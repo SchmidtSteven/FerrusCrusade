@@ -3600,44 +3600,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="9cea-2e7-8711-11bf" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="2" field="d2a4-fb3f-936f-3dbf">
-              <conditions>
-                <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2449-72bc-7ec7-81f9">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <associations>
-            <association min="1" max="1" scope="b1cf-c5-5121-92a4" childId="9fbe-3d53-a375-b987" name="Hellfyre missile rack" id="5711-b735-22db-7a5b"/>
-          </associations>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="4-9 Scarab Occult Terminators" hidden="false" id="9fbe-3d53-a375-b987" defaultSelectionEntryId="a7ee-9112-4e83-bc2">
@@ -3800,6 +3762,81 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ Hellfyre missile rack" hidden="false" id="0ebb-c3e6-dbfc-1374">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6fd-628f-3113-70dc"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0d52-e2f3-47d6-c1ee" name="Inferno combi-bolter" hidden="false" collective="true" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="67a2-e23c-ca9a-7f0e" name="Inferno combi-bolter" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="589b-38b8-7cd9-77c2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a4-e356-b5d7-9d59"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry id="fdb5-fd4a-0b2a-10bf" name="Prosperine khopesh" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7830-6353-6279-fe62"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c1f-f815-c4ed-990c"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e0b9-befb-1dae-3fcb" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="316c-42b2-cde3-b6fe" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="2" field="b6fd-628f-3113-70dc">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="316c-42b2-cde3-b6fe">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="57d5-9a4c-87b8-86a0"/>
@@ -3811,7 +3848,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3997,7 +4034,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile name="Servile Pawns" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f7ea-e27e-52cc-8dd2">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly THOUSAND SONS INFANTRY units, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Glamour of Tzeentch [Aura, Psychic]: While a friendly THOUSAND SONS INFANTRY unit is within 6&quot; of this model, models in that unit have the Stealth ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Glamour of Tzeentch (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa29-af55-b319-e4d6">
@@ -7557,7 +7594,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="10c4-fb65-ff9c-4b26" includeChildSelections="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
