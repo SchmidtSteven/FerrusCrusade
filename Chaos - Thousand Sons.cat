@@ -3610,44 +3610,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <cost name="Cabal Points" typeId="5878-a561-3259-89b6" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="9cea-2e7-8711-11bf" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="2" field="d2a4-fb3f-936f-3dbf">
-              <conditions>
-                <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2449-72bc-7ec7-81f9">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <associations>
-            <association min="1" max="1" scope="b1cf-c5-5121-92a4" childId="9fbe-3d53-a375-b987" name="Hellfyre missile rack" id="5711-b735-22db-7a5b"/>
-          </associations>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="4-9 Scarab Occult Terminators" hidden="false" id="9fbe-3d53-a375-b987" defaultSelectionEntryId="a7ee-9112-4e83-bc2">
@@ -3809,6 +3771,44 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
+              </constraints>
+              <modifiers>
+                <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="9cea-2e7-8711-11bf" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="2" field="d2a4-fb3f-936f-3dbf">
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2449-72bc-7ec7-81f9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <associations>
+                <association min="1" max="1" scope="b1cf-c5-5121-92a4" childId="9fbe-3d53-a375-b987" name="Hellfyre missile rack" id="5711-b735-22db-7a5b"/>
+              </associations>
             </selectionEntry>
           </selectionEntries>
           <constraints>
