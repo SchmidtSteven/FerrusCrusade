@@ -3821,7 +3821,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
