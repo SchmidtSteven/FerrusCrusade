@@ -3774,7 +3774,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hellfyre missile rack" hidden="false" id="9cea-2e7-8711-11bf">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d2a4-fb3f-936f-3dbf"/>
               </constraints>
               <modifiers>
                 <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
