@@ -3669,146 +3669,131 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                 </modifier>
                 <modifier type="floor" value="7" field="9f9-b13c-476-9d77"/>
               </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="92f8-89fa-9239-29dd" type="selectionEntry" targetId="5f94-a8ff-78d0-8c7c"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ heavy warpflamer" hidden="false" id="6bc9-f53a-e7e6-19bc">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f6b-cd25-42e2-eef9"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="96c0-9357-6745-583e" name="Prosperine khopesh" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18e5-6e76-e3e6-c9bb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ae-5e78-5b6e-4c7c"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ac32-f47d-ea56-daa5" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy warpflamer" hidden="false" id="cf2a-95e6-e6da-1430" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c7a-2924-eaa3-482f"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f512-49bb-440d-29b8"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Heavy warpflamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a577-a5a8-8341-7712">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Ignores Cover" hidden="false" type="rule" id="66e0-67e2-5852-8127" targetId="4640-43e7-30b-215a"/>
-                    <infoLink name="Torrent" hidden="false" type="rule" id="a118-3c8c-b28d-8dc8" targetId="5edf-d619-23e0-9b56"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink name="Heavy weapon" hidden="false" id="2579-7f95-6141-e449" targetId="5d25-35ac-5458-4ba2" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="9bc0-7405-c411-055d" type="selectionEntry" targetId="5f94-a8ff-78d0-8c7c"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ soulreaper cannon" hidden="false" id="f0e4-fd2b-1ba8-7234">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f6b-cd25-42e2-eef9"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c248-3077-319a-7c4" name="Prosperine khopesh" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18e5-6e76-e3e6-c9bb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ae-5e78-5b6e-4c7c"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="105f-60e8-25d7-b240" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Soulreaper cannon" hidden="false" id="18b7-8efe-ae35-80da" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7be9-8552-4ca2-a65f"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcff-b781-600b-560d"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Soulreaper cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="af0c-7bd2-96b0-7dad">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Devastating Wounds" hidden="false" type="rule" id="4500-4ea0-dabc-5949" targetId="be1e-ac8e-1e2c-3528"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink name="Heavy weapon" hidden="false" id="9390-74b1-ced6-3a3a" targetId="5d25-35ac-5458-4ba2" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="3931-6acd-ec0f-d0cb" type="selectionEntry" targetId="5f94-a8ff-78d0-8c7c"/>
-              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="57d5-9a4c-87b8-86a0"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="23d9-a462-8f17-3ba"/>
           </constraints>
-          <modifiers>
-            <modifier type="add" value="Max 1 heavy weapon per 5 models" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Scarab Occult Terminator w/ heavy weapons" id="e9fc-a7f1-103d-3941" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ heavy warpflamer" hidden="false" id="6bc9-f53a-e7e6-19bc">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prosperine khopesh" hidden="false" id="96c0-9357-6745-583e" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b608-df92-0cd9-bba9"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a018-7860-8a8c-d2f3"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Prosperine khopesh" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ac32-f47d-ea56-daa5">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy warpflamer" hidden="false" id="cf2a-95e6-e6da-1430" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c7a-2924-eaa3-482f"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f512-49bb-440d-29b8"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Heavy warpflamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a577-a5a8-8341-7712">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Ignores Cover" id="66e0-67e2-5852-8127" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                        <infoLink name="Torrent" id="a118-3c8c-b28d-8dc8" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink name="Heavy weapon" hidden="false" id="2579-7f95-6141-e449" targetId="5d25-35ac-5458-4ba2" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="9bc0-7405-c411-055d" type="selectionEntry" targetId="5f94-a8ff-78d0-8c7c"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ soulreaper cannon" hidden="false" id="f0e4-fd2b-1ba8-7234">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Prosperine khopesh" hidden="false" id="c248-3077-319a-7c4" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18e5-6e76-e3e6-c9bb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ae-5e78-5b6e-4c7c"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Prosperine khopesh" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="105f-60e8-25d7-b240">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Soulreaper cannon" hidden="false" id="18b7-8efe-ae35-80da" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff60-b33f-01a7-de9b"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5880-e31d-933d-aa11"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Soulreaper cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="af0c-7bd2-96b0-7dad">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Devastating Wounds" id="4500-4ea0-dabc-5949" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink name="Heavy weapon" hidden="false" id="9390-74b1-ced6-3a3a" targetId="5d25-35ac-5458-4ba2" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Hellfyre Missile Rack" hidden="false" id="3931-6acd-ec0f-d0cb" type="selectionEntry" targetId="5f94-a8ff-78d0-8c7c"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b0-df82-1e1b-ac84"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="94b0-df82-1e1b-ac84">
                   <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Max 1 hellfyre missle rack per 5 models" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                    <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="d0a4-7a7e-39d3-28ea" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
