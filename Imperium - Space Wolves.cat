@@ -1661,6 +1661,9 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <categoryLink targetId="4554-88b1-466c-d9f5" id="b016-d3c5-4643-aa40" primary="false" name="Wolf Guard Terminators"/>
         <categoryLink targetId="180b-bab2-a59f-44bc" id="9983-f551-b723-61d8" primary="false" name="Wolf Guard"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8619-d624-dffa-46e0" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm bolter" id="2fb0-97d5-262d-b992" collective="false">
       <profiles>
@@ -3723,6 +3726,9 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="277b-383e-4050-c29e" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-weapon" id="45c9-1d53-d014-892a">
       <profiles>
@@ -3798,29 +3804,23 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wolf Guard Headtakers" hidden="false" id="03e1-9eba-f2f0-4ce5" defaultSelectionEntryId="41a6-294b-7367-efef" sortIndex="2">
+        <selectionEntryGroup name="Wolf Guard Headtakers" hidden="false" id="03e1-9eba-f2f0-4ce5" sortIndex="2" defaultSelectionEntryId="9162-ceef-e61c-9fe7">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6139-b226-68d4-75e3"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2c76-9857-67bc-7ddc"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dbdd-84bb-7758-b519"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ paired master-crafted power weapon" hidden="false" id="9162-ceef-e61c-9fe7">
+            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ paired master-crafted power weapon" hidden="false" id="9162-ceef-e61c-9fe7" defaultAmount="">
               <entryLinks>
                 <entryLink import="true" name="Paired master-crafted power weapons" hidden="false" type="selectionEntry" id="5ced-1e53-cca2-1649" targetId="740f-16e7-7e62-9b3f">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a4db-1888-c721-27fa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                   <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="353d-7c09-ae25-e0f7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="353d-7c09-ae25-e0f7"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f383-c4a2-5e46-b62f"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="03b8-1496-07b5-8a78"/>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="41b0-b9a2-483f-1f9a"/>
-              </constraints>
               <profiles>
-                <profile name="Wolf Guard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a48b-19b8-6135-26a5">
+                <profile name="Wolf Guard Headtakers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a48b-19b8-6135-26a5">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
@@ -3831,26 +3831,25 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="55e4-12ed-475a-b8e3"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ heavy bolt pistol" hidden="false" id="7a8b-e66a-714d-acf7">
               <entryLinks>
                 <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="9f9a-a5da-c45c-35c7" targetId="3b8f-1cb7-3c6e-4455">
                   <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ec50-1bc2-99a0-24e9"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ab44-0218-822a-b8fb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec50-1bc2-99a0-24e9"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4397-8c26-2a7b-3792"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="c435-2d83-bcd6-b1f6" targetId="ebda-08ed-994a-b579">
                   <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e887-129c-5c49-7352"/>
-                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6e8a-eb72-28c2-7d25"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e887-129c-5c49-7352"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fd5-8d59-f816-4a70"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="43eb-2e08-9359-138d"/>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fdf3-8fcf-51a2-a228"/>
-              </constraints>
               <profiles>
                 <profile name="Wolf Guard Headtakers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d39f-5648-fe63-813b">
                   <characteristics>
@@ -3863,84 +3862,51 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="bd70-f9b1-7950-21d2"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Hunting Wolf" hidden="false" id="9062-9501-ca90-b019" defaultSelectionEntryId="41a6-294b-7367-efef" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee1f-3c79-c6c3-26ab"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3217-bd4e-ea48-8c09"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ heavy bolt pistol" hidden="false" id="128a-99f7-fd6c-9a85">
-              <constraints>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ec3f-4475-2b88-31e0"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b536-c77e-6172-708e"/>
-              </constraints>
-              <profiles>
-                <profile name="Hunting Wolf" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="52d9-b2f5-25b8-836b">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Teeth and Claws" hidden="false" id="97de-3d8a-a87e-0e8d">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0b0-957b-312a-9802"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fc5-bd4e-1aaa-1288"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Teeth and Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="42a6-f4a7-dd4f-b1bf">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink targetId="4c3e-9310-a516-3590" id="1a7a-6866-a810-ea3e" primary="false" name="Beast"/>
-            <categoryLink targetId="aff3-d6a3-2a95-9dc" id="c663-1140-6a31-3474" primary="false" name="Imperium"/>
-            <categoryLink targetId="ed37-2738-e1bf-8fdc" id="e4e9-e0ae-c307-2d11" primary="false" name="Hunting Wolves"/>
-            <categoryLink targetId="6e7-40c-58d9-e402" id="488f-c20b-76c5-87b9" primary="false" name="Faction: Adeptus Astartes"/>
-            <categoryLink targetId="a0d9-c115-2a-8330" id="56c7-b0c0-3fc1-c53f" primary="false" name="Faction: Space Wolves"/>
-          </categoryLinks>
+        <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
+          <entryLinks>
+            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762" defaultAmount=""/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="180" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="model" shared="true" id="f2a9-f1a7-ae2d-05ab" includeChildSelections="true"/>
+            <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="3e6b-7ced-6148-63a0" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="110" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="ed37-2738-e1bf-8fdc" childId="model" shared="true" id="91a2-80bb-a268-c3db" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="cc1c-7e5c-00b7-f5bc" includeChildSelections="true"/>
+                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="e0a0-a82c-a2f6-d18b" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="220" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="ed37-2738-e1bf-8fdc" childId="model" shared="true" id="74e0-99ef-0d8d-ca0d" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="01c6-6512-d5e3-f52f" includeChildSelections="true"/>
+                <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="c976-96f3-db4c-2f5c" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="21bc-de37-1ec4-7179" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="12" field="selections" scope="force" shared="true" id="48ef-fb79-c65b-2d73" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Paired master-crafted power weapons" id="740f-16e7-7e62-9b3f">
       <profiles>
@@ -4067,6 +4033,57 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
       </profiles>
       <comment>4+ inv</comment>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hunting Wolves" hidden="false" id="4def-6243-a627-e762">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="395d-0159-ee07-373e" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="a0d9-c115-2a-8330" id="51a6-9093-30f2-6283" primary="false" name="Faction: Space Wolves"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="d217-d5a8-4cf5-3bdd" primary="true" name="Infantry"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="c8c6-f615-adc9-d080" primary="false" name="Imperium"/>
+        <categoryLink targetId="180b-bab2-a59f-44bc" id="c777-4680-4ef6-5f94" primary="false" name="Wolf Guard"/>
+        <categoryLink targetId="1fdb-004f-6c61-14b7" id="7f2f-7295-ff51-6af3" primary="false" name="Headtakers"/>
+        <categoryLink targetId="5179-8ede-45e3-49a2" id="e1e3-0691-654d-992c" primary="false" name="Tacticus"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Teeth and Claws" hidden="false" id="1a8c-12ce-6e3c-5aea">
+          <profiles>
+            <profile name="Teeth and Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f713-9ccf-ff9c-089e">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7920-48c9-a2b3-53d9"/>
+      </constraints>
+      <profiles>
+        <profile name="Hunting Wolf" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4ff6-a237-fe9e-e135">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">6+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Logan Grimnar" hidden="false" id="48a0-9386-4930-6a62">
@@ -4158,11 +4175,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="a3fa-f659-b61-d66b" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Wolf Guard" hidden="false" id="180b-bab2-a59f-44bc">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e54d-8d2-8d82-d5f4" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Wolf Guard" hidden="false" id="180b-bab2-a59f-44bc"/>
     <categoryEntry name="Lukas the Trickster" hidden="false" id="3e7d-6254-65cf-fe96">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a3fa-f659-b61-d66b" includeChildSelections="true"/>
@@ -4269,16 +4282,8 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c504-a2d1-d490-501c" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Hunting Wolves" hidden="false" id="ed37-2738-e1bf-8fdc">
-      <constraints>
-        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="5959-0559-2c1b-8f47" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="Headtakers" hidden="false" id="1fdb-004f-6c61-14b7">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5a34-7ea0-c52a-d21e" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Hunting Wolves" hidden="false" id="ed37-2738-e1bf-8fdc"/>
+    <categoryEntry name="Headtakers" hidden="false" id="1fdb-004f-6c61-14b7"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Logan Grimnar" hidden="false" type="selectionEntry" id="23f-47a2-1700-86cd" targetId="c65-46c6-3a62-80c"/>
@@ -4303,6 +4308,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
     <entryLink import="true" name="Wolf Priest" hidden="false" type="selectionEntry" id="899e-0b6a-9c78-693d" targetId="4726-21ad-489c-74e9"/>
     <entryLink import="true" name="Wolf Guard Terminators" hidden="false" type="selectionEntry" id="8136-7d3e-9ee2-c5c2" targetId="ca30-caf3-d7a8-1d32"/>
     <entryLink import="true" name="Wolf Guard Headtakers" hidden="false" type="selectionEntry" id="e79a-abac-efa0-ce0e" targetId="2a61-19d4-392b-8187"/>
+    <entryLink import="true" name="Hunting Wolves" hidden="true" type="selectionEntry" id="acdd-eea2-643d-129a" targetId="4def-6243-a627-e762"/>
   </entryLinks>
   <sharedInfoGroups>
     <infoGroup name="Logan" hidden="false" id="976-2d16-9324-f92">
