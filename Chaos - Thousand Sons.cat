@@ -83,6 +83,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
     </categoryEntry>
     <categoryEntry name="Mutant" id="f5bc-077e-5247-5609" hidden="false"/>
     <categoryEntry name="Sekhetar Robots" id="d5ae-b806-e782-2d62" hidden="false"/>
+    <categoryEntry name="Hellfyre Missile Rack" id="d0a4-7a7e-39d3-28ea" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="87f0-0a14-9b6b-f367" name="Rituals reference" hidden="false" collective="false" import="true" type="upgrade">
@@ -3674,7 +3675,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </profiles>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec57-83d7-4557-de6e"/>
-                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="36f2-13d0-04e6-30be" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="36f2-13d0-04e6-30be" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="2" field="36f2-13d0-04e6-30be">
@@ -3683,6 +3684,9 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <categoryLinks>
+                    <categoryLink targetId="d0a4-7a7e-39d3-28ea" id="7f2f-b1f6-2426-8a71" primary="false" name="Hellfyre Missile Rack"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -3745,9 +3749,9 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <categoryLink name="Heavy weapon" hidden="false" id="2579-7f95-6141-e449" targetId="5d25-35ac-5458-4ba2" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="50ed-715f-58ac-4160">
+                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="3442-2f1e-c5d9-f9b9">
                   <profiles>
-                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8d09-1634-2ebc-7456">
+                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="417e-721e-a0ca-286c">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
@@ -3760,16 +3764,19 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09b6-d72f-c06a-8843"/>
-                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="bc24-904c-a588-a0b0" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ae-dc34-2697-f597"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="3422-4a69-f3d0-6f86" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="bc24-904c-a588-a0b0">
+                    <modifier type="set" value="2" field="3422-4a69-f3d0-6f86">
                       <conditions>
                         <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Hellfyre Missile Rack" hidden="false" id="a323-e253-1e9b-2e8a" targetId="d0a4-7a7e-39d3-28ea" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -3822,9 +3829,9 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <categoryLink name="Heavy weapon" hidden="false" id="9390-74b1-ced6-3a3a" targetId="5d25-35ac-5458-4ba2" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="cbfb-f131-4b59-f73c">
+                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="6635-5770-4ffe-9402">
                   <profiles>
-                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8e3a-95cf-5e63-3efe">
+                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e24c-f701-1eaf-0291">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
@@ -3837,16 +3844,19 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14fd-61d0-65d0-a6e7"/>
-                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="5592-a1b7-4d39-28c3" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="141b-3b07-462f-5728"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="07d4-3b7a-8913-2a59" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="2" field="5592-a1b7-4d39-28c3">
+                    <modifier type="set" value="2" field="07d4-3b7a-8913-2a59">
                       <conditions>
                         <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <categoryLinks>
+                    <categoryLink name="Hellfyre Missile Rack" hidden="false" id="2a23-4f31-2d16-94fe" targetId="d0a4-7a7e-39d3-28ea" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -3862,6 +3872,16 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   <conditions>
                     <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
                     <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="5d25-35ac-5458-4ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Max 1 hellfyre missle rack per 5 models" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                    <condition type="greaterThan" value="2" field="selections" scope="b1cf-c5-5121-92a4" childId="d0a4-7a7e-39d3-28ea" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
