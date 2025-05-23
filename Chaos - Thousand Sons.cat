@@ -3783,13 +3783,23 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b0-df82-1e1b-ac84"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="94b0-df82-1e1b-ac84"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="2" field="94b0-df82-1e1b-ac84">
                   <conditions>
                     <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
                   </conditions>
+                </modifier>
+                <modifier type="add" value="Max 1 {this} per 5 models" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="e9fc-a7f1-103d-3941" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
