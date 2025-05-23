@@ -3658,6 +3658,32 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     </profile>
                   </profiles>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="bbbc-17c7-f9e1-ae0f">
+                  <profiles>
+                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f7be-6421-e393-00fd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec57-83d7-4557-de6e"/>
+                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="36f2-13d0-04e6-30be" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="36f2-13d0-04e6-30be">
+                      <conditions>
+                        <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
               </selectionEntries>
               <modifiers>
                 <modifier type="decrement" value="1" field="9f9-b13c-476-9d77">
@@ -3719,6 +3745,32 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <categoryLink name="Heavy weapon" hidden="false" id="2579-7f95-6141-e449" targetId="5d25-35ac-5458-4ba2" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="50ed-715f-58ac-4160">
+                  <profiles>
+                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8d09-1634-2ebc-7456">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09b6-d72f-c06a-8843"/>
+                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="bc24-904c-a588-a0b0" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="bc24-904c-a588-a0b0">
+                      <conditions>
+                        <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ soulreaper cannon" hidden="false" id="f0e4-fd2b-1ba8-7234">
@@ -3770,82 +3822,33 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <categoryLink name="Heavy weapon" hidden="false" id="9390-74b1-ced6-3a3a" targetId="5d25-35ac-5458-4ba2" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Scarab Occult Terminator w/ Hellfyre missile rack" hidden="false" id="0ebb-c3e6-dbfc-1374">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6fd-628f-3113-70dc"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0d52-e2f3-47d6-c1ee" name="Inferno combi-bolter" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry type="upgrade" import="true" name="Hellfyre Missile Rack" hidden="false" id="cbfb-f131-4b59-f73c">
                   <profiles>
-                    <profile id="67a2-e23c-ca9a-7f0e" name="Inferno combi-bolter" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                    <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8e3a-95cf-5e63-3efe">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="589b-38b8-7cd9-77c2"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a4-e356-b5d7-9d59"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14fd-61d0-65d0-a6e7"/>
+                    <constraint type="max" value="1" field="selections" scope="ad0-9341-6146-3751" shared="false" id="5592-a1b7-4d39-28c3" includeChildSelections="true"/>
                   </constraints>
-                </selectionEntry>
-                <selectionEntry id="fdb5-fd4a-0b2a-10bf" name="Prosperine khopesh" hidden="false" collective="true" import="true" type="upgrade">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7830-6353-6279-fe62"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c1f-f815-c4ed-990c"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e0b9-befb-1dae-3fcb" name="Prosperine khopesh" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <modifiers>
+                    <modifier type="set" value="2" field="5592-a1b7-4d39-28c3">
+                      <conditions>
+                        <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
-              <modifiers>
-                <modifier type="add" value="Max 1 hellfyre rack per 5 models" field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="1" field="selections" scope="b1cf-c5-5121-92a4" childId="316c-42b2-cde3-b6fe" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b6fd-628f-3113-70dc">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="b1cf-c5-5121-92a4" childId="model" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Hellfyre missile rack" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="316c-42b2-cde3-b6fe">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
