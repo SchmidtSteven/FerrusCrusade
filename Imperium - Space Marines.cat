@@ -37824,6 +37824,112 @@ Their Appointed Hour: You can re‑roll Advance and Charge rolls made for this
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saga of the Beastslayer" hidden="false" id="8ae6-3345-d599-6847">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Legendary Slayers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5e22-679b-47b1-3ffe">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ADEPTUS ASTARTES model from your army makes an attack, if that attack targets a CHARACTER, MONSTER or VEHICLE unit or if your Saga is completed (see below), that attack has the [LETHAL HITS] ability.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Saga of the Beastslayer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4766-bfeb-06d3-f9c4">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, your Beastslayer tally is 0, and you determine your Beastslayer target by halving the number of units from your opponent&apos;s army that have one or more of the following keywords (rounding up): CHARACTER, MONSTER, VEHICLE.
+
+
+Each time an ADEPTUS ASTARTES unit from your army shoots or fights, after all of those attacks have been resolved, add 1 to your Beastslayer tally for each enemy unit with one or more of the following keywords destroyed by those attacks: CHARACTER, MONSTER, VEHICLE.
+
+
+Once your Beastslayer tally is equal to or greater than your Beastslayer target, your Saga is completed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saga of the Bold" hidden="false" id="88cf-43ec-7643-c38a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Heroes ALL" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d678-afe6-2f42-d6ae">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ADEPTUS ASTARTES unit from your army is selected to shoot or fight, apply one of the following when resolving those attacks:
+
+If your Saga is completed (see below), you can re-roll one Hit roll, one Wound roll and one Damage roll.
+
+Otherwise, if that unit is a SPACE WOLVES CHARACTER unit, you can re-roll one Hit roll, one Wound roll or one Damage roll.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Saga of the Bold" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ec48-30cb-a35f-f20e">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a SPACE WOLVES CHARACTER unit from your army does one of the following, that unit achieves that Boast. Once three or more different Boasts have been achieved by units from your army, your Saga is completed.
+
+
+Your Hide as a Trophy: That unit destroys your Oath of Moment target. Slay Them All: That unit destroys your Oath of Moment target, and that is the second Oath of Moment target destroyed by that unit in this battle.
+
+
+Overrun Their Position: At the end of either player&apos;s turn, that unit is wholly within your opponent&apos;s deployment zone.
+
+
+Hold the Line: From the second battle round onwards, at the end of your Command phase, that unit is within range of an objective marker you control that is not within your deployment zone.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saga of the Hunter" hidden="false" id="79c6-c9c2-7c0a-32e7">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Pack&apos;s Quarry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f08f-1eab-3ff0-b044">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in a SPACE WOLVES unit from your army makes a melee attack that targets an enemy unit, if that
+enemy unit is within Engagement Range of one or more other ADEPTUS ASTARTES units from your army, or if the attacking unit contains more models than that enemy unit:
+
+
+Add 1 to the Hit roll.
+
+
+If your Saga is completed (see below),
+add 1 to the Wound roll as well.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Saga of the Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="778d-24b3-c71f-bd9c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, your Quarry tally is 0. Each time an ADEPTUS ASTARTES unit from your army
+fights, after all of those attacks have been resolved, add 1 to your Quarry tally for each enemy unit destroyed by those attacks. 
+
+
+Once your Quarry tally is equal to or greater than the number shown in the table below (depending on the battle size),  your Saga is completed.
+
+
+BATTLE SIZE     QUARRY TALLY
+
+
+Incursion              2
+
+
+Strike Force         3
+
+
+Onslaught            4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9e5d-de4c-c5d1-1d3e" collapsible="true">
@@ -40106,7 +40212,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7047-73a6-28e-c859" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="79c6-c9c2-7c0a-32e7" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -40208,7 +40314,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7047-73a6-28e-c859" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="88cf-43ec-7643-c38a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -40315,7 +40421,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7047-73a6-28e-c859" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="8ae6-3345-d599-6847" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
