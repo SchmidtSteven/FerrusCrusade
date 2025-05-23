@@ -3810,7 +3810,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dbdd-84bb-7758-b519"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ paired master-crafted power weapon" hidden="false" id="9162-ceef-e61c-9fe7" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ paired master-crafted power weapon" hidden="false" id="9162-ceef-e61c-9fe7">
               <entryLinks>
                 <entryLink import="true" name="Paired master-crafted power weapons" hidden="false" type="selectionEntry" id="5ced-1e53-cca2-1649" targetId="740f-16e7-7e62-9b3f">
                   <constraints>
@@ -3870,7 +3870,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </selectionEntryGroup>
         <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
           <entryLinks>
-            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762" defaultAmount=""/>
+            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4308,7 +4308,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
     <entryLink import="true" name="Wolf Priest" hidden="false" type="selectionEntry" id="899e-0b6a-9c78-693d" targetId="4726-21ad-489c-74e9"/>
     <entryLink import="true" name="Wolf Guard Terminators" hidden="false" type="selectionEntry" id="8136-7d3e-9ee2-c5c2" targetId="ca30-caf3-d7a8-1d32"/>
     <entryLink import="true" name="Wolf Guard Headtakers" hidden="false" type="selectionEntry" id="e79a-abac-efa0-ce0e" targetId="2a61-19d4-392b-8187"/>
-    <entryLink import="true" name="Hunting Wolves" hidden="true" type="selectionEntry" id="acdd-eea2-643d-129a" targetId="4def-6243-a627-e762"/>
   </entryLinks>
   <sharedInfoGroups>
     <infoGroup name="Logan" hidden="false" id="976-2d16-9324-f92">
