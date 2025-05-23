@@ -3675,7 +3675,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </profiles>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec57-83d7-4557-de6e"/>
-                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="36f2-13d0-04e6-30be" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="true" id="36f2-13d0-04e6-30be" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="2" field="36f2-13d0-04e6-30be">
@@ -3765,7 +3765,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </profiles>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ae-dc34-2697-f597"/>
-                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="3422-4a69-f3d0-6f86" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="true" id="3422-4a69-f3d0-6f86" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="2" field="3422-4a69-f3d0-6f86">
@@ -3845,7 +3845,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   </profiles>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="141b-3b07-462f-5728"/>
-                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="false" id="07d4-3b7a-8913-2a59" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="b1cf-c5-5121-92a4" shared="true" id="07d4-3b7a-8913-2a59" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="2" field="07d4-3b7a-8913-2a59">
