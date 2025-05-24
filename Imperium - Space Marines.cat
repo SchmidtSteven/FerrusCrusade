@@ -40212,7 +40212,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="79c6-c9c2-7c0a-32e7" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="88cf-43ec-7643-c38a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -40240,6 +40240,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Swift Hunter" hidden="false" id="c8f1-9a98-9a40-019e">
               <constraints>
@@ -40260,6 +40267,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Feral Rage" hidden="false" id="4a05-5c57-2056-5c16">
               <constraints>
@@ -40362,6 +40376,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Skjald" hidden="false" id="a5ea-ff62-b163-50d0">
               <constraints>
@@ -40402,6 +40423,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -40489,6 +40517,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Wolf-Touched" hidden="false" id="0ac6-2037-c8bf-9e6d">
               <constraints>
@@ -40504,6 +40539,13 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
