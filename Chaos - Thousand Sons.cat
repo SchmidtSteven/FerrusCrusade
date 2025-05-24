@@ -1674,7 +1674,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -3377,7 +3377,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
@@ -4129,7 +4129,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="a6be-878c-42ec-a96e" name="Thousand Sons Daemon Prince" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">11&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">13&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
@@ -5644,7 +5644,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         <categoryLink id="1d51-ea8c-ec25-a981" name="Psyker" hidden="false" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink id="8c6b-dd77-3884-ea6c" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="0cbf-917d-bcda-26e2" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
-        <categoryLink id="4ae5-0a2a-6e04-c049" name="Infernal Master" hidden="false" targetId="14c6-7790-6e57-92b9" primary="false"/>
+        <categoryLink targetId="3789-4546-1d0a-f02b" id="28fb-75a9-539b-b864" primary="false" name="Sorcerer"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="019e-c75c-4b8e-82ef" name="Force weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -7451,7 +7451,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="1693-5e00-da69-57bb" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="3789-4546-1d0a-f02b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="5714-9842-cb4c-fcd9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
