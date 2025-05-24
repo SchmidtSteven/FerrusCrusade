@@ -1362,7 +1362,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wolf Guard Terminators" hidden="false" id="ca30-caf3-d7a8-1d32">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <profiles>
         <profile name="Rugged Resillience" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b2ea-319f-b86-ab13">
@@ -1372,9 +1377,9 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="370" field="51b2-306e-1021-d207">
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="ca30-caf3-d7a8-1d32" childId="model" shared="true" id="f400-1fa2-8969-b370" includeChildSelections="true"/>
+            <condition type="atLeast" value="6" field="selections" scope="parent" childId="model" shared="true" id="f400-1fa2-8969-b370" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1384,27 +1389,27 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <infoLink name="Deep Strike" id="c6a7-9caa-ad43-c59e" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="4-9 Terminators" hidden="false" id="9f5c-b0e1-1e24-3cfa" defaultSelectionEntryId="c169-905a-e3f-8c1" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8309-aa29-6458-1bfb"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="665b-22f9-251d-def2"/>
-          </constraints>
+        <selectionEntryGroup name="Wolf Guard Terminator" id="47df-9eb2-3c73-e67f" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Wolf Guard Terminator" hidden="false" id="c169-905a-e3f-8c1">
+            <selectionEntry type="model" import="true" name="Wolf Guard Terminator Pack Leader" hidden="false" id="1f70-af8a-871e-979f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cf1-af70-fbab-ec50"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-3ce5-fd40-58e"/>
+              </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons" hidden="false" id="fe72-93a8-ada8-7b30" defaultSelectionEntryId="b9cd-1f7e-c301-bbdd">
+                <selectionEntryGroup name="Wargear" id="4c2a-3678-da00-a4c1" hidden="false" defaultSelectionEntryId="none">
                   <entryLinks>
-                    <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="b9cd-1f7e-c301-bbdd" targetId="ebda-08ed-994a-b579">
+                    <entryLink import="true" name="Relic Greataxe" hidden="false" id="9527-d27e-dd78-867d" type="selectionEntry" targetId="e026-a506-e1c7-25c7">
                       <constraints>
-                        <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d753-27d2-8010-2ab0"/>
-                        <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e65d-c9b5-3daf-6d1b"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4e2-fc87-e917-ee72"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Storm shield" hidden="false" type="selectionEntry" id="671c-9c01-e58e-53dc" targetId="d576-d444-2286-9eeb">
+                    <entryLink import="true" name="Twin lightning claws" hidden="false" id="34d5-d0df-af74-de3f" type="selectionEntry" targetId="b37d-ce46-a9bd-1c53"/>
+                    <entryLink import="true" name="Storm shield" hidden="false" id="ce2d-6800-4d12-77ec" type="selectionEntry" targetId="d576-d444-2286-9eeb">
                       <profiles>
-                        <profile name="Wolf Guard Terminators (Storm shield)" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5e56-98fc-f4b-c1d9">
+                        <profile name="Wolf Guard Terminators (Storm shield)" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="55c7-4ca9-46c-2650">
                           <characteristics>
-                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
                             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -1414,52 +1419,135 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                         </profile>
                       </profiles>
                       <constraints>
-                        <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="72b6-18b0-5e2b-bad7"/>
-                        <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c6d5-41b8-e230-6d8e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72b6-18b0-5e2b-bad7"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5d2-d505-2b81-56bb"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cfa-4202-2768-ef8d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfd6-b818-84d8-0090"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Storm bolter" hidden="false" id="fd1b-d26f-20ab-39c1" defaultSelectionEntryId="94bc-cc45-9729-c51d">
-                      <entryLinks>
-                        <entryLink import="true" name="Storm bolter" hidden="false" type="selectionEntry" id="94bc-cc45-9729-c51d" targetId="2fb0-97d5-262d-b992">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d0e-62bd-849e-7cf9"/>
-                          </constraints>
-                          <modifiers>
-                            <modifier type="set" value="0" field="1d0e-62bd-849e-7cf9" id="eeb2-1529-2b41-f32f"/>
-                          </modifiers>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="cf7c-f7eb-9fb0-28b0"/>
-                        <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="06e5-c019-049d-8dfc"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <modifiers>
-                    <modifier type="set" value="4" field="b5d2-d505-2b81-56bb">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="c169-905a-e3f-8c1" childId="b37d-ce46-a9bd-1c53" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="9" field="cfa-4202-2768-ef8d">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="c169-905a-e3f-8c1" childId="b37d-ce46-a9bd-1c53" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <profiles>
+                <profile name="Wolf Guard Terminator Pack Leader" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b013-68ca-96db-717f">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="64b1-484c-f26f-fd51" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3a-8d24-cf72-3096"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="2dea-b2c-e2f9-5de3" type="selectionEntry" targetId="2fb0-97d5-262d-b992">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="122c-50d0-6004-41c8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Wolf Guard Terminator w/ Heavy Weapon" hidden="false" id="6898-ba38-78e0-0cc3" sortIndex="4">
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2206-ec94-f634-2226"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c922-dc86-2723-ac77"/>
               </constraints>
               <profiles>
-                <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="53e9-9024-f706-ff18">
+                <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fa03-d4a6-d2a4-dcf9">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Assault Cannon" hidden="false" id="4c24-dd25-e2f2-ca95" type="selectionEntry" targetId="2de6-ff2-dc37-b20d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24b2-c9b9-1b73-b469"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power fist" hidden="false" id="ef46-86f9-c3f4-6dd1" type="selectionEntry" targetId="eb70-5918-e9a-5a3f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29a7-e1a2-9878-24f2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="2" field="c922-dc86-2723-ac77">
+                  <conditions>
+                    <condition type="equalTo" value="10" field="selections" scope="ca30-caf3-d7a8-1d32" childId="47df-9eb2-3c73-e67f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Wulf Guard Terminators /w Master-crafted Power Weapon &amp; Storm bolter" hidden="false" id="5536-c63d-bbf1-ea8f" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="45c8-36b3-fb4c-a395" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                  <constraints>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5221-3442-0308-72ab"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="0a7c-43e2-9e39-41b9" type="selectionEntry" targetId="2fb0-97d5-262d-b992">
+                  <constraints>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="97c7-62b9-c537-3da0"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4caa-3892-3261-c17a"/>
+              </constraints>
+              <profiles>
+                <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d157-4ea6-450c-d5a3">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Wulf Guard Terminators /w Master-crafted Power Weapon &amp; Storm shield" hidden="false" id="352f-6ec3-464c-d70b" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Storm shield" hidden="false" id="a0a0-02be-6b14-7424" type="selectionEntry" targetId="d576-d444-2286-9eeb">
+                  <profiles>
+                    <profile name="Wolf Guard Terminators (Storm shield)" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1d9d-6b0b-e535-cf04">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dfd7-7b26-8fcc-58db"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="40c2-fe16-d759-6337" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                  <constraints>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="094a-0074-73e8-4ced"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="aa3c-49fb-76ad-6209"/>
+              </constraints>
+              <profiles>
+                <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3b0a-5216-2fd5-a52e">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -1472,185 +1560,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="1 per 5 models" hidden="false" id="a064-415-94d4-2371">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Wolf Guard Terminator w/ Heavy Weapon" hidden="false" id="3e05-9064-404-87d4">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d217-d4e1-284e-92c7"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Melee Option" hidden="false" id="7bb2-cc25-18f4-26b1" defaultSelectionEntryId="1328-bb3e-2f00-ac2c">
-                      <entryLinks>
-                        <entryLink import="true" name="Power fist" hidden="false" type="selectionEntry" id="1328-bb3e-2f00-ac2c" targetId="eb70-5918-e9a-5a3f"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0ce-be79-bce8-9170-min"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ce-be79-bce8-9170-max"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                    <selectionEntryGroup name="Heavy Weapon Option" hidden="false" id="6321-4020-b197-706f">
-                      <entryLinks>
-                        <entryLink import="true" name="Assault Cannon" hidden="false" type="selectionEntry" id="1342-aac1-3427-1f57" targetId="2de6-ff2-dc37-b20d"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c23e-ec08-f02f-d4bf-min"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23e-ec08-f02f-d4bf-max"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <profiles>
-                    <profile name="Wolf Guard Terminators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e7a0-5f0e-405c-8d50">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e1f9-719d-6f76-5a8e"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="e1f9-719d-6f76-5a8e" id="ed99-62e7-5faa-dee1">
-                  <conditions>
-                    <condition type="lessThan" value="10" field="selections" scope="ca30-caf3-d7a8-1d32" childId="model" shared="true" id="67f8-a069-45cb-49f8" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="03cf-edad-afc6-74f7"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5b60-e269-0aa5-26c9"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Wolf Guard Terminator Pack Leader" hidden="false" id="1f70-af8a-871e-979f" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cf1-af70-fbab-ec50"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d80-3ce5-fd40-58e"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" hidden="false" id="4c2a-3678-da00-a4c1" defaultSelectionEntryId="64b1-484c-f26f-fd51">
-              <entryLinks>
-                <entryLink import="true" name="Power fist" hidden="false" type="selectionEntry" id="e834-87d6-34dc-8a0c" targetId="eb70-5918-e9a-5a3f">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc03-4d31-527a-7c78"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bc45-6c22-a679-bc03" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="64b1-484c-f26f-fd51" targetId="ebda-08ed-994a-b579">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d753-27d2-8010-2ab0"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bff5-cecc-7f73-1217"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="bff5-cecc-7f73-1217" id="2259-aa23-61e6-3229"/>
-                  </modifiers>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3863-f536-1435-d298" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Relic Greataxe" hidden="false" type="selectionEntry" id="9527-d27e-dd78-867d" targetId="e026-a506-e1c7-25c7">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4e2-fc87-e917-ee72"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Twin lightning claws" hidden="false" type="selectionEntry" id="34d5-d0df-af74-de3f" targetId="b37d-ce46-a9bd-1c53">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b72a-55b2-8176-1feb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Storm shield" hidden="false" type="selectionEntry" id="ce2d-6800-4d12-77ec" targetId="d576-d444-2286-9eeb">
-                  <profiles>
-                    <profile name="Wolf Guard Terminators (Storm shield)" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="55c7-4ca9-46c-2650">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="72b6-18b0-5e2b-bad7"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5d2-d505-2b81-56bb"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cfa-4202-2768-ef8d"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Storm bolter" hidden="false" id="c275-8534-c836-59da">
-                  <entryLinks>
-                    <entryLink import="true" name="Storm bolter" hidden="false" type="selectionEntry" id="2dea-b2c-e2f9-5de3" targetId="2fb0-97d5-262d-b992">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d0e-62bd-849e-7cf9"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="1d0e-62bd-849e-7cf9" id="7024-7508-af5e-720c"/>
-                      </modifiers>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c46f-a0b1-6d5b-c7c2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf7c-f7eb-9fb0-28b0"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Assault Cannon" hidden="false" id="6b60-9a47-9b92-531f">
-                  <entryLinks>
-                    <entryLink import="true" name="Assault Cannon" hidden="false" type="selectionEntry" id="56da-0854-5587-a460" targetId="2de6-ff2-dc37-b20d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2965-409c-076c-3406"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="2965-409c-076c-3406" id="f88b-9fda-9556-e4be"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd35-d75e-672a-6295"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <modifiers>
-                <modifier type="set" value="1" field="b5d2-d505-2b81-56bb">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="1f70-af8a-871e-979f" childId="b37d-ce46-a9bd-1c53" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="cfa-4202-2768-ef8d">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="1f70-af8a-871e-979f" childId="b37d-ce46-a9bd-1c53" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <profiles>
-            <profile name="Wolf Guard Terminator Pack Leader" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b013-68ca-96db-717f">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6e3d-16a4-5bb4-82f2" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="a0d9-c115-2a-8330" id="716f-a80c-3ec-5af" primary="false" name="Faction: Space Wolves"/>
@@ -1662,7 +1577,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <categoryLink targetId="180b-bab2-a59f-44bc" id="9983-f551-b723-61d8" primary="false" name="Wolf Guard"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8619-d624-dffa-46e0" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8619-d624-dffa-46e0" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm bolter" id="2fb0-97d5-262d-b992" collective="false">
@@ -2222,11 +2137,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderwolf Cavalry" hidden="false" id="7a50-3722-8195-5877">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="8508-fd1c-a749-c025" primary="false" name="Faction: Adeptus Astartes"/>
@@ -2237,7 +2153,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <categoryLink targetId="c6da-5578-9ad5-94ef" id="3768-38de-e622-4f5f" primary="false" name="Thunderwolf Cavalry"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="7a50-3722-8195-5877" childId="model" shared="true" id="75dd-2178-4086-f46e" includeChildSelections="true"/>
           </conditions>
@@ -3818,6 +3734,12 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f383-c4a2-5e46-b62f"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="d1df-335f-edf6-16d3" type="selectionEntry" targetId="3b8f-1cb7-3c6e-4455">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b8-f851-ca8a-ce64"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8953-526f-236d-fbd1"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Wolf Guard Headtakers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a48b-19b8-6135-26a5">
@@ -3835,7 +3757,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="55e4-12ed-475a-b8e3"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ heavy bolt pistol" hidden="false" id="7a8b-e66a-714d-acf7">
+            <selectionEntry type="model" import="true" name="Wolf Guard Headtakers w/ Master-crafted Power weapon &amp; Storm shield" hidden="false" id="7a8b-e66a-714d-acf7">
               <entryLinks>
                 <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="9f9a-a5da-c45c-35c7" targetId="3b8f-1cb7-3c6e-4455">
                   <constraints>
@@ -3849,6 +3771,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fd5-8d59-f816-4a70"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Storm shield" hidden="false" id="ae12-47c5-7e98-00b8" type="selectionEntry" targetId="14d9-290f-100f-881c"/>
               </entryLinks>
               <profiles>
                 <profile name="Wolf Guard Headtakers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d39f-5648-fe63-813b">
