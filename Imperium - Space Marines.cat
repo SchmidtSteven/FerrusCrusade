@@ -37337,7 +37337,7 @@ per turn.</characteristic>
     </profile>
     <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db19-dee7-9530-ef0e">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
       </characteristics>
       <comment>4+</comment>
     </profile>
