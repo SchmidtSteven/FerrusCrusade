@@ -275,7 +275,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
           </modifiers>
         </infoLink>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="c3a2-9f43-3467-7b0c" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Lord of Deceit (Aura)" id="7bf6-352a-6f85-c996" hidden="false" type="profile" targetId="8332-466b-a51f-63ab"/>
         <infoLink name="Invulnerable Save" id="5cab-f00d-d138-36f9" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
       </infoLinks>
       <profiles>
@@ -294,7 +293,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this model, if the Strength characteristic of that attack is greater than this model&apos;s Toughness characteristic, subtract 1 from the Wound roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ancient Tactician" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="true" id="64d9-5889-14e6-77a1">
+        <profile name="Ancient Tactician" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="64d9-5889-14e6-77a1">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ancient Tactician: At the start of your Command phase, if this model is on the battlefield, you gain 1CP.</characteristic>
           </characteristics>
