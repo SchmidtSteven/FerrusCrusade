@@ -40429,7 +40429,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
               <profiles>
                 <profile name="Braggart&apos;s Steel" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b655-0eb8-00db-a47c">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SPACE WOLVES model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. If the bearer&apos;s unit has  chieved one or more Boasts, add 1 to the Damage characteristic of those weapons as well.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SPACE WOLVES model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. If the bearer&apos;s unit has achieved one or more Boasts, add 1 to the Damage characteristic of those weapons as well.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
