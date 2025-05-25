@@ -37493,7 +37493,7 @@ have the [ANTI-PSYKER 4+] ability.</characteristic>
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Champions of Russ" hidden="false" id="7047-73a6-28e-c859">
+        <selectionEntry type="upgrade" import="true" name="Champions of Russ" hidden="true" id="7047-73a6-28e-c859">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -38129,7 +38129,7 @@ Onslaught            4</characteristic>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="efc3-e416-8f5e-e1af" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Champions of Russ Enhancements(Obsolet)" hidden="false" id="8538-ed61-bab0-244a">
+        <selectionEntryGroup name="Champions of Russ Enhancements(Obsolet)" hidden="true" id="8538-ed61-bab0-244a">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
