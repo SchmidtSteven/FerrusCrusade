@@ -244,7 +244,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bjorn the Fell-Handed" hidden="false" id="c35a-6d78-2169-3d23">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1026,7 +1026,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grey Hunters" hidden="false" id="60ce-47ea-50fa-53f2">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1361,7 +1361,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wolf Guard Terminators" hidden="false" id="ca30-caf3-d7a8-1d32">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1376,7 +1376,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="360" field="51b2-306e-1021-d207">
+        <modifier type="set" value="340" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="parent" childId="model" shared="true" id="f400-1fa2-8969-b370" includeChildSelections="true"/>
           </conditions>
@@ -1683,7 +1683,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wulfen" hidden="false" id="d937-bd7d-618d-4e2d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1698,7 +1698,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <categoryLink targetId="19ab-c0ae-7b00-dc0c" id="c81c-5d1-6171-ddf0" primary="false" name="Wulfen"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="160" field="51b2-306e-1021-d207">
+        <modifier type="set" value="180" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="d937-bd7d-618d-4e2d" childId="model" shared="true" id="5aef-47e5-58e1-5de9" includeChildSelections="true"/>
           </conditions>
@@ -2042,7 +2042,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Murderfang" hidden="false" id="6ef5-6700-d888-df3b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="fc38-f33d-895d-7055" primary="false" name="Faction: Adeptus Astartes"/>
@@ -3495,7 +3500,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wolf Guard Battle Leader" hidden="false" id="da71-6be5-53d9-55a1">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="68d6-da4e-d591-5381" primary="false" name="Faction: Adeptus Astartes"/>
@@ -3569,7 +3579,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
                     </profile>
@@ -3684,7 +3694,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wolf Guard Headtakers" hidden="false" id="2a61-19d4-392b-8187">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3797,7 +3807,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="3e6b-7ced-6148-63a0" includeChildSelections="true"/>
           </conditions>
@@ -3848,7 +3858,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wulfen w/ Storm Shield" hidden="false" id="7ff3-364d-cf70-3f8a">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3863,7 +3873,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <categoryLink targetId="19ab-c0ae-7b00-dc0c" id="0459-7d87-1a4f-4315" primary="false" name="Wulfen"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="7ff3-364d-cf70-3f8a" childId="model" shared="true" id="107f-126f-08ed-515f" includeChildSelections="true"/>
           </conditions>
