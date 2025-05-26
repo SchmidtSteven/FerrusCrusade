@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="60" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink id="9fec-b3ad-9626-6706" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="4e2e-3067-84f6-f727" targetId="b45c-af22-788a-dfd6" importRootEntries="true"/>
@@ -752,13 +752,13 @@ No **^^Plague Legions**^^ models from your army can be your **^^Warlord**^^.</de
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Plagueblade" hidden="false" id="9f5-6951-9996-f2a0">
+        <selectionEntry type="upgrade" import="true" name="Manreaper" hidden="false" id="9f5-6951-9996-f2a0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74c6-87ba-d0c9-af2d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a57-5d7a-df41-f1cb"/>
           </constraints>
           <profiles>
-            <profile name="➤ Plagueblade - strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1f4a-a63-4949-cc05">
+            <profile name="➤ Manreaper - strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1f4a-a63-4949-cc05">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
@@ -769,7 +769,7 @@ No **^^Plague Legions**^^ models from your army can be your **^^Warlord**^^.</de
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Plagueblade - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df56-965-4501-bdea">
+            <profile name="➤ Manreaper - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df56-965-4501-bdea">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
@@ -1870,12 +1870,14 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+,Pistol,Precision</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Pistol" hidden="false" type="rule" id="ae8-a47a-d525-19c1" targetId="8bf7-8812-923d-29e4"/>
+            <infoLink name="Precision" hidden="false" type="rule" id="9953-84a6-3819-1ea7" targetId="9143-31ae-e0a6-6007"/>
+            <infoLink name="Anti-" hidden="false" type="rule" id="fd8d-3fcd-92bd-d0cf" targetId="4111-82e3-9444-e942"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -5163,7 +5165,6 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
       </infoLinks>
       <categoryLinks>
         <categoryLink id="431f-2b59-2707-87dc" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink id="cc81-5fcb-bfd4-ef57" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="true"/>
         <categoryLink id="7446-2615-c0ab-74d4" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="101a-6b71-54f6-2f43" name="Daemon" hidden="false" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink id="45e3-1669-b587-1fc8" name="Nurgle" hidden="false" targetId="ed0d-8e2a-225c-2340" primary="false"/>
