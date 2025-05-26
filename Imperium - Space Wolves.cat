@@ -3756,8 +3756,8 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
@@ -3810,17 +3810,8 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="3e6b-7ced-6148-63a0" includeChildSelections="true"/>
+            <condition type="lessThan" value="6" field="selections" scope="parent" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="set" value="110" field="51b2-306e-1021-d207">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="cc1c-7e5c-00b7-f5bc" includeChildSelections="true"/>
-                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="e0a0-a82c-a2f6-d18b" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
         <modifier type="set" value="220" field="51b2-306e-1021-d207">
           <conditionGroups>
@@ -3831,6 +3822,32 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="b356-f4b6-a9a9-9a85" includeChildSelections="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="6" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="110" field="51b2-306e-1021-d207">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="cc1c-7e5c-00b7-f5bc" includeChildSelections="true"/>
+                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" id="e0a0-a82c-a2f6-d18b" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <conditions>
+            <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="e35b-6e0b-a20a-16d3" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
