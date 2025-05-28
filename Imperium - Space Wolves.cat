@@ -1488,7 +1488,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Wulf Guard Terminators /w Master-crafted Power Weapon &amp; Storm bolter" hidden="false" id="5536-c63d-bbf1-ea8f" sortIndex="2">
+            <selectionEntry type="model" import="true" name="Wolf Guard Terminators /w Master-crafted Power Weapon &amp; Storm bolter" hidden="false" id="5536-c63d-bbf1-ea8f" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="45c8-36b3-fb4c-a395" type="selectionEntry" targetId="ebda-08ed-994a-b579">
                   <constraints>
@@ -1517,7 +1517,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Wulf Guard Terminators /w Master-crafted Power Weapon &amp; Storm shield" hidden="false" id="352f-6ec3-464c-d70b" sortIndex="3">
+            <selectionEntry type="model" import="true" name="Wolf Guard Terminators /w Master-crafted Power Weapon &amp; Storm shield" hidden="false" id="352f-6ec3-464c-d70b" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Storm shield" hidden="false" id="a0a0-02be-6b14-7424" type="selectionEntry" targetId="d576-d444-2286-9eeb">
                   <profiles>
