@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="60" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="61" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink id="9fec-b3ad-9626-6706" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="4e2e-3067-84f6-f727" targetId="b45c-af22-788a-dfd6" importRootEntries="true"/>
@@ -5164,12 +5164,13 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
         <infoLink id="2427-a026-caf8-a9c" name="Infiltrators" hidden="false" targetId="c05d-f4c3-f091-4938" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="431f-2b59-2707-87dc" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
+        <categoryLink id="431f-2b59-2707-87dc" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="true"/>
         <categoryLink id="7446-2615-c0ab-74d4" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="101a-6b71-54f6-2f43" name="Daemon" hidden="false" targetId="9c0e-7e25-4580-e439" primary="false"/>
         <categoryLink id="45e3-1669-b587-1fc8" name="Nurgle" hidden="false" targetId="ed0d-8e2a-225c-2340" primary="false"/>
         <categoryLink id="f6c4-8e84-508-764e" name="Nurglings" hidden="false" targetId="bc6c-c76a-8bae-e5c7" primary="false"/>
         <categoryLink targetId="6f2b-ffb3-e9ee-7c7f" id="fc53-b317-c394-77fa" primary="false" name="Plague Legions"/>
+        <categoryLink targetId="0645-9d06-2e2c-3a94" id="5cf9-23eb-64f6-2404" primary="false" name="Summoned"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7212-7cc9-ec49-72b8" name="Nurgling Swarm" hidden="false" collective="false" import="true" type="model">
@@ -6450,6 +6451,7 @@ When mustering your army, unless specifically stated otherwise, you cannot selec
     <categoryEntry name="Possessed" hidden="false" id="17d9-312-1d15-bc7"/>
     <categoryEntry name="Blightlord heavy weapon" id="aa7e-4b31-713a-6732" hidden="true"/>
     <categoryEntry name="Plague Legions" id="6f2b-ffb3-e9ee-7c7f" hidden="false"/>
+    <categoryEntry name="Summoned" hidden="false" id="0645-9d06-2e2c-3a94"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Chaos Lord" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e70-7085-af42-e162">
