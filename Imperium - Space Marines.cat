@@ -3103,7 +3103,7 @@
       </profiles>
       <comment>A5 WS 2+</comment>
     </selectionEntry>
-        <selectionEntry id="ebda-08ed-994a-b579" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ebda-08ed-994a-b579" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7bf3-e01c-dce7-60fd" name="Master-crafted Power Weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
           <characteristics>
