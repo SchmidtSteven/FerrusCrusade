@@ -3506,7 +3506,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
+        <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762">
               <modifiers>
