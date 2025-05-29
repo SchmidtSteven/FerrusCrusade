@@ -3616,9 +3616,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3395-a692-47a8-489d"/>
-          </constraints>
           <modifiers>
             <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
               <conditionGroups>
@@ -3641,11 +3638,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="set" value="6" field="3395-a692-47a8-489d">
-              <conditions>
-                <condition type="atLeast" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="74bb-eaf3-6bed-a115" includeChildSelections="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3809,6 +3801,10 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0afb-0118-1d61-587e"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a19-7d9e-eb76-caaa"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
