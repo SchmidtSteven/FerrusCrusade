@@ -3506,6 +3506,49 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </profile>
       </profiles>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
+          <entryLinks>
+            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762">
+              <modifiers>
+                <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="6" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="b356-f4b6-a9a9-9a85" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="Please select 0 or 3 Hunting Wolves" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="5ca0-e9b9-5cc5-6d12" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3395-a692-47a8-489d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="3395-a692-47a8-489d">
+              <conditions>
+                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="da1d-7989-cef2-421c" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Wolf Guard Headtakers" hidden="false" id="03e1-9eba-f2f0-4ce5" sortIndex="2" defaultSelectionEntryId="9162-ceef-e61c-9fe7">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6139-b226-68d4-75e3"/>
@@ -3576,49 +3619,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               </constraints>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
-          <entryLinks>
-            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762">
-              <modifiers>
-                <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="6" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                        <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="b356-f4b6-a9a9-9a85" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="add" value="Please select 0 or 3 Hunting Wolves" field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="5ca0-e9b9-5cc5-6d12" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3395-a692-47a8-489d"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="3395-a692-47a8-489d">
-              <conditions>
-                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="da1d-7989-cef2-421c" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -3783,9 +3783,9 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
       </profiles>
       <comment>4+ inv</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hunting Wolves" hidden="false" id="4def-6243-a627-e762">
+    <selectionEntry type="model" import="true" name="Hunting Wolves" hidden="false" id="4def-6243-a627-e762">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
