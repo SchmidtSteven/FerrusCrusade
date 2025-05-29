@@ -3646,17 +3646,12 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="6" field="3395-a692-47a8-489d">
-              <conditions>
-                <condition type="atLeast" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="da1d-7989-cef2-421c" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3395-a692-47a8-489d"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3395-a692-47a8-489d"/>
           </constraints>
         </entryLink>
       </entryLinks>
