@@ -1405,8 +1405,8 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfd6-b818-84d8-0090"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aece-bc84-204c-ce45"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Master Crafted Power Weapon and Storm Bolter or Storm Shield" id="d1ce-e352-2f56-4176" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Master Crafted Power Weapon and Storm Bolter or Storm Shield" hidden="false" id="15a3-9f26-5142-9770">
                       <entryLinks>
                         <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="64b1-484c-f26f-fd51" type="selectionEntry" targetId="ebda-08ed-994a-b579">
                           <constraints>
@@ -1447,8 +1447,8 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                           </constraints>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -1483,12 +1483,14 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
               <entryLinks>
                 <entryLink import="true" name="Assault Cannon" hidden="false" id="4c24-dd25-e2f2-ca95" type="selectionEntry" targetId="2de6-ff2-dc37-b20d">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24b2-c9b9-1b73-b469"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d146-6a2f-b643-05b7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a5-5e25-b3a7-c667"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Power fist" hidden="false" id="ef46-86f9-c3f4-6dd1" type="selectionEntry" targetId="eb70-5918-e9a-5a3f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29a7-e1a2-9878-24f2"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e5-a8cf-c427-5ef8"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1504,12 +1506,14 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
               <entryLinks>
                 <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="45c8-36b3-fb4c-a395" type="selectionEntry" targetId="ebda-08ed-994a-b579">
                   <constraints>
-                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5221-3442-0308-72ab"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5221-3442-0308-72ab"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1116-b1a9-b181-658c"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="0a7c-43e2-9e39-41b9" type="selectionEntry" targetId="2fb0-97d5-262d-b992">
                   <constraints>
-                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="97c7-62b9-c537-3da0"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50d3-ca01-b803-473d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e22c-4e8b-2896-9c4a"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1545,12 +1549,14 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dfd7-7b26-8fcc-58db"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e6a-1a67-d7f0-e61d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccfd-314a-070d-af6e"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="40c2-fe16-d759-6337" type="selectionEntry" targetId="ebda-08ed-994a-b579">
                   <constraints>
-                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="094a-0074-73e8-4ced"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08a2-b58d-c8ad-f20a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbf1-b011-4f89-9c06"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -3399,7 +3405,10 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feea-177a-ff45-7f33"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="a01c-aa2f-c6ce-e52b" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="771b-873a-607a-0232" type="selectionEntry" targetId="ad5b-c310-db86-a58c"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="ba33-e645-2732-4529">
                   <profiles>
                     <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f9a6-7715-aaf5-d708">
                       <characteristics>
@@ -3413,9 +3422,8 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                       </characteristics>
                     </profile>
                   </profiles>
-                </entryLink>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="771b-873a-607a-0232" type="selectionEntry" targetId="ad5b-c310-db86-a58c"/>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -3571,7 +3579,32 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </selectionEntryGroup>
         <selectionEntryGroup name="Hunting Wolves" id="8889-bf54-6c27-3bba" hidden="false" defaultSelectionEntryId="6cf2-2c95-efd1-1485">
           <entryLinks>
-            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762"/>
+            <entryLink import="true" name="Hunting Wolves" hidden="false" id="6cf2-2c95-efd1-1485" type="selectionEntry" targetId="4def-6243-a627-e762">
+              <modifiers>
+                <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="6" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="b356-f4b6-a9a9-9a85" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="Please select 0 or 3 Hunting Wolves" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="5ca0-e9b9-5cc5-6d12" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3592,19 +3625,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="Please select 0 or 6 Hunting Wolves" field="error">
-          <conditions>
-            <condition type="greaterThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="b356-f4b6-a9a9-9a85" includeChildSelections="true"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="6" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" value="110" field="51b2-306e-1021-d207">
           <conditionGroups>
             <conditionGroup type="and">
@@ -3616,19 +3636,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
           <conditions>
             <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="e35b-6e0b-a20a-16d3" includeChildSelections="true"/>
           </conditions>
-        </modifier>
-        <modifier type="add" value="Please select 0 or 3 Hunting Wolves" field="error">
-          <conditions>
-            <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="5ca0-e9b9-5cc5-6d12" includeChildSelections="true"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="4def-6243-a627-e762" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
