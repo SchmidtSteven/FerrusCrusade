@@ -3641,7 +3641,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
             </modifier>
             <modifier type="set" value="6" field="3395-a692-47a8-489d">
               <conditions>
-                <condition type="lessThan" value="4" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="da1d-7989-cef2-421c" includeChildSelections="true"/>
+                <condition type="atLeast" value="3" field="selections" scope="2a61-19d4-392b-8187" childId="03e1-9eba-f2f0-4ce5" shared="true" id="da1d-7989-cef2-421c" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
