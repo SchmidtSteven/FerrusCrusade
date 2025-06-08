@@ -1485,7 +1485,7 @@ range of one or more objective markers.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">14</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">6</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
               </characteristics>
             </profile>
             <profile id="c9aa-1054-c816-8c79" name="➤ Reaper chainsword - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
@@ -1496,7 +1496,7 @@ range of one or more objective markers.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1518,7 +1518,7 @@ range of one or more objective markers.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">20</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">8</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
               </characteristics>
             </profile>
             <profile id="5c72-6f33-e9c8-5d0f" name="➤ Warpstrike claw - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
@@ -1529,7 +1529,7 @@ range of one or more objective markers.</characteristic>
                 <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1986,7 +1986,7 @@ range of one or more objective markers.</characteristic>
         <entryLink id="6ea7-07d2-808c-044a" name="Enhancements" hidden="false" collective="false" import="true" targetId="18da-1609-c0fb-cf69" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="430"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="395"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4640,7 +4640,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
