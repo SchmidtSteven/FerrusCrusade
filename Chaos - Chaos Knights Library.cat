@@ -447,6 +447,11 @@
         <infoLink id="f5f5-6433-ddd6-23aa" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="97fd-09c5-60a8-63c4" type="profile"/>
         <infoLink id="b065-8569-91d8-423a" name="Harbingers of Dread" hidden="false" targetId="d71a-a59f-aafd-3723" type="rule"/>
         <infoLink name="Dreaded Masters" id="ae81-1607-e85d-8eac" hidden="false" type="rule" targetId="36df-7a0b-e5b7-5f29"/>
+        <infoLink name="Scouts" id="c556-03ce-f103-7521" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4336-a70c-6d53-77c4" name="Faction: Chaos Knights" hidden="false" targetId="bb67-f191-6562-acc7" primary="false"/>
@@ -2114,7 +2119,7 @@ range of one or more objective markers.</characteristic>
                 <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1c5a-cef3-9eaa-8c11" primary="true" name="Configuration"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry id="c43a-0fb3-6379-f037" name="Traitoris Lance" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c43a-0fb3-6379-f037" name="Traitoris Lance (New)" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
