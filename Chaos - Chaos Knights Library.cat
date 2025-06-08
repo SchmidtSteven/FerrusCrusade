@@ -3958,50 +3958,46 @@ this phase.</characteristic>
           </conditions>
         </modifier>
       </modifiers>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Main weapons" id="84f0-61b4-35a1-3286" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d51-1b09-1511-86e4" sortIndex="1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Darkflame lance and Terrorpulse missiles" hidden="false" id="fd4b-4f6f-bf11-ac42" collective="false" sortIndex="1">
+          <profiles>
+            <profile name="Darkflame lance " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e42e-b439-7641-6a94">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER,TORRENT</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Terrorpulse missiles" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b6bc-52fd-d8cf-e79f">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ignores Cover" id="b1bb-103a-714e-b3d2" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+            <infoLink name="Torrent" id="38e6-d2de-7ccf-467e" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+            <infoLink name="Blast" id="2074-833d-cd57-29fc" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f24-d952-8155-c94a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="955b-dfa7-c605-ba45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Darkflame lance and Terrorpulse missiles" hidden="false" id="fd4b-4f6f-bf11-ac42" collective="false">
-              <profiles>
-                <profile name="Darkflame lance " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e42e-b439-7641-6a94">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER,TORRENT</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Terrorpulse missiles" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b6bc-52fd-d8cf-e79f">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Ignores Cover" id="b1bb-103a-714e-b3d2" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
-                <infoLink name="Torrent" id="38e6-d2de-7ccf-467e" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
-                <infoLink name="Blast" id="2074-833d-cd57-29fc" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="e93b-bfc1-82f7-11a1" name="Fellbore" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
