@@ -4553,7 +4553,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
           <profiles>
             <profile name="BLESSING OF THE DARK MASTER" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f768-06be-4611-3ee5">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CHADS KNIGHTS model only. The bearer has the Stealth ability. In addition, once per battle, after you make a saving throw for the bearer, you can change the Damage characteristic of that attack to 0.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CHAOS KNIGHTS model only. The bearer has the Stealth ability. In addition, once per battle, after you make a saving throw for the bearer, you can change the Damage characteristic of that attack to 0.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4579,7 +4579,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
           <profiles>
             <profile name="PREYSLAYER&apos;S MANTLE" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2832-88fb-be47-238f">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WAR DoG model only. The bearer has the Super-heavy select one unit from your opponent&apos;s Walker ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">War Dog model only. The bearer has the Super-heavy select one unit from your opponent&apos;s Walker ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4605,7 +4605,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
           <profiles>
             <profile name="FINAL HOWL (AURA)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ade5-b7d3-1fa1-67b8">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WAR DoG model only. While a friendly WAR DoG model is within 6&quot; of the bearer, each time that model makes an attack, re-roll a Wound roll of 1.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">War Dog model only. While a friendly War Dog model is within 6&quot; of the bearer, each time that model makes an attack, re-roll a Wound roll of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4631,7 +4631,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
           <profiles>
             <profile name="LOPING PREDATOR" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea7a-23b9-c7ef-b42e">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WAR DOG model only. The bearer&apos;s ranged weapons have the (ASSAULT) ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WarDog model only. The bearer&apos;s ranged weapons have the (ASSAULT) ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4657,7 +4657,7 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
           <profiles>
             <profile name="PANOPLY OF THE CURSED KNIGHTS" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="32a4-13b4-6845-7740">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WAR DaG model only. Each time an attack targets the bearer, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">War Dog model only. Each time an attack targets the bearer, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
