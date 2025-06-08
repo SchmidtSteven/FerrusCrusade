@@ -4894,5 +4894,6 @@ Unnatural Fortitude: When this unit is selected as the target of an attack, unti
     <entryLink import="true" name="War Dog Karnivore" hidden="false" type="selectionEntry" id="6884-a812-e5ca-5a8d" targetId="e96b-ac98-7fd2-a155"/>
     <entryLink import="true" name="War Dog Moirax" hidden="false" type="selectionEntry" id="ac91-fe54-bd09-4145" targetId="ae7c-3679-a88-6895"/>
     <entryLink import="true" name="War Dog Stalker" hidden="false" type="selectionEntry" id="6974-5c30-1291-f54d" targetId="bbc6-c0ed-24e8-86b7"/>
+    <entryLink import="true" name="Knight Ruinator" hidden="false" type="selectionEntry" id="29f2-1455-b831-bc21" targetId="16b1-85ec-89ed-1f7b"/>
   </entryLinks>
 </catalogue>
