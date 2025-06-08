@@ -489,7 +489,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e26d-a244-a6fb-bce1" name="Enhancements" hidden="false" collective="false" import="true" targetId="18da-1609-c0fb-cf69" type="selectionEntryGroup"/>
         <entryLink import="true" name="Character" hidden="false" id="db3b-bbfc-9018-7217" type="selectionEntry" targetId="960f-e2ce-a467-99d7"/>
       </entryLinks>
       <costs>
