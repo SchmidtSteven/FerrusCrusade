@@ -1913,7 +1913,7 @@ range of one or more objective markers.</characteristic>
                 </profile>
                 <profile id="2ebf-53ac-3034-47a1" name="Warpshock harpoon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
