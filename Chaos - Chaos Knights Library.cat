@@ -566,6 +566,7 @@
         <infoLink id="928a-574c-f429-72f8" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="97fd-09c5-60a8-63c4" type="profile"/>
         <infoLink id="81c8-fc6f-d880-245b" name="Harbingers of Dread" hidden="false" targetId="d71a-a59f-aafd-3723" type="rule"/>
         <infoLink name="Dreaded Masters" id="1bcd-189e-2953-6450" hidden="false" type="rule" targetId="36df-7a0b-e5b7-5f29"/>
+        <infoLink name="Sustained Hits" id="973a-6d37-e05c-ebb9" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e723-2423-466a-923e" name="Faction: Chaos Knights" hidden="false" targetId="bb67-f191-6562-acc7" primary="false"/>
@@ -1912,7 +1913,7 @@ range of one or more objective markers.</characteristic>
                 </profile>
                 <profile id="2ebf-53ac-3034-47a1" name="Warpshock harpoon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">24</characteristic>
@@ -3837,7 +3838,7 @@ this phase.</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3856,7 +3857,7 @@ this phase.</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+2</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">SUSTAINED HITS 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
