@@ -3944,11 +3944,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e54d-8d2-8d82-d5f4" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="Wulfen" hidden="false" id="19ab-c0ae-7b00-dc0c">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e54d-8d2-8d82-d5f4" includeChildSelections="true"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Wulfen" hidden="false" id="19ab-c0ae-7b00-dc0c"/>
     <categoryEntry name="Wulfen Dreadnought" hidden="false" id="d8f-dda1-f160-f0a0">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e54d-8d2-8d82-d5f4" includeChildSelections="true"/>
