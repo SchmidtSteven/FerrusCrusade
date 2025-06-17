@@ -1813,6 +1813,9 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="510a-b1f4-657a-6bd4" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8485-e509-8f41-9ad7" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stormfrag auto-launcher" hidden="false" id="2b70-55e9-caf0-c94d" collective="true">
       <constraints>
@@ -3770,6 +3773,9 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="c3a8-92a2-8797-508c" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Invulnerable Save" id="7ed7-c987-fc84-415a" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fed-1201-dc9d-da22" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Totem" hidden="false" id="631b-a8c8-f65b-e4db" collective="true">
       <constraints>
