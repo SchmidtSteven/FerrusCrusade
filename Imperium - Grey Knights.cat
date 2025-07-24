@@ -37,14 +37,14 @@
 ■ Paladin Squad</characteristic>
           </characteristics>
         </profile>
-        <profile name="Empyric Amplification (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f64-f896-c54f-7fea">
+        <profile name="Hammerhand (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f64-f896-c54f-7fea">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, Psychic weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Focused Mind (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="53db-1bc6-da94-f8e9">
+        <profile name="Eye of Judgement (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="53db-1bc6-da94-f8e9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack with a Psychic weapon, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -209,14 +209,14 @@
 ■ Strike Squad</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ethereal Castigation (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4020-4496-e5f3-62fd">
+        <profile name="Clarion of Haste (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4020-4496-e5f3-62fd">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Fights First ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit is eligible to declare a charge in a turn in which it Advanced</characteristic>
           </characteristics>
         </profile>
-        <profile name="Martial Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc8f-6b40-8152-671f">
+        <profile name="Inspiring Exemplar" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc8f-6b40-8152-671f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model destroys an enemy CHARACTER model in the Fight phase, you gain 1CP and until the end of the battle, add 1 to the Attacks characteristic of its Nemesis force weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -371,14 +371,14 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Words of Power (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="82-db07-19c0-1f1b">
+        <profile name="Zealous Path" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="82-db07-19c0-1f1b">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, you can re-roll Charge rolls made for that unit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dread Bearing (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d73-2ecd-2b3c-3f18">
+        <profile name="Litanies of Sanctity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d73-2ecd-2b3c-3f18">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one friendly GREY KNIGHTS unit that is Battle-shocked and within 12&quot; of this model. That unit is no longer Battle-shocked.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="82ae-190e-a811-610">
@@ -535,9 +535,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Vortex of Doom (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f49c-a3e0-29e8-7304">
+        <profile name="Haloed in Soulfire (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f49c-a3e0-29e8-7304">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, you can select one enemy unit within 18&quot; of and visible to this Psyker (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12&quot; of this Psyker). If you do, roll one D6: on a 1, this Psyker’s unit suffers D6 mortal wounds; on a 2-5, that enemy unit suffers 2D3 mortal wounds; on a 6, that enemy unit suffers 2D6 mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -569,32 +569,18 @@
               <infoLinks>
                 <infoLink name="Psychic" id="db4-2bff-fa0f-657" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="ece5-81be-5539-308a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Purge Soul" hidden="false" id="3aa5-b3f3-8ec2-8559">
+            <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="3aa5-b3f3-8ec2-8559">
               <profiles>
-                <profile name="➤ Purge Soul - witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3820-e568-e53-96f2">
+                <profile name="Vortex of Doom" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3820-e568-e53-96f2">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="➤ Purge Soul - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="65d8-79ca-e784-b480">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precision, Psychic, Hazardous</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic,Blast</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -604,12 +590,8 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Psychic" id="7171-9d6f-574-c03d" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
-                <infoLink name="Precision" id="efad-4c6e-5824-10ab" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-                <infoLink name="Hazardous" id="fd19-c75a-61ed-22e4" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+                <infoLink name="Blast" id="efad-4c6e-5824-10ab" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="291a-4c80-ffb7-117a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -771,7 +753,7 @@
       <profiles>
         <profile name="Brotherhood Techmarine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2e1f-f5d5-d4ff-f061">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -786,14 +768,14 @@
 ■ Strike Squad</characteristic>
           </characteristics>
         </profile>
-        <profile name="Awaken the Machine Spirit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="877c-7676-7032-ecd3">
+        <profile name="Guardians of the Machine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="877c-7676-7032-ecd3">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly GREY KNIGHTS VEHICLE model within 6&quot; of this model. Until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit ends a charge move within Engagement Range of one or more GREY KNIGHTS VEHICLE units from your army and within 6&quot; of this mode!&apos;s unit, you can target this model&apos;s unit with the Heroic Intervention Stratagem for OCP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Omnissiah’s Blessing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f298-3658-77a2-5851">
+        <profile name="Blessing of the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f298-3658-77a2-5851">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly Grey Knights Vehicle model within 3&quot; of this model. That Vehicle model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly GREY KNIGHTS VEHICLE model within 3&quot; of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Techmarine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7750-f512-8316-e851">
@@ -809,28 +791,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6308-65e2-d4e5-3ce8" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="78d0-de33-2a42-edef">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f667-45a8-152-64c6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8115-444-8ff9-7054"/>
-              </constraints>
-              <profiles>
-                <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="462e-af68-3725-10ef">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="36eb-c26d-8f00-c967" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Omnissian power axe" hidden="false" id="aa5-cfe9-83d9-250a">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="babc-84e7-7d38-c82c"/>
@@ -851,39 +811,6 @@
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="71ed-f54b-ecec-ebd2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plasma cutter" hidden="false" id="3549-7e11-cc13-6991">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edb0-5bd2-f6a-8ba4"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f094-62a7-d07f-d4c2"/>
-              </constraints>
-              <profiles>
-                <profile name="➤ Plasma cutter - standard" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cf76-7725-98e1-d456">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="➤ Plasma cutter - supercharge" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3bd0-22d0-6cad-cbbd">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks, Hazardous</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="97eb-d078-1df0-ccd9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Servo-arms" hidden="false" id="56a2-d965-8a31-8eec">
@@ -908,20 +835,39 @@
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="aad8-49a5-ec6f-a5b5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grav-pistol" hidden="false" id="24a3-f6c0-3ca7-ae59">
+              <profiles>
+                <profile name="Grav-pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3510-76fc-5d-2f5e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Anti-Vehicle 2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="de20-7fee-38a7-682e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                <infoLink name="Anti-" id="1c57-3253-bd10-4e9e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Boltgun" id="9fd1-cdfd-7fbd-70ef" hidden="false" defaultSelectionEntryId="3116-6dc9-27ee-97bb">
+            <selectionEntryGroup name="Forge bolter" id="9fd1-cdfd-7fbd-70ef" hidden="false" defaultSelectionEntryId="3116-6dc9-27ee-97bb">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="3116-6dc9-27ee-97bb">
+                <selectionEntry type="upgrade" import="true" name="Forge bolter" hidden="false" id="3116-6dc9-27ee-97bb">
                   <profiles>
-                    <profile name="Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f239-3ccc-a7ed-a37a">
+                    <profile name="Forge bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f239-3ccc-a7ed-a37a">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
                     </profile>
@@ -929,27 +875,6 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="33b0-9aa3-4992-2f8f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="24a3-f6c0-3ca7-ae59">
-                  <profiles>
-                    <profile name="Bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3510-76fc-5d-2f5e">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c120-a9bc-4b73-728f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Pistol" id="de20-7fee-38a7-682e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -1074,9 +999,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hammerhand (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ebb-9bbe-208-ac9c">
+        <profile name="Force Edge (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ebb-9bbe-208-ac9c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack that targets a unit (excluding MONSTERS and VEHICLES), improve the Armour Penetration characteristic of that attack by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1153,11 +1078,11 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f3-7268-a1f4-ccb0"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Narthecium" hidden="false" id="65d9-e2ef-776d-f579" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Apothecary&apos;s Narthecium" hidden="false" id="65d9-e2ef-776d-f579" collective="true">
                   <profiles>
-                    <profile name="Narthecium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="97ca-b4cb-c700-e6c2">
+                    <profile name="Apothecary&apos;s Narthecium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="97ca-b4cb-c700-e6c2">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can return 1 destroyed model (excluding Characters) to the bearer’s unit</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if the bearer is not destroyed, you can return 1 destroyed model (excluding CHARACTERS] to the bearer&apos;s unit.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1290,9 +1215,6 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92f4-540f-4984-cc0f"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="695a-ef91-f244-f130"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8f66-8bec-bea5-df56" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -1410,12 +1332,12 @@
         </profile>
         <profile name="Champion of the Order of Purifiers (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3cd-1880-37fe-4cfc">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Attacks characteristic of that unit’s Purifying Flame.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Attacks characteristic of Purifying Flame weapons equipped by models in that unit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Foresight of the Prognosticars (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7414-1762-a008-9828">
+        <profile name="Foresight (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7414-1762-a008-9828">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, the first time a saving throw is failed for this model, change the Damage characteristic of that attack to 0</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a CHARACTER unit, you can re-roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="722a-9e45-fe18-94aa">
@@ -1439,7 +1361,7 @@
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Ignores Cover, Psychic</characteristic>
               </characteristics>
@@ -1517,14 +1439,14 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Might of Purity (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f271-762e-61ae-367f">
+        <profile name="Might of Titan (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f271-762e-61ae-367f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, you can ignore any or all modifiers to the characteristics of models in that unit and to any roll or test made for models in that unit (excluding modifiers to saving throws).</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks and Strength characteristics of melee weapons equipped by this model.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Master Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb03-8115-df85-19ac">
+        <profile name="Warrior Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb03-8115-df85-19ac">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ecd8-2298-e581-30d1">
@@ -1596,6 +1518,37 @@
                 <entryLink import="true" name="Psilencer" hidden="false" id="5e52-a297-2678-0651" type="selectionEntry" targetId="56c3-92fd-4579-7d89">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a4e5-9428-b521-b1c7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Psycannon" id="473e-0784-689e-1c67" hidden="false" defaultSelectionEntryId="4b05-7ba4-756a-a78d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd45-c859-83b5-1942"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39e8-1c0b-6993-b95f"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="e150-1cb3-43f3-e568" type="selectionEntry" targetId="18c1-d4b5-0ff0-4808">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f50-c9b8-6b6a-4e08"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b33d-f6d1-1191-d7ba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Incinerator" hidden="false" id="9859-ba05-300f-5d1d" type="selectionEntry" targetId="17ed-2f7b-bf3a-3c94">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bd5e-034b-631e-df1c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Psycannon" hidden="false" id="4b05-7ba4-756a-a78d" type="selectionEntry" targetId="977f-fdd6-c09c-5def">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6c2e-b53c-a7a5-88b3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Psilencer" hidden="false" id="9cd7-930b-3c25-5800" type="selectionEntry" targetId="56c3-92fd-4579-7d89">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0ad8-f044-56eb-2c46" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
@@ -1706,12 +1659,12 @@
         </profile>
         <profile name="Surge of Wrath (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ee5-63a2-6c01-e628">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, in the Fight phase, one model from your army with this ability can use it before resolving its attacks. If it does, until the end of the phase, each time that model makes an attack that targets a Monster or Vehicle unit, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack that targets a MONSTER or VEHICLE unit, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Heroism’s Favour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dce-9e37-9f2-5687">
+        <profile name="Warrior Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dce-9e37-9f2-5687">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this model with a Stratagem, it only costs 1CP to use, even if the CP cost is higher</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Damaged: 1-4 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="abf6-e340-d8e8-5486">
@@ -1753,6 +1706,11 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="99a7-5ed6-b575-9a34" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Nemesis flail" hidden="false" id="55d9-ee25-e901-6e2e" type="selectionEntry" targetId="3742-4e4d-89fc-b070">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a328-8593-ea81-4799" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged Weapons" id="5a6-d46b-4cbb-bb52" hidden="false">
@@ -1782,6 +1740,22 @@
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="0f95-567b-4431-a4ef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Sublimator" hidden="false" id="878a-ef41-373d-4e22" type="selectionEntry" targetId="bdf2-9697-4868-be27">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39d6-2202-d6c3-29a2"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="32eb-bc1c-21ea-31ec" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="1427-5dc6-3813-2b8c" type="selectionEntry" targetId="8e23-f84e-1095-ac5a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c29-4399-3824-1760"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab57-46d4-1513-465e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
@@ -1887,7 +1861,7 @@
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
@@ -1934,6 +1908,32 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74bd-1b90-ed9e-d18e"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc94-131a-657e-9206"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Psychic" id="e25b-1e86-cb09-f36c" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Searing Purity" hidden="false" id="7a4b-5137-fee1-1247">
+          <profiles>
+            <profile name="Malleus Argyrum" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9273-8eec-0d95-94f5">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds,Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d508-5209-4e6e-fe70"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17c6-36f9-04a1-0f22"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastating Wounds" id="42be-a292-9cad-4287" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="Psychic" id="adcd-0bba-7bb6-aa6f" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2560,9 +2560,9 @@
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 6 Grey Knights Infantry models. It cannot transport Terminator models.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Fire Support" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b9fd-80d9-a165-1812">
+        <profile name="Fire Focus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b9fd-80d9-a165-1812">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2740,9 +2740,9 @@
             <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 Grey Knights Infantry models. It cannot transport Terminator models.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Self Repair" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3355-18b8-ee22-87f9">
+        <profile name="Truesilver Aegis (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3355-18b8-ee22-87f9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, this model regains 1 lost wound.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly GREY KNIGHTS unit is wholly within 6&quot; of this unit, models in that unit have the Feel No Pain 6+ ability against mortal wounds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3401,7 +3401,7 @@
         <profile name="Grey Knights Stormtalon Gunship" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cdf0-34bc-c94b-a1cd">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">20+&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
@@ -3573,7 +3573,7 @@
       <profiles>
         <profile name="Grey Knights Venerable Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="51d0-128-5b9c-c280">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
@@ -3581,9 +3581,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="Wisdom of the Ancients (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b3c-49ee-2ca0-7bcf">
+        <profile name="Guidance of the Ancients (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b3c-49ee-2ca0-7bcf">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly Grey Knights Infantry unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a GREY KNIGHTS model from your army makes an attack that targets that unit, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3618,11 +3618,6 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="1fe5-d63e-b77a-678e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="37bf-8534-37d6-9b5c" type="selectionEntry" targetId="5f8c-4833-2298-a8fa">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bd8c-2691-e60d-19eb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Storm Bolter and Dreadnought Combat Weapon" id="620b-24e8-bfc5-5b1b" hidden="false" defaultSelectionEntryId="48f5-9797-90d0-0f80">
@@ -3645,28 +3640,6 @@
                       </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="cdab-3a0d-7a65-d9c4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Missile launcher and armoured feet" hidden="false" id="32ac-a868-380f-38ec">
-                  <entryLinks>
-                    <entryLink import="true" name="Missile launcher" hidden="false" id="998d-61c4-a8ac-32dd" type="selectionEntry" targetId="2e04-b7e6-7fb2-7ae5">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35af-dae8-8a1e-bb73" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a017-9cb2-4158-41f7" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c61f-0bc3-5b4e-fce0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Armoured feet" hidden="false" id="66bf-d779-dbc9-a0d6" type="selectionEntry" targetId="ca07-6ba0-e864-2d6e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebe4-4701-621d-1692" includeChildSelections="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68ee-c14e-5520-504e" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="42e5-1d1a-27c0-5ba3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
@@ -3820,7 +3793,7 @@
         </profile>
         <profile name="Personal Teleporters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d05-c69c-2572-99ba">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6&quot; as if it were your Movement phase. If it does, until the end of the turn, this unit is not eligible to declare a charge</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4052,9 +4025,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
         </profile>
-        <profile name="Empyric Reprisal (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c53f-7fdc-438d-5dcd">
+        <profile name="Indomitable Spirit (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c53f-7fdc-438d-5dcd">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.</characteristic>
           </characteristics>
         </profile>
         <profile name="Damaged: 1-4 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6980-2489-73f9-24ed">
@@ -4248,9 +4221,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Inner Fortitude (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="935d-fb65-54d-274f">
+        <profile name="Attuned Onslaught (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="935d-fb65-54d-274f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Charge move, until the end of the turn, add 1 to the Damage characteristic of melee weapons equipped by PALADIN SQUAD models in this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4504,9 +4477,9 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Astral Aim (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6515-217f-6031-85ce">
+        <profile name="Righteous Persecution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6515-217f-6031-85ce">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability, provided the target of that weapon is visible to one or more other friendly Grey Knights Psyker units</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit [excluding MONSTERS and VEHICLES) hit by one or more of those attacks: until the start of your next turn, that enemy unit is pinned. While a unit is pinned, subtract 2 from that unit&apos;s Move characteristic and subtract 2 from Charge rolls made for it.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4734,7 +4707,7 @@
         </profile>
         <profile name="Sanctity of Purpose" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f2c4-c894-81d4-d126">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target is within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5002,7 +4975,7 @@
         </profile>
         <profile name="Sanctifying Ritual (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e301-c532-9ade-1060">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under you control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent&apos;s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6357,7 +6330,7 @@
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
@@ -6847,7 +6820,7 @@
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Ignores Cover, Psychic</characteristic>
           </characteristics>
@@ -6973,6 +6946,68 @@
       <infoLinks>
         <infoLink name="Rapid Fire" id="0348-c48f-e9eb-6ecf" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
         <infoLink name="Twin-linked" id="c7c7-a883-cfb4-aa2f" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis flail" hidden="false" id="3742-4e4d-89fc-b070">
+      <profiles>
+        <profile name="Nemesis flail" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8c08-35c0-3871-0d7b">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Psychic" hidden="false" id="4272-6ab0-d302-a9fe" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sublimator" hidden="false" id="bdf2-9697-4868-be27" collective="false">
+      <profiles>
+        <profile name="Sublimator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c348-f777-c641-072b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic,Melta 4, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Melta" id="1a3a-6d85-5af2-4110" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+        <infoLink name="Psychic" id="b3e0-29b6-fb84-51a5" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+        <infoLink name="Twin-linked" id="44e4-9c51-b564-386c" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fragstorm grenade launcher" hidden="false" id="8e23-f84e-1095-ac5a" collective="false">
+      <profiles>
+        <profile name="Fragstorm grenade launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="12f1-e41b-4b3a-66d6">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Blast" id="203c-a548-c621-5dab" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7257,6 +7292,124 @@
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="12d6-9559-5828-d799" includeChildForces="true" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Augurium Task Force" id="461e-d0fe-40f9-2047" hidden="false" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="GRIMOIRE OF CONJUNCTIONS" hidden="false" id="7d79-26d8-5b45-9638">
+              <profiles>
+                <profile name="GRIMOIRE OF CONJUNCTIONS" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="717b-c4b4-ee8a-d5a4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 4 to the Strength characteristic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d79-26d8-5b45-9638" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d79-26d8-5b45-9638" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SHIELD OF PROPHECY" hidden="false" id="2f58-8e7b-c53a-dfd7">
+              <profiles>
+                <profile name="SHIELD OF PROPHECY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2074-8fc0-b2d9-eb95">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle, at the start of the battle round, the bearer can use this Enhancement. If it does, until the end of the battle round, add 2 to the Toughness characteristic of models in the bearer&apos;s unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2f58-8e7b-c53a-dfd7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="2f58-8e7b-c53a-dfd7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="ONE FOOT IN THE FUTURE" hidden="false" id="7e94-3848-8c0f-3e5b">
+              <profiles>
+                <profile name="ONE FOOT IN THE FUTURE" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="087e-9dcf-96c1-d403">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Each time the bearer&apos;s unit is set up in your Reinforcements step, the bearer can use this Enhancement. If it does, the bearer&apos;s unit can make a Normal move of up to D6&quot;, and until the end of the turn, the bearer&apos;s unit is not eligible to declare
+a Charge.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7e94-3848-8c0f-3e5b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7e94-3848-8c0f-3e5b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="DOOMSEER&apos;S AMULET" hidden="false" id="54bf-8627-8e42-9a88">
+              <profiles>
+                <profile name="DOOMSEER&apos;S AMULET" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e93-b32c-35ba-b5a7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Each time the bearer&apos;s unit is set up in your Reinforcements step, the bearer can use this Enhancement. If it does, select one enemy unit within 12&quot; of and visible to the bearer. That enemy unit must take a Battle-shock test, subtracting
+1 from that test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="54bf-8627-8e42-9a88" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="54bf-8627-8e42-9a88" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bcb7-c2a7-e7fb-3aae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a680-5b33-eb4e-6fb6" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="eba5-2551-4f4c-40e6" includeChildForces="true" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Detachments" hidden="false" id="f7f3-a061-3f69-1432" defaultSelectionEntryId="none">
@@ -7282,6 +7435,52 @@
 - At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Hallowed Ground.
 
 Each time a model in a **^^Grey Knights^^** unit from your army makes an attack that targets a visible target, re roll a Hit roll of 1. If that unit is a **^^Purifier Squad^^** and/or is wholly within your army’s Hallowed Ground, you can re roll the Hit roll instead.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Augurium Task Force" hidden="false" id="c3fc-b175-00e7-16c7">
+          <rules>
+            <rule name="Augurium Task Force" id="0a74-82ac-b75f-9d1a" hidden="false">
+              <description>From the second battle round onwards, at the start of your Movement phase, if you did not select the maximum number
+of GREY KNIGHTS units from your army using the Gate of Infinity ability at the end of your opponent&apos;s previous turn, you can select one GREY KNIGHTS unit from your army that is on the battlefield that could have been selected using the Gate of Infinity ability. Remove that unit from the battlefield and place it into Strategic Reserves.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sanctic Spearhead" hidden="false" id="1d5f-079f-a3d9-beb6">
+          <rules>
+            <rule name="Sanctic Spearhead" id="cd89-9804-9254-70e6" hidden="false">
+              <description>Each time a GREY KNIGHTS VEHICLE unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristic of models in that unit, and until the end of the turn, ranged weapons equipped by models in that unit have the [ASSAULT] ability.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Banisher" hidden="false" id="ca26-bdf1-e780-1ed3">
+          <rules>
+            <rule name="Banisher" id="d382-33c1-8b8a-dca3" hidden="false">
+              <description>Each time a GREY KNIGHTS unit from your army is selected to fight, that unit can take a Leadership test. If that test is passed, select one of the  following rules. Until the end of the phase, that unit has that rule.
+
+
+Melee weapons equipped by models in
+this unit with the [PSYCHIC] ability also
+have the [SUSTAINED HITS 1] ability.
+
+
+Melee weapons equipped by models in
+this unit with the [PSYCHIC] ability also
+have the [LETHAL HITS] ability.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hallowed Conglave" hidden="false" id="66e4-3e95-28e7-f978">
+          <rules>
+            <rule name="Hallowed Conglave" id="6f23-5591-c236-f5ef" hidden="false">
+              <description>GREY KNIGHTS TERMINATOR units from your army are eligible to shoot and declare a charge in a turn in which they Fell Back.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Brotherhood Strike" hidden="false" id="2754-4ada-b9fd-702f">
+          <rules>
+            <rule name="Brotherhood Strike" id="acd1-169d-85a6-95fc" hidden="false">
+              <description>Each time a unit from your army is set up using the Deep Strike ability, until the end of the turn, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -7409,15 +7608,14 @@ Each time a model in a **^^Grey Knights^^** unit from your army makes an attack 
     </profile>
   </sharedProfiles>
   <rules>
-    <rule name="Teleport Assault" id="6a5e-1316-2d87-93c5" hidden="false">
-      <description>If your Army Faction is **^^Grey Knights^^**, at the end of your opponent’s turn, you can select a number of **^^Grey Knights^^** units from your army with this ability (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
+    <rule name="Gate of Infinity" id="6a5e-1316-2d87-93c5" hidden="false">
+      <description>If your Army Faction is **^^Grey Knights^^**, at the end of your opponent’s Fight phase, you can select a number of units from your army that are on the battlefield (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
 
-Combat Patrol - Up to 1 unit
 Incursion - Up to 2 units
 Strike Force - Up to 3 units
 Onslaught - Up to 4 units
 
-Once you have made your selections, remove those units from the battlefield. In the Reinforcements step of your next Movement phase, set each of those units up anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models. Any units that are not on the battlefield at the end of the battle count as destroyed.</description>
+Once you have made your selections, remove those units from the battlefield and place them into Strategic Reserves.</description>
     </rule>
   </rules>
 </catalogue>
