@@ -7398,11 +7398,18 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="fa7c-cb4d-d3ca-5f97" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="fa7c-cb4d-d3ca-5f97" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fa7c-cb4d-d3ca-5f97" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="fa7c-cb4d-d3ca-5f97" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -7682,10 +7689,17 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7710,11 +7724,18 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -7783,10 +7804,17 @@ that Stratagem this turn.</characteristic>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7811,11 +7839,18 @@ that Stratagem this turn.</characteristic>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -7868,10 +7903,17 @@ more than 9&quot; horizontally away from all enemy units. If the bearer&apos;s 
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
