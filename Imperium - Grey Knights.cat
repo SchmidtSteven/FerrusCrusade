@@ -1738,6 +1738,7 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a328-8593-ea81-4799" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Nemesis mace" hidden="false" id="794f-c416-f5e6-41e2" type="selectionEntry" targetId="5251-a684-b4d6-3f26"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged Weapons" id="5a6-d46b-4cbb-bb52" hidden="false">
@@ -1777,17 +1778,19 @@
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="32eb-bc1c-21ea-31ec" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="1427-5dc6-3813-2b8c" type="selectionEntry" targetId="8e23-f84e-1095-ac5a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c29-4399-3824-1760"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab57-46d4-1513-465e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="1427-5dc6-3813-2b8c" type="selectionEntry" targetId="8e23-f84e-1095-ac5a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c29-4399-3824-1760"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab57-46d4-1513-465e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6284,13 +6287,14 @@
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Sustained Hits 1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Sustained Hits 1, Precision</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Sustained Hits" hidden="false" type="rule" id="b6de-2b73-7a93-b18d" targetId="1897-c22c-9597-12b1"/>
         <infoLink name="Psychic" hidden="false" type="rule" id="74a0-8aa1-1b80-cc8b" targetId="e9c4-2bb8-12ee-cd1b"/>
+        <infoLink name="Precision" id="9ece-122e-49da-5c27" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
       <comment>BS3+</comment>
     </selectionEntry>
@@ -7030,7 +7034,7 @@
             <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic,Melta 4, Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Melta 4, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7062,6 +7066,26 @@
       </costs>
       <infoLinks>
         <infoLink name="Blast" id="203c-a548-c621-5dab" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nemesis mace" hidden="false" id="5251-a684-b4d6-3f26">
+      <profiles>
+        <profile name="Nemesis mace" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3679-423e-30c9-d9ca">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic, Precision, Anti-Character 2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Psychic" id="8c54-8c37-6c20-ffee" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+        <infoLink name="Anti-" id="0205-cf5e-ff05-0bcd" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Precision" id="afbe-c8aa-7a6d-ce01" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
