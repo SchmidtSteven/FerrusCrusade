@@ -2562,17 +2562,12 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" id="94d2-6177-ac2b-d739" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Twin Heavy Bolter" id="2831-c0e-a552-952a" hidden="false" defaultSelectionEntryId="47ce-be44-85f3-320b">
+            <selectionEntryGroup name="Ranged Weapon" id="2831-c0e-a552-952a" hidden="false" defaultSelectionEntryId="47ce-be44-85f3-320b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="379c-a140-c939-189"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9a-6186-7f85-d09"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin assault cannon" hidden="false" id="f053-fa87-bf7e-e179" type="selectionEntry" targetId="1b31-e329-a8f8-0fa2">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="63d1-4ce4-4f66-7aca" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Twin lascannon" hidden="false" id="e2fd-921d-5ad7-39f6" type="selectionEntry" targetId="34f9-dc04-80a5-4c11">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="79c9-befb-4f71-41d5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -7345,7 +7340,7 @@ a Charge.</characteristic>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
