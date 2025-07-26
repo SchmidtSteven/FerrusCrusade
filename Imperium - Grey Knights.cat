@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="59" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="60" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f3e4-7fc3-8f57-6303" importRootEntries="true" targetId="1b6d-dc06-5db9-c7d1"/>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="575c-d0f9-7fdc-2ddb" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
@@ -1165,40 +1165,23 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="702-d447-314b-a3f6"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="702-d447-314b-a3f6"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="702-d447-314b-a3f6">
+                <modifier type="set" value="1" field="702-d447-314b-a3f6">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
+                        <condition type="atLeast" value="5" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
                         <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="unit" childId="468a-4e44-8f46-a005" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6215-3f01-f844-585" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="702-d447-314b-a3f6">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="468a-4e44-8f46-a005" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6215-3f01-f844-585" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="unit" childId="6215-3f01-f844-585" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <entryLinks>
@@ -1514,38 +1497,7 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Storm Bolter" id="1afc-d16b-2a31-bea8" hidden="false" defaultSelectionEntryId="78e7-2856-7a49-ba9f">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d395-cc4f-5bd6-fa86"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c5-8856-a7dd-c7e5"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Storm bolter" hidden="false" id="78e7-2856-7a49-ba9f" type="selectionEntry" targetId="18c1-d4b5-0ff0-4808">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c6a-dc05-51e6-4749"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="15a6-33d9-dd32-0942" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Incinerator" hidden="false" id="47a2-17a7-2f80-9e31" type="selectionEntry" targetId="17ed-2f7b-bf3a-3c94">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="e4eb-050b-c844-c0ed" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Psycannon" hidden="false" id="4f06-e4ae-500d-da73" type="selectionEntry" targetId="977f-fdd6-c09c-5def">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="229d-4562-680e-08db" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Psilencer" hidden="false" id="5e52-a297-2678-0651" type="selectionEntry" targetId="56c3-92fd-4579-7d89">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a4e5-9428-b521-b1c7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Psycannon" id="473e-0784-689e-1c67" hidden="false" defaultSelectionEntryId="4b05-7ba4-756a-a78d">
+            <selectionEntryGroup name="Ranged Weapon" id="473e-0784-689e-1c67" hidden="false" defaultSelectionEntryId="4b05-7ba4-756a-a78d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd45-c859-83b5-1942"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39e8-1c0b-6993-b95f"/>
@@ -3726,6 +3678,7 @@
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="651e-589f-b87f-1ffa" type="selectionEntryGroup" targetId="1f2e-4c6b-19f2-30e0" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="5573-9c4e-73c4-d4a2" type="selectionEntryGroup" targetId="c440-b056-f09a-c88a"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -4290,7 +4243,7 @@
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="a6ad-579-5c78-6d6a" targetId="a343-738-c273-4e13"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="4-9 Paladins" hidden="false" id="fc49-2cb9-b72-9890" defaultSelectionEntryId="d1b3-96e2-43e6-6bf4" sortIndex="3">
+        <selectionEntryGroup name="3-9 Paladins" hidden="false" id="fc49-2cb9-b72-9890" defaultSelectionEntryId="d1b3-96e2-43e6-6bf4" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Paladin" hidden="false" id="d1b3-96e2-43e6-6bf4">
               <entryLinks>
@@ -4365,9 +4318,14 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="702-d447-314b-a3f6"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="702-d447-314b-a3f6"/>
               </constraints>
               <modifiers>
+                <modifier type="set" value="2" field="702-d447-314b-a3f6">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="6528-4634-c2cf-2840" childId="model" shared="true"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" value="4" field="702-d447-314b-a3f6">
                   <conditions>
                     <condition type="atLeast" value="10" field="selections" scope="6528-4634-c2cf-2840" childId="model" shared="true"/>
@@ -4383,10 +4341,38 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Paladin with Narthecium" hidden="false" id="1d7a-2106-4a7b-2f43">
+              <entryLinks>
+                <entryLink import="true" name="Nemesis force weapon" hidden="false" id="e51f-e285-b744-14d8" type="selectionEntry" targetId="feab-83f0-d48f-071f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97ee-2168-66b4-57b5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b44-1d9a-c786-8e18"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Apothecary&apos;s Narthecium" hidden="false" id="7858-c3f9-b07c-6199" collective="true">
+                  <profiles>
+                    <profile name="Apothecary&apos;s Narthecium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef99-076c-663f-7aba">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if the bearer is not destroyed, you can return 1 destroyed model (excluding CHARACTERS] to the bearer&apos;s unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fb1-68c5-1f32-9c7a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e77-675c-6f5d-a3ac"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4649-39b4-0071-83ba"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e99f-6e07-1a6b-a4a4"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e3fa-db46-4723-6423"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7b99-67cb-8159-5980"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f2ef-a945-c834-4d09"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Paragon" id="1c13-d08a-b927-17b2" hidden="false" sortIndex="2">
@@ -8048,7 +8034,6 @@ have the [LETHAL HITS] ability.</description>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
-    <entryLink import="true" name="Brother-Captain" hidden="false" type="selectionEntry" id="8421-ca98-c324-ec3a" targetId="dce9-6eb4-fa33-e869"/>
     <entryLink import="true" name="Brotherhood Champion" hidden="false" type="selectionEntry" id="b391-1ca8-ca39-ece7" targetId="2c81-4e74-8707-3117"/>
     <entryLink import="true" name="Brotherhood Chaplain" hidden="false" type="selectionEntry" id="47d8-1a0a-e584-991" targetId="b9b1-d698-1e98-da45"/>
     <entryLink import="true" name="Brotherhood Librarian" hidden="false" type="selectionEntry" id="eb42-25e1-cb7-81e0" targetId="5412-1f01-b7cc-bf12"/>
