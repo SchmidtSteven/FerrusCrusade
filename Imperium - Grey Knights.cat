@@ -353,7 +353,11 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Brotherhood Chaplain" hidden="false" id="b9b1-d698-1e98-da45">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ebf4-5ffe-19e7-c6c7" id="d184-1a1e-4a50-eaa5" primary="false" name="Brotherhood Chaplain"/>
@@ -972,7 +976,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Brotherhood Terminator Squad" hidden="false" id="a037-a89c-f59f-8b1e">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -984,7 +988,7 @@
             <condition type="equalTo" value="5" field="selections" scope="a037-a89c-f59f-8b1e" childId="model" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="330" field="51b2-306e-1021-d207">
+        <modifier type="set" value="320" field="51b2-306e-1021-d207">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -994,7 +998,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="420" field="51b2-306e-1021-d207">
+        <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="9" field="selections" scope="a037-a89c-f59f-8b1e" childId="model" shared="true"/>
           </conditions>
@@ -4178,7 +4182,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Paladin Squad" hidden="false" id="6528-4634-c2cf-2840">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4190,7 +4194,7 @@
             <condition type="equalTo" value="5" field="selections" scope="1e9b-5681-eaf7-5e08" childId="model" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="375" field="51b2-306e-1021-d207">
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -4200,7 +4204,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="480" field="51b2-306e-1021-d207">
+        <modifier type="set" value="450" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="9" field="selections" scope="6528-4634-c2cf-2840" childId="model" shared="true"/>
           </conditions>
