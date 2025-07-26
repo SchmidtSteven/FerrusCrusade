@@ -779,7 +779,7 @@
         </profile>
         <profile name="Guardians of the Machine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="877c-7676-7032-ecd3">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit ends a charge move within Engagement Range of one or more GREY KNIGHTS VEHICLE units from your army and within 6&quot; of this mode!&apos;s unit, you can target this model&apos;s unit with the Heroic Intervention Stratagem for OCP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit ends a charge move within Engagement Range of one or more GREY KNIGHTS VEHICLE units from your army and within 6&quot; of this model&apos;s unit, you can target this model&apos;s unit with the Heroic Intervention Stratagem for OCP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
           </characteristics>
         </profile>
         <profile name="Blessing of the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f298-3658-77a2-5851">
@@ -867,35 +867,29 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f85-dae1-8b4c-e00c"/>
               </constraints>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Forge bolter" id="9fd1-cdfd-7fbd-70ef" hidden="false" defaultSelectionEntryId="3116-6dc9-27ee-97bb">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Forge bolter" hidden="false" id="3116-6dc9-27ee-97bb">
-                  <profiles>
-                    <profile name="Forge bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f239-3ccc-a7ed-a37a">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="33b0-9aa3-4992-2f8f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forge bolter" hidden="false" id="3116-6dc9-27ee-97bb">
+              <profiles>
+                <profile name="Forge bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f239-3ccc-a7ed-a37a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="33b0-9aa3-4992-2f8f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97d7-70b-14be-968f"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ff-c335-6266-499b"/>
               </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
