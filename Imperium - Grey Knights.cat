@@ -56,7 +56,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="ac65-12a8-3533-ef2a" hidden="false" sortIndex="4">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Storm Bolter" id="20a2-ba8f-784c-3bf" hidden="false" defaultSelectionEntryId="324f-557a-d87a-e55b">
+            <selectionEntryGroup name="Ranged Weapon" id="20a2-ba8f-784c-3bf" hidden="false" defaultSelectionEntryId="324f-557a-d87a-e55b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="171a-0bb2-0259-c9fc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67fd-922c-e111-5724"/>
@@ -8061,6 +8061,7 @@ have the [LETHAL HITS] ability.</description>
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Order of Battle" hidden="false" id="6d55-7518-ff2e-b9f5" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
+    <entryLink import="true" name="Brother-Captain" hidden="false" id="40a4-1786-686d-7735" targetId="dce9-6eb4-fa33-e869" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Brother-Captain" hidden="false" id="71ac-a100-1ec8-14e9"/>
