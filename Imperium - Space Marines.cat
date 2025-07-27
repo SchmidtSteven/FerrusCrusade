@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="110" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="117" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -37594,6 +37594,25 @@ At the end of each player’s turn, you can select one of the Sagas listed below
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Godhammer Assault Force" hidden="false" id="d01e-ca08-d6c0-da0c">
+          <profiles>
+            <profile name="Shock and Awe" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cad7-ce0a-06c7-ec11">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ADEPTUS ASTARTES unit from your army declares a charge, if it disembarked from a TRANSPORT this turn, after selecting the targets of that charge, select one of those targets; that enemy unit must take a Battle-shock test.
+
+
+Each time a model in an ADEPTUS ASTARTES unit from your army makes a melee attack, if it disembarked from a TRANSPORT this turn, add 1 to the Hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Stormlance Task Force" hidden="false" id="50ed-e07c-8f6b-b035">
           <profiles>
             <profile name="Lightning Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="10ce-24dc-556d-1a38">
@@ -37946,6 +37965,41 @@ Onslaught            4</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Companions of Vehemence" hidden="false" id="0142-a6c9-a4f0-48b9">
+          <profiles>
+            <profile name="Righteous Fervour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84b4-37d6-078c-fd49">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for Adeptus Astartes units from your army.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Godhammer Assault Force" hidden="false" id="2e96-fda4-b063-baee">
+          <profiles>
+            <profile name="Shock and Awe" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d9c-b06d-84ca-b309">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ADEPTUS ASTARTES unit from your army declares a charge, if it disembarked from a TRANSPORT this turn, after selecting the targets of that charge, select one of those targets; that enemy unit must take a Battle-shock test.
+
+
+Each time a model in an ADEPTUS ASTARTES unit from your army makes a melee attack, if it disembarked from a TRANSPORT this turn, add 1 to the Hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -38935,6 +38989,98 @@ is Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="abb4-dc89-4e0-9150" shared="true" id="e5a3-5e3c-ead5-631a" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Godhammer Assault Force Enhancements" hidden="false" id="e8e8-a582-a08a-d17a">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Paragon of Fury" hidden="false" id="4464-cc02-22a9-ca6a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9391-ebd9-36f0-9220" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Paragon of Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60af-9446-db5a-5bdb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. Each time a melee attack made by the bearer is allocated to an enemy model, if the bearer disembarked from a TRANSPORT this turn, add 1 to the Damage characteristic of that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Battle-Psalm Precentor" hidden="false" id="9881-8ee0-c631-a4d7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8439-85e5-4506-8b5a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Battle-Psalm Precentor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0928-3552-6645-150e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. Each time the bearer&apos;s unit declares a charge, if an enemy unit takes a Battle-shock test as a result of the Shock and Awe Detachment rule, subtract 1 from that Battle-shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augury Servo-Host" hidden="false" id="f903-dbd2-ac75-ec50">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ee25-92fc-7e5c-521e" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Augury Servo-Host" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2d00-7169-13d4-6cf2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. At the start of your Shooting phase, select one enemy unit within 12&quot; and visible to the bearer. Until the end of the phase, models in that unit cannot have the Benefit of Cover.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Herald of Sacred Slaughter" hidden="false" id="ca80-b44c-0ddb-2e9c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4480-cbce-96f5-e9a2" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Herald of Sacred Slaughter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dab5-c0d3-7c97-e6f0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a DEDICATED TRANSPORT, that DEDICATED TRANSPORT has the Scouts 9&quot; ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50dd-25f6-307c-4854"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="cae1-0d07-dcc4-4467" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d01e-ca08-d6c0-da0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -40605,6 +40751,190 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9b0-8a53-be19-6e2d"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2406-647b-ff3e-b792" includeChildSelections="true"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Companions of Vehemence Enhancements" id="eb9b-1814-85c8-5412" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Zealous Vanguard" hidden="false" id="202e-5c71-8b32-a263">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2266-1007-f628-a9cc" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Zealous Vanguard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4901-13c2-b4fd-db0d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. Models in the bearer&apos;s unit have the Scouts 6&quot; ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Oathbound Exemplar" hidden="false" id="d68a-f663-27d2-3a0a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="210e-b504-2392-82be" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Oathbound Exemplar" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0423-a6c7-2d89-d36d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Infantry model only. Add 1 to Advance rolls made for the bearer&apos;s unit. If the mission pack you are playing features Actions, the bearer&apos;s unit is eligible to start to perform an Action in a turn in which it Advanced.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Animus" hidden="false" id="a9d5-2b9c-9393-790f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3b5a-3c77-0443-9815" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Animus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c86b-03f6-e9f2-a51a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Chaplain or Judiciar model only. Improve the Armour Penetration characteristic of melee weapons equipped by models in the bearer&apos;s unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Merciless Denunciation" hidden="false" id="a765-2722-06f0-e95b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec51-07c0-1391-fd01" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Merciless Denunciation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d3ba-5f97-e3a0-1375">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Chaplain or Judiciar model only. Each time a model in the bearer&apos;s unit makes a melee attack, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="022c-8a70-75ee-40d8"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bcc4-f58c-70b3-88af" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d01e-ca08-d6c0-da0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Godhammer Assault Force Enhancements" id="5073-6777-739b-08a4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Paragon of Fury" hidden="false" id="d871-d0a9-2368-7f50">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b45c-76aa-f539-f335" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Paragon of Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7df2-3317-538f-ed84">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. Each time a melee attack made by the bearer is allocated to an enemy model, if the bearer disembarked from a TRANSPORT this turn, add 1 to the Damage characteristic of that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Battle-Psalm Precentor" hidden="false" id="8b39-4c01-fa55-31a9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="074d-0579-06ef-5c5c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Battle-Psalm Precentor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="95e2-b9bb-1102-0e18">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. Each time the bearer&apos;s unit declares a charge, if an enemy unit takes a Battle-shock test as a result of the Shock and Awe Detachment rule, subtract 1 from that Battle-shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augury Servo-Host" hidden="false" id="cc10-1ce0-35d0-e079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8cd3-f1d2-d9ae-b5a5" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Augury Servo-Host" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="76f0-2c90-49b4-fb7f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. At the start of your Shooting phase, select one enemy unit within 12&quot; and visible to the bearer. Until the end of the phase, models in that unit cannot have the Benefit of Cover.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Herald of Sacred Slaughter" hidden="false" id="9104-22d2-93a0-f881">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f360-a4dc-93df-179e" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Herald of Sacred Slaughter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="511a-9f7c-83b1-d3ce">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a DEDICATED TRANSPORT, that DEDICATED TRANSPORT has the Scouts 9&quot; ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1d1-6b2d-7af0-0f87"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="dacc-c966-6a6e-c16d" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d01e-ca08-d6c0-da0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
