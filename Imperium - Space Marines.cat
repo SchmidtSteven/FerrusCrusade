@@ -43761,6 +43761,13 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
       <description>If your Army Faction is Adeptus Astartes, at the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:
 ■ You can reroll the Hit roll
 ■ If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, add 1 to the Wound roll as well.</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
   </sharedRules>
   <infoLinks>

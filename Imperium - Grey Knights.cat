@@ -1139,32 +1139,6 @@
                     <entryLink import="true" name="Psilencer" hidden="false" type="selectionEntry" id="3ccf-db10-dc87-3038" targetId="d526-d040-807c-34f6"/>
                     <entryLink import="true" name="Psycannon" hidden="false" type="selectionEntry" id="39bd-f647-4b4d-9494" targetId="e520-9c7-d10c-897d"/>
                   </entryLinks>
-                  <modifiers>
-                    <modifier type="add" value="Terminator with Ancient&apos;s Banner already has a Heavy Weapon" field="error">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="unit" childId="468a-4e44-8f46-a005" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="77d3-d321-bb86-dabe" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6215-3f01-f844-585" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="unit" childId="468a-4e44-8f46-a005" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="2" field="selections" scope="unit" childId="77d3-d321-bb86-dabe" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6215-3f01-f844-585" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>

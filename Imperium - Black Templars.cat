@@ -4207,6 +4207,7 @@ You can attach this model to one of the above units even if one Captain or Chap
         <categoryLink name="Imperium" hidden="false" id="f1e7-335e-7dd0-148b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="e63b-5e86-5d58-105f" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Chaplain" hidden="false" id="dde2-b18f-4486-1512" targetId="1fb1-3603-a4bd-485" primary="false"/>
+        <categoryLink targetId="9249-acae-2882-d95" id="9bce-3cec-ece4-fb70" primary="false" name="Faction: Black Templars"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Invulnerable Save" id="d166-e2ef-59e8-4cd1" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
@@ -4421,6 +4422,7 @@ You can attach this model to one of the above units even if one Captain or Chap
         <categoryLink name="Tacticus" hidden="false" id="27a7-af96-bdc4-3a68" targetId="5179-8ede-45e3-49a2" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="bfd4-c077-a6bc-b436" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Ancient" hidden="false" id="53a0-b41a-90bc-4bf5" targetId="9bb1-7b6c-326a-da2c" primary="false"/>
+        <categoryLink targetId="9249-acae-2882-d95" id="f2f7-5c4b-f86b-a626" primary="false" name="Faction: Black Templars"/>
       </categoryLinks>
       <profiles>
         <profile name="Crusade Ancient" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e6f3-4628-7088-5a2b">
