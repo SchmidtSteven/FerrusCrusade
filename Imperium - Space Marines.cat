@@ -37414,7 +37414,7 @@ per turn.</characteristic>
     </profile>
     <profile name="Astartes Banner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4873-996f-a8a2-bcb1">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
