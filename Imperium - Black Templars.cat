@@ -21,6 +21,10 @@
     <entryLink import="true" name="Black Templars Repulsor Executioner" hidden="false" type="selectionEntry" id="f0fe-79fd-b14c-4c2b" targetId="a344-192f-aae2-16e5"/>
     <entryLink import="true" name="Marshal" hidden="false" type="selectionEntry" id="d0d4-cb65-1f61-62f6" targetId="68dd-5f49-4f17-cd84"/>
     <entryLink import="true" name="Castellan" hidden="false" type="selectionEntry" id="b2aa-5043-ce3c-4804" targetId="f151-e676-d3b8-200c"/>
+    <entryLink import="true" name="Crusade Ancient" hidden="false" id="cccf-a4f1-3a24-b333" targetId="0943-b06a-042c-9575" type="selectionEntry"/>
+    <entryLink import="true" name="Execrator" hidden="false" id="b96b-3118-2beb-d409" targetId="8b5a-2d34-c8be-6382" type="selectionEntry"/>
+    <entryLink import="true" name="Land Raider Crusader" hidden="false" id="1edc-40e4-3e0f-543e" targetId="f474-a64e-4dad-2f85" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Squad" hidden="false" id="2dd7-bb9c-64df-663a" targetId="871e-02ee-5a6d-db7a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Chaplain Grimaldus" hidden="false" id="8165-e372-4fd6-3274">
