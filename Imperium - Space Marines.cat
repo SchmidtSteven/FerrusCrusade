@@ -8660,6 +8660,11 @@ Strategic Reserves.</characteristic>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="4463-1fae-cc23-d51d" primary="true" name="Infantry"/>
@@ -21267,6 +21272,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -37325,6 +37335,25 @@ per turn.</characteristic>
       </profiles>
       <comment>S6</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="466f-9ef9-f5b2-cd26" collective="true">
+      <profiles>
+        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1700-6570-9b6f-209f">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>A4 WS 3+ Sus1 Collective</comment>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="4fa6-ddcb-693b-8184" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -37344,7 +37373,7 @@ per turn.</characteristic>
     </profile>
     <profile name="Tactical Precision" hidden="false" id="b07f-3052-e85f-d6d3" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the LETHAL HITS ability.</characteristic>
       </characteristics>
     </profile>
     <profile name="Litany of Hate" hidden="false" id="3b72-1499-de01-95bb" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
