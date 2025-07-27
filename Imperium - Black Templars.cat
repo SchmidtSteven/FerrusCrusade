@@ -212,11 +212,12 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
     </selectionEntry>
     <selectionEntry type="model" import="true" name="High Marshal Helbrecht" hidden="false" id="da8a-de9f-1fe7-2513">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="ace8-c505-59f5-9b12" primary="true" name="Epic Hero"/>
@@ -1284,7 +1285,12 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="871a-b528-553-7f86" primary="true" name="Epic Hero"/>
