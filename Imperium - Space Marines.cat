@@ -209,15 +209,7 @@
     <entryLink import="true" name="Heavy Intercessor Squad" hidden="false" type="selectionEntry" id="44a8-9703-5aed-64f" targetId="7324-e591-939b-b675"/>
     <entryLink import="true" name="Hellblaster Squad" hidden="false" type="selectionEntry" id="4c8-e877-566b-a1ee" targetId="7102-b3a4-9bfc-1b84"/>
     <entryLink import="true" name="Hunter [Legends]" hidden="false" type="selectionEntry" id="d318-96c5-d134-fa02" targetId="3ad-729-3235-4777"/>
-    <entryLink import="true" name="Impulsor" hidden="false" type="selectionEntry" id="3fe5-fdf6-5abc-c60f" targetId="bfb1-7512-e1a3-9fa2">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d18-436e-360c-a380" shared="true" id="ea39-87e9-b86c-25f8" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink import="true" name="Impulsor" hidden="false" type="selectionEntry" id="3fe5-fdf6-5abc-c60f" targetId="bfb1-7512-e1a3-9fa2"/>
     <entryLink import="true" name="Inceptor Squad" hidden="false" type="selectionEntry" id="28ff-a147-b488-2411" targetId="3e14-2a-d358-6ada"/>
     <entryLink import="true" name="Incursor Squad" hidden="false" type="selectionEntry" id="19ec-f615-a22c-431" targetId="527c-120e-9e4e-9bfe"/>
     <entryLink import="true" name="Infernus Squad" hidden="false" type="selectionEntry" id="20b3-f504-9c79-bc74" targetId="b007-fc7b-8e4a-b017"/>
@@ -266,15 +258,7 @@
     <entryLink import="true" name="Scout Bike Squad [Legends]" hidden="false" type="selectionEntry" id="8650-9036-5842-d423" targetId="699f-a59e-baa6-ba8b"/>
     <entryLink import="true" name="Rhino" hidden="false" type="selectionEntry" id="efc9-2aff-c5b-6790" targetId="a14e-75ca-ef91-397f"/>
     <entryLink import="true" name="Predator Annihilator" hidden="false" type="selectionEntry" id="57a1-1350-9b3c-9452" targetId="31a-6c3e-5843-4023"/>
-    <entryLink import="true" name="Repulsor Executioner" hidden="false" type="selectionEntry" id="6d49-e23e-978b-7160" targetId="9259-f166-15f2-7f79">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d18-436e-360c-a380" shared="true" id="836b-80a8-4879-48f0" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink import="true" name="Repulsor Executioner" hidden="false" type="selectionEntry" id="6d49-e23e-978b-7160" targetId="9259-f166-15f2-7f79"/>
     <entryLink import="true" name="Lieutenant" hidden="false" type="selectionEntry" id="9770-3a56-619e-f390" targetId="ce15-e87e-7cff-b129"/>
     <entryLink import="true" name="Relic Terminator Squad [Legends]" hidden="false" type="selectionEntry" id="9f08-f0fd-cfdd-57b1" targetId="9d3f-134e-1f5b-531a"/>
     <entryLink import="true" name="Predator Destructor" hidden="false" type="selectionEntry" id="90c2-1ed5-bebf-73e8" targetId="d4c8-dd6a-cd7a-ccc3"/>
@@ -287,15 +271,7 @@
     <entryLink import="true" name="Reiver Squad" hidden="false" type="selectionEntry" id="72c7-e95f-cade-27d7" targetId="a7ae-e495-683b-7c90"/>
     <entryLink import="true" name="Captain" hidden="false" type="selectionEntry" id="91e3-a419-8c58-98f5" targetId="6c10-5b51-5bc0-8d2c"/>
     <entryLink import="true" name="Techmarine" hidden="false" type="selectionEntry" id="c7ef-84b1-fdf5-c5a8" targetId="e671-cd3a-2b03-3954"/>
-    <entryLink import="true" name="Repulsor" hidden="false" type="selectionEntry" id="b6f6-3b6d-2508-7c12" targetId="e8e-fc5c-c689-99ca">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d18-436e-360c-a380" shared="true" id="2d21-d3d5-5f76-b689" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink import="true" name="Repulsor" hidden="false" type="selectionEntry" id="b6f6-3b6d-2508-7c12" targetId="e8e-fc5c-c689-99ca"/>
     <entryLink import="true" name="Scout Sniper Squad [Legends]" hidden="false" type="selectionEntry" id="b90d-26e-4e1e-73ab" targetId="9a96-8de3-f4aa-7497">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -37507,43 +37483,6 @@ For the purposes of determining which models can embark within a TRANSPORT model
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Righteous Crusaders" hidden="false" id="4d18-436e-360c-a380">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Templar Vows" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5b6b-2f54-a092-39b2">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, select one of the four Templar Vows below to be active for Adeptus Astartes units from your army until the end of the battle</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Vow - Suffer Not the Unclean to Live" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="95ab-4f48-1ffa-57cd">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Vow - Accept Any Challenge No Matter the Odds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8475-f93f-e677-87d7">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Vow - Abhor the Witch, Destroy the Witch" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd52-b536-1487-a7e3">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unithave a 4+ invulnerable save against Psychic Attacks and melee weapons equipped by models in this unit 
-have the [ANTI-PSYKER 4+] ability.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Vow - Uphold the Honour of the Emperor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc51-2c2c-ccd1-fad7">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability and a Leadership characteristic of 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Champions of Russ" hidden="true" id="7047-73a6-28e-c859">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -38128,109 +38067,6 @@ Each time a model in an ADEPTUS ASTARTES unit from your army makes a melee attac
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8e-f294-9343-a3bd"/>
             <constraint type="max" value="3" field="selections" scope="force" shared="true" id="140d-ea7c-f640-4e3e" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Righteous Crusaders Enhancements" hidden="false" id="2c33-ce59-2492-e44">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Perdition&apos;s Edge" hidden="false" id="55fd-608e-6766-f17b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a5cc-3fb4-4e10-a775" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Perdition&apos;s Edge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc58-c199-50fa-c288">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only.
-
-
-■ Improve the Strength and Armour Penetration characteristics of the bearer’s melee weapons by 1.
-■ If the Suffer Not the Unclean to Live vow is active for your army, add 1 to the Attacks characteristic of the bearer’s melee weapons as well.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Witchseeker Bolts" hidden="false" id="c6e7-acb2-dac8-e2f2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="898e-e47d-cb34-c08c" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Witchseeker Bolts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af0c-615c-95e3-47d9">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only.
-
-
-■ The bearer’s ranged weapons have the [PRECISION], [ANTI-PSYKER 4+] and [DEVASTATING WOUNDS] abilities. 
-■ If the Abhor the Witch, Destroy the Witch vow is active for your army, each time the bearer makes a ranged attack that targets a Psyker unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sigismund&apos;s Seal" hidden="false" id="3ae-8543-64c0-8606">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a021-c96-5450-32ea" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Sigismund&apos;s Seal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="baea-44fb-a555-d3da">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only.
-
-
-■ Improve the Attacks characteristic of the bearer’s melee weapons by 1.
-■ While the bearer is leading a unit, if the Accept Any Challenge, No Matter the Odds vow is active for your army, each time a model in that unit makes a melee attack, a successful unmodified Hit roll of 5+ scores a Critical Hit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tannhauser&apos;s Bones" hidden="false" id="a813-c65f-b3c5-a512">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f61f-4d1c-bf34-728f" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Tannhauser&apos;s Bones" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ff53-8354-da1c-529d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only.
-
-
-■ Each time an attack is allocated to the bearer, halve the Damage characteristic of that attack.
-■ While the bearer is leading a unit, if the Uphold the Honour of the Emperor vow is active for your army, models in that unit have the Feel No Pain 5+ ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="4d18-436e-360c-a380" shared="true" id="51a8-8918-ce5b-348" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c043-2ea5-54bc-5109"/>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="efc3-e416-8f5e-e1af" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Champions of Russ Enhancements(Obsolet)" hidden="true" id="8538-ed61-bab0-244a">
