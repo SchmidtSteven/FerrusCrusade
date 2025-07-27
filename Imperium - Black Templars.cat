@@ -1293,8 +1293,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="871a-b528-553-7f86" primary="true" name="Epic Hero"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="4be7-5fd-cbf9-3be7" primary="false" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="4be7-5fd-cbf9-3be7" primary="true" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="fb6f-552c-55c0-72d7" primary="false" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="288b-c9bb-2adf-694b" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="92f-7a4c-22e6-8c9c" primary="false" name="Imperium"/>
@@ -1319,6 +1318,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad60-fb6-5cf4-f118" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="60d4-673f-d75f-e97b" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Black Templars Gladiator Lancer" hidden="false" id="7dec-dc3d-c40a-8ce">
@@ -4576,6 +4576,10 @@ You can attach this model to one of the above units even if one Captain, Chapte
               <infoLinks>
                 <infoLink name="Lethal Hits" id="75d7-897f-b7d7-61c0" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2a5-96c7-1c99-28f4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d6-795c-152b-2cd3"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
