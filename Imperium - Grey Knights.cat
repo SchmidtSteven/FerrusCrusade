@@ -6818,13 +6818,14 @@
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Sustained Hits 1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Sustained Hits 1, Precision</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Sustained Hits" hidden="false" type="rule" id="2cb1-0317-536d-079a" targetId="1897-c22c-9597-12b1"/>
         <infoLink name="Psychic" hidden="false" type="rule" id="e7ce-6691-85ff-a51d" targetId="e9c4-2bb8-12ee-cd1b"/>
+        <infoLink name="Precision" id="a54e-204f-d55e-0356" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
       <comment>BS2+</comment>
     </selectionEntry>
