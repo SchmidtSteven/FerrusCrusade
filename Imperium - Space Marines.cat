@@ -22791,12 +22791,22 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </profile>
         <profile name="Drop Pod Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2f23-8c83-540c-fa07">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately  disembark after it has been set up on the battlefield, and they must be set up more than 9&quot; away from all enemy models. After this model has been set up on the battlefield, no units can embark within it.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model must start the battle in Reserves and can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9&quot; away from all enemy models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Transport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a232-6e38-a6ef-b5f4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a transport capacity of 10 Adeptus Astartes Infantry models. It cannot transport Jump Pack, Wulfen, Gravis, Centurion or Terminator models.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a transport capacity of 12 Adeptus Astartes Infantry models. It cannot transport Jump Pack, Wulfen, Gravis, Centurion or Terminator models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Combat Disembarkation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9571-8021-2d6d-4729">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a unit disembarks from this model after it has been set up on the battlefield, that unit is still eligible to declare a charge this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deployment Complete" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f92c-604b-c305-69ff">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once this unit is set up on the battlefield and all units within it have disembarked, until the end of the battle, units cannot embark within this TRANSPORT.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -22809,44 +22819,6 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <infoLink name="Deep Strike" hidden="false" type="rule" id="1085-f66-5482-24be" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="3a59-a51e-2b13-81dd" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Option" hidden="false" id="e931-8a06-d04f-f59f" defaultSelectionEntryId="2d58-50d4-36ac-79e3" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97e0-b69e-2de3-d2e4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce8-f364-86ae-5b86"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Storm Bolter" hidden="false" type="selectionEntry" id="2d58-50d4-36ac-79e3" targetId="eb61-5cd0-5242-74cc">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b414-53e1-5d48-def3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deathwind Launcher" hidden="false" id="6470-7f4c-f107-d0b1">
-              <profiles>
-                <profile name="Deathwind Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f77e-4615-560d-7e3b">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Blast" hidden="false" type="rule" id="5c05-7b57-8c5-cdbc" targetId="6c1f-1cf7-ff25-c99e"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="34ab-cc01-e8a9-d516" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="72eb-4a1b-774-a0ba" primary="true" name="Vehicle"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="61a0-6382-70e0-c926" primary="false" name="Imperium"/>
