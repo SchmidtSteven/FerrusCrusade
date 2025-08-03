@@ -2740,7 +2740,7 @@
           <selectionEntries>
             <selectionEntry id="e767-518d-893b-648c" name="Master-crafted Heavy Bolt Rifle and Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="dead-d99a-7331-c1b8" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                <entryLink id="dead-d99a-7331-c1b8" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="2379-6a1b-31b3-c061" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e82-ded8-848e-85b7" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa42-7cf-c939-bf64" type="max"/>
@@ -3079,7 +3079,22 @@
       </profiles>
       <comment>A5 WS 2+</comment>
     </selectionEntry>
-    <selectionEntry id="ebda-08ed-994a-b579" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="ebda-08ed-994a-b579" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="18e6-2f4f-b709-d127">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>4A WS3+</comment>
+    </selectionEntry>
     <selectionEntry id="6e7b-4796-0ba3-a2d0" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f4f9-d665-21c1-2727" name="Close Combat Weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
@@ -24332,7 +24347,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Neo-volkite pistol, Master-crafted Power Sword &amp; Storm Shield" hidden="false" id="a1f2-12d9-5a4c-a524">
               <entryLinks>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="f08e-ff00-e54a-3efb" targetId="ebda-08ed-994a-b579">
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="f08e-ff00-e54a-3efb" targetId="2498-efda-cc9e-47f9">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eb5-84d6-adab-bc1"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ad-b285-f4bf-c238"/>
@@ -24456,7 +24471,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c061-0f9d-bdaa-37c5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink id="fcd2-9360-7c4b-5861" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                    <entryLink id="fcd2-9360-7c4b-5861" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="2498-efda-cc9e-47f9" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="5e41-82f5-cb87-2159" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -24492,7 +24507,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
                         </entryLink>
                       </entryLinks>
                     </entryLink>
-                    <entryLink id="2ad4-5afe-c163-c2ea" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                    <entryLink id="2ad4-5afe-c163-c2ea" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="2498-efda-cc9e-47f9" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="9ab2-88c8-b5b4-a828" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -29715,7 +29730,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c092-db85-34ef-a2f0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink id="e77-5303-12ad-cbde" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                    <entryLink id="e77-5303-12ad-cbde" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="2379-6a1b-31b3-c061" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="602d-8523-6045-df30" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -29768,37 +29783,6 @@ You can attach this model to one of the above units even if one Captain, Chapte
             </selectionEntry>
             <selectionEntry id="1fd4-9cd4-eda6-baad" name="Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="c552-195a-d3a4-54c" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abea-59a4-d47-d6d3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0e6-b0ee-9c0c-7a4" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="8c0a-4653-7b36-6cc5" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="30ba-6ab5-e99b-d5d7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="8c0a-4653-7b36-6cc5" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                  <profiles>
-                    <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="18e6-2f4f-b709-d127">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </entryLink>
                 <entryLink id="3009-ebd0-faf7-259f" name="Relic Shield" hidden="false" collective="false" import="true" targetId="6198-7228-4a39-7926" type="selectionEntry">
                   <profiles>
                     <profile id="cbc5-87e5-a711-57f9" name="Relic Shield" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -29851,6 +29835,37 @@ You can attach this model to one of the above units even if one Captain, Chapte
                       </modifiers>
                     </entryLink>
                   </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="1c5a-f766-549a-02e4">
+                  <entryLinks>
+                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="506d-eee3-d472-24a5" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="911b-5dd4-c090-b793" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="506d-eee3-d472-24a5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e7-47ae-4f72-a01e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77d1-323d-3ae8-cb56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="55d9-9c5b-30ff-6246">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -29952,7 +29967,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="9fbf-f79d-bb91-19ba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink id="c964-1cfb-8795-a9a8" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                    <entryLink id="c964-1cfb-8795-a9a8" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="2379-6a1b-31b3-c061" type="selectionEntry">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="3135-7995-4822-4118" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -37305,6 +37320,38 @@ per turn.</characteristic>
       <infoLinks>
         <infoLink name="Sustained Hits" id="4fa6-ddcb-693b-8184" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2379-6a1b-31b3-c061" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a604-d9cc-c2e1-0581">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>6A WS2+</comment>
+    </selectionEntry>
+    <selectionEntry id="2498-efda-cc9e-47f9" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="dc00-bd1f-7dd1-3695">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>5A WS2+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
