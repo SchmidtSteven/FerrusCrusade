@@ -7607,7 +7607,7 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c820-b755-1958-392d" includeChildForces="true" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Hallowed Conglave" id="b336-d7e3-7d0a-0181" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Hallowed Conclave" id="b336-d7e3-7d0a-0181" hidden="false" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="INESCAPABLE JUDGEMENT (PSYCHIC)" hidden="false" id="4e36-20cd-5b1f-1226">
               <profiles>
@@ -7953,9 +7953,9 @@ have the [LETHAL HITS] ability.</description>
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hallowed Conglave" hidden="false" id="66e4-3e95-28e7-f978">
+        <selectionEntry type="upgrade" import="true" name="Hallowed Conclave" hidden="false" id="66e4-3e95-28e7-f978">
           <rules>
-            <rule name="Hallowed Conglave" id="6f23-5591-c236-f5ef" hidden="false">
+            <rule name="Hallowed Conclave" id="6f23-5591-c236-f5ef" hidden="false">
               <description>GREY KNIGHTS TERMINATOR units from your army are eligible to shoot and declare a charge in a turn in which they Fell Back.</description>
             </rule>
           </rules>
