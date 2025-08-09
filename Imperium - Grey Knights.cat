@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="60" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="50c4-3e83-fe54-97c4" name="Imperium - Grey Knights" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="61" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f3e4-7fc3-8f57-6303" importRootEntries="true" targetId="1b6d-dc06-5db9-c7d1"/>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="575c-d0f9-7fdc-2ddb" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
@@ -7339,7 +7339,7 @@ a Charge.</characteristic>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="eba5-2551-4f4c-40e6" includeChildForces="true" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Banisher" id="7c7a-b179-a5dc-1490" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Banishers" id="7c7a-b179-a5dc-1490" hidden="false" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="EPHEMERAL TOME" hidden="false" id="fa7c-cb4d-d3ca-5f97">
               <profiles>
@@ -7936,7 +7936,7 @@ of GREY KNIGHTS units from your army using the Gate of Infinity ability at the�
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Banisher" hidden="false" id="ca26-bdf1-e780-1ed3">
+        <selectionEntry type="upgrade" import="true" name="Banishers" hidden="false" id="ca26-bdf1-e780-1ed3">
           <rules>
             <rule name="Banisher" id="d382-33c1-8b8a-dca3" hidden="false">
               <description>Each time a GREY KNIGHTS unit from your army is selected to fight, that unit can take a Leadership test. If that test is passed, select one of the  following rules. Until the end of the phase, that unit has that rule.
