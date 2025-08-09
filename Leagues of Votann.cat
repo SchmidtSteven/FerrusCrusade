@@ -3708,11 +3708,6 @@ result, but it must end that move as close as possible to the closest enemy unit
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="2c56-ffbd-262e-cf12" name="Rampart crest" hidden="false" collective="false" import="true" targetId="0369-3c56-a9d1-307d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="019b-2529-fb9e-b2cf" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="241c-ae10-96f2-fc95" name="Warlord" hidden="false" collective="false" import="true" targetId="92b3-11ff-2a27-cd0c" type="selectionEntry"/>
       </entryLinks>
       <costs>
