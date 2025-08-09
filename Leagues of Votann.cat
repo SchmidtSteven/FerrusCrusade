@@ -4717,6 +4717,9 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Twin-linked" id="229b-484f-a660-c405" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -4808,9 +4811,9 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="1edc-c527-581e-ace3" name="Opportunistic Manoeuvre" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="1edc-c527-581e-ace3" name="Scanner Uplink" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is supressed. While a unit is supressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Kapricus Carrier" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="98e7-e374-763e-64a0">
@@ -4833,6 +4836,11 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
         <infoLink id="6308-7e63-7f10-7ebb" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Deck" id="b230-eb50-0c99-9a07" hidden="false" type="rule" targetId="13b2-6518-dab3-7ea1">
+          <modifiers>
+            <modifier type="append" value="5" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4889,14 +4897,33 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="4497-02c3-63bc-5a17" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="5c2e-2f94-80b0-9dfa" name="Smoke Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="742f-1898-3e27-04c6" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb01-fe6a-7e99-026e" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05bc-4931-8a70-cde0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87f3-813c-8121-ba2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile id="3bcd-3cab-3323-7d5e" name="Twin magna-coil autocannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+            <profile id="3bcd-3cab-3323-7d5e" name="Smoke Launcher" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the SMOKE keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Magna-coil autocannon" hidden="false" id="2b98-4944-dcab-b14c" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbc6-7a25-4707-f395" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d2-00a2-498f-199a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Magna-coil autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="393a-b8e3-5e08-0295">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
@@ -4904,39 +4931,13 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Magna-rail cannon" hidden="false" id="9698-41a3-0972-5a53" collective="false">
-          <profiles>
-            <profile name="Magna-rail cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0035-2b31-5eaf-6216">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Devastating Wounds" id="9d3c-3702-4ac7-f60d" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
-            <infoLink name="Heavy" id="cc78-8898-90b7-af95" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12e0-cfa9-c235-1b5a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2232-c6d6-8420-63e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
       <costs>
