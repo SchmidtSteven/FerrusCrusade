@@ -4604,6 +4604,37 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e5be-48de-0f44-ba44" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
+      <profiles>
+        <profile name="Kapricus Defenders" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fdcc-c08e-78dd-c182">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Opportunistic Manoeuvre" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea3a-4580-f406-ef8c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="bf84-b27e-d06e-250c" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Prioritised Efficiency" id="f7b5-2d70-484a-a887" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
+        <infoLink name="Scouts" id="400b-5f7d-ca88-7bb1" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
+          <modifiers>
+            <modifier type="append" value="9&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Yield Points" id="3ae2-994b-aa8f-6532" hidden="false" targetId="ac1b-7bc9-3778-09a1" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9c6d-5500-40d3-8ad0" name="Faction: Leagues of Votann" hidden="false" targetId="8474-765-16a9-f00d" primary="false"/>
         <categoryLink id="efdd-2ba8-57c5-b6db" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
@@ -4738,37 +4769,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd59-c761-2c5a-1ecd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aebe-5d52-d2ca-df90" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
-          <profiles>
-            <profile name="Kapricus Defenders" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fdcc-c08e-78dd-c182">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Opportunistic Manoeuvre" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea3a-4580-f406-ef8c">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deadly Demise" id="bf84-b27e-d06e-250c" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
-              <modifiers>
-                <modifier type="append" value="1" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Prioritised Efficiency" id="f7b5-2d70-484a-a887" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
-            <infoLink name="Scouts" id="400b-5f7d-ca88-7bb1" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
-              <modifiers>
-                <modifier type="append" value="9&quot;" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Yield Points" id="3ae2-994b-aa8f-6532" hidden="false" targetId="ac1b-7bc9-3778-09a1" type="rule"/>
-          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4778,6 +4778,13 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="190" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="3613-2555-3bc8-282a" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6c68-590f-338f-3579" name="Kapricus Carrier" hidden="false" collective="false" import="true" type="model">
       <constraints>
