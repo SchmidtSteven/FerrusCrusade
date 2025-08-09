@@ -4643,7 +4643,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <categoryLink targetId="15d1-4f21-eb3a-9e42" id="1cff-4a5e-8d01-8756" primary="false" name="Defender"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Kapricus Defender" hidden="false" id="347c-7838-e83f-c025">
+        <selectionEntry type="model" import="true" name="Kapricus Defender" hidden="false" id="347c-7838-e83f-c025">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured hull" hidden="false" id="dd5b-a3d9-1cb1-775e" collective="false">
               <constraints>
@@ -4791,7 +4791,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="6d34-f8de-0a19-08e0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <profiles>
-        <profile id="e723-062a-4165-796e" name="Kapricus Defenders" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+        <profile id="e723-062a-4165-796e" name="Kapricus Carrier" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
