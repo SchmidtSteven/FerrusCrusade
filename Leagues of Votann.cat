@@ -48,7 +48,7 @@
     <entryLink id="97af-8af2-07e1-5fd9" name="Buri Aegnirssen" hidden="false" collective="false" import="true" targetId="1841-1337-0968-6c68" type="selectionEntry"/>
     <entryLink id="f3c2-d5bd-3ac4-63da" name="Cthonian Earthshakers" hidden="false" collective="false" import="true" targetId="daa1-c6e6-4320-824a" type="selectionEntry"/>
     <entryLink id="1338-db51-4d61-3cd4" name="Ironkin Steeljacks with Heavy Volkanite Disintegrators" hidden="false" collective="false" import="true" targetId="ff06-171a-5613-7869" type="selectionEntry"/>
-    <entryLink id="95f9-72e1-b0f0-6a17" name="Ironkin Steeljacks with Meele Weapons" hidden="false" collective="false" import="true" targetId="d297-4d16-0662-df4e" type="selectionEntry"/>
+    <entryLink id="95f9-72e1-b0f0-6a17" name="Ironkin Steeljacks with Melee Weapons" hidden="false" collective="false" import="true" targetId="d297-4d16-0662-df4e" type="selectionEntry"/>
     <entryLink id="3a3b-a43a-4ccb-a561" name="Kapricus Carrier" hidden="false" collective="false" import="true" targetId="6c68-590f-338f-3579" type="selectionEntry"/>
     <entryLink id="3613-2555-3bc8-282a" name="Kapricus Defenders" hidden="false" collective="false" import="true" targetId="528c-01a9-2821-89e9" type="selectionEntry"/>
     <entryLink id="1356-58a1-f317-f363" name="Arkanyst Evaluator" hidden="false" collective="false" import="true" targetId="1431-0d98-7813-6225" type="selectionEntry"/>
@@ -3995,13 +3995,13 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tansmatter inverter" hidden="false" id="e304-b5f0-cc35-126c" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Transmatter inverter" hidden="false" id="e304-b5f0-cc35-126c" collective="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-8165-0ade-09e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef9-cd14-6e61-0aed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <profiles>
-            <profile name="➤ Tansmatter inverter - half charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f277-84f5-1ea2-7afe">
+            <profile name="➤ Transmatter inverter - half charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f277-84f5-1ea2-7afe">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
@@ -4012,7 +4012,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Tansmatter inverter - full charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea83-802a-26ec-aadb">
+            <profile name="➤ Transmatter inverter - full charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea83-802a-26ec-aadb">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
@@ -4023,7 +4023,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2, Hazardous</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Tansmatter inverter - overcharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="700a-1bd5-cb7e-cbda">
+            <profile name="➤ Transmatter inverter - overcharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="700a-1bd5-cb7e-cbda">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
