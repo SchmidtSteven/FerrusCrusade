@@ -2753,11 +2753,6 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
       <infoLinks>
         <infoLink id="1bfe-f3fc-7477-33b4" name="Prioritised Efficiency" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
         <infoLink id="5fb5-438e-1d19-a335" name="Yield Points" hidden="false" targetId="ac1b-7bc9-3778-09a1" type="rule"/>
-        <infoLink id="b493-f7b7-b73e-2b44" name="Scouts" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="6&quot;"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="4699-8864-05c7-1659" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="1"/>
