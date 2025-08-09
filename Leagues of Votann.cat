@@ -312,6 +312,16 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
                 <repeat field="selections" scope="ba4f-c3f9-6925-af0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4a-9d09-be51-1a5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" value="1" field="60bb-ef6c-5c31-8a16">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="ba4f-c3f9-6925-af0c" childId="498d-9a57-c56f-c5ed" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="c0a7-e561-b704-d2fe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="ba4f-c3f9-6925-af0c" childId="498d-9a57-c56f-c5ed" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60bb-ef6c-5c31-8a16" type="min"/>
@@ -740,6 +750,85 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hearthkyn Warrior w/ knife" hidden="false" id="498d-9a57-c56f-c5ed" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3902-c8da-ebff-f33f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="c524-cb55-04c9-1981" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c51c-a2fe-9445-077c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1d7-d9fb-f8f3-0179" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4f70-e0ac-58fc-6238">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolt pistol" hidden="false" id="22e9-698e-7599-67f3" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea70-3bc9-f7cf-29f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3600-9e70-6ac9-75cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Autoch-pattern bolt pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9e50-4840-11c7-be39">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="8eb7-4987-f7b8-fc45" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Plasma Knife" hidden="false" id="ac34-378f-5251-a5c1" collective="false">
+              <profiles>
+                <profile name="Plasma Knife" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ad0b-6413-20e1-c5a5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eef9-6d13-84ad-dfc9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea6c-2158-c2a3-0892" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
@@ -3005,7 +3094,7 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
                     <profile id="3f35-c2d8-a449-f13b" name="SP conversion beamer" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -5197,10 +5286,16 @@ that Stratagem.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6da3-60ef-f488-dca3" shared="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="b861-20e8-d108-6a80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ff44-b28f-9e8a-3cc9" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6da3-60ef-f488-dca3" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ff44-b28f-9e8a-3cc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -5229,10 +5324,16 @@ that Stratagem.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6da3-60ef-f488-dca3" shared="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="b861-20e8-d108-6a80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ff44-b28f-9e8a-3cc9" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6da3-60ef-f488-dca3" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ff44-b28f-9e8a-3cc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -5286,7 +5387,7 @@ that Stratagem.</characteristic>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="98ec-0940-f5a0-d245" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gravitaion Vault" hidden="false" id="6c7f-b3c9-977d-e23e">
+        <selectionEntry type="upgrade" import="true" name="Graviton Vault" hidden="false" id="6c7f-b3c9-977d-e23e">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -5300,7 +5401,7 @@ that Stratagem.</characteristic>
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Gravitaion Vault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="37c5-c4fb-3997-c1e4">
+            <profile name="Graviton Vault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="37c5-c4fb-3997-c1e4">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">IRON-MASTER model only. In your Shooting phase, after the bearer has shot, and in the Fight phase, after the bearer has fought, select one enemy MONSTER or VEHICLE unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is
 suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
