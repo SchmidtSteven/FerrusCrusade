@@ -1090,8 +1090,18 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
           </constraints>
           <entryLinks>
             <entryLink id="9fc0-572e-c94d-dfda" name="Teleport crest" hidden="false" collective="false" import="true" targetId="0a19-2550-9aad-a268" type="selectionEntry"/>
-            <entryLink id="e5d4-81b0-9513-29fe" name="Weavefield crest" hidden="false" collective="false" import="true" targetId="7133-f7e4-5925-8200" type="selectionEntry"/>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Weavefield Crest" hidden="false" id="5df3-98a8-f5e4-db2a">
+              <profiles>
+                <profile name="Weavefield Crest" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aeab-71f2-af66-9230">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="aab6-e41b-da7f-10ed" name="Melee weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d302-52a9-ef8a-d430">
           <constraints>
@@ -1163,7 +1173,7 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
       <profiles>
         <profile id="1fa8-d8d6-7361-c235" name="Weavefield crest" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearers unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2192,6 +2202,21 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, adding 1 to the result if units from your army have Fortify Takeover: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Beserk" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7b48-5717-37e7-66ae">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Subterranean Explosives" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b1b-5b1b-e5de-f7c2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit [excluding MONSTERS and VEHICLES) hit by one or more of those attacks made with a mole grenade launcher. Until the start of your next Shooting phase, that enemy unit cannot be targeted with the Fire Overwatch Stratagem.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="136b-bb76-21cd-514e" name="Prioritised Efficiency" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
@@ -2219,18 +2244,6 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d2-c17b-0ca0-2fa3" type="min"/>
                 <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7778-f62f-9399-6ace" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="7b48-5717-37e7-66ae" name="Beserk" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="34e2-9d32-58ea-3d85" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0e8e-5168-13f2-1dba">
                   <constraints>
@@ -2331,13 +2344,6 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41f2-2317-c0f3-eb73" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="6b1b-5b1b-e5de-f7c2" name="Subterranean Explosives" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit [excluding MONSTERS and VEHICLES) hit by one or more of those attacks made with a mole grenade launcher. Until the start of your next Shooting phase, that enemy unit cannot be targeted with the Fire Overwatch Stratagem.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntries>
                 <selectionEntry id="8a21-fee6-f357-b914" name="Mole grenade launcher" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2602,18 +2608,6 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c3-d20a-e932-7daf" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="3a41-3906-9674-4060" name="Hernkyn Pioneer w/ HYLas rotary cannon" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntries>
                 <selectionEntry id="318a-7688-fc1a-1db4" name="HYLas rotary cannon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2667,18 +2661,6 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4b3-fade-8587-a119" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="7f56-585f-95ee-802a" name="Hernkyn Pioneer w/ ion beamer" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntries>
                 <selectionEntry id="73e8-fbd7-e965-cd07" name="Ion beamer" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2694,12 +2676,12 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits D3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="feeb-21bf-36dd-f9f3" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+                    <infoLink name="Blast" id="613f-3085-6271-db8b" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -2987,7 +2969,7 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="a40d-50a1-cd02-32c0" name="Breachin Fire" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="a40d-50a1-cd02-32c0" name="Breaching Fire" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next Shooting phase, that enemy unit cannot have the Benefit of Cover.</characteristic>
           </characteristics>
@@ -3403,6 +3385,10 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="b352-5e00-a5f1-0689" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+        <infoLink name="Assault" id="4e2e-40af-77d5-53ac" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hernkyn Yaegirs" hidden="false" id="5b0b-c18d-1470-44bb" collective="false">
       <constraints>
@@ -3975,95 +3961,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <categoryLink id="1a29-6129-b129-f4f2" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink targetId="0cfa-c2c4-9990-1326" id="0a61-39f5-24ee-1bee" primary="false" name="Arkanyst Evaluator"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6abc-11f9-88e4-30ec" name="Melee weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e03d-99af-36d8-3789">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3334-c1a5-50ca-7199" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5910-2f85-8254-ef4a" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="89f1-f471-8596-dcc5" collective="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52b6-22bb-649b-4339" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ab9-83c3-311d-0862" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d189-7b19-7319-8a11">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="2bd9-a81e-4be4-73ef" name="Ranged weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5de2-b9fc-e92c-66cd">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4c9-58ae-c992-313d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdbe-2464-2974-9898" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tansmatter inverter" hidden="false" id="e304-b5f0-cc35-126c" collective="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-8165-0ade-09e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef9-cd14-6e61-0aed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="➤ Tansmatter inverter - half charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f277-84f5-1ea2-7afe">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="➤ Tansmatter inverter - full charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea83-802a-26ec-aadb">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2, Hazardous</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="➤ Tansmatter inverter - overcharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="700a-1bd5-cb7e-cbda">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3, Hazardous, Overcharge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Rapid Fire" id="1e41-6440-9ea6-363b" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-                <infoLink name="Overcharge" id="0e91-e9e5-a72e-293d" hidden="false" targetId="b909-9f3f-21d8-175e" type="rule"/>
-                <infoLink name="Hazardous" id="3697-cd83-a6f3-148e" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e589-4181-2733-52aa" name="Warlord" hidden="false" collective="false" import="true" targetId="92b3-11ff-2a27-cd0c" type="selectionEntry"/>
         <entryLink id="0281-99fe-9c34-b953" name="Enhancements" hidden="false" collective="false" import="true" targetId="06ba-6740-bf71-0eea" type="selectionEntryGroup"/>
@@ -4075,6 +3972,79 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="89f1-f471-8596-dcc5" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52b6-22bb-649b-4339" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ab9-83c3-311d-0862" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d189-7b19-7319-8a11">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tansmatter inverter" hidden="false" id="e304-b5f0-cc35-126c" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-8165-0ade-09e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ef9-cd14-6e61-0aed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Tansmatter inverter - half charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f277-84f5-1ea2-7afe">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Tansmatter inverter - full charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea83-802a-26ec-aadb">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2, Hazardous</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Tansmatter inverter - overcharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="700a-1bd5-cb7e-cbda">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3, Hazardous, Overcharge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="1e41-6440-9ea6-363b" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
+            <infoLink name="Overcharge" id="0e91-e9e5-a72e-293d" hidden="false" targetId="b909-9f3f-21d8-175e" type="rule"/>
+            <infoLink name="Hazardous" id="3697-cd83-a6f3-148e" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="daa1-c6e6-4320-824a" name="Cthonian Earthshakers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4123,8 +4093,8 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cthonian Earthshakers" hidden="false" id="b169-9390-5e52-b174">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="de97-3070-2a02-703a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="38c4-4f5f-eb21-566a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de97-3070-2a02-703a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c4-4f5f-eb21-566a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Plasma Picks" hidden="false" id="10ee-f3ae-bab1-8d4e">
@@ -4171,25 +4141,11 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Wargear Option" hidden="false" id="042c-d36b-1d11-c005" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69bb-d314-28c1-be2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef84-c955-b02e-5323" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Blast" id="7c5b-2a26-9afe-52b9" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
-                <infoLink name="Indirect Fire" id="69ec-9131-77ff-c99a" hidden="false" targetId="4ddd-4e29-acdd-5e6d" type="rule"/>
-                <infoLink name="Heavy" id="5249-f435-fb9b-f326" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear Option" id="f1a1-4123-32e1-87a6" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Breacher ordnance" hidden="false" id="bd54-ac14-9272-c8c4" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="becc-ad72-e4da-14c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c232-cf29-7428-3835" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Breacher ordnance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b340-9b9d-b73a-81a9">
                       <characteristics>
@@ -4199,19 +4155,20 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast,Heavy,Indirect Fire</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Blast" id="30fc-62e7-6c01-ad5d" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+                    <infoLink name="Heavy" id="4177-7d76-e8e1-35d9" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
+                    <infoLink name="Indirect Fire" id="79a0-1dc9-9ea9-35b2" hidden="false" targetId="4ddd-4e29-acdd-5e6d" type="rule"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Tremor shells" hidden="false" id="f60a-6b27-4889-f267" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ccc-bd80-f1dc-b944" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="594d-d992-1117-03f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Tremor shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="58e2-623c-9ae3-b5d9">
                       <characteristics>
@@ -4221,17 +4178,26 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast,Heavy,Indirect Fire</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Blast" id="7c5b-2a26-9afe-52b9" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
+                    <infoLink name="Heavy" id="5249-f435-fb9b-f326" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
+                    <infoLink name="Indirect Fire" id="69ec-9131-77ff-c99a" hidden="false" targetId="4ddd-4e29-acdd-5e6d" type="rule"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69bb-d314-28c1-be2d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef84-c955-b02e-5323" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -4257,6 +4223,16 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in the bearer&apos;s unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [PRECISION] ability</characteristic>
           </characteristics>
         </profile>
+        <profile name="Ironkin Steeljacks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e118-bc12-ef86-21ba">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="59c3-dd66-80ee-17ca" name="Prioritised Efficiency" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
@@ -4274,18 +4250,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26d8-2021-d61b-a367" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3163-90b6-9a8c-c86d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <profiles>
-            <profile id="5ed7-d206-308e-ed62" name="Steeljack Theyn" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="da0d-bad6-b56c-1c04" hidden="false">
               <selectionEntries>
@@ -4374,18 +4338,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
           </constraints>
           <selectionEntries>
             <selectionEntry id="9f60-e474-dd5c-e96f" name="Ironkin Steeljacks" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="e118-bc12-ef86-21ba" name="Ironkin Steeljacks" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="786b-c70a-693d-3762" name="Ranged weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="58c5-35f8-3823-bf60">
                   <constraints>
@@ -4486,6 +4438,16 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in the bearer&apos;s unit makes an attack that targets an enemy unit within range of one or more objective markers, on a Critical Wound, that attack has the [PRECISION] ability</characteristic>
           </characteristics>
         </profile>
+        <profile name="Ironkin Steeljacks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="758f-65ba-cfa8-ad38">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="6ea5-217c-920f-6698" name="Prioritised Efficiency" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
@@ -4503,18 +4465,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b8-aabe-4b02-854b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59a9-b440-9083-fc48" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="4d91-26bf-6de4-ee7e" name="Steeljack Theyn" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee weapon" id="8a5a-5de6-8920-2ef4" hidden="false" collective="false" import="true" defaultSelectionEntryId="62a4-5af9-8d4d-9d0d">
               <constraints>
@@ -4618,18 +4568,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
           </constraints>
           <selectionEntries>
             <selectionEntry id="7966-335a-0269-db75" name="Ironkin Steeljacks" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="758f-65ba-cfa8-ad38" name="Ironkin Steeljacks" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee weapon" id="24b7-7303-9ff3-30b7" hidden="false" collective="false" import="true" defaultSelectionEntryId="62a4-5af9-8d4d-9d0d">
                   <constraints>
@@ -4802,28 +4740,6 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Smoke Launcher" hidden="false" id="5597-6105-1bd1-16a1" collective="false">
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f75a-dbce-805c-3713" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4262-3087-38e0-8e96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Twin magna-coil autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2695-3a99-3868-c02f">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Twin magna-coil autocannon" hidden="false" id="acb8-3aba-d8e6-ea9f" collective="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310b-5675-809b-e92d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -4848,6 +4764,22 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
               <infoLinks>
                 <infoLink name="Twin-linked" id="229b-484f-a660-c405" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Smoke Launcher" hidden="false" id="d2ae-11ee-482c-dfb9" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="768e-118c-76e8-60c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da00-9ee9-9e4b-50f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Smoke Launcher" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e51f-b937-cc2e-0c68">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the SMOKE keyword.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -4888,7 +4820,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Heavy</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
