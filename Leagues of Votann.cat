@@ -4600,7 +4600,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="528c-01a9-2821-89e9" name="Kapricus Defenders" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="528c-01a9-2821-89e9" name="Kapricus Defenders" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e5be-48de-0f44-ba44" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
