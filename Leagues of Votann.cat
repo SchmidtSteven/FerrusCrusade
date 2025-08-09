@@ -4091,7 +4091,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Up to twice per battle, in your Shooting phase, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, each time a model in this unit makes an attack with its breacher ordnance, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cthonian Earthshaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="815b-e0dc-7fcc-5020">
+        <profile name="Cthonian Earthshakers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="815b-e0dc-7fcc-5020">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">4</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
@@ -4121,7 +4121,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Cthonian Earthshaker" hidden="false" id="b169-9390-5e52-b174">
+        <selectionEntry type="model" import="true" name="Cthonian Earthshakers" hidden="false" id="b169-9390-5e52-b174">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="de97-3070-2a02-703a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="38c4-4f5f-eb21-566a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -4186,6 +4186,10 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
               </costs>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Breacher ordnance" hidden="false" id="bd54-ac14-9272-c8c4" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="becc-ad72-e4da-14c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c232-cf29-7428-3835" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                   <profiles>
                     <profile name="Breacher ordnance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b340-9b9d-b73a-81a9">
                       <characteristics>
@@ -4204,6 +4208,10 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Tremor shells" hidden="false" id="f60a-6b27-4889-f267" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ccc-bd80-f1dc-b944" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="594d-d992-1117-03f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                   <profiles>
                     <profile name="Tremor shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="58e2-623c-9ae3-b5d9">
                       <characteristics>
