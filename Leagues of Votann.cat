@@ -260,8 +260,7 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
       <profiles>
         <profile id="183b-a8a1-b9eb-2dd5" name="Luck Has, Need Keeps, Toil Earns" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under
-your control until your opponent&apos;s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent&apos;s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
           </characteristics>
         </profile>
         <profile id="15e9-df12-30b7-42cb" name="Hearthkyn Warriors" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -447,13 +446,12 @@ your control until your opponent&apos;s Level of Control over that objective ma
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8c4f-8d9a-86f6-c394" name="Theyn&apos;s meele weapon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8c4f-8d9a-86f6-c394" name="Theyn&apos;s melee weapon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e8-5ca9-6aab-3f10" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce81-be01-84f3-7412" type="min"/>
               </constraints>
               <profiles>
-                <profile id="4dfd-1803-12bf-20f0" name="Theyn&apos;s meele weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                <profile id="4dfd-1803-12bf-20f0" name="Theyn&apos;s melee weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -478,35 +476,6 @@ your control until your opponent&apos;s Level of Control over that objective ma
               </constraints>
               <selectionEntries>
                 <selectionEntry id="77d1-ad07-5fa7-0006" name="Autoch-pattern bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="d269-614d-b419-fdb3-min" value="1">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="ba4f-c3f9-6925-af0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af62-d6f6-eee1-bde5" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="d269-614d-b419-fdb3-max" value="1">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="ba4f-c3f9-6925-af0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af62-d6f6-eee1-bde5" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="ba4f-c3f9-6925-af0c" childId="af62-d6f6-eee1-bde5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d269-614d-b419-fdb3-min" type="min" automatic="true"/>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d269-614d-b419-fdb3-max" type="max" automatic="true"/>
-                  </constraints>
                   <profiles>
                     <profile id="d23e-d5ed-7719-e55b" name="Autoch-pattern bolter" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                       <characteristics>
@@ -525,35 +494,6 @@ your control until your opponent&apos;s Level of Control over that objective ma
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6fc8-4163-7dbd-06cb" name="Ion blaster" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="75c7-3079-5f13-1ed0-min" value="1">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="ba4f-c3f9-6925-af0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7827-334a-d85e-5227" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="75c7-3079-5f13-1ed0-max" value="1">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="ba4f-c3f9-6925-af0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7827-334a-d85e-5227" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="ba4f-c3f9-6925-af0c" childId="7827-334a-d85e-5227" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c7-3079-5f13-1ed0-min" type="min" automatic="true"/>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c7-3079-5f13-1ed0-max" type="max" automatic="true"/>
-                  </constraints>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
@@ -571,64 +511,14 @@ your control until your opponent&apos;s Level of Control over that objective ma
                     </profile>
                   </profiles>
                 </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="03cc-c0fe-a490-be84" name="Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="0e83-c23f-a775-62a3">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="224a-b0df-2358-66f8" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2407-75f3-ed5c-8778" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0e83-c23f-a775-62a3" name="Autoch-pattern bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry type="upgrade" import="true" name="Theyn&apos;s pistol" hidden="false" id="bb3a-91fb-e18b-8973">
                   <profiles>
-                    <profile id="c9fa-75b9-1653-c0c3" name="Autoch-pattern bolt pistol" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                    <profile name="Theyn&apos;s pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e45e-1da1-114d-d3e6">
                       <characteristics>
                         <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="8634-1170-3cdb-e428" name="Pistol" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="58eb-b5c9-b091-ecfc" name="Etacarn plasma pistol" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="da4a-736e-1715-b2a6" name="Etacarn plasma pistol" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="5775-1fbd-512b-6b95" name="Pistol" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Ion pistol" hidden="false" id="bb3a-91fb-e18b-8973">
-                  <profiles>
-                    <profile name="Ion pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e45e-1da1-114d-d3e6">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
@@ -636,7 +526,7 @@ your control until your opponent&apos;s Level of Control over that objective ma
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="c8eb-3ccd-5600-f189" name="Pistol" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+                    <infoLink name="Pistol" id="c8eb-3ccd-5600-f189" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
