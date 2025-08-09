@@ -227,7 +227,6 @@
       <infoLinks>
         <infoLink name="Leader" hidden="false" type="rule" id="4740-2ab7-4c53-4e37" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="36b8-36f5-d613-ca9e" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Fights First" hidden="false" type="rule" id="4f48-4dcb-6d3e-72e9" targetId="24-c886-e8ba-5a89"/>
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="40ed-1437-38dd-6487" targetId="df6-e949-835b-ad0d"/>
       </infoLinks>
       <entryLinks>
@@ -3651,6 +3650,7 @@
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="651e-589f-b87f-1ffa" type="selectionEntryGroup" targetId="1f2e-4c6b-19f2-30e0" sortIndex="1"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="5573-9c4e-73c4-d4a2" type="selectionEntryGroup" targetId="c440-b056-f09a-c88a"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="72a7-f6c1-863c-d3e6" type="selectionEntry" targetId="beae-4593-3686-1672"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
