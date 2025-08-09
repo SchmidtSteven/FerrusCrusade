@@ -4602,41 +4602,8 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
     </selectionEntry>
     <selectionEntry id="528c-01a9-2821-89e9" name="Kapricus Defenders" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd59-c761-2c5a-1ecd" type="min"/>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aebe-5d52-d2ca-df90" type="max"/>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e5be-48de-0f44-ba44" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
-      <profiles>
-        <profile id="fdcc-c08e-78dd-c182" name="Kapricus Defenders" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ea3a-4580-f406-ef8c" name="Opportunistic Manoeuvre" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="f7b5-2d70-484a-a887" name="Prioritised Efficiency" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
-        <infoLink id="3ae2-994b-aa8f-6532" name="Yield Points" hidden="false" targetId="ac1b-7bc9-3778-09a1" type="rule"/>
-        <infoLink id="400b-5f7d-ca88-7bb1" name="Scouts" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="9&quot;"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="bf84-b27e-d06e-250c" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="1"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="9c6d-5500-40d3-8ad0" name="Faction: Leagues of Votann" hidden="false" targetId="8474-765-16a9-f00d" primary="false"/>
         <categoryLink id="efdd-2ba8-57c5-b6db" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
@@ -4645,126 +4612,165 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <categoryLink targetId="15d1-4f21-eb3a-9e42" id="1cff-4a5e-8d01-8756" primary="false" name="Defender"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="dd5b-a3d9-1cb1-775e" name="Armoured hull" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8520-3357-282b-0c0c" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b6-8b56-8c9c-1d0f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="29ba-1638-8825-514a" name="Armoured hull" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="acb8-3aba-d8e6-ea9f" name="Twin magna-coil autocannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310b-5675-809b-e92d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb32-3e9b-8cd2-f6d9" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="807a-9e60-b224-aeec" name="Twin magna-coil autocannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5597-6105-1bd1-16a1" name="Smoke Launcher" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f75a-dbce-805c-3713" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4262-3087-38e0-8e96" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2695-3a99-3868-c02f" name="Twin magna-coil autocannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="100d-a369-e379-3597" name="Wargear Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="091e-06fa-a39a-1d8f">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc7a-ce83-e67d-545d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1790-1cc4-fd22-968f" type="max"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Kapricus Defender" hidden="false" id="347c-7838-e83f-c025">
           <selectionEntries>
-            <selectionEntry id="b974-995d-a69b-7f57" name="HYLas rotary cannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Armoured hull" hidden="false" id="dd5b-a3d9-1cb1-775e" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8520-3357-282b-0c0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37b6-8b56-8c9c-1d0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <profiles>
-                <profile id="19ac-7f37-b7dc-0626" name="HYLas rotary cannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                <profile name="Armoured hull" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="29ba-1638-8825-514a">
                   <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Sustained Hits" id="ec2a-1380-4772-45c2" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
-              </infoLinks>
             </selectionEntry>
-            <selectionEntry id="2388-628c-5481-bbea" name="Magna-rail cannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry type="upgrade" import="true" name="Smoke Launcher" hidden="false" id="5597-6105-1bd1-16a1" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f75a-dbce-805c-3713" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4262-3087-38e0-8e96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <profiles>
-                <profile name="Magna-rail cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2657-bea9-8c1a-34ca">
+                <profile name="Twin magna-coil autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2695-3a99-3868-c02f">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                     <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="97d5-230b-ef87-ad5f" name="Devastating Wounds" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
-                <infoLink name="Heavy" id="aa93-eac1-6776-7daf" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
-              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin magna-coil autocannon" hidden="false" id="acb8-3aba-d8e6-ea9f" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310b-5675-809b-e92d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb32-3e9b-8cd2-f6d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Twin magna-coil autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="807a-9e60-b224-aeec">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear Options" id="100d-a369-e379-3597" hidden="false" collective="false" import="true" defaultSelectionEntryId="091e-06fa-a39a-1d8f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc7a-ce83-e67d-545d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1790-1cc4-fd22-968f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="HYLas rotary cannon" hidden="false" id="b974-995d-a69b-7f57" collective="false">
+                  <profiles>
+                    <profile name="HYLas rotary cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="19ac-7f37-b7dc-0626">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="ec2a-1380-4772-45c2" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Magna-rail cannon" hidden="false" id="2388-628c-5481-bbea" collective="false">
+                  <profiles>
+                    <profile name="Magna-rail cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2657-bea9-8c1a-34ca">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3+3</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="97d5-230b-ef87-ad5f" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
+                    <infoLink name="Heavy" id="aa93-eac1-6776-7daf" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd59-c761-2c5a-1ecd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aebe-5d52-d2ca-df90" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Kapricus Defenders" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fdcc-c08e-78dd-c182">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Opportunistic Manoeuvre" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea3a-4580-f406-ef8c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deadly Demise" id="bf84-b27e-d06e-250c" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+              <modifiers>
+                <modifier type="append" value="1" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Prioritised Efficiency" id="f7b5-2d70-484a-a887" hidden="false" targetId="351a-a702-9080-7f08" type="rule"/>
+            <infoLink name="Scouts" id="400b-5f7d-ca88-7bb1" hidden="false" targetId="ada6-bac1-ffe0-d6f7" type="rule">
+              <modifiers>
+                <modifier type="append" value="9&quot;" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Yield Points" id="3ae2-994b-aa8f-6532" hidden="false" targetId="ac1b-7bc9-3778-09a1" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
