@@ -3059,13 +3059,12 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-MONSTER 3+, Anti-VEHICLE 3+, Blast</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-MONSTER 3+, Anti-VEHICLE 3+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
                     <infoLink id="0b9f-c578-b7b2-85d8" name="Anti-" hidden="false" targetId="4111-82e3-9444-e942" type="rule"/>
-                    <infoLink id="476e-4034-43a0-f769" name="Blast" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -3084,7 +3083,7 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Conversion, Lethal</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Conversion, Lethal Hits</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4509,7 +4508,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                         <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4612,7 +4611,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
