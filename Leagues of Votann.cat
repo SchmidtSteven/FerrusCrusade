@@ -729,24 +729,6 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1a08-7e1b-06b3-0963" name="Plasma Knife" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="1e8e-c2a2-ee10-5824" name="Plasma Knife" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3035,7 +3017,7 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 2</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -3735,7 +3717,7 @@ result, but it must end that move as close as possible to the closest enemy unit
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c65-dd31-29f9-0f22" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a4bb-bae7-c69c-dbb3" name="Bane - strike" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile id="a4bb-bae7-c69c-dbb3" name="➤ Bane - strike" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
@@ -3746,7 +3728,7 @@ result, but it must end that move as close as possible to the closest enemy unit
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
               </characteristics>
             </profile>
-            <profile id="7122-72ff-cfdd-6c3d" name="Bane - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile id="7122-72ff-cfdd-6c3d" name="➤ Bane - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
