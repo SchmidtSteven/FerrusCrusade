@@ -249,6 +249,7 @@ Quality
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Knight Defender" hidden="false" id="d614-e909-9c8e-8e6e" targetId="5961-5313-db56-dd58" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Canis Rex" id="55fb-9c91-1a4f-3037">
@@ -492,9 +493,8 @@ Quality
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Armiger Warglaive" id="5bbd-c5d3-58d7-e391">
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="e395-3277-43cf-64b6" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="e395-3277-43cf-64b6" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="7d4a-82d6-7ceb-784c" primary="false" name="Walker"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="8971-15a6-ebf0-1f57" primary="true" name="Battleline"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="9790-8b6d-ab36-1c21" primary="false" name="Imperium"/>
         <categoryLink targetId="b5e4-3253-c157-54fd" id="45fe-cae9-c763-7d92" primary="false" name="Faction: Imperial Knights"/>
         <categoryLink targetId="72cd-6281-73a-e0fc" id="ea09-3a59-cdb1-e928" primary="false" name="Warglaive"/>
@@ -708,9 +708,8 @@ Quality
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Armiger Helverin" id="7314-3c4a-36ab-a594">
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="8e5-50e1-634a-4aa7" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="8e5-50e1-634a-4aa7" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="b014-7796-fde5-59fc" primary="false" name="Walker"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="49ac-23b-89e7-a7bf" primary="true" name="Battleline"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="7caf-7ee7-4e4-cbb3" primary="false" name="Imperium"/>
         <categoryLink targetId="b5e4-3253-c157-54fd" id="c08c-61c7-25d6-2d7c" primary="false" name="Faction: Imperial Knights"/>
         <categoryLink targetId="df5-4bc-4d9b-dfa5" id="850f-5594-24aa-2621" primary="false" name="Helverin"/>
@@ -5010,8 +5009,7 @@ Quality
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1ee9-2726-fc53-d237" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="9918-6145-6e8d-75b3" primary="true" name="Battleline"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="cfec-9b33-fca7-7d2d" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="cfec-9b33-fca7-7d2d" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="f5bb-3575-eeed-b6ae" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="96c8-dc2d-8199-7d88" primary="false" name="Imperium"/>
         <categoryLink targetId="b5e4-3253-c157-54fd" id="1f22-f0d3-e9e9-25bb" primary="false" name="Faction: Imperial Knights"/>
