@@ -5009,12 +5009,13 @@ Quality
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1ee9-2726-fc53-d237" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="cfec-9b33-fca7-7d2d" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="cfec-9b33-fca7-7d2d" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="f5bb-3575-eeed-b6ae" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="96c8-dc2d-8199-7d88" primary="false" name="Imperium"/>
         <categoryLink targetId="b5e4-3253-c157-54fd" id="1f22-f0d3-e9e9-25bb" primary="false" name="Faction: Imperial Knights"/>
         <categoryLink targetId="4c40-ab9-54af-d290" id="7099-32a7-4a75-ccc4" primary="false" name="Armiger"/>
         <categoryLink targetId="f9af-3a72-6e97-1a32" id="687b-25d0-1fc9-830c" primary="false" name="Moirax"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="a890-a0a0-8ff1-e767" primary="true" name="Battleline"/>
       </categoryLinks>
       <profiles>
         <profile name="Armiger Moirax" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3bc2-f11c-17f4-befe">
