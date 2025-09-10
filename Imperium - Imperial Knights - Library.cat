@@ -5416,7 +5416,7 @@ Quality
         </profile>
         <profile name="Invulnerable Save (4+*)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b4ea-c927-a32d-e423">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save against ranged attacks.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save against ranged attacks. It cannot be used vs melee attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6710,7 +6710,7 @@ ARMIGER models from your army gain the BATTLELINE keyword.</description>
   <sharedProfiles>
     <profile name="Invulnerable Save (5+*)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="8552-862d-6a49-4879">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save against ranged attacks. It cannot be used vs melee attacks.</characteristic>
       </characteristics>
       <comment>5+</comment>
     </profile>
