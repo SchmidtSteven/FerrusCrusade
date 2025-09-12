@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="119" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="149" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -7583,7 +7583,7 @@ Strategic Reserves.</characteristic>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="160" field="51b2-306e-1021-d207">
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="7044-bf1-f949-c32d" childId="fa1c-b448-12fa-e1d6" shared="true" id="392e-6b9-8a3c-cc35"/>
           </conditions>
@@ -9367,7 +9367,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="220" field="51b2-306e-1021-d207">
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="129d-2da5-66f3-f4ec" childId="72d4-ff18-9328-2bce" shared="true" id="c997-19f1-338e-a1ad"/>
           </conditions>
@@ -12319,7 +12319,12 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Redemptor Dreadnought" hidden="false" id="1d94-b3c8-9205-827e">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="195"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="43e3-e8fd-14a9-69a1" primary="true" name="Vehicle"/>
@@ -12663,7 +12668,7 @@ by 1.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c14c-f21e-5ae3-4ae1" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -20605,7 +20610,12 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Gladiator Valiant" hidden="false" id="6b89-8147-9b6b-6db1">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="4b9e-ec28-b77b-7518" primary="true" name="Vehicle"/>
@@ -21045,7 +21055,12 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="4da8-4e44-613b-ad50" targetId="3b76-4053-ece9-6e7d"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -21394,7 +21409,12 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Raider Redeemer" hidden="false" id="d361-a36e-1448-264d">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="285"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="270"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="f268-7c87-16a1-dad8" primary="true" name="Vehicle"/>
@@ -36524,7 +36544,7 @@ per turn.</characteristic>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="160" field="51b2-306e-1021-d207">
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="cdd9-efda-95-e7b2" childId="39ae-d203-80cc-60d4" shared="true" id="e634-3709-1823-c93" includeChildSelections="true"/>
           </conditions>

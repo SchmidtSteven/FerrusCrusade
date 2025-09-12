@@ -6070,7 +6070,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6198,7 +6198,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6226,7 +6226,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6282,7 +6282,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6330,7 +6330,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6358,7 +6358,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6386,7 +6386,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6414,7 +6414,7 @@ Quality
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6611,7 +6611,7 @@ No ADEPTUS MECHANICUS models from your army can be your WARLORD.</description>
         <selectionEntry type="upgrade" import="true" name="Valourstrike Lance" hidden="false" id="dc3c-f879-c59e-6647">
           <rules>
             <rule name="Bold Gallantry" id="14cf-3550-f0c0-fea3" hidden="false">
-              <description>Each time an IMPERIAL KNIGHTS unit from your army Advances, you can re-roll the Advance roll, and each time an IMPERIAL KNIGHTS unit from your army Advances, until the end of the turn, ranged weapons equipped by IMPERIAL KNIGHTS models from your army have the [ASSAULT] ability.</description>
+              <description>Each time an IMPERIAL KNIGHTS unit from your army Advances, until the end of the turn, ranged weapons equipped by IMPERIAL KNIGHTS models from your army have the [ASSAULT] ability.</description>
             </rule>
           </rules>
         </selectionEntry>
