@@ -27,6 +27,7 @@
     <categoryEntry id="63b4-7e76-fc18-cc0c" name="Kapricus Carrier" hidden="false"/>
     <categoryEntry id="e9f6-7bec-e0b5-9eeb" name="Kapricus Defenders" hidden="false"/>
     <categoryEntry id="ff44-b28f-9e8a-3cc9" name="Memnyr Strategist" hidden="false"/>
+    <categoryEntry name="Kapricus" id="9cf1-24f6-887e-bc32" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="0ec6-9ba0-eef0-b5b9" name="Detachment Choice" hidden="false" collective="false" import="true" targetId="5914-3326-fac9-bf29" type="selectionEntry"/>
@@ -4018,12 +4019,16 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
           </profiles>
           <infoLinks>
             <infoLink name="Rapid Fire" id="1e41-6440-9ea6-363b" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
-            <infoLink name="Overcharge" id="0e91-e9e5-a72e-293d" hidden="false" targetId="b909-9f3f-21d8-175e" type="rule"/>
             <infoLink name="Hazardous" id="3697-cd83-a6f3-148e" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <rules>
+            <rule name="Overcharge" id="bf12-3dcc-4a15-d5d9" hidden="false">
+              <description>Each time the bearer takes a Hazardous test for this weapon, subtract 2 from the result.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -4693,8 +4698,8 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <categoryLink id="9c6d-5500-40d3-8ad0" name="Faction: Leagues of Votann" hidden="false" targetId="8474-765-16a9-f00d" primary="false"/>
         <categoryLink id="efdd-2ba8-57c5-b6db" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="0586-c278-d488-df65" primary="false" name="Fly"/>
-        <categoryLink targetId="f68a-48a6-9702-c05e" id="5520-8433-cf93-b1d2" primary="false" name="Kapricus"/>
-        <categoryLink targetId="15d1-4f21-eb3a-9e42" id="1cff-4a5e-8d01-8756" primary="false" name="Defender"/>
+        <categoryLink targetId="e9f6-7bec-e0b5-9eeb" id="3f4b-619d-8d67-11a5" primary="false" name="Kapricus Defenders"/>
+        <categoryLink targetId="9cf1-24f6-887e-bc32" id="20ac-91b0-b5d7-3a3d" primary="false" name="Kapricus"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kapricus Defender" hidden="false" id="347c-7838-e83f-c025">
@@ -4891,8 +4896,8 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
         <categoryLink id="bdd6-3516-71a5-15e1" name="Transport" hidden="false" targetId="75e8-57c4-40e3-1817" primary="false"/>
         <categoryLink id="c837-ba3f-ed64-a30a" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="true"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="bae6-c09d-0ec2-ac00" primary="false" name="Fly"/>
-        <categoryLink targetId="c458-538e-82ae-0bcd" id="325c-8d78-61a1-3a76" primary="false" name="Carrier"/>
-        <categoryLink targetId="b98f-1aa3-96dd-e073" id="b956-d5da-500d-f582" primary="false" name="Hernkyn"/>
+        <categoryLink targetId="63b4-7e76-fc18-cc0c" id="9f8e-7591-99d5-299a" primary="false" name="Kapricus Carrier"/>
+        <categoryLink targetId="9cf1-24f6-887e-bc32" id="ede8-2c8d-ed38-e1a3" primary="false" name="Kapricus"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="be22-9acf-1baf-4a5d" name="Armoured hull" hidden="false" collective="false" import="true" type="upgrade">
