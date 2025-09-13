@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="43" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4ef9-15ce-e3e6-36de" name="Imperium - Adeptus Astartes - Blood Angels" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="65" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="abd0-8ebd-6fbd-2d94" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="9c08-8ffc-d746-7384" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -94,12 +94,20 @@
         </modifier>
       </modifiers>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b2a5-774d-bc84-39e2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="3224-c427-61bb-7de8" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Baal Predator" hidden="false" id="640-9969-d5b9-875c">
       <categoryLinks>
@@ -111,11 +119,12 @@
         <categoryLink targetId="62ac-ef42-27b4-ae7" id="306d-bc56-434a-ae0a" primary="false" name="Faction: Blood Angels"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8ebc-45bb-9bb4-1b2b"/>
@@ -310,55 +319,6 @@
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="6" field="71c3-52e4-9303-395b">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
@@ -373,6 +333,51 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
@@ -476,10 +481,17 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4d19-d380-2bab-d656" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4d19-d380-2bab-d656" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f47f-9e0f-1e95-c74a" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="9720-129b-ea83-be57" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Captain Tycho [Legends]" hidden="false" id="ae0a-e23c-2184-7c65">
       <categoryLinks>
@@ -512,7 +524,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4528-8260-7345-c022" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4528-8260-7345-c022" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -620,6 +632,13 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="36c9-6d37-9ac5-90ab" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="86fb-9b0d-52e2-5e12" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tycho the Lost [Legends]" hidden="false" id="8577-8a5d-75f6-a630">
       <constraints>
@@ -638,7 +657,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b71-86a2-c4f9-d916" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="3b71-86a2-c4f9-d916" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -707,14 +726,22 @@
         <categoryLink targetId="6e7-40c-58d9-e402" id="3027-f9d4-1b79-275a" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="62ac-ef42-27b4-ae7" id="248c-290a-adfd-5577" primary="false" name="Faction: Blood Angels"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="d46d-ae47-02b9-cbf2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="bb3e-b4d5-48ba-09e1" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chief Librarian Mephiston" hidden="false" id="ab35-2c36-9389-d1d5">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="3237-1a66-35d0-d554" primary="true" name="Epic Hero"/>
@@ -872,6 +899,13 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="27f7-9d4c-d894-cc79" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="ece1-c32e-66ab-aad2" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="fae3-45b2-a012-dbd5" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander Dante" hidden="false" id="7323-ebf-9afe-7e7a">
       <constraints>
@@ -978,11 +1012,12 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -994,6 +1029,13 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="75b-952d-efa4-257c" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="75cd-f8db-eb22-5f66" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="1493-829b-a07f-c2a3" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Death Company Dreadnought with Magna-Grapple [Legends]" hidden="false" id="e7ee-e70-bd87-7c5c">
       <categoryLinks>
@@ -1058,7 +1100,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="260c-36e2-be4d-b0f2" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="260c-36e2-be4d-b0f2" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1181,7 +1223,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b38d-1560-a315-dd2e"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="940e-d105-2045-47b9" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="940e-d105-2045-47b9" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35b0-f945-cd5a-93e9"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a83f-518b-9929-4b85"/>
@@ -1212,7 +1254,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4008-3ee1-3d80-89be"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="a64c-9a97-52fb-a967" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a64c-9a97-52fb-a967" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bf7-88de-ca27-7428"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c3-32a6-a0c1-1cc5"/>
@@ -1313,7 +1355,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff28-199d-9823-4142"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="f02a-e90-a66f-3ee0" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="f02a-e90-a66f-3ee0" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b18a-abf4-21f0-fda"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd47-8510-20e4-1af"/>
@@ -1344,7 +1386,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3669-ed5e-3203-4447"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="5acd-bc3e-b0c8-d17d" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="5acd-bc3e-b0c8-d17d" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a3-9f2e-74-5712"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91c9-d9-b910-bbac"/>
@@ -1493,7 +1535,7 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8036-6d6f-ccb8-7729"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="662c-6ce5-a225-74ce" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="662c-6ce5-a225-74ce" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4264-fe9d-7f8-c36"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb71-3acf-efb3-880d"/>
@@ -1570,7 +1612,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="27be-7f03-3845-1927" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="27be-7f03-3845-1927" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1583,11 +1625,12 @@ If a Character unit from your army with the Leader ability can be attached to a
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Company Marines with Jump Packs" hidden="false" id="65f6-18df-f6df-7e39">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="933a-a48d-3fb6-7c1a" primary="true" name="Infantry"/>
@@ -1651,8 +1694,15 @@ If a Character unit from your army with the Leader ability can be attached to a
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="190e-00d1-b6af-68bf" includeChildSelections="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="190e-00d1-b6af-68bf" includeChildSelections="false" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="190e-00d1-b6af-68bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="b23e-8c93-e120-a322" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Death Company Marine w/ alternate weapons" hidden="false" id="b23e-8c93-e120-a322">
               <selectionEntryGroups>
@@ -1660,54 +1710,176 @@ If a Character unit from your army with the Leader ability can be attached to a
                   <entryLinks>
                     <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="807b-c7cb-b04b-4194" type="selectionEntry" targetId="3b8f-1cb7-3c6e-4455"/>
                     <entryLink import="true" name="Plasma Pistol" hidden="false" id="38be-33ce-c35a-b96c" type="selectionEntry" targetId="25c2-104f-fa0c-809e">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="1c49-ce71-a3ea-cd31" includeChildSelections="true"/>
+                      </constraints>
                       <modifiers>
-                        <modifier type="decrement" value="1" field="fe38-bdb5-bd5c-1e53">
-                          <repeats>
-                            <repeat value="1" repeats="1" field="selections" scope="65f6-18df-f6df-7e39" childId="9dc6-6ad8-818e-db2e" shared="true" roundUp="false" includeChildSelections="true"/>
-                            <repeat value="1" repeats="1" field="selections" scope="65f6-18df-f6df-7e39" childId="d8bf-e17f-d6fa-b7e8" shared="true" roundUp="false" includeChildSelections="true"/>
-                          </repeats>
-                        </modifier>
-                        <modifier type="increment" value="2" field="fe38-bdb5-bd5c-1e53">
+                        <modifier type="increment" value="2" field="1c49-ce71-a3ea-cd31">
                           <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
+                        <modifier type="decrement" value="1" field="1c49-ce71-a3ea-cd31">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="9dc6-6ad8-818e-db2e" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="d8bf-e17f-d6fa-b7e8" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
                       </modifiers>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="65f6-18df-f6df-7e39" shared="true" id="fe38-bdb5-bd5c-1e53" includeChildSelections="true" includeChildForces="true"/>
-                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Hand Flamer" hidden="false" id="2f6f-1dd8-9d13-e471" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="65f6-18df-f6df-7e39" shared="true" id="0d45-3676-5e1b-1b43" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="0d45-3676-5e1b-1b43" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="0d45-3676-5e1b-1b43">
                           <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                         <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
                           <repeats>
-                            <repeat value="1" repeats="1" field="selections" scope="65f6-18df-f6df-7e39" childId="d8bf-e17f-d6fa-b7e8" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="d8bf-e17f-d6fa-b7e8" shared="true" roundUp="false" includeChildSelections="true"/>
                           </repeats>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="9dc6-6ad8-818e-db2e" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="0d45-3676-5e1b-1b43">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="9dc6-6ad8-818e-db2e" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Inferno Pistol" hidden="false" id="c219-5e50-5d8d-4930" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="65f6-18df-f6df-7e39" shared="true" id="1851-0d8a-d7e6-dc69" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2247-18a3-4f5c-c6f0" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="1851-0d8a-d7e6-dc69">
+                        <modifier type="increment" value="1" field="2247-18a3-4f5c-c6f0">
                           <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
-                        <modifier type="decrement" value="1" field="1851-0d8a-d7e6-dc69">
+                        <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
                           <repeats>
-                            <repeat value="1" repeats="1" field="selections" scope="65f6-18df-f6df-7e39" childId="9dc6-6ad8-818e-db2e" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="9dc6-6ad8-818e-db2e" shared="true" roundUp="false" includeChildSelections="true"/>
                           </repeats>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="c219-5e50-5d8d-4930" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="2247-18a3-4f5c-c6f0">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="model" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="c219-5e50-5d8d-4930" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="3" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="2" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -1719,26 +1891,54 @@ If a Character unit from your army with the Leader ability can be attached to a
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee Weapon" id="9068-ef9c-8583-ceb2" hidden="false" defaultSelectionEntryId="05ea-4b2e-bcbb-7c9b">
                   <entryLinks>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="bead-7f68-bd5c-5f80" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
-                    <entryLink import="true" name="Power Fist" hidden="false" id="c317-53c8-0d9e-c321" type="selectionEntry" targetId="f8d8-7e77-4b71-faac"/>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="bead-7f68-bd5c-5f80" type="selectionEntry" targetId="c4b5-68e-2266-f459">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="3631-5441-fc6a-de48" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="3631-5441-fc6a-de48">
+                          <conditions>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="3631-5441-fc6a-de48">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="f8d8-7e77-4b71-faac" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="c317-53c8-0d9e-c321" type="selectionEntry" targetId="f8d8-7e77-4b71-faac">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="ebe8-6fbd-85e2-b08d" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="ebe8-6fbd-85e2-b08d">
+                          <conditions>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="ebe8-6fbd-85e2-b08d">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="unit" childId="c4b5-68e-2266-f459" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Eviscerator" hidden="false" id="801d-80dc-3e31-0d5a" type="selectionEntry" targetId="515e-8dca-b455-dc02">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="4351-c5b7-b6fb-97c0" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="4351-c5b7-b6fb-97c0">
+                          <conditions>
+                            <condition type="atLeast" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="0dfe-06f1-349f-8d28" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="05ea-4b2e-bcbb-7c9b">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6d8d-2d40-5226-505d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7797-e7ba-081e-a610" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d9b-858a-6a40-b723" includeChildSelections="false"/>
@@ -1746,126 +1946,8 @@ If a Character unit from your army with the Leader ability can be attached to a
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c935-cab5-c6b3-117f"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="c935-cab5-c6b3-117f"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="c935-cab5-c6b3-117f">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="38dc-f876-6405-8f17" childId="model" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Death Company Marine w/ Eviscerator" hidden="false" id="5eb4-4667-4a63-4222">
-              <entryLinks>
-                <entryLink import="true" name="Eviscerator" hidden="false" id="1370-9b15-c522-5927" type="selectionEntry" targetId="515e-8dca-b455-dc02">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62b7-2ee7-ba3b-54a0" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3023-1d3e-c4ed-7437" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Pistol Weapon" id="bada-0ac0-b07b-8f28" hidden="false" defaultSelectionEntryId="8e8b-6242-e163-9510">
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="8e8b-6242-e163-9510" type="selectionEntry" targetId="3b8f-1cb7-3c6e-4455"/>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="8dae-a61f-e908-d2b5" type="selectionEntry" targetId="25c2-104f-fa0c-809e"/>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" id="4e46-4e8b-6947-1ab8" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e"/>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="8894-3d1e-46cd-1bdb" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c90-d049-ec67-b7d2" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b08-b481-8fbc-acc9" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="825f-6cc1-6a04-36e7" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="825f-6cc1-6a04-36e7">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="parent" childId="model" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Death Company Marine w/ Power Weapon/Fist" hidden="false" id="cf78-7fd4-77c8-72c7">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fecf-62b0-248d-e760" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Melee Weapon" id="6d32-4ca8-88ff-2a4a" hidden="false" defaultSelectionEntryId="05ea-4b2e-bcbb-7c9b">
-                  <entryLinks>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="7950-92e0-7296-dfb2" type="selectionEntry" targetId="c4b5-68e-2266-f459">
-                      <modifiers>
-                        <modifier type="increment" value="1" field="44e6-a494-4e45-3021">
-                          <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" includeChildSelections="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="65f6-18df-f6df-7e39" shared="true" id="44e6-a494-4e45-3021" includeChildSelections="true"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" id="b828-c5c4-0f19-5c29" type="selectionEntry" targetId="f8d8-7e77-4b71-faac">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="65f6-18df-f6df-7e39" shared="true" id="61ed-1137-50cb-b3a7" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="61ed-1137-50cb-b3a7">
-                          <conditions>
-                            <condition type="atLeast" value="10" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" includeChildSelections="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcea-5084-a3e5-28db" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5be7-4946-ad6d-64ba" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol Weapon" id="22d8-9429-0cda-a95e" hidden="false" defaultSelectionEntryId="1a25-3b75-833d-5956">
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="1a25-3b75-833d-5956" type="selectionEntry" targetId="3b8f-1cb7-3c6e-4455"/>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="14b4-0532-258f-f481" type="selectionEntry" targetId="25c2-104f-fa0c-809e"/>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" id="6be6-55c7-8dc5-0f78" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e"/>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="6ca6-d645-1182-a691" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0948-ff84-834d-13c1" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="606e-dc0e-0a23-2752" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Death Company Marine w/Plasma Pistol" hidden="false" id="25e8-9f6b-85d6-742f">
-              <entryLinks>
-                <entryLink import="true" name="Plasma Pistol" hidden="false" id="1080-67ea-3fd6-8ca2" type="selectionEntry" targetId="25c2-104f-fa0c-809e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30bd-cee1-068c-173b" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-710b-e79c-0ddd" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Astartes Chainsword" hidden="false" id="653c-b498-fdca-804c" type="selectionEntry" targetId="efcd-180-d07-b4d6">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91bb-cf97-3b5d-82ae" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c11-18c9-0087-d6ef" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a267-2735-c8f6-a16f" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="a267-2735-c8f6-a16f">
-                  <conditions>
-                    <condition type="atLeast" value="10" field="selections" scope="38dc-f876-6405-8f17" childId="model" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1875,7 +1957,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+        <modifier type="set" value="230" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="65f6-18df-f6df-7e39" childId="model" shared="true" id="4a95-a7bd-d401-9728" includeChildSelections="true"/>
           </conditions>
@@ -2141,7 +2223,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cf89-a015-258d-018f" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cf89-a015-258d-018f" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2154,55 +2236,6 @@ If a Character unit from your army with the Leader ability can be attached to a
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="6" field="011e-e0ca-2496-1e2a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
@@ -2217,6 +2250,51 @@ If a Character unit from your army with the Leader ability can be attached to a
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
@@ -2381,18 +2459,26 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="c0fd-faf6-f6f1-6c2a" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="c0fd-faf6-f6f1-6c2a" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="cbda-f489-168d-3b54" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="5c9a-c6f3-b60d-4fa4" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lemartes" hidden="false" id="cbc2-18c9-45b6-6327">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="40ee-2e76-5838-d294" primary="true" name="Epic Hero"/>
@@ -2507,6 +2593,13 @@ If a Character unit from your army with the Leader ability can be attached to a
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="c31b-a630-6df8-1d06" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="c739-8716-49da-4b58" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Librarian Dreadnought [Legends]" hidden="false" id="b6e0-b465-801c-24c8">
       <costs>
@@ -2526,7 +2619,7 @@ If a Character unit from your army with the Leader ability can be attached to a
       <profiles>
         <profile name="Librarian Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a67b-5be1-718e-6fc3">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
@@ -2594,6 +2687,9 @@ horizontally away from all enemy models.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f93-28c9-083b-c165" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="966f-ac5b-50e2-e34f" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Furioso Fist" hidden="false" id="e26d-6206-fd7a-2bd7">
               <constraints>
@@ -2642,6 +2738,9 @@ horizontally away from all enemy models.</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1760-facc-a263-ee82" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Psychic Weapon" hidden="false" id="0496-5d7c-d7d2-f9b4" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -2680,7 +2779,7 @@ horizontally away from all enemy models.</characteristic>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="035d-0ce5-d412-7901" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="035d-0ce5-d412-7901" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2690,55 +2789,6 @@ horizontally away from all enemy models.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="6" field="54e5-01d4-6abd-3b86">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
@@ -2754,6 +2804,51 @@ horizontally away from all enemy models.</characteristic>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
         </modifierGroup>
@@ -2761,11 +2856,14 @@ horizontally away from all enemy models.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sanguinary Guard" hidden="false" id="25e4-ead-faac-2531">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="b929-ac1e-a8dc-dd66" primary="true" name="Infantry"/>
@@ -2816,7 +2914,7 @@ horizontally away from all enemy models.</characteristic>
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -2833,8 +2931,8 @@ horizontally away from all enemy models.</characteristic>
                         <profile name="Encarmine Spear" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="46c8-05c2-743b-b8a5">
                           <characteristics>
                             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -2915,6 +3013,13 @@ horizontally away from all enemy models.</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="2" field="bef7-942a-1a23-59f8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8352-c4fb-89d7-30d6" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -2960,55 +3065,6 @@ horizontally away from all enemy models.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="6" field="e001-678c-49ed-a79c">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
@@ -3024,6 +3080,51 @@ horizontally away from all enemy models.</characteristic>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
         </modifierGroup>
@@ -3031,7 +3132,12 @@ horizontally away from all enemy models.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sanguinary Priest" hidden="false" id="f80-be5-d17c-db23">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="1745-3589-5d6b-5454" primary="true" name="Character"/>
@@ -3041,6 +3147,7 @@ horizontally away from all enemy models.</characteristic>
         <categoryLink targetId="561f-8606-9555-b3ba" id="a064-e396-b8ec-6f5d" primary="false" name="Sanguinary Priest"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="5914-910-c561-83d4" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="62ac-ef42-27b4-ae7" id="25b7-a267-cb0c-38d9" primary="false" name="Faction: Blood Angels"/>
+        <categoryLink targetId="5179-8ede-45e3-49a2" id="a5ab-e25c-7c42-0f41" primary="false" name="Tacticus"/>
       </categoryLinks>
       <profiles>
         <profile name="Sanguinary Priest" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4aba-1b11-e595-e9c9">
@@ -3099,11 +3206,30 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
+            <modifier type="increment" value="2" field="33bf-b1fb-369b-6e44">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="bf39-4cdb-3e37-dcec">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="ad95-a04c-853b-cb7b">
               <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2f74-a57c-86a9-d5f4" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="append" value="(Blooded)" field="name">
               <conditionGroups>
@@ -3111,7 +3237,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3122,7 +3247,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3133,30 +3257,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="2" field="33bf-b1fb-369b-6e44">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="bf39-4cdb-3e37-dcec">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
@@ -3170,35 +3278,30 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82b7-8759-4a0a-f7fc"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3646-cd5a-6620-5ecd"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="f249-0a2b-d703-3a1b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="9025-77d6-52f9-04dd" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa72-1abd-ea2e-8e6d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4285-793e-acdf-3726" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="a846-7d7e-bb9d-3120">
+            <entryLink import="true" name="Astartes Chainsword" hidden="false" id="1550-c228-5787-99b1" type="selectionEntry" targetId="36aa-c29e-8f8-c662">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="6e3e-638b-5327-1d6d" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c46e-0b24-bad4-5fb5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6e22-0deb-9688-07ed" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57ff-38c5-9744-9dba"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19c1-8c6e-ee45-a81f"/>
               </constraints>
-              <profiles>
-                <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff37-5cda-b6d2-f6d4">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ac0-7a5f-cb4d-0fa6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -3283,6 +3386,13 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="c335-71bb-55b2-31a1" targetId="caa-f869-3cbd-b48e"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="f2ba-0fe7-120b-0d09" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="3ebd-1233-fbf7-5da6" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sanguinary Priest with Jump Pack [Legends]" hidden="false" id="fa13-ba8a-8711-87b6">
       <costs>
@@ -3350,18 +3460,37 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="fab4-9f56-3f0e-4506" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="fab4-9f56-3f0e-4506" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
+            <modifier type="increment" value="2" field="f9df-1fce-11a4-6b4c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="f1c3-fa83-8c81-16dc">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="ea01-1153-d751-cd9a">
               <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2f74-a57c-86a9-d5f4" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="append" value="(Blooded)" field="name">
               <conditionGroups>
@@ -3369,7 +3498,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3380,7 +3508,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3391,30 +3518,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="2" field="f9df-1fce-11a4-6b4c">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="f1c3-fa83-8c81-16dc">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
@@ -3441,9 +3552,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="31fe-fad0-0aaf-db8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="0572-6adf-141e-53f0" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="21ac-69c3-0466-a330" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4188-48bd-7668-4dc6" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="9281-00e4-135f-bc45" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3452,9 +3571,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6c-2d06-860c-d221"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c89b-9e01-bb89-665f"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b415-186e-c355-b47e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="6dc1-94be-60a8-ddf3" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5ff5-1eb5-763d-c0c2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="415d-e159-52bc-de19" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3528,23 +3652,38 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Boltgun" hidden="false" id="ed04-a23e-7ede-8e02" type="selectionEntry" targetId="beac-9df8-7247-c8ab">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="f246-95e0-ff0e-2864" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8bda-add8-63d2-1847" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4af-ce2f-80f3-7f7b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="f273-c3ee-1fec-0bad" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Bolt Pistol" hidden="false" id="d3b9-ba1b-bf08-6095" type="selectionEntry" targetId="18b0-8c2-173f-5" defaultAmount="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="32c0-9f8e-a2de-7c31" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f479-1cab-d6d2-33ee" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="00ee-ae62-9c89-61c8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="1467-be22-60dd-b6cc" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Hand Flamer" hidden="false" id="5b2f-2447-6b8b-267e" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e">
                   <infoLinks>
                     <infoLink name="Ignores Cover" id="133d-dd74-b054-7668" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
                     <infoLink name="Torrent" id="27a2-3bcf-da5e-63ae" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="19da-b2aa-c196-56b9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6459-a44e-b0c5-21a6" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb6b-6ca9-0c9c-9974" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="15e3-4be8-4e4a-aabb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -3567,9 +3706,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Devastating Wounds" id="8fb3-5f1-86b0-62a0" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                     <infoLink name="Rapid Fire" id="ec56-9fa5-7534-920b" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d288-2665-f04b-4806" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="561b-70ed-7da5-7480" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6394-406b-8efc-7b5b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="4038-28cb-a30b-8ff5" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="5c7d-6a56-e86f-2d2c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Grav-Pistol" hidden="false" id="282a-a8b8-e3fb-64c8">
                   <profiles>
@@ -3589,9 +3736,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Pistol" id="b483-5d2-789a-f1b6" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                     <infoLink name="Anti-" id="dc3d-bd86-cce9-5869" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a6d0-ee04-0daf-c786" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="3b5a-888e-333b-cf49" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0859-acaf-2e8d-abb1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="f316-7ef7-a9fb-b672" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="0f37-5c28-9d49-1812" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="36f2-52f-a36a-64b1">
                   <profiles>
@@ -3611,9 +3766,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Pistol" id="70c7-83be-e44b-f530" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                     <infoLink name="Melta" id="4b83-74e3-52e1-10ce" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9cfb-5c51-3c73-7ed4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="7450-b4b0-d732-b5e6" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5202-41ea-af10-feb8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c9d0-ce10-7bf6-8311" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="b6bb-0167-2532-1038" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f510-6bbc-748a-7ccb">
                   <profiles>
@@ -3644,9 +3807,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <infoLink name="Hazardous" id="c91b-9853-283a-65d9" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
                     <infoLink name="Pistol" id="1956-b86a-d4ee-839d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="406b-bd96-9624-562e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="125f-3ea3-c146-b870" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb82-df6b-ed23-96d9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3272-c81c-12aa-9ebb" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="dacb-1a32-d57d-61d1" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="8149-cac1-27a4-2bbc">
                   <profiles>
@@ -3665,9 +3836,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <infoLinks>
                     <infoLink name="Rapid Fire" id="8010-1be6-d279-134" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="89ca-626d-fee5-6c2f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6233-6290-89ae-a791" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="09c1-550f-d274-cba5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="3057-f8c0-8298-3c66" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="428e-3000-550d-6a0a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3678,19 +3857,34 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Astartes Chainsword" hidden="false" id="e04a-f7e8-e2cb-e196" type="selectionEntry" targetId="c1b9-f39d-7390-d4cb" defaultAmount="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9167-9a0c-d32a-fc09" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="6732-296d-4455-4c1e" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc91-78df-3c11-4795" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="aa92-7554-33d5-636f" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="b9d0-695f-9601-ee96" type="selectionEntry" targetId="50dd-3e76-d993-4d1a">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="af3a-4110-d391-ac26" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="63f5-5a0c-e315-d02a" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="586a-2586-80f7-cb9e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="af8f-57b6-6f99-6994" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Thunder Hammer" hidden="false" id="4b0-e9af-197d-7fa3" type="selectionEntry" targetId="4913-96d4-2b1f-2c21">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2bb8-015e-bac3-4883" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="137d-3182-5d87-8b88" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="be97-a58c-7555-185a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8b39-d985-7593-cc6c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -3708,9 +3902,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0531-b028-ef65-6360" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="ecb8-b8c7-93ba-e425" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d8e0-ac5b-f7f2-281c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0f02-72f2-302a-77d9" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="91cf-7133-cb0d-4499" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3721,9 +3923,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33db-e687-ee6c-2d27"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e8-e984-16c3-bd4a"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="9f05-bd57-1ddb-dadf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="cdd1-6884-e606-2409" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="09e5-88fb-9332-96a4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8d21-922b-6828-7172" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3731,18 +3938,37 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cde3-3920-60fa-3295" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cde3-3920-60fa-3295" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
+            <modifier type="increment" value="2" field="f69f-b673-df52-30a5">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="8395-2679-2885-2a8d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="e190-a3f6-38cb-7678">
               <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2f74-a57c-86a9-d5f4" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="append" value="(Blooded)" field="name">
               <conditionGroups>
@@ -3750,7 +3976,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3761,7 +3986,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3772,30 +3996,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <conditions>
                     <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
                     <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="2" field="f69f-b673-df52-30a5">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="8395-2679-2885-2a8d">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
@@ -3840,14 +4048,24 @@ You can attach this model to one of the above units, even if one Captain, Chapt
             <selectionEntryGroup name="Melee" id="f88f-efee-7bdb-3008" hidden="false" defaultSelectionEntryId="8684-4762-7c7a-028e">
               <entryLinks>
                 <entryLink import="true" name="Power Fist" hidden="false" id="39a1-6da8-f5b3-864f" type="selectionEntry" targetId="99de-5985-8cb8-f571">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a414-8bd3-634c-ab9b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f0f9-6aea-ed49-80ed" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="bdd4-56e5-add8-0dc4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="2d06-50d9-631a-1343" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Relic Weapon" hidden="false" id="26a8-4370-64dc-be4d" type="selectionEntry" targetId="5baf-8a8a-b5ba-1223">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9e08-ed6a-b340-07a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="a6e0-c3bb-15a0-5455" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2819-a28d-2624-4cda" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5d4d-1d03-1346-cca2" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -3869,9 +4087,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="af3d-08b3-2a7e-377a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8b0a-e440-4231-b060" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="61b2-123e-2618-6da8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0e59-5f8f-92da-437d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="fed0-f39b-4196-1d03" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3882,9 +4108,14 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Inferno Pistol" hidden="false" id="65bf-a135-9120-ba15" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="db95-f39f-195e-a46f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="8d66-9482-0be1-4629" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb6c-7eff-8350-9ad2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="82ec-79a1-d173-40b2" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
@@ -3905,9 +4136,17 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <infoLinks>
                     <infoLink name="Pistol" id="6067-d788-2b38-d165" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc6a-effa-4768-2cdb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="b5f6-03b4-66a3-76e0" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="49f0-4ac8-235f-110f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8f40-9c30-33c0-355e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="92ca-f473-cc9c-ce11" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3945,55 +4184,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditions>
-                <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" value="2" field="2608-13ef-d8cc-fa64">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
@@ -4004,6 +4194,56 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
+            <modifier type="increment" value="1" field="f624-815a-bca5-137a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2f74-a57c-86a9-d5f4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>Crusade modifiers</comment>
         </modifierGroup>
@@ -4012,6 +4252,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
     <selectionEntry type="model" import="true" name="Death Company Captain" hidden="false" id="4743-6dc9-fda7-0a8c">
       <infoLinks>
         <infoLink name="Invulnerable Save" id="e4b7-a76f-3668-bbac" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Black Rage" id="3565-0ac7-f0dd-ad20" hidden="false" type="profile" targetId="3e0a-31f-8be-e293"/>
       </infoLinks>
       <profiles>
         <profile name="Death Company Captain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="75c4-36b0-af42-362b">
@@ -4040,11 +4281,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         <profile name="Death Vision of Sanguinius" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b276-0bcd-8baf-3c14">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b870-b3ce-57a6-7655">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack, you can re-roll the Hit roll. While this model&apos;s unit is not within 12&quot; of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4132,6 +4368,13 @@ You can attach this model to one of the above units, even if one Captain, Chapt
     <selectionEntry type="model" import="true" name="Death Company Captain with Jump Pack" hidden="false" id="2574-a949-ae3f-58c2">
       <infoLinks>
         <infoLink name="Invulnerable Save" id="2885-4ff2-a92d-00c5" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Black Rage" id="a7b7-85cc-dcb8-a4d7" hidden="false" type="profile" targetId="3e0a-31f-8be-e293"/>
+        <infoLink name="Feel No Pain" id="e3ed-7f43-7627-fffd" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="d22b-2e57-b257-c3ab" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <profiles>
         <profile name="Death Vision of Sanguinius" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="165c-259e-fbfe-4298">
@@ -4159,11 +4402,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 
 ■ Death Company Marines with Jump Packs</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9a02-63f7-a140-1526">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack, you can re-roll the Hit roll. While this model&apos;s unit is not within 12&quot; of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4254,7 +4492,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b01-ec10-9ad1-abda" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="efbd-b697-b3f3-1160" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="efbd-b697-b3f3-1160" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="974a-7a68-bb67-61e8" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d85f-2408-4cab-0299" includeChildSelections="false"/>
@@ -4292,21 +4530,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
               <selectionEntryGroups>
                 <selectionEntryGroup name="Replace Close Combat Weapon" id="62ca-0c5d-078e-9da8" hidden="false" defaultSelectionEntryId="6899-8a73-6f36-cdf9">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="3ced-57f5-a1ab-cf07">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cc95-5b45-a417-a70d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="6899-8a73-6f36-cdf9">
                       <profiles>
                         <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c018-a904-2473-3658">
@@ -4346,6 +4569,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <entryLinks>
                     <entryLink import="true" name="Thunder Hammer" hidden="false" id="d21e-f281-5e3f-e0b2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="6969-2b53-4bc9-6905" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="919f-6a34-9a92-f6b3" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <modifiers>
                     <modifier type="set" value="1" field="57e0-15ea-a7bd-a74d">
@@ -4365,23 +4589,9 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                     <entryLink import="true" name="Hand Flamer" hidden="false" id="c688-04d5-5b88-2efd" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e"/>
                     <entryLink import="true" name="Inferno Pistol" hidden="false" id="a442-5bfb-4a6e-a7db" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8"/>
                     <entryLink import="true" name="Plasma Pistol" hidden="false" id="7caa-84df-0e1c-cfb0" type="selectionEntry" targetId="25c2-104f-fa0c-809e"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8896-afbc-724b-a018" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="64ec-a197-c1c2-22a5">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="465a-8c97-c0d9-865e">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bolt Rifle" hidden="false" id="4c87-32d4-eca9-677f">
                       <profiles>
                         <profile name="Bolt Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f983-e976-63ef-aa4a">
@@ -4647,21 +4857,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Replace Chainsword" id="fff9-ea18-368c-d4a1" hidden="false" defaultSelectionEntryId="c7a8-c7ee-1248-ef35">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Astartes Chainsword" hidden="false" id="c7a8-c7ee-1248-ef35">
-                      <profiles>
-                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="cb64-11b5-c45a-b0fc">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="2aba-e045-dbd4-adbd">
                       <profiles>
                         <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b64e-5d06-ef65-5bdf">
@@ -4681,6 +4876,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <entryLinks>
                     <entryLink import="true" name="Thunder Hammer" hidden="false" id="0750-7bd3-6edf-09d2" type="selectionEntry" targetId="3acf-2a72-a5a2-84a2"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="773e-a671-ad57-aa08" type="selectionEntry" targetId="c4b5-68e-2266-f459"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="8b85-90a0-8aca-7fbe" type="selectionEntry" targetId="efcd-180-d07-b4d6"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4761-c7fa-10ea-e343" includeChildSelections="false"/>
@@ -4690,7 +4886,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   <modifiers>
                     <modifier type="set" value="1" field="4f47-ceb3-a70f-8e21">
                       <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="c7a8-c7ee-1248-ef35" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="efcd-180-d07-b4d6" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -4802,11 +4998,6 @@ You can attach this model to one of the above units, even if one Captain, Chapt
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eadd-9d93-1829-14d1">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack, you can re-roll the Hit roll. While this model&apos;s unit is not within 12&quot; of one or more friendly Chaplain models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deadly Demise" id="5222-55a7-586c-77c6" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
@@ -4820,6 +5011,7 @@ You can attach this model to one of the above units, even if one Captain, Chapt
           </modifiers>
         </infoLink>
         <infoLink name="Damaged: 1-4 Wounds Remaining" id="5841-c934-8d28-38b1" hidden="false" type="profile" targetId="ee64-aaaf-75df-8da9"/>
+        <infoLink name="Black Rage" id="df74-70ee-c1e9-644a" hidden="false" type="profile" targetId="3e0a-31f-8be-e293"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="83a9-b6bb-2e6b-5fa1" type="selectionEntryGroup" targetId="0b9e-c615-13b4-9302" sortIndex="1"/>
@@ -4947,11 +5139,12 @@ You can attach this model to one of the above units, even if one Captain, Chapt
         <categoryLink targetId="7278-781b-ce6c-d23c" id="617a-2324-ed57-6d21" primary="false" name="Death Company"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Death Company Marines with Boltguns and Jump Packs [Legends]" hidden="false" id="bcfe-f4fb-5c44-652d">
@@ -5021,7 +5214,7 @@ If a Character unit from your army with the Leader ability can be attached to a
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07ef-a0d1-55be-3b30"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="4289-1cda-4f15-04cb" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
+                        <entryLink import="true" name="Close combat weapon" hidden="false" id="4289-1cda-4f15-04cb" type="selectionEntry" targetId="6c7d-af5b-482-6fbe">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a545-a3e9-c674-c789"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acab-c81f-c169-179e"/>
@@ -5098,7 +5291,7 @@ If a Character unit from your army with the Leader ability can be attached to a
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="0a91-ef8e-1ad7-2b8c" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="0a91-ef8e-1ad7-2b8c" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5138,7 +5331,7 @@ If a Character unit from your army with the Leader ability can be attached to a
   <sharedProfiles>
     <profile name="Black Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e0a-31f-8be-e293">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack, you can re-roll the Hit roll. While this unit is not within 12&quot; of one or more friendly Chaplain models, it cannot be selected to Fall Back and the Objective Control characteristic of models in this unit is 0.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a melee attack, you can re-roll the Hit roll. While this model&apos;s unit is not within 6&quot; of one or more friendly ^^**Blood Angels Character**^^ models, or 12&quot; of one or more friendly ^^**Chaplain**^^ models, it cannot be selected to Fall Back and the Objective Control characteristic of models in this unit is 0.</characteristic>
       </characteristics>
     </profile>
     <profile name="Visions of Heresy" hidden="false" id="6b69-8f10-6d74-706c" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -5182,7 +5375,7 @@ If a Character unit from your army with the Leader ability can be attached to a
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
