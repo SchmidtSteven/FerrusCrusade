@@ -17840,7 +17840,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="4 Incubi" hidden="false" id="6dc6-9115-d2a9-59b9" sortIndex="3">
+        <selectionEntryGroup name="4-9 Incubi" hidden="false" id="6dc6-9115-d2a9-59b9" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Incubi" hidden="false" id="a783-f14f-4278-c2a3" collective="false">
               <profiles>
@@ -17884,7 +17884,7 @@ It can also move through sections of terrain features that are more than 4&quot;
           </selectionEntries>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="803b-ba96-6a93-243"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fdec-8a50-b532-f0c2"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="fdec-8a50-b532-f0c2"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Klaivex" id="4827-0e50-b623-65ea" hidden="false" sortIndex="2">
@@ -18074,6 +18074,13 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="170" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="1529-793d-481b-82bf" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d20b-783-ccf6-b29d" name="Kabalite Warriors" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
