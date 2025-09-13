@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Xenos - Drukhari" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Xenos - Drukhari" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Aeldari - Aeldari Library" id="d965-4d5b-d10b-350b" targetId="dfcf-1214-b57-2205"/>
   </catalogueLinks>
@@ -9,7 +9,6 @@
     <entryLink import="true" name="Court of the Archon" hidden="false" type="selectionEntry" id="1cfc-355a-ccc1-176b" targetId="b221-43a3-8bee-117c"/>
     <entryLink import="true" name="Cronos" hidden="false" type="selectionEntry" id="6ce9-94b5-94c8-82f" targetId="a5d3-e21b-bf13-a952"/>
     <entryLink import="true" name="Drazhar" hidden="false" type="selectionEntry" id="80eb-f424-6a35-c0c9" targetId="a30b-b966-d264-e935"/>
-    <entryLink import="true" name="Grotesques" hidden="false" type="selectionEntry" id="c4bf-74c9-87a2-f609" targetId="d729-7e1f-93a9-b1c5"/>
     <entryLink import="true" name="Haemonculus" hidden="false" type="selectionEntry" id="16f-1b8-d251-4b6a" targetId="32ff-aec4-9669-c8a2"/>
     <entryLink import="true" name="Hellions" hidden="false" type="selectionEntry" id="e32b-d49a-e848-2274" targetId="2311-9feb-9d0a-8154"/>
     <entryLink import="true" name="Incubi" hidden="false" type="selectionEntry" id="a658-2f16-a5ad-f228" targetId="1529-793d-481b-82bf"/>
@@ -47,5 +46,7 @@
     <entryLink import="true" name="Corsair Reaver Band [Legends]" hidden="false" id="61c4-ce6e-1bc5-5abb" type="selectionEntry" targetId="758b-bfd2-96ed-52b"/>
     <entryLink import="true" name="Corsair Skyreaver Band [Legends]" hidden="false" id="8166-ecfa-0bd5-b2a3" type="selectionEntry" targetId="4146-4127-52f7-5786"/>
     <entryLink import="true" name="Order of Battle" hidden="false" id="13e0-52b5-d24c-eb89" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
+    <entryLink import="true" name="Scourges with Heavy Weapons" hidden="false" id="200d-57a7-f367-4d23" type="selectionEntry" targetId="7ccd-7989-ec0d-2888"/>
+    <entryLink import="true" name="Lady Malys" hidden="false" id="8d3c-cf60-0f30-feb4" type="selectionEntry" targetId="874f-76d7-de74-c8fe"/>
   </entryLinks>
 </catalogue>
