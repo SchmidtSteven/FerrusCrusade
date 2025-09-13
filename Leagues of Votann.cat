@@ -74,7 +74,7 @@
               <rules>
                 <rule name="Methodical Annihilation" id="70a5-9f3d-4e2f-8eb3" hidden="false">
                   <description>Each time a LEAGUES OF VOTANN model from your army makes an attack with a weapon (excluding Blast weapons) that targets the closest eligible target or a target that is within Engagement Range of that model’s unit: 
-- Re‑roll a Hit roll of 1. 
+- Re‑roll a Wound roll of 1. 
 - If your unit is a KÂHL, EINHYR HEARTHGUARD or ÛTHAR THE DESTINED unit, improve the Armour Penetration characteristic of that attack by 1.</description>
                 </rule>
               </rules>
@@ -5134,7 +5134,7 @@ that Stratagem.</characteristic>
           <profiles>
             <profile name="Bastion Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68fb-67e5-3675-c850">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12&quot; of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12&quot; of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1. If you spend 1YP, until the end of the phase, if the attacking model is within 18&quot; of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1 instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
