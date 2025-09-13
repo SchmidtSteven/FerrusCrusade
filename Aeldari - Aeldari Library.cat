@@ -16870,7 +16870,7 @@ It can also move through sections of terrain features that are more than 4&quot;
     </selectionEntry>
     <selectionEntry id="a5d3-e21b-bf13-a952" name="Cronos" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="170">
+        <modifier type="set" field="51b2-306e-1021-d207" value="110">
           <conditions>
             <condition field="selections" scope="a5d3-e21b-bf13-a952" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -16890,7 +16890,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink id="ac24-e02b-2b5a-f5db" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
