@@ -35460,7 +35460,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         <categoryLink targetId="7378-931b-0f4b-46fd" id="a322-f593-3aaa-a40a" primary="false" name="Blades for Hire"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -35694,25 +35694,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                     <infoLink name="Heavy" id="e66e-e2ac-4925-fe15" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Shardcarbine" hidden="false" id="058f-3441-e0ef-d991" collective="false">
-                  <profiles>
-                    <profile name="Shardcarbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d217-7918-d414-a7f8">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Anti-" id="b476-c3e8-f288-fe7c" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                    <infoLink name="Assault" id="72f9-0091-4479-8273" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                  </infoLinks>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16fe-1aa1-6f0d-d4fa"/>
@@ -35930,12 +35911,12 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
       <categoryLinks>
         <categoryLink id="029c-a2a1-dca2-6d1a" name="Aeldari" hidden="false" targetId="e035-51fc-813a-1313" primary="false"/>
         <categoryLink id="4cd4-be3a-a412-7a80" name="Faction: Drukhari" hidden="false" targetId="1015-db48-a2fa-c7da" primary="false"/>
-        <categoryLink id="c9c5-e5d8-ff6b-aca5" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink id="c9c5-e5d8-ff6b-aca5" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="1372-ed35-ddd8-e1ec" primary="false" name="Grenades"/>
         <categoryLink targetId="9706-3b42-5a16-4a9b" id="4e0e-87ec-00b4-72ca" primary="false" name="Hand of the Archon"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
