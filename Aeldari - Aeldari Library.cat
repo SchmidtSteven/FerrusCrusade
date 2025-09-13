@@ -36294,12 +36294,19 @@ Each time a unit from your army performs an Agile Manoeuvre that involves rollin
           </modifiers>
           <rules>
             <rule name="Realspace Raiders" hidden="false" id="9e6b-b67a-7f41-1a8a">
-              <description>At the start of the battle, you gain an additional 1 Pain token for each of the following your army contains:
-■ One or more Archon models
-■ One or more Succubus models
-■ One or more Haemonculus models
-Designer’s Note: These are all cumulative, so if your army contains at least one Archon, at least one Succubus and at least one Haemonculus, you would start the battle with an additional 3
-Pain tokens.</description>
+              <description>At the start of the battle, you gain 2 Pain tokens for each of the following combinations your army contains (these do not need to be in the same Attached unit):
+
+
+One or more ARCHON models and one or more KABALITE WARRIORS units.
+
+
+One or more SUCCUBUS models and one or more WYCHES units.
+
+
+One or more HAEMONCULUS models and one or more WRACKS units.
+
+
+Designer’s Note: These are all cumulative, so if your army contains at least one of all of the combinations listed above, you start the battle with 6 Pain tokens.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -36520,6 +36527,96 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
 ■ Each time a model in this unit makes an attack, re-roll a Wound roll of 1.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Covenite Coterie" hidden="false" id="ad2a-5823-9e74-7406">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Corsairs and Travelling Players" id="6fb9-752c-345c-b36e" hidden="false" type="rule" targetId="8344-0055-bb1f-4783"/>
+          </infoLinks>
+          <rules>
+            <rule name="Stitchflesh Abominations" id="7e02-6202-7b04-05ce" hidden="false">
+              <description>Each time an attack targets a HAEMONCULUS COVENS unit from your army, if the Strength characteristic of that attack is greater than the Toughness characteristic of your unit, subtract 1 from the Wound roll.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kabalite Cartel" hidden="false" id="55e0-882e-7156-465b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Murderous Agenda" id="5639-cb61-38ce-b1d4" hidden="false">
+              <description>At the start of the first battle round, select one of the Contracts below, then select one unit from your opponent’s army that matches the ‘Contract’ description in that Contract. Until that Contract is completed, that unit is your Contract unit and KABAL and BLADES FOR HIRE units from your army have the ability stated in that Contract. At the start of your Command phase, if your Contract unit is destroyed, that Contract is completed and you gain 3 Pain tokens.
+
+
+Trophy Hunters
+Contract: One CHARACTER unit.
+Ability: Each time a KABAL or BLADES FOR HIRE model in this unit makes an attack that targets the Contract unit, that attack has the [PRECISION] ability.
+
+
+Sow Fear and Terror
+Contract: One INFANTRY or MOUNTED unit (excluding units containing only CHARACTER models). At the start of your Command phase, this Contract is completed if all non-CHARACTER models in that unit are destroyed.
+Ability: Each time a KABAL or BLADES FOR HIRE model in this unit makes an attack that targets an INFANTRY or MOUNTED unit, that attack has the [SUSTAINED HITS 1] ability.
+
+
+For Strength
+Contract: One MONSTER or VEHICLE unit.
+Ability: Each time a KABAL or BLADES FOR HIRE model in this unit makes an attack that targets a MONSTER or VEHICLE unit, that attack has the [LETHAL HITS] ability.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Corsairs and Travelling Players" id="677b-a791-d77e-59af" hidden="false" type="rule" targetId="8344-0055-bb1f-4783"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spectacle of Spite" hidden="false" id="23c9-690a-8088-5095">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Combat Drugs" id="b53a-350d-158e-1ec8" hidden="false">
+              <description>At the start of your Command phase, select which Combat Drugs will be active for your army until the start of your next Command phase. To do so, either select one from the list below (you cannot select the same Combat Drug more than once per battle), or randomly select two by rolling two D6. When doing so randomly, Combat Drugs you have previously selected can become active again, but if you randomly select one that is already active for your army, it has no additional effect.
+
+
+Adrenalgit
+Add 1 to the Attacks characteristic of melee weapons equipped by WYCH CULT models from your army.
+
+
+Hypex
+Add 2&quot; to the Move characteristic of WYCH CULT models from your army.
+
+
+Serpentin
+Improve the Weapon Skill characteristic of melee weapons equipped by WYCH CULT models from your army by 1.
+
+
+Painbringer
+Add 1 to the Toughness characteristic of WYCH CULT models from your army.
+
+
+Grave Lotus
+Add 1 to the Strength characteristic of melee weapons equipped by WYCH CULT models from your army.
+
+
+Splintermind
+Improve the Leadership characteristic of WYCH CULT models from your army by 1, and improve the Ballistic Skill characteristic of ranged weapons equipped by WYCH CULT models from your army by 1.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Corsairs and Travelling Players" id="aad1-d308-38c9-51ef" hidden="false" type="rule" targetId="8344-0055-bb1f-4783"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -38533,7 +38630,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
         </selectionEntryGroup>
         <selectionEntryGroup name="Realspace Raiders Enhancements" id="33a3-43a6-44d6-b5bf" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Crucible of Malediction" hidden="false" id="651b-340c-8698-732d" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Eye of Spite" hidden="false" id="651b-340c-8698-732d" collective="false">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
               </costs>
@@ -38544,19 +38641,19 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Crucible of Malediction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3634-9104-e3bf-38fa">
+                <profile name="Eye of Spite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3634-9104-e3bf-38fa">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Haemonculus model only. Once per battle, at the start of any Shooting phase, the bearer can use this Enhancement. When it does, every enemy unit within 12&quot; must take a Battle-shock test, subtracting 1 from that test if the bearer’s unit is currently Empowered. Each time a Psyker unit fails this test, it suffers D3 mortal wounds.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SUCCUBUS model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer’s unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blood Dancer" hidden="false" id="5158-7f1e-824c-3627" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Dark Vitality" hidden="false" id="5158-7f1e-824c-3627" collective="false">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
               </costs>
@@ -38564,17 +38661,10 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc7-e771-f5ec-7061"/>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="52a1-e946-49dc-7702" includeChildSelections="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <profiles>
-                <profile name="Blood Dancer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36e-245-5b61-c7a9">
+                <profile name="Dark Vitality" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36e-245-5b61-c7a9">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Succubus model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. While the bearer is Empowered, Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">DRUKHARI model only. The bearer’s unit is always Empowered – you do not need to spend any Pain tokens to activate that unit’s Pain abilities.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -38597,12 +38687,18 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
               <profiles>
                 <profile name="Labyrinthine Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e73-c351-7d24-482f">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Archon model only. Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 3 to the result if the Stratagem being used is Alliance of Agony: on a 4+, you gain 1CP</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:
+
+
+Spend 1 Pain token and gain 1CP.
+
+
+Roll one D6: on a 4+, you gain 1CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Art of Pain" hidden="false" id="715-eb25-e05a-dda9" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Crucible of Malediction" hidden="false" id="715-eb25-e05a-dda9" collective="false">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
               </costs>
@@ -38611,12 +38707,19 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7a81-c715-3c17-8a97" includeChildSelections="true"/>
               </constraints>
               <profiles>
-                <profile name="The Art of Pain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b660-b1c1-e41a-828f">
+                <profile name="Crucible of Malediction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b660-b1c1-e41a-828f">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Drukhari model only. In your Command phase, if the bearer is on the battlefield, you gain 1 Pain token</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HAEMONCULUS model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12&quot; of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a PSYKER unit fails that test, it suffers 3 mortal wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -38965,7 +39068,7 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
               <profiles>
                 <profile name="Sadistic Fulcrum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cafe-b553-9431-642d">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Drukhari model only. Each time you expend a Pain token to Empower the bearer’s unit in the Shooting phase, you can select one friendly Drukhari Transport within 3&quot; of the bearer’s unit; until the end of the phase, that Transport is also Empowered.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Drukhari model only. Each time you expend a Pain token to Empower the bearer’s unit in the Shooting phase, you can select one friendly Drukhari Transport within 6&quot; of the bearer’s unit; until the end of the phase, each time that Transport makes an attack, you can re-roll the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -39418,6 +39521,365 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
               </conditionGroups>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Covenite Coterie Enhancements" id="b75c-5508-62e6-f3ee" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Master Regenesist" hidden="false" id="39a6-50bb-0423-71c0" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaaa-9efa-7595-5ae5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2be-7998-4e62-0758" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Master Regenesist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e8aa-34fe-2aa0-e7e0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HAEMONCULUS model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer’s unit instead of D3+1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master Nemesine" hidden="false" id="9dcd-37eb-088a-050e" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd88-d243-e4f2-2b8d"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8599-b6eb-9edf-a2fa" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Master Nemesine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="25b0-23c5-9385-7187">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HAEMONCULUS model only. The bearer’s weapons have the [ANTI-BEAST 2+] and [ANTI-MONSTER 4+] abilities.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master Repugnomaner (Aura)" hidden="false" id="3081-5f4a-890d-2142" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9112-aa26-4bed-c173"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ab2-422e-4dd3-0e00" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Master Repugnomaner (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7b5f-ebb0-b8a7-8195">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HAEMONCULUS model only. Add 3&quot; to the range of the bearer’s Fear Incarnate ability, and each time a friendly DRUKHARI unit within 9&quot; of the bearer fails a Battle-shock test or is destroyed, roll one D6: on a 4+, you gain 1 Pain token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master Artisan" hidden="false" id="cdf7-0677-c113-e7dd" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1c3-5e99-24d2-9e65"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f321-cead-7ef7-98c9" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Master Artisan" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f1d-ffc8-bba6-9756">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HAEMONCULUS model only. Add 1 to the bearer’s Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer’s unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="ad2a-5823-9e74-7406" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3948-edf9-5235-6e58"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Kabalite Cartel Enhancements" id="ddb5-f608-c129-0d5d" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Leechbite Plate" hidden="false" id="e9bf-681e-e9e9-2446" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b331-e583-07fe-7fea"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ac82-e5c0-c808-64e7" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Leechbite Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f083-12f3-6e65-0c88">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. The bearer has a Save characteristic of 3+. At the start of either player’s Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.
+
+Spend 1 Pain token and gain 1CP.
+
+
+Roll one D6: on a 4+, you gain 1CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Towering Arrogance" hidden="false" id="a48a-acbd-496e-3220" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b046-a07e-3c2d-cd61"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f3e5-69e5-e3b7-a04e" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Towering Arrogance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7bf-f97e-14dd-9f4c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Informant Network" hidden="false" id="9860-9ea1-0555-fa23" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffa2-134a-cec4-5605"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dc70-fe62-1446-06ae" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Informant Network" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1fd4-3bb6-44df-0c5d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. At the start of the Declare Battle Formations step, select up to three KABALITE WARRIORS and/or HAND OF THE ARCHON units from your army; those units gain the Infiltrators ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Webway Awl" hidden="false" id="ee5c-4c89-a375-e219" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e34-1d8f-ea79-f285"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff21-9491-f4bd-a9d0" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Webway Awl" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d79c-db5c-ac54-ff99">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. Models in the bearer’s unit have the Deep Strike ability, and you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="55e0-882e-7156-465b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dae-a30c-7921-f8bb"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Spectacle of Spite Enhancements" id="ec8f-bd39-f89e-852f" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pharmacophex" hidden="false" id="53e6-5362-a7b0-a925" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef24-91b6-2e37-71c7"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5a72-0030-6932-67d3" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Pharmacophex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7916-333f-3ba1-5795">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SUCCUBUS model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer’s unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Morgheanna’s Curse" hidden="false" id="13e7-a657-b943-fac2" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9357-79be-8d06-f024"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e75c-2a81-1602-dee0" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Morgheanna’s Curse" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c71-eaf0-f8db-af3b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SUCCUBUS model only. Improve the Armour Penetration and Damage characteristics of the bearer’s melee weapons by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Periapt of Torments" hidden="false" id="bd35-2c88-d27e-b20d" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4f3-c9ae-57c9-5afa"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6822-7423-5358-d54a" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Periapt of Torments" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4414-192d-69e3-a7eb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SUCCUBUS model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chronoshard" hidden="false" id="104c-4d08-a1da-8cd4" collective="false">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57aa-9159-e231-2485"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a659-21f9-43b3-48eb" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Chronoshard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e857-3c1e-031b-5dc0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SUCCUBUS model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer’s unit have the Fights First ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="23c9-690a-8088-5095" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4222-6f2a-2370-4a81"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -40083,28 +40545,31 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
 Each time one of the triggers shown in the Agile Manoeuvres section of your codex occurs, you can spend one Battle focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</description>
     </rule>
     <rule name="Power from Pain" hidden="false" id="5e02-2ddc-f55-e6dd">
-      <description>If your Army Faction is DRUKHARI, units from your army with this ability can become Empowered Through Pain. This is done using Pain tokens.
+      <description>Pain Abilities
 
-GAINING PAIN TOKENS 
 
-If your Army Faction is Drukhari, you gain Pain tokens as follows:
-■ At the start of the battle, depending on the battle size:
-COMBAT PATROL -  1 PAIN TOKEN
-INCURSION - 2 PAIN TOKENS
-STRIKE FORCE - 3 PAIN TOKENS
-ONSLAUGHT - 4 PAIN TOKENS
-■ Each time an enemy unit is destroyed, you gain 1 Pain token.
-■ Each time an enemy unit fails a Battle-shock test, you gain 1 Pain token.
-Each time you gain a Pain token, keep it to one side – this is your Pain token pool.
+All DRUKHARI units have a Pain ability, tagged with the word ‘Pain’. Pain abilities only apply to a unit while it is Empowered. If your Army Faction is DRUKHARI, you can Empower units from your army with Pain abilities by spending Pain tokens (see below).
 
-EMPOWERED THROUGH PAIN
 
-At the start of any phase, you can expend one or more Pain tokens from your Pain token pool. Each time you do, select one unit from your army with the Power from Pain ability. Until the end of the phase, that unit is Empowered, and gains the  abilities listed below, depending on the phase.
+Designer’s Note: You can also spend Pain tokens to activate additional effects in certain other rules such as Enhancements and Stratagems.
 
-■ Empowered in the Movement or Charge phase:
-◦ You can re-roll Advance or Charge rolls made for that unit.
-■ Empowered in the Shooting or Fight phase:
-◦ Each time a model in that unit makes an attack, you can re-roll the Hit roll and, if it is a melee attack, improve the Armour Penetration characteristic of that attack by 1.</description>
+
+Gaining Pain Tokens
+
+
+If your Army Faction is DRUKHARI, you gain Pain tokens as follows:
+
+
+1 Pain token at the start of your Command phase.
+
+
+1 Pain token each time an enemy unit is destroyed.
+
+
+1 Pain token each time an enemy unit fails a Battle-shock test.
+
+
+Each time you gain a Pain token, keep it to one side – this is your Pain token pool. Each time you spend a Pain token, reduce your Pain token pool by the same amount.</description>
     </rule>
     <rule name="Disparate Paths" id="10d8-3547-47ae-baab" hidden="false">
       <description>When mustering you army, you can include Harlequins units in your army, even though they do not have the Asuryani Faction keyword. Unless otherwise stated, you cannot select Harlequins or Ynnari as your Army Faction.</description>
