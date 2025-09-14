@@ -19406,17 +19406,30 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2 Lascannons" hidden="false" id="dc9d-797c-f683-93c">
-                  <entryLinks>
-                    <entryLink import="true" name="Lascannon" hidden="false" id="d993-301b-49be-bd72" type="selectionEntry" targetId="200b-3f66-2458-aa0f">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="1803-6eb3-7947-ab75">
+                      <profiles>
+                        <profile name="Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afb1-39e4-602a-f107">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dada-9c8f-632-9c08"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f3d0-b8e4-fcc4-8166"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f982-45cb-e0f9-3c5a"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bf4c-0e23-dfa7-c798"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cc21-7aad-759b-b177" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="91fd-2e84-5162-9360" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
-                    </entryLink>
-                  </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Heavy Bolters" hidden="false" id="f94a-7ea8-501-3e8b">
                   <entryLinks>
