@@ -22177,19 +22177,261 @@ Before the battle, at the start of the Declare Battle Formations step, you can s
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="afc9-3fce-de9a-f65a" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Twin Torturer’s Tools" hidden="false" id="8edd-43f2-8e97-ee98" type="selectionEntry" targetId="8134-641c-147e-9559"/>
-                  </entryLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Torturer’s Tools and Power Weapon" id="5400-e354-56c7-2794" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2fa-19d0-f7df-24bd"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c8c-f38d-ed19-401e"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Twin Torturer’s Tools" hidden="false" id="fa1f-ba21-c840-54bd">
                       <entryLinks>
-                        <entryLink import="true" name="Torturer’s Tools" hidden="false" id="863a-e6bb-d73b-7c8e" type="selectionEntry" targetId="5e86-2bda-5983-1777"/>
+                        <entryLink import="true" name="Twin Torturer’s Tools" hidden="false" id="8edd-43f2-8e97-ee98" type="selectionEntry" targetId="8134-641c-147e-9559"/>
                       </entryLinks>
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="9c0f-edcd-3464-7cba">
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee and Ranged" hidden="false" id="fff6-d9ec-9455-a549">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Melee" id="0725-8cbf-161c-635c" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="7928-36c6-1da3-d371">
+                              <infoLinks>
+                                <infoLink name="Anti-" id="eb5f-4b8e-b533-55cd" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                              </infoLinks>
+                              <profiles>
+                                <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5d73-fe69-a6fb-73e3">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 3+</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Torturer’s Tools" hidden="false" id="6c9d-dc04-d96a-0644" collective="true">
+                              <infoLinks>
+                                <infoLink name="Anti-" id="8c0f-0aee-2a3d-99f9" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                              </infoLinks>
+                              <profiles>
+                                <profile name="Torturer’s Tools" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b3f0-c669-4191-a3a5">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 4+</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                            </selectionEntry>
+                          </selectionEntries>
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d804-0b3b-e99e-76ec"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d974-b5fe-1435-433f"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Ranged" id="cb02-26af-c389-8aa1" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Hexrifle" hidden="false" id="9444-fc30-a0dc-19dc" collective="true">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83b1-3fce-a01d-5f5e"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Hexrifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="68d3-ea24-4ca2-0a6d">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Heavy" id="07f3-1dad-3480-42bd" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                                <infoLink name="Precision" id="9363-af9d-f680-79b0" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="0" field="83b1-3fce-a01d-5f5e">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditionGroups>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="1" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="c3d8-1bf0-ff35-bdd9" shared="true" includeChildSelections="true"/>
+                                            <condition type="lessThan" value="6" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="2" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="c3d8-1bf0-ff35-bdd9" shared="true" includeChildSelections="true"/>
+                                            <condition type="atLeast" value="10" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                      </conditionGroups>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Liquifier gun" hidden="false" id="23e9-e861-2308-d740" collective="true">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfa4-9ed0-a092-a9a0"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Liquifier Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5577-f8d1-e322-1ce6">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Anti-Infantry 3+</characteristic>
+                                  </characteristics>
+                                  <modifiers>
+                                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Torrent" id="3ad6-b2b6-4bd5-bce1" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                                <infoLink name="Anti-" id="15c8-89a5-321b-e8ab" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="0" field="dfa4-9ed0-a092-a9a0">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditionGroups>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="1" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="af0-2527-f39e-f792" shared="true" includeChildSelections="true"/>
+                                            <condition type="lessThan" value="6" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="2" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="af0-2527-f39e-f792" shared="true" includeChildSelections="true"/>
+                                            <condition type="atLeast" value="10" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                      </conditionGroups>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Ossefactor" hidden="false" id="723f-00a8-cecc-44c6" collective="true">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49d2-b14a-0e80-08ab"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Ossefactor" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="08eb-afad-04fa-5698">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                    <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+                                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+, Devastating Wounds</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Anti-" id="e0b4-2cd9-5954-8c11" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                                <infoLink name="Devastating Wounds" id="dc25-bafc-09e1-523f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="0" field="49d2-b14a-0e80-08ab">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditionGroups>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="1" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="32c2-dccc-387e-4767" shared="true" includeChildSelections="true"/>
+                                            <condition type="lessThan" value="6" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="2" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="32c2-dccc-387e-4767" shared="true" includeChildSelections="true"/>
+                                            <condition type="atLeast" value="10" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                      </conditionGroups>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Stinger pistol" hidden="false" id="30f0-b27e-8035-900d" collective="true">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fde-0d7c-9933-9afe"/>
+                              </constraints>
+                              <profiles>
+                                <profile name="Stinger Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e55c-3d52-832b-7f61">
+                                  <characteristics>
+                                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                                    <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+                                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-infantry 2+, Pistol</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Anti-" id="261b-fdca-8637-c243" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                                <infoLink name="Pistol" id="1649-7bc8-4e27-eaa8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="0" field="5fde-0d7c-9933-9afe">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditionGroups>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="1" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="8f92-bc32-71c6-6f82" shared="true" includeChildSelections="true"/>
+                                            <condition type="lessThan" value="6" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                        <conditionGroup type="and">
+                                          <conditions>
+                                            <condition type="atLeast" value="2" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="8f92-bc32-71c6-6f82" shared="true" includeChildSelections="true"/>
+                                            <condition type="atLeast" value="10" field="selections" scope="2659-7a1b-3ce6-8e4b" childId="model" shared="true" includeChildSelections="true"/>
+                                          </conditions>
+                                        </conditionGroup>
+                                      </conditionGroups>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6602-f715-b15b-a2bd"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="323a-4d5f-38c0-4244"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Torturer&apos;s Tools and Power Weapon" hidden="false" id="92a7-1cbc-f5d5-aca3">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="9c0f-edcd-3464-7cba">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7e7-ee91-26fd-6b4e"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bc5-c33b-ec87-8b68"/>
                           </constraints>
                           <infoLinks>
                             <infoLink name="Anti-" id="1d7a-f486-bff9-8683" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
@@ -22208,13 +22450,31 @@ Before the battle, at the start of the Declare Battle Formations step, you can s
                             </profile>
                           </profiles>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Torturer’s Tools" hidden="false" id="8bb0-42ac-efcf-c986" collective="true">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0817-fae8-8cef-9aeb"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f372-6d99-49de-0b0e"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Anti-" id="31d8-a6f4-6c31-b626" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                          </infoLinks>
+                          <profiles>
+                            <profile name="Torturer’s Tools" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="edc0-41de-cabd-e050">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 4+</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
                       </selectionEntries>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2fa-19d0-f7df-24bd"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c8c-f38d-ed19-401e"/>
-                  </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
