@@ -18058,18 +18058,13 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5f5b-7a8b-c946-871b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f5b-7a8b-c946-871b" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="add" value="1 Token per 5 Models" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="af19-6951-4401-26ab" shared="true"/>
-                    <condition type="lessThan" value="10" field="selections" scope="parent" childId="model" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" value="2" field="5f5b-7a8b-c946-871b">
+              <conditions>
+                <condition type="atLeast" value="10" field="selections" scope="1529-793d-481b-82bf" childId="model" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -35536,7 +35531,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
-        <profile name="Archon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2990-f83b-6388-606a">
+        <profile name="Lady Malys" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2990-f83b-6388-606a">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -36271,10 +36266,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                 <selectionEntryGroup name="Special Weapon" id="e970-499b-00e5-848b" hidden="false">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Blaster" hidden="false" id="2ff8-91f2-6f1f-0171" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1db7-6fb5-e03e-1296"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a8b-472d-f985-5a88"/>
-                      </constraints>
                       <profiles>
                         <profile name="Blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7dab-dd76-f171-e192">
                           <characteristics>
@@ -36293,10 +36284,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                       </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Shredder" hidden="false" id="5dd4-92b6-81a1-73c3">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a43-b59f-6bac-a7ab"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0bd-7e5f-8970-26d8"/>
-                      </constraints>
                       <profiles>
                         <profile name="Shredder" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9c62-6405-020e-eb90">
                           <characteristics>
@@ -36414,19 +36401,11 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                           </characteristics>
                         </profile>
                       </profiles>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8bc-5de2-815b-1664"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35eb-cc60-d608-8a17"/>
-                      </constraints>
                       <infoLinks>
                         <infoLink name="Heavy" id="3059-f4ce-8b7a-4a4e" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
                       </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Splinter cannon" hidden="false" id="0008-ad36-3ca8-6b1e">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860b-c442-2e9c-990a"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee60-46b2-4e57-53e8"/>
-                      </constraints>
                       <profiles>
                         <profile name="Splinter Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ee6f-c1e3-1815-fe6e">
                           <characteristics>
@@ -39930,7 +39909,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Spiteful Raider" hidden="false" id="c049-95f9-58cb-b70a">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -40409,7 +40388,12 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Master Nemesine" hidden="false" id="9dcd-37eb-088a-050e" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd88-d243-e4f2-2b8d"/>
@@ -40432,7 +40416,12 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Master Repugnomaner (Aura)" hidden="false" id="3081-5f4a-890d-2142" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9112-aa26-4bed-c173"/>
@@ -40455,7 +40444,12 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Master Artisan" hidden="false" id="cdf7-0677-c113-e7dd" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1c3-5e99-24d2-9e65"/>
@@ -40504,7 +40498,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Leechbite Plate" hidden="false" id="e9bf-681e-e9e9-2446" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -40526,18 +40520,14 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
                 <profile name="Leechbite Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f083-12f3-6e65-0c88">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ARCHON model only. The bearer has a Save characteristic of 3+. At the start of either player’s Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.
-
-Spend 1 Pain token and gain 1CP.
-
-
-Roll one D6: on a 4+, you gain 1CP.</characteristic>
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Towering Arrogance" hidden="false" id="a48a-acbd-496e-3220" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -40698,7 +40688,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Periapt of Torments" hidden="false" id="bd35-2c88-d27e-b20d" collective="false">
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
