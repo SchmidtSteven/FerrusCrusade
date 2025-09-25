@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="105" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="109" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -17544,30 +17544,8 @@ It can also move through sections of terrain features that are more than 4&quot;
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ce-b360-8e3b-a5ce"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee Weapon Option" id="7914-125d-26b4-8682" hidden="false" defaultSelectionEntryId="6ba1-f90f-f7f6-c41f">
+                <selectionEntryGroup name="Extra Melee Weapon Option" id="7914-125d-26b4-8682" hidden="false" defaultSelectionEntryId="6ba1-f90f-f7f6-c41f">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Hellglaive" hidden="false" id="6ba1-f90f-f7f6-c41f">
-                      <profiles>
-                        <profile name="Hellglaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ab6-58d0-d2e3-59e6">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1, Lance</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Sustained Hits" id="6b8f-8791-4bd1-53d2" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                        <infoLink name="Lance" id="7300-6c26-0184-7436" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="edd9-7a83-396a-e286" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="85b9-cecf-2902-702e">
                       <profiles>
                         <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6a31-ca3e-a5a9-b773">
@@ -17616,7 +17594,6 @@ It can also move through sections of terrain features that are more than 4&quot;
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c026-cf9a-dcca-c5a2"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d31-b330-c481-e200"/>
                   </constraints>
                 </selectionEntryGroup>
@@ -17669,7 +17646,6 @@ It can also move through sections of terrain features that are more than 4&quot;
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Splinter Pistol" hidden="false" id="9d00-3449-6fca-aeab">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8460-85b5-5d4b-f6ab" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3d-51cf-f0fa-74fa" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
@@ -17693,6 +17669,31 @@ It can also move through sections of terrain features that are more than 4&quot;
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ed53-1931-4529-dff6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hellglaive" hidden="false" id="6ba1-f90f-f7f6-c41f">
+                  <profiles>
+                    <profile name="Hellglaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ab6-58d0-d2e3-59e6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1, Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="6b8f-8791-4bd1-53d2" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                    <infoLink name="Lance" id="7300-6c26-0184-7436" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="edd9-7a83-396a-e286" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75de-4a23-f2cc-8cff"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
