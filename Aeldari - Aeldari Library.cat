@@ -19785,7 +19785,7 @@ Aethersails: While one or more DRUKHARI units are embarked within this model, yo
     </selectionEntry>
     <selectionEntry id="2c3a-9752-2516-69ab" name="Reavers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="140">
+        <modifier type="set" field="51b2-306e-1021-d207" value="130">
           <conditions>
             <condition field="selections" scope="2c3a-9752-2516-69ab" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
