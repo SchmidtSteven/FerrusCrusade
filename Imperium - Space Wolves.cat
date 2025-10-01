@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="60" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="63" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -1615,7 +1615,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <categoryLink targetId="6e7-40c-58d9-e402" id="6e3d-16a4-5bb4-82f2" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="a0d9-c115-2a-8330" id="716f-a80c-3ec-5af" primary="false" name="Faction: Space Wolves"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="aa46-bd88-7084-2c7b" primary="true" name="Infantry"/>
-        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="66f2-3e0e-b4a8-dfc4" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="5b9b-6a22-adf1-ce55" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="fe6b-69d3-e632-2977" primary="false" name="Terminator"/>
         <categoryLink targetId="4554-88b1-466c-d9f5" id="b016-d3c5-4643-aa40" primary="false" name="Wolf Guard Terminators"/>
