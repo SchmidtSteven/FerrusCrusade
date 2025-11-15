@@ -1728,7 +1728,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
       <modifiers>
         <modifier type="set" value="210" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="parent" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="4" field="selections" scope="parent" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1852,7 +1852,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
             <selectionEntry type="model" import="true" name="Company Ancient" hidden="false" id="7f98-6bdb-f169-9f1f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="104e-0a6e-be5e-8d63"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5a7b-10bf-58e1-1ee5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5a7b-10bf-58e1-1ee5" includeChildSelections="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ca4d-974a-7f22-4597" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
@@ -1895,7 +1895,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
             <selectionEntry type="model" import="true" name="Company Champion" hidden="false" id="c4ab-68f7-9e88-3f15">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c04-b4ad-52e5-8170"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2a4-3216-6f07-7363"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2a4-3216-6f07-7363" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="Honour or Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0582-217e-2fba-7be6">
@@ -2154,6 +2154,7 @@ You can attach this model to the above unit even if a Marneus Calgar unit has al
         <infoLink name="Leader" id="dd9a-0238-ded5-d33d" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Oath of Moment" id="c1d1-42cd-9cd9-6694" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Invulnerable Save" id="b4cb-376e-ce2b-5f73" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Deep Strike" id="d596-f342-e1a2-1983" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -2262,6 +2263,10 @@ You can attach this model to the above unit even if a Marneus Calgar unit has al
       <categoryLinks>
         <categoryLink name="Imperium" hidden="false" id="5891-2fbe-2aa8-982d" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="a9be-2a4a-c736-2bfc" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="67aa-5d93-855d-abf4" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="740a-892c-8958-defa" id="e80f-5457-2b3e-e8f5" primary="false" name="Terminator"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="1735-3e2c-dcb4-c98d" primary="false" name="Character"/>
+        <categoryLink targetId="5bd8-882d-302b-48f3" id="6a35-58ab-a559-e719" primary="false" name="Chapter Master"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1659-a43a-6da2-c30d"/>
