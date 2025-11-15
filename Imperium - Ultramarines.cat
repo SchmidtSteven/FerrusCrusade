@@ -1752,6 +1752,11 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Shooting phase, each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Surge move. To do so, roll one D6: models in this unit can move a number of inches up to the result, but this unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT). When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Surge move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Surge move per phase.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Attached Unit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="77cf-307a-3105-1bb8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Captain or Chapter Master unit from your army can be attached to a Company Heroes unit, it can be attached to this unit instead.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="a694-b670-1a68-c365" targetId="cf47-a0d7-7207-29dc" primary="true"/>
@@ -2046,11 +2051,10 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 
-■ Assault Intercessor Squad
-■ Bladeguard Veteran Squad
-■ Company Heroes
-■ Sternguard Veteran Squad
-■ Tactical Squad</characteristic>
+■ Victrix Honour Guard
+
+
+You can attach this model to the above unit even if a Marneus Calgar unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2137,6 +2141,13 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="0" field="7d9f-c2bb-03ab-4d53">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="2ae8-40ec-ba34-dfe5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marneus Calgar in Armour of Antilochus" hidden="false" id="d031-a3ca-e879-91ee">
       <infoLinks>
@@ -2188,7 +2199,10 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
 ■ Infernus Squad
 ■ Intercessor Squad
 ■ Sternguard Veteran Squad
-■ Tactical Squad</characteristic>
+■ Tactical Squad
+■ Terminator Squad
+■ Terminator Assault Squad
+■ Victrix Honour Guard</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2262,6 +2276,13 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="0" field="1659-a43a-6da2-c30d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="388d-198a-29f-d03e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
