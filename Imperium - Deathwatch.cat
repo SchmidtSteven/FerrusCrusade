@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f89b-84e0-6e3b-f1e2" name="Imperium - Adeptus Astartes - Deathwatch" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="61" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f89b-84e0-6e3b-f1e2" name="Imperium - Adeptus Astartes - Deathwatch" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="63" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Terminator Heavy Weapons" hidden="false" id="77ef-f5b6-e6bc-7618" defaultSelectionEntryId="8259-a28d-949-b4fa">
       <constraints>
@@ -44,7 +44,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fb-6e93-80fe-7b0e"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Plasma cannon" hidden="false" type="selectionEntry" id="c8e8-e62f-1e5c-5832" targetId="fdd7-3066-57cc-ce52">
+            <entryLink import="true" name="Plasma Cannon" hidden="false" type="selectionEntry" id="c8e8-e62f-1e5c-5832" targetId="47ef-a0e2-2cb0-845d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8b2-8dd7-c5a4-c30c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a0-b614-f655-a690"/>
@@ -63,7 +63,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a04-f9a7-c458-b51b"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="eb24-a514-989e-1b7e" targetId="da0b-ae86-a275-13f1">
+            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="eb24-a514-989e-1b7e" targetId="19af-a336-8adb-60e7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6d1-1505-a691-d5d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6225-ac10-3438-5a79"/>
@@ -198,7 +198,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fb-6e93-80fe-7b0e"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Plasma cannon" hidden="false" type="selectionEntry" id="bb9b-51f8-92-c77" targetId="fdd7-3066-57cc-ce52">
+            <entryLink import="true" name="Heavy Plasma Cannon" hidden="false" type="selectionEntry" id="bb9b-51f8-92-c77" targetId="6a16-65ff-b6a2-f359">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8b2-8dd7-c5a4-c30c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a0-b614-f655-a690"/>
@@ -217,7 +217,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fb-6e93-80fe-7b0e"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Plasma cannon" hidden="false" type="selectionEntry" id="c99b-d36a-2eb8-30bf" targetId="fdd7-3066-57cc-ce52">
+            <entryLink import="true" name="Plasma Cannon" hidden="false" type="selectionEntry" id="c99b-d36a-2eb8-30bf" targetId="47ef-a0e2-2cb0-845d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8b2-8dd7-c5a4-c30c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a0-b614-f655-a690"/>
@@ -236,7 +236,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a04-f9a7-c458-b51b"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="1723-13c4-1f4-ac57" targetId="da0b-ae86-a275-13f1">
+            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="1723-13c4-1f4-ac57" targetId="19af-a336-8adb-60e7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6d1-1505-a691-d5d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6225-ac10-3438-5a79"/>
@@ -261,7 +261,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a04-f9a7-c458-b51b"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="c886-bd63-5a5c-8141" targetId="da0b-ae86-a275-13f1">
+            <entryLink import="true" name="Cyclone missile launcher" hidden="false" type="selectionEntry" id="c886-bd63-5a5c-8141" targetId="19af-a336-8adb-60e7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6d1-1505-a691-d5d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6225-ac10-3438-5a79"/>
@@ -1381,7 +1381,7 @@
             <categoryLink targetId="9cfd-1c32-585f-7d5c" id="ce01-a32c-1053-c4f6" primary="false" name="Character"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="2b37-916-99ee-476" targetId="18b0-8c2-173f-5">
+            <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="2b37-916-99ee-476" targetId="18b0-8c2-173f-5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c22-e01b-bd7d-78c3"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7-d-e31-c20f"/>
@@ -1478,7 +1478,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="b49f-9294-c1fa-50bd" targetId="18b0-8c2-173f-5">
+            <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="b49f-9294-c1fa-50bd" targetId="18b0-8c2-173f-5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c22-e01b-bd7d-78c3"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7-d-e31-c20f"/>
@@ -1587,7 +1587,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="ce65-70f7-7adf-a89e" targetId="18b0-8c2-173f-5">
+            <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="ce65-70f7-7adf-a89e" targetId="18b0-8c2-173f-5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c22-e01b-bd7d-78c3"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7-d-e31-c20f"/>
@@ -1748,7 +1748,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="664e-a3fa-d859-9b99" targetId="18b0-8c2-173f-5">
+            <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="664e-a3fa-d859-9b99" targetId="18b0-8c2-173f-5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c22-e01b-bd7d-78c3"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7-d-e31-c20f"/>
@@ -2676,7 +2676,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="343f-86ae-2018-d9f4"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="8990-e4fe-995a-e7d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="8990-e4fe-995a-e7d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc09-2ab1-66a1-4886" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="402d-221b-4cf4-cc95" includeChildSelections="false"/>
@@ -2711,19 +2711,19 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d5-cd69-2f5b-f75d"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="c8e8-42c1-17ae-1655" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="c8e8-42c1-17ae-1655" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c3c-36b9-52b4-3d6f" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c9f-9c86-05d5-9fa1" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="5fad-cb88-bc24-405f" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="5fad-cb88-bc24-405f" type="selectionEntry" targetId="3c0b-9a9a-df74-9514">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8446-b5e3-1308-df19" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e9-7251-76cf-0727" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Vengor Launcher" hidden="false" id="45c4-cf62-c6fb-0a20" type="selectionEntry" targetId="7d58-3576-d40e-b858">
+                    <entryLink import="true" name="Vengor Launcher" hidden="false" id="45c4-cf62-c6fb-0a20" type="selectionEntry" targetId="d292-5b21-6291-5f33">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4a-18b5-2f35-2649-max" includeChildSelections="false"/>
@@ -2745,13 +2745,13 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="633d-8bcc-bf1b-caa6"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="e243-f440-4e99-69d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="e243-f440-4e99-69d3" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5152-ba28-40fb-e5f7" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d0-79e0-9a9a-3b2d" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="4bbe-a651-0949-34cd" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="4bbe-a651-0949-34cd" type="selectionEntry" targetId="3c0b-9a9a-df74-9514">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb2-c11c-7717-d8d2-max" includeChildSelections="false"/>
@@ -2798,13 +2798,13 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aa4-6c18-8130-e192"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ef0c-c761-a7f1-56dd" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="ef0c-c761-a7f1-56dd" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae1a-7056-ec32-9326" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb15-c4ae-9582-3d6a" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="0915-80ce-d6c4-31c1" type="selectionEntry" targetId="566c-9e8f-3121-93b0">
+                    <entryLink import="true" name="Castellan Launcher" hidden="false" id="0915-80ce-d6c4-31c1" type="selectionEntry" targetId="3c0b-9a9a-df74-9514">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ed-0f6e-7c89-6841" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c6-7a3e-8c78-ca02" includeChildSelections="false"/>
@@ -2853,7 +2853,7 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6daf-acfa-2263-6b64" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="6443-96b2-f81e-91ad" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="6443-96b2-f81e-91ad" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdc1-2812-53e8-5f2d"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2c6-4a83-a1c9-3a03"/>
@@ -2887,7 +2887,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a42-5c08-1bb6-33a7"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="da18-b750-6753-cfd2" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="da18-b750-6753-cfd2" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c521-c729-fab9-3ac8"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a97-0de4-62a4-52d7"/>
@@ -2904,7 +2904,7 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf7-7d55-92dc-4fcb" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="8766-1ee4-06db-55bf" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="8766-1ee4-06db-55bf" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="a077-e1c9-f8f0-d38" shared="true" id="7179-f79e-2087-1575" includeChildSelections="true"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ba6-5771-4e34-6e15-min" includeChildSelections="false"/>
@@ -2968,7 +2968,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9b86-262d-68c4-3986"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="f82c-7c13-8110-8fb5" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="f82c-7c13-8110-8fb5" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1599-70e6-66e0-fc62"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9418-121d-75a0-8eb9"/>
@@ -2980,7 +2980,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9c-0eab-5b7b-b186"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Pyreblaster" hidden="false" id="6b9e-b8c6-f7ad-228d" type="selectionEntry" targetId="2737-cb80-0c3a-3dfa">
+                <entryLink import="true" name="Pyreblaster" hidden="false" id="6b9e-b8c6-f7ad-228d" type="selectionEntry" targetId="bcf-9f6b-f51e-6332">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6526-4db5-bfc3-ecf5-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6526-4db5-bfc3-ecf5-max" includeChildSelections="false"/>
@@ -3089,7 +3089,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Astartes grenade launcher" hidden="false" id="ab02-913c-6cba-5d5c" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
+            <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="ab02-913c-6cba-5d5c" type="selectionEntry" targetId="ca2b-3d9a-e739-cb21">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="a077-e1c9-f8f0-d38" shared="true" id="8293-0f24-5332-443f" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a06-a34a-5324-b64d" includeChildSelections="false"/>
@@ -3111,7 +3111,7 @@
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ced4-f796-802a-345f" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-            <entryLink import="true" name="Bolt pistol" hidden="false" id="514c-5b0d-824e-2572" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="514c-5b0d-824e-2572" type="selectionEntry" targetId="18b0-8c2-173f-5" collective="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c97a-3d78-52d8-cd68"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db3e-95d8-c0fe-79fc"/>
@@ -3252,7 +3252,7 @@
                     </profile>
                   </profiles>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="ae82-6562-497e-de55" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="ae82-6562-497e-de55" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59d-564e-8411-2bdc"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fb-4f17-29a-8639"/>
@@ -3271,7 +3271,7 @@
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="d728-a8d8-70b1-7b91" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                    <entryLink import="true" name="Melta rifle" hidden="false" id="0b8b-e8e1-2961-86b9" type="selectionEntry" targetId="c88c-d4a0-4ec4-625c">
+                    <entryLink import="true" name="Melta Rifle" hidden="false" id="0b8b-e8e1-2961-86b9" type="selectionEntry" targetId="c035-ab98-87fb-11b1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="6582-fd4a-1697-f029" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -3299,7 +3299,7 @@
                     </profile>
                   </profiles>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="ff42-27b7-67c-e679" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="ff42-27b7-67c-e679" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59d-564e-8411-2bdc"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fb-4f17-29a-8639"/>
@@ -3406,7 +3406,7 @@
                   </selectionEntries>
                   <entryLinks>
                     <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="4265-34cc-a6f5-40d6" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                    <entryLink import="true" name="Fragstorm grenade launcher" hidden="false" id="c671-17f7-c2d0-b42e" type="selectionEntry" targetId="2557-ebbd-6ea5-3785">
+                    <entryLink import="true" name="Fragstorm Grenade Launcher" hidden="false" id="c671-17f7-c2d0-b42e" type="selectionEntry" targetId="2557-ebbd-6ea5-3785">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="915d-dd82-48f0-c3bd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -3500,7 +3500,7 @@
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Kill Team Heavy Intercessor" hidden="false" id="84f7-2150-fe04-4f8b" defaultAmount="10">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="7a47-2296-2512-45e6" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="7a47-2296-2512-45e6" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0657-3763-16f6-0400"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6a3-8d8a-728f-8488"/>
@@ -3568,7 +3568,7 @@
                 </selectionEntry>
                 <selectionEntry type="model" import="true" name="Kill Team Heavy Intercessor w/ heavy bolter" hidden="false" id="83ce-4339-bfd5-7635">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ff70-fa6d-3525-c08a" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="ff70-fa6d-3525-c08a" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="915c-8819-f315-dfe0"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e8b-f4b2-5b5f-373c"/>
@@ -3833,7 +3833,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="ac01-79aa-e24f-38e" targetId="18b0-8c2-173f-5">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="ac01-79aa-e24f-38e" targetId="18b0-8c2-173f-5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59d-564e-8411-2bdc"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fb-4f17-29a-8639"/>
@@ -3932,7 +3932,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="684b-9e41-83a2-7221" targetId="18b0-8c2-173f-5">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="684b-9e41-83a2-7221" targetId="18b0-8c2-173f-5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59d-564e-8411-2bdc"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fb-4f17-29a-8639"/>
@@ -3989,7 +3989,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="f24f-1446-d7a3-2403" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="f24f-1446-d7a3-2403" type="selectionEntry" targetId="18b0-8c2-173f-5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9256-ff0c-6f4c-1cde"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d771-f636-2d31-a2c7"/>
@@ -4230,7 +4230,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e3-9d37-042a-1277"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="adac-6eb5-5e8f-0221" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="adac-6eb5-5e8f-0221" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33d0-fd59-77e2-9c53"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d52-2a1b-5608-5ebe"/>
@@ -4302,7 +4302,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e5f7-b35f-91ed-0005"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="26fe-f6b9-75dc-887c" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="26fe-f6b9-75dc-887c" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ec-6dd3-a179-dead"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4db5-e843-1d85-99fa"/>
@@ -4321,7 +4321,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                       </entryLinks>
                     </entryLink>
                     <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="4cb4-d567-5b89-f2ad" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                    <entryLink import="true" name="Las fusil" hidden="false" id="9fac-8013-550b-e3fa" type="selectionEntry" targetId="631b-bd1f-e76a-e166">
+                    <entryLink import="true" name="Las Fusil" hidden="false" id="9fac-8013-550b-e3fa" type="selectionEntry" targetId="a915-a3ab-7c62-9e3b">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="bece-108f-d8d6-6e51" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -4349,7 +4349,7 @@ If this unit has a Leader unit attached to it during the Declare Battle Formatio
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1295-e77d-ae1c-bac3"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="8ce3-531b-4210-e200" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="8ce3-531b-4210-e200" type="selectionEntry" targetId="18b0-8c2-173f-5">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a0-3e86-ceaf-ac09"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="115f-c054-c061-f727"/>
