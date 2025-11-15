@@ -1879,7 +1879,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                   <profiles>
                     <profile name="Master-crafted power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c139-bf22-6689-cded">
                       <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">24&quot;</characteristic>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
@@ -1922,7 +1922,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                   <profiles>
                     <profile name="Blades of honour" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="57d3-448a-fe1c-acb4">
                       <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">24&quot;</characteristic>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
@@ -1979,7 +1979,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
                   <profiles>
                     <profile name="Master-crafted power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d710-237a-1020-3391">
                       <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">24&quot;</characteristic>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                         <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
                         <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                         <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
