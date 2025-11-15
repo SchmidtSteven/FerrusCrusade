@@ -36921,6 +36921,38 @@ your Oath of Moment target until you select a new one</characteristic>
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blade of Ultramar" hidden="false" id="4131-b1d9-c0f3-3a0b" collective="false" page="2">
+          <profiles>
+            <profile name="Mastered Doctrines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb2f-ae18-2adc-3411">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of up to three of your Command phases, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all ADEPTUS ASTARTES units from your army. You cannot select a Combat Doctrine you have already selected this battle, unless a friendly MARNEUS CALGAR model is on the battlefield.
+
+DEVASTATOR DOCTRINE 
+This unit is eligible to shoot in a turn in which it Advanced.
+
+TACTICAL DOCTRINE
+This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
+
+ASSAULT DOCTRINE
+This unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Grenades" hidden="false" id="aead-ae18-4932-0dc4" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4029-9237-e8db-af55" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9e5d-de4c-c5d1-1d3e" collapsible="true">
@@ -40110,6 +40142,16 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="5d6e-fd3-330a-11dd" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1dea-4c70-8d4d-3415" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21c2-cfeb-d455-48d8"/>
@@ -40344,6 +40386,112 @@ its controlling player). Once per battle, when such an enemy unit fails a Battl
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52e9-c28f-49fd-f891" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blade of Ultramar Enhancements" id="c3c6-768b-db94-bcb1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour of Antoninus" hidden="false" id="3beb-30b2-051c-9a51">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bff9-b63d-c9bf-b1e7" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Armour of Antoninus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ecf9-f8ba-17c2-8606">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Adeptus Astartes^^** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="ddbe-c6c8-fcc7-a2f5" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                  <modifiers>
+                    <modifier type="append" value="5+" field="name" join=" "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Artificer Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.9cfd-1c32-585f-7d5c.profiles.Unit"/>
+                    <modifier type="set" value="2+" field="450-a17e-9d5e-29da" join=", " scope="model" affects="self.entries.recursive.9cfd-1c32-585f-7d5c.profiles.Unit"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Oath of Macragge" hidden="false" id="9e0c-7215-611e-caec">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7457-1a21-7b67-b572" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Oath of Macragge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f7d-7dac-edf6-7264">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is under the effects of the Assault Doctrine, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Student of the Codex" hidden="false" id="92d1-f04a-90c8-ba39">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="96fb-5215-1952-1836" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Student of the Codex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="807d-ddfc-86f0-c38c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. At the start of your Command phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, until the start of your next Command phase, the Tactical Doctrine is active for this unit (instead of any other Combat Doctrine you select to be active for your army, and even if there is no Combat Doctrine active for your army).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran of Behemoth" hidden="false" id="e4e6-be54-f2a3-5860">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="62e9-335b-0e4c-760a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Veteran of Behemoth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7bef-e171-961f-c0ac">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, you can reroll Advance rolls made for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="4131-b1d9-c0f3-3a0b" shared="true" id="9dd7-519b-1935-f41a" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4029-9237-e8db-af55" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ba-38a0-2633-79bb"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
