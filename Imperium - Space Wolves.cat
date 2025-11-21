@@ -3886,9 +3886,9 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         <categoryLink targetId="a0d9-c115-2a-8330" id="77ad-6633-37bc-f6b2" primary="false" name="Faction: Space Wolves"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="bd51-105f-5152-a28a" primary="true" name="Infantry"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="3883-0b48-ac3a-36af" primary="false" name="Imperium"/>
-        <categoryLink targetId="180b-bab2-a59f-44bc" id="0d06-a59a-3073-cc5b" primary="false" name="Wolf Guard"/>
-        <categoryLink targetId="1fdb-004f-6c61-14b7" id="f596-0630-4b71-8d70" primary="false" name="Headtakers"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="d8e6-4b5a-b196-ebc9" primary="false" name="Tacticus"/>
+        <categoryLink targetId="7295-ed65-8ff4-7a5f" id="7bc3-c295-97a1-7f73" primary="false" name="Phobos"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="917e-727e-2798-6e7c" primary="false" name="Grenades"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="e98d-d9c9-3a22-2972" primary="false" name="Smoke"/>
       </categoryLinks>
       <profiles>
         <profile name="Deadly Stalkers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="90ff-ecec-1190-466e">
@@ -3898,12 +3898,12 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
         </profile>
         <profile name="Hunting Hounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="31b3-20b5-9df8-0c10">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Hunting Hounds: While this unit is within 6&quot; of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it have an Objective Control characteristic of 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within 6&quot; of one or more friendly SPACE WOLVES CHARACTER models (excluding WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it have an Objective Control characteristic of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wolf Scouts" hidden="false" id="52fb-cb36-cc4a-c144" sortIndex="0" defaultSelectionEntryId="9162-ceef-e61c-9fe7">
+        <selectionEntryGroup name="Wolf Scouts" hidden="false" id="52fb-cb36-cc4a-c144" sortIndex="1" defaultSelectionEntryId="9162-ceef-e61c-9fe7">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c586-7bca-e0dd-5334"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="47f2-144b-0bc7-650c"/>
@@ -3918,6 +3918,18 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <profiles>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7ddc-90b9-371a-91f7">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b46e-3ad8-0067-032a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9441-0ff9-67de-34e4"/>
@@ -3953,6 +3965,18 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <profiles>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="640c-31a6-9ad1-591f">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Combat Blade" hidden="false" id="fec0-d52c-1031-d4b3">
                   <constraints>
@@ -3988,6 +4012,16 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                 <profile name="Haywire Mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="57d8-bd0e-cc5e-e354">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one enemy unit within 3&quot; of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a VEHICLE unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a80e-b0af-fe16-dbb4">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4044,6 +4078,18 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f73a-d3be-464d-fe50"/>
               </constraints>
+              <profiles>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b493-c89e-09b7-f6dc">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Wolf Scout with Runic Stave" hidden="false" id="b104-258e-01f2-4418">
               <entryLinks>
@@ -4104,6 +4150,18 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0739-c16a-a27f-5faa"/>
               </constraints>
+              <profiles>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d054-1255-67cf-a00e">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Wolf Scout with Carbine" hidden="false" id="ec54-73df-7787-a426">
               <selectionEntries>
@@ -4159,20 +4217,20 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3260-c34f-83b4-94a5">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
-          <profiles>
-            <profile name="Wolf Scout" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="640c-31a6-9ad1-591f">
-              <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
-                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -4419,7 +4477,7 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
     <entryLink import="true" name="Wolf Priest" hidden="false" type="selectionEntry" id="899e-0b6a-9c78-693d" targetId="4726-21ad-489c-74e9"/>
     <entryLink import="true" name="Wolf Guard Terminators" hidden="false" type="selectionEntry" id="8136-7d3e-9ee2-c5c2" targetId="ca30-caf3-d7a8-1d32"/>
     <entryLink import="true" name="Wolf Guard Headtakers" hidden="false" type="selectionEntry" id="e79a-abac-efa0-ce0e" targetId="2a61-19d4-392b-8187"/>
-    <entryLink import="true" name="Wolf Scouts" hidden="false" id="926c-b0dc-0a1e-fa0e" targetId="cfb2-5a31-e650-8995" type="selectionEntry"/>
+    <entryLink import="true" name="Wolf Scouts" hidden="false" id="5963-eefc-0003-6c7f" targetId="cfb2-5a31-e650-8995" type="selectionEntry"/>
   </entryLinks>
   <sharedInfoGroups>
     <infoGroup name="Logan" hidden="false" id="976-2d16-9324-f92">
