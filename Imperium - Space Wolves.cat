@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="65" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="66" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -3585,12 +3585,6 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4397-8c26-2a7b-3792"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" type="selectionEntry" id="c435-2d83-bcd6-b1f6" targetId="ebda-08ed-994a-b579">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e887-129c-5c49-7352"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fd5-8d59-f816-4a70"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Storm shield" hidden="false" id="ae12-47c5-7e98-00b8" type="selectionEntry" targetId="14d9-290f-100f-881c"/>
               </entryLinks>
               <profiles>
@@ -3608,6 +3602,23 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="bd70-f9b1-7950-21d2"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Master-crafted Power Weapon" hidden="false" id="fd73-07e5-bc5e-271f">
+                  <profiles>
+                    <profile name="Master-crafted Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1c41-468e-66f6-5fe7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4242,6 +4253,12 @@ WULFEN models], if this unit is not Battle-shocked, HUNTING WOLVES models in it
       </modifiers>
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="b24b-7bcc-12ce-501f" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Infiltrators" id="49b6-acbe-b355-fce7" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Scouts" id="2051-d574-4cc5-8644" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3415-6e47-09c8-6104" includeChildSelections="true" includeChildForces="true"/>
