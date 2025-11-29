@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="116" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="131" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is **^^T’au Empire^^**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.
@@ -68,6 +68,13 @@ Until the end of the phase, each time a model from your army in a Guided unit m
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander Shadowsun" hidden="false" id="4d0d-af9d-53c2-bc31">
       <categoryLinks>
@@ -403,13 +410,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -418,6 +418,8 @@ Until the end of the phase, each time a model from your army in a Guided unit m
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="5678-b647-c331-a6d9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="7ce9-9239-2f30-4497" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Tau Flamer Weapon" hidden="false" id="d2d7-9fa4-279b-c818" targetId="41b7-324d-21d3-af5e" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander in Crisis Battlesuit [Legends]" hidden="false" id="6de0-279f-b471-65ca">
@@ -530,9 +532,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Airbursting fragmentation projector" hidden="false" id="7a71-3c5a-a5c9-ce67" type="selectionEntry" targetId="437e-0e4a-5c90-dbef">
-                  <entryLinks>
-                    <entryLink import="true" name="Supernova Launcher upgrade" hidden="false" id="3cf1-1b5d-8159-e085" type="selectionEntry" targetId="e844-ec7e-9e46-1071"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e7e-b985-2b6f-53a2"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6d43-a632-246e-29f9" includeChildSelections="false"/>
@@ -549,6 +548,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="5a53-209a-09eb-e80a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6744-b2c8-ff03-d4b4" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="53f6-a7e2-348f-723a" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -567,9 +567,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="T&apos;au flamer" hidden="false" id="ef8a-1a12-d664-f69f" type="selectionEntry" targetId="6e8-cf2e-cedd-9028">
-                  <entryLinks>
-                    <entryLink import="true" name="Thermoneutronic Projector upgrade" hidden="false" id="499f-3c10-97ec-769c" type="selectionEntry" targetId="61f4-6563-bdb8-ec27"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3f1d-cab6-47a3-ec03"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="934c-1ab8-514a-3fca" includeChildSelections="false"/>
@@ -586,14 +583,12 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="a781-56d9-cf1d-c9de" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="55d8-0a6f-3ff9-6bbd" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="d1f9-62ea-b348-3763" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Fusion blaster" hidden="false" id="c29e-1f09-bcd6-c83e" type="selectionEntry" targetId="a384-146f-1171-f49f">
-                  <entryLinks>
-                    <entryLink import="true" name="Fusion Blades upgrade" hidden="false" id="b2ee-71e7-ed4c-2789" type="selectionEntry" targetId="4cb3-e969-20d8-b003" flatten="false" collapsible="false" collective="false"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="281d-6ec0-a779-bc2c"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4114-328b-f7ef-7d0b" includeChildSelections="false"/>
@@ -606,18 +601,16 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                     </modifier>
                   </modifiers>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="4049-d5c3-983e-7237" hidden="false" flatten="true">
+                    <selectionEntryGroup name="Weapon Upgrades" id="4049-d5c3-983e-7237" hidden="false">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="ac39-87c1-985f-66c3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5d4a-98cd-5e6e-454b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="4b41-1604-887f-46ce" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Plasma rifle" hidden="false" id="d73b-0f77-90e7-3918" type="selectionEntry" targetId="e87a-3ab1-2834-bb10">
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma Accelerator Rifle upgrade" hidden="false" id="8410-1e4e-7a68-76e9" type="selectionEntry" targetId="e396-458e-e066-fdbb"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6a48-ca72-acf6-3114"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="744b-a833-b730-85ff" includeChildSelections="false"/>
@@ -634,6 +627,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="bbc3-a7ed-4e3d-2c81" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="e4a5-d014-93c3-8789" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="0e7b-1ab9-95c9-ea1b" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -868,9 +862,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Airbursting fragmentation projector" hidden="false" id="7a59-e857-9ead-a189" type="selectionEntry" targetId="437e-0e4a-5c90-dbef">
-                  <entryLinks>
-                    <entryLink import="true" name="Supernova Launcher upgrade" hidden="false" id="fbc1-0c62-466a-bff5" type="selectionEntry" targetId="e844-ec7e-9e46-1071"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0099-4c44-cb0d-d795"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1ccf-2ed5-8d98-e151" includeChildSelections="false"/>
@@ -887,6 +878,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="fd0c-8ea9-27d4-1d35" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7fa9-6377-0a54-3427" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="06dc-5046-a353-1020" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -905,9 +897,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="T&apos;au flamer" hidden="false" id="d850-2def-4a37-717a" type="selectionEntry" targetId="6e8-cf2e-cedd-9028">
-                  <entryLinks>
-                    <entryLink import="true" name="Thermoneutronic Projector upgrade" hidden="false" id="7b4c-8de9-cf17-6b2d" type="selectionEntry" targetId="61f4-6563-bdb8-ec27" flatten="false" collapsible="false" collective="false"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3267-efa5-3ad1-b93d"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="160b-6338-838c-afc4" includeChildSelections="false"/>
@@ -924,14 +913,12 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="cda0-eb32-29b7-e555" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="cd34-901c-4d67-47c1" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="69a6-a9fa-96a0-94f1" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Fusion blaster" hidden="false" id="2e46-a7fd-185c-8f94" type="selectionEntry" targetId="a384-146f-1171-f49f">
-                  <entryLinks>
-                    <entryLink import="true" name="Fusion Blades upgrade" hidden="false" id="94a2-94b0-7c70-2736" type="selectionEntry" targetId="4cb3-e969-20d8-b003" flatten="false" collapsible="false" collective="false"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8488-feb3-d130-a9e2"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="54d3-dc6d-bed9-a080" includeChildSelections="false"/>
@@ -944,18 +931,16 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                     </modifier>
                   </modifiers>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="9d6f-eac7-4e1e-272d" hidden="false" flatten="true">
+                    <selectionEntryGroup name="Weapon Upgrades" id="9d6f-eac7-4e1e-272d" hidden="false">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="32ac-0e01-58f1-ecf6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="ac14-efb3-560d-9a75" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="552b-323a-b1c8-ba76" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Plasma rifle" hidden="false" id="e1e7-ffd5-f7c3-9e85" type="selectionEntry" targetId="e87a-3ab1-2834-bb10">
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma Accelerator Rifle upgrade" hidden="false" id="58bd-4597-9d65-2537" type="selectionEntry" targetId="e396-458e-e066-fdbb"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="19ae-8342-6ba0-786f"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cbd2-999e-939c-3c4a" includeChildSelections="false"/>
@@ -972,6 +957,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="2673-db42-8ba6-4af4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="83da-8471-59e2-7789" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="9f15-e14c-a981-085b" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -1218,9 +1204,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Airbursting fragmentation projector" hidden="false" id="da48-f97e-82ec-40cd" type="selectionEntry" targetId="437e-0e4a-5c90-dbef">
-                  <entryLinks>
-                    <entryLink import="true" name="Supernova Launcher upgrade" hidden="false" id="c65f-127f-c0ca-8548" type="selectionEntry" targetId="e844-ec7e-9e46-1071"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="849f-f1ac-7cf8-df85"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5e92-89d6-5716-fd93" includeChildSelections="false"/>
@@ -1237,6 +1220,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c610-ca4e-c364-ae69" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="db56-db1d-d858-389b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="8211-7991-ac3f-4cb4" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -1255,9 +1239,6 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="T&apos;au flamer" hidden="false" id="3e0a-6736-edf4-2654" type="selectionEntry" targetId="6e8-cf2e-cedd-9028">
-                  <entryLinks>
-                    <entryLink import="true" name="Thermoneutronic Projector upgrade" hidden="false" id="782f-88bb-8cde-4085" type="selectionEntry" targetId="61f4-6563-bdb8-ec27"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="284b-f979-c91b-5107"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d132-dfd4-4941-9ba1" includeChildSelections="false"/>
@@ -1274,14 +1255,12 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="868c-253f-df46-d02f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="ff40-1b0a-4d03-3a4d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="ac1e-4263-46b1-f93e" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Fusion blaster" hidden="false" id="ca22-7e8c-cbac-025a" type="selectionEntry" targetId="a384-146f-1171-f49f">
-                  <entryLinks>
-                    <entryLink import="true" name="Fusion Blades upgrade" hidden="false" id="df9e-7636-d633-0f8b" type="selectionEntry" targetId="4cb3-e969-20d8-b003" flatten="false" collapsible="false" collective="false"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b0a7-fe8e-c153-130d"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4582-a7ac-1f9b-7bfa" includeChildSelections="false"/>
@@ -1294,18 +1273,16 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                     </modifier>
                   </modifiers>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="9df6-f096-27b6-246f" hidden="false" flatten="true">
+                    <selectionEntryGroup name="Weapon Upgrades" id="9df6-f096-27b6-246f" hidden="false">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="daa8-7f88-4478-bca6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5f5d-340e-d746-b797" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="4f17-c843-d714-7072" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Plasma rifle" hidden="false" id="fddd-9b4b-c121-8e96" type="selectionEntry" targetId="e87a-3ab1-2834-bb10">
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma Accelerator Rifle upgrade" hidden="false" id="5029-89e7-9e62-db24" type="selectionEntry" targetId="e396-458e-e066-fdbb"/>
-                  </entryLinks>
                   <constraints>
                     <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="96da-1fc8-b680-0667"/>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c00f-9293-39b5-d67f" includeChildSelections="false"/>
@@ -1322,6 +1299,7 @@ Until the end of the phase, each time a model from your army in a Guided unit m
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="37b2-8c6a-1c26-3b3f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d77a-92a4-2691-e937" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="f26a-7c7e-8741-b6e9" type="selectionEntryGroup" targetId="14ac-72a0-13cf-0187"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -3048,6 +3026,9 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                   <infoLinks>
                     <infoLink name="Blast" hidden="false" id="e6ef-98dd-c0d7-544a" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="760c-d5cb-b70a-b10d" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -3335,6 +3316,9 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="faee-9da4-238a-964c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="c3b6-5b97-5d90-9083" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Repeater cannon" hidden="false" id="2fb8-f39-4432-ff3d" collective="true">
                   <profiles>
@@ -3411,6 +3395,9 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="aabe-acd8-fd2a-d570" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="8936-dec3-970f-7478" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Tanglecannon" hidden="false" id="55a6-ac3b-f686-73a1" collective="true">
                   <profiles>
@@ -3955,6 +3942,10 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </profile>
       </profiles>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Plasma Rifle Weapon" hidden="false" id="56ba-3c3e-bb33-5f0d" targetId="630e-f998-7bab-7116" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="2118-536a-69d3-dffe" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Missile pod" hidden="false" id="8290-c852-cce9-d50e">
       <profiles>
@@ -3995,6 +3986,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="7288-48b3-c4df-66c6" id="570-f85b-1daf-c925" primary="false" name="Battlesuit"/>
         <categoryLink targetId="76ec-55b5-1805-5855" id="58ff-5c4b-2872-699c" primary="false" name="Stealth"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e439-38ac-fd0-1d24" primary="false" name="Faction: T&apos;au Empire"/>
+        <categoryLink name="Grenades" hidden="false" id="8fee-4d53-4a2e-ccfa" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Forward Observers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5b0-2214-2987-d0de">
@@ -4015,11 +4008,12 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5599-8d97-b9a4-9e91" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Stealth Shas&apos;ui (2-5)" hidden="false" id="a463-a329-d423-f948" defaultSelectionEntryId="40a5-647f-cdd8-9cf6" sortIndex="3">
+        <selectionEntryGroup name="Stealth Shas&apos;ui" hidden="false" id="a463-a329-d423-f948" defaultSelectionEntryId="40a5-647f-cdd8-9cf6" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Stealth Shas&apos;ui w/ burst cannon" hidden="false" id="40a5-647f-cdd8-9cf6" defaultAmount="1,1">
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a12f-e569-a9f-3417"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb06-d81d-4d38-e622" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8d74-a25b-c760-3bb5"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Battlesuit fists" hidden="false" type="selectionEntry" id="8e62-9c84-5dfc-ead6" targetId="6cf1-5611-ba26-a9b1" collective="false">
@@ -4027,19 +4021,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a650-7187-238c-e237"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ff-8abd-2267-3c87"/>
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Battlesuit support system" hidden="false" id="7ccb-965d-72e1-6b2b" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b01-6f63-eddc-5dbb" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="8520-86b2-7c2e-5f4a" includeChildSelections="true"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="8520-86b2-7c2e-5f4a">
-                      <conditions>
-                        <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Burst cannon" hidden="false" id="8917-7370-2d88-cfc4" type="selectionEntry" targetId="1790-25b7-8264-f6ba" collective="true">
                   <constraints>
@@ -4079,28 +4060,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ed5-dd96-2e8a-506"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="189f-7e32-30eb-8034"/>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="bf75-664b-6625-643c" includeChildSelections="true"/>
+                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="bf75-664b-6625-643c" includeChildSelections="true"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="2" field="bf75-664b-6625-643c">
-                      <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Battlesuit support system" hidden="false" id="7f83-cf1a-7e9d-b453" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3795-fb4a-e770-1bc7" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="c770-49af-9c32-4699" includeChildSelections="true"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="c770-49af-9c32-4699">
-                      <conditions>
-                        <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
               </entryLinks>
               <profiles>
@@ -4121,8 +4082,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a0b8-9389-c08e-129e"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="40e3-8997-795f-d404"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a0b8-9389-c08e-129e"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="40e3-8997-795f-d404"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Stealth Shas&apos;vre" id="63b1-cf27-e34a-b8e8" hidden="false" sortIndex="2">
@@ -4151,15 +4112,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="6b65-3a99-b164-82dd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="ac5d-96dd-be09-4a87" includeChildSelections="true"/>
+                            <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="ac5d-96dd-be09-4a87" includeChildSelections="true"/>
                           </constraints>
-                          <modifiers>
-                            <modifier type="set" value="2" field="ac5d-96dd-be09-4a87">
-                              <conditions>
-                                <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
@@ -4174,26 +4128,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                         <profile name="Homing Beacon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1333-60c8-37d2-1a4d">
                           <characteristics>
                             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can use the Rapid Ingress Stratagem for 0CP. The target must be set up within 3&quot; of the bearer’s unit and not within 9&quot; of any enemy units.
-Designer’s Note: Place a Homing Beacon token next to this unit, removing it once this ability is used.</characteristic>
+**Designer’s Note:** *Place a Homing Beacon token next to this unit, removing it once this ability is used.*</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Battlesuit support system" hidden="false" id="93be-8b0e-b529-8b23" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="ef45-9ad6-4471-2366" includeChildSelections="true"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cf6-06c3-5a95-3b18" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="ef45-9ad6-4471-2366">
-                          <conditions>
-                            <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink import="true" name="Battlesuit fists" hidden="false" id="329a-10c5-2661-7ba3" type="selectionEntry" targetId="6cf1-5611-ba26-a9b1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="78e3-b0c6-592a-e288" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -4204,6 +4145,14 @@ Designer’s Note: Place a Homing Beacon token next to this unit, removing it on
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Drones (0-2)" hidden="false" id="15f3-e055-4fce-f77e" type="selectionEntryGroup" targetId="de95-b481-fb09-1bce"/>
+                    <entryLink import="true" name="Pulse pistol" hidden="false" id="2c55-cf25-c27a-4eb4" type="selectionEntry" targetId="4310-a1ce-dde7-70e3">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="3a3b-ee2c-e726-eed0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd7-d1e3-c495-f6c6" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4227,21 +4176,15 @@ Designer’s Note: Place a Homing Beacon token next to this unit, removing it on
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="greaterThan" value="3" field="selections" scope="5d3a-803e-7cbc-b2f1" childId="model" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6961-9ee4-2d3a-dfca" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
@@ -4359,6 +4302,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <categoryLink targetId="6df-937-16bc-8c1a" id="3354-a841-e4c0-e675" primary="false" name="Smoke"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="8403-8c1b-1533-294d" primary="false" name="Battlesuit"/>
         <categoryLink targetId="ca95-5f2a-e510-7dbb" id="4a98-57a-d14c-6f5a" primary="false" name="Ghostkeel"/>
+        <categoryLink name="Faction: T&apos;au Empire" hidden="false" id="f2f2-1bcb-283d-0313" targetId="3d58-2655-391e-ecc" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a80a-623d-10a-155c"/>
@@ -4453,13 +4397,6 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -4468,6 +4405,9 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="afa6-b6c0-8830-5385" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="ecbe-a170-9e65-0ea2" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Cyclic ion raker" hidden="false" id="607c-5de1-21e-96bf">
                   <profiles>
@@ -4905,17 +4845,12 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                         <modifierGroup type="and">
                           <comment>Pulse Accelerator Drone</comment>
                           <modifiers>
-                            <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", ">
-                              <conditions>
-                                <condition type="greaterThan" value="0" field="selections" scope="self" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                            <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
+                            <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", "/>
+                            <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc"/>
                           </modifiers>
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="root-entry" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
+                          </conditions>
                         </modifierGroup>
                       </modifierGroups>
                     </profile>
@@ -4984,17 +4919,12 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                         <modifierGroup type="and">
                           <comment>Pulse Accelerator Drone</comment>
                           <modifiers>
-                            <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", ">
-                              <conditions>
-                                <condition type="greaterThan" value="0" field="selections" scope="self" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                            <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
+                            <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", "/>
+                            <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc"/>
                           </modifiers>
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="root-entry" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
+                          </conditions>
                         </modifierGroup>
                       </modifierGroups>
                     </profile>
@@ -5255,17 +5185,12 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                             <modifierGroup type="and">
                               <comment>Pulse Accelerator Drone</comment>
                               <modifiers>
-                                <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", ">
-                                  <conditions>
-                                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </modifier>
-                                <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </modifier>
+                                <modifier type="append" value="Pulse Accelerator Drone" field="annotation" join=", "/>
+                                <modifier type="set" value="26&quot;" field="9896-9419-16a1-92fc"/>
                               </modifiers>
+                              <conditions>
+                                <condition type="greaterThan" value="0" field="selections" scope="root-entry" childId="296b-c47c-fbbc-bf11" shared="true" includeChildSelections="true"/>
+                              </conditions>
                             </modifierGroup>
                           </modifierGroups>
                         </profile>
@@ -5518,13 +5443,6 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -5533,6 +5451,9 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="5a02-29b3-c284-7b57" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="c3da-e889-1b46-4937" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -6375,12 +6296,12 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <modifiers>
         <modifier type="set" value="170" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="a594-317-b90a-a226" childId="model" shared="true"/>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="270" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="greaterThan" value="2" field="selections" scope="a594-317-b90a-a226" childId="model" shared="true"/>
+            <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8151,18 +8072,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="8bb6-a87a-1607-6012" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="ba9d-80eb-a645-d562" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Destroyer missiles" hidden="false" id="6e13-c32e-d336-c">
               <infoLinks>
@@ -8318,13 +8235,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Indirect Fire, Twin-linked</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -8336,6 +8246,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="9d44-5158-d5af-e8cb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="47c5-30d9-3df3-0082" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin burst cannon" hidden="false" id="2526-2545-30a1-7685">
                   <comment>Stormsurge Heavy varant</comment>
@@ -8786,6 +8699,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                         <infoLink name="Ignores Cover" hidden="false" type="rule" id="f530-5d6a-9a23-7b48" targetId="4640-43e7-30b-215a"/>
                         <infoLink name="Torrent" hidden="false" type="rule" id="fd4c-c699-8d0c-84e2" targetId="5edf-d619-23e0-9b56"/>
                       </infoLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="4a35-04b3-be82-7f2c" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -9101,16 +9017,12 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="0a61-c5c9-5df2-14cb" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="5691-9564-6d30-64b0">
       <categoryLinks>
@@ -10093,13 +10005,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 3</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <constraints>
@@ -10111,6 +10016,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="62d9-e179-6c52-ef07" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="a51c-a7d4-f10c-9a18" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -12364,6 +12272,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="a6e1-d0cc-9df8-79ca" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="e3a9-1e6b-ddb5-ad0e" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kroot rifle" hidden="false" id="90cb-5188-ffbe-f2ec" collective="true">
               <profiles>
@@ -12736,13 +12647,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -12754,6 +12658,9 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c255-de76-9719-85d3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="c06a-97f7-d34e-ade6" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Phased ion gun" hidden="false" id="8c47-d162-cabe-a3b8">
                       <profiles>
@@ -13113,7 +13020,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <profiles>
         <profile name="Sunforge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="883e-96af-3014-6550">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack that targets a MONSTER or VEHICLE unit, you can re-roll the Wound roll and you can re-roll the Damage roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Wound roll and you can re-roll the Damage roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a892-303e-34b8-116a">
@@ -14609,6 +14516,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                       </selectionEntryGroups>
                       <categoryLinks>
                         <categoryLink name="Ranged Weapon" hidden="false" id="34e8-9d2a-e2e8-3861" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="67d4-bbe9-a086-919f" targetId="e993-e086-6de1-12af" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Hunting javelin" hidden="false" id="9046-4988-e8ca-7920">
@@ -14715,6 +14623,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="ed15-5cac-4e28-c9a5" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="1c24-0da8-940d-ded7" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -14925,6 +14834,9 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="8f3e-f4cc-6c0f-0e8b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="3a7d-27a3-a9b1-0c00" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -15102,13 +15014,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15118,6 +15023,8 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="65d0-1b80-1d14-7651" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="f939-1805-4e06-4669" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Airbursting Fragmentation Projector Weapon" hidden="false" id="c123-736b-4531-1d2a" targetId="784e-8685-51f5-cac4" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Airbursting fragmentation projector" hidden="false" id="91cc-510a-3381-0a8b">
@@ -15132,13 +15039,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15146,6 +15046,11 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="Indirect Fire" id="c8e9-b51a-090b-e75b" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
       </infoLinks>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="909b-7900-18a7-064f" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Airbursting Fragmentation Projector Weapon" hidden="false" id="4346-1aeb-7ca5-80e6" targetId="784e-8685-51f5-cac4" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="b1bf-14b0-e66a-cf58" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cyclic ion blaster" hidden="false" id="9e40-f25b-c5dd-6712">
       <profiles>
@@ -15222,13 +15127,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15236,6 +15134,10 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="Torrent" id="082a-d4d1-f0d5-8887" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Twin-linked" id="3982-0239-f11f-37df" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="ce4a-ab39-711f-d31d" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="1de6-9a38-0d16-aaeb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Accelerator burst cannon" hidden="false" id="e5b9-7fe9-4792-3e31">
       <profiles>
@@ -15283,13 +15185,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15298,6 +15193,8 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="57de-b6e4-9cf2-b949" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="10a3-974e-04da-9def" targetId="4986-bf86-beb4-13ac" primary="false"/>
+        <categoryLink name="Fusion Blaster Weapon" hidden="false" id="d03a-b1c8-a0f1-f653" targetId="c366-a7c4-45e2-5b6e" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin fusion blaster" hidden="false" id="c166-1c3f-6109-269f">
@@ -15312,19 +15209,15 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2, Twin-linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Melta" id="0755-5c24-9cf4-865d" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
         <infoLink name="Twin-linked" id="00c1-5be3-9e9b-49e4" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="efb7-b671-8dfc-798f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoured hull" hidden="false" id="f2bd-0132-eee3-7311">
       <profiles>
@@ -15547,6 +15440,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e58a-47bd-38db-78eb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Plasma Rifle Weapon" hidden="false" id="7485-7d84-059e-cbce" targetId="630e-f998-7bab-7116" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin smart missile system" hidden="false" id="ae18-59e0-feaa-ccf5">
@@ -15659,6 +15553,9 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="Indirect Fire" id="7cb2-35fe-51c5-baf8" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
         <infoLink name="Twin-linked" id="3d07-916b-b594-9983" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Support Turret Weapon" hidden="false" id="3272-09b8-d1f6-7168" targetId="6e38-21cc-73fd-70d4" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Crushing bulk" hidden="false" id="659c-0926-9ea4-8983">
       <profiles>
@@ -15795,235 +15692,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="Assault" id="4425-97c9-6eff-332d" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
       <comment>BS4+ Assault</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Supernova Launcher upgrade" hidden="false" id="e844-ec7e-9e46-1071">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="8588-2b55-0468-0a97" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="b154-2a39-236a-8de2">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8588-2b55-0468-0a97" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8334-982b-381e-2585" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="b154-2a39-236a-8de2" includeChildSelections="true"/>
-      </constraints>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="append" value="Supernova Launcher" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thermoneutronic Projector upgrade" hidden="false" id="61f4-6563-bdb8-ec27" collective="false">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="1184-c004-494b-642e" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="9558-f0bb-b86c-844c">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1184-c004-494b-642e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c026-0d27-19ef-898d" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9558-f0bb-b86c-844c" includeChildSelections="true"/>
-      </constraints>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="append" value="Thermoneutronic Projector" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Accelerator Rifle upgrade" hidden="false" id="e396-458e-e066-fdbb" collective="false">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="bc44-f33b-73bc-5ae5" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="d2e0-1a7f-b5d2-7d01">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="bc44-f33b-73bc-5ae5" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ea7f-7e30-c6d7-0d87" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="d2e0-1a7f-b5d2-7d01" includeChildSelections="true"/>
-      </constraints>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="append" value="Plasma Accelerator Rifle" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fusion Blades upgrade" hidden="false" id="4cb3-e969-20d8-b003" collective="false">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fb72-80a9-f2b5-31a6" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="1" field="db71-c17a-5b61-9e8c">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fb72-80a9-f2b5-31a6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ecf6-b2fe-16d0-ff11" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="db71-c17a-5b61-9e8c" includeChildSelections="true"/>
-      </constraints>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="append" value="Fusion Blades" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="Melta 4" field="7f1b-8591-2fcf-d01c" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -17624,6 +17292,16 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           <infoLinks>
             <infoLink name="Lethal Hits" id="cbf0-4d84-3bba-6a83" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
           </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Merciless Marksmen" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons" join=", "/>
+                <modifier type="replace" field="7f1b-8591-2fcf-d01c" scope="root-entry" affects="self.entries.recursive.6e38-21cc-73fd-70d4.profiles.Ranged Weapons" join=", " arg="Lethal Hits"/>
+                <modifier type="replace" field="annotation" scope="root-entry" affects="self.entries.recursive.6e38-21cc-73fd-70d4.profiles.Ranged Weapons" join=", " arg="Merciless Marksmen"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Practised Aim" hidden="false" id="e31f-8dc8-a9e8-5ed6">
           <constraints>
@@ -17665,16 +17343,8 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Practised Aim" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="e31f-8dc8-a9e8-5ed6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="model-or-unit" childId="e31f-8dc8-a9e8-5ed6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Practised Aim" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="root-entry" affects="self.entries.recursive.profiles.Ranged Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -18037,14 +17707,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="c2e6-c428-b9e8-9313">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="c2e6-c428-b9e8-9313" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53d9-902f-c50f-115e" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="563b-ecd2-6c40-b740" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0758-7a01-8038-ae7c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="edd4-f2a7-c222-66e5" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="edd4-f2a7-c222-66e5" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="e1a6-d896-8dbd-14a2" defaultAmount="5">
                               <costs>
@@ -18074,7 +17749,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="c611-1cb8-04c3-ad92" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="c611-1cb8-04c3-ad92" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d32a-5d0b-3d5e-b7e6" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="0a2d-35b0-3ecd-9534" includeChildSelections="true"/>
@@ -18109,14 +17784,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="9643-5115-fc0a-4056">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="9643-5115-fc0a-4056" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d6-710e-7ec0-15e8" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="2f54-3a21-1b46-1457" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21b8-e918-1397-cf3c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="4832-ef9c-e5c7-08a1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="4832-ef9c-e5c7-08a1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="9ac2-31a8-2617-d1a3" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1aed-8973-0ac2-079f" includeChildSelections="true"/>
@@ -18136,7 +17816,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="f0ea-7d8d-28db-1a14" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="f0ea-7d8d-28db-1a14" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="4924-b37b-5cd5-6c7f" defaultAmount="4">
                               <costs>
@@ -18176,14 +17856,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="0eff-a32c-92cb-eaf5">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="0eff-a32c-92cb-eaf5" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba0-ea55-dd39-aa00" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="0719-210f-329d-9ab9" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c26c-0248-1140-0b0c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="b7fe-1a9d-f2ab-fb70" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="b7fe-1a9d-f2ab-fb70" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6c18-a207-8ae7-40a8" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="81ff-a6b6-7122-0966" includeChildSelections="true"/>
@@ -18208,7 +17893,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="5a9e-ece3-c674-96d1" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="5a9e-ece3-c674-96d1" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="a18a-369a-3859-c3d3" defaultAmount="3">
                               <costs>
@@ -18248,14 +17933,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="2e6b-d582-2b10-c7e4">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="2e6b-d582-2b10-c7e4" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e26-4397-bd44-9a4a" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="6bd5-df86-5fde-11f2" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf73-0df7-3701-d733" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="6cbe-d41c-6054-2d1b" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="6cbe-d41c-6054-2d1b" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="f0aa-a17d-9fb6-4c08" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d2c8-88ff-f329-0632" includeChildSelections="true"/>
@@ -18280,7 +17970,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="ff66-7128-1335-2f96" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="ff66-7128-1335-2f96" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="d64a-ad7f-b098-74f3" defaultAmount="3">
                               <costs>
@@ -18320,14 +18010,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="1c5b-3f50-4b7d-fe98">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="1c5b-3f50-4b7d-fe98" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4607-f1ff-c28a-02fd" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="aea3-4402-9f3f-486d" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56b4-311e-527f-cfe4" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="e3d9-2f54-6741-a33d" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="e3d9-2f54-6741-a33d" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="45ca-08e6-cec7-7671" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1012-8603-97e8-712e" includeChildSelections="true"/>
@@ -18352,7 +18047,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="1701-4b49-529d-2455" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="1701-4b49-529d-2455" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="8426-b4a3-b560-72c0" defaultAmount="4">
                               <costs>
@@ -18392,14 +18087,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="256d-c21d-3d79-ce1e">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="256d-c21d-3d79-ce1e" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af6-6bbf-b0b5-062e" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="780d-8ff1-2bf4-2989" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cfa-77e8-38c8-dee6" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="e83a-8434-9b9f-dd42" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="e83a-8434-9b9f-dd42" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6c76-426b-3094-9d75" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="57c7-e5d1-24da-f1ba" includeChildSelections="true"/>
@@ -18424,7 +18124,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="3170-3a76-47f3-188f" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="3170-3a76-47f3-188f" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="abc8-cde8-0f67-ee17" defaultAmount="4">
                               <costs>
@@ -18464,14 +18164,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="f605-bd44-f447-dce5">
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="f605-bd44-f447-dce5" sortIndex="3">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01c2-67d4-9463-4683" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="8cb1-b818-18a8-4882" sortIndex="4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5696-1ed4-6d10-7025" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="7199-8e93-3cbe-d27e" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="7199-8e93-3cbe-d27e" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="993f-1e72-69d1-c168" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1a8f-8501-a47b-ef89" includeChildSelections="true"/>
@@ -18496,7 +18201,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="1aee-4aeb-0a5c-9339" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="1aee-4aeb-0a5c-9339" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="df31-3193-e879-03d6" defaultAmount="2">
                               <costs>
@@ -18536,14 +18241,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="5fac-92de-38de-ced4">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="5fac-92de-38de-ced4" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a67-3d93-20be-8594" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="518a-1902-6803-a8dd" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d41f-01db-31ad-b5d1" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="4f69-9dfe-651d-02a0" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="4f69-9dfe-651d-02a0" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="b1ee-8dd2-6946-946a" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6d69-e0b8-968b-b40e" includeChildSelections="true"/>
@@ -18568,7 +18278,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="9e2e-d76c-c991-0e00" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="9e2e-d76c-c991-0e00" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="2b58-60f9-766b-ce67" defaultAmount="6">
                               <costs>
@@ -18608,14 +18318,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="23e7-6c15-33c6-d8e2">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="23e7-6c15-33c6-d8e2" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e1-509a-b721-135d" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="f602-9c12-f494-8e13" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b99-4a64-c8b9-20da" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="c266-0931-e2b3-70f1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="c266-0931-e2b3-70f1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d9cd-8d44-da06-b85a" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="b131-1715-dc76-38d6" includeChildSelections="true"/>
@@ -18635,7 +18350,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="ca83-ec31-d9ed-9668" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="ca83-ec31-d9ed-9668" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="eb60-e8f2-c1c8-71c1" defaultAmount="4">
                               <costs>
@@ -18673,32 +18388,32 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                   <modifiers>
                     <modifier type="set" value="4" field="22e9-bdfc-02d9-4bd1">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="50c4-b24b-a0b1-5451" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50c4-b24b-a0b1-5451" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" value="4" field="03ac-83bc-97af-8101">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="50c4-b24b-a0b1-5451" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="50c4-b24b-a0b1-5451" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" value="6" field="22e9-bdfc-02d9-4bd1">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="9166-cb92-ea7e-6611" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9166-cb92-ea7e-6611" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" value="6" field="03ac-83bc-97af-8101">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="9166-cb92-ea7e-6611" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9166-cb92-ea7e-6611" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" value="8" field="22e9-bdfc-02d9-4bd1">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="71a5-6d33-65bd-3798" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="71a5-6d33-65bd-3798" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" value="8" field="03ac-83bc-97af-8101">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="ancestor" childId="71a5-6d33-65bd-3798" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="71a5-6d33-65bd-3798" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -19009,6 +18724,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd97-19b6-3957-4c78" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="205d-dcad-4d0-ccae" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d372-6d2c-2df2-8e91" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -19081,6 +18797,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd97-19b6-3957-4c78" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="205d-dcad-4d0-ccae" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d372-6d2c-2df2-8e91" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -19155,6 +18872,215 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Enhancement Upgrades" id="14ac-72a0-13cf-0187" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusion Blades upgrade" hidden="false" id="4cb3-e969-20d8-b003" collective="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fb72-80a9-f2b5-31a6" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="c366-a7c4-45e2-5b6e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="db71-c17a-5b61-9e8c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fb72-80a9-f2b5-31a6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ecf6-b2fe-16d0-ff11" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="db71-c17a-5b61-9e8c" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Fusion Blades" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="3" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="replace" value="Melta 4" field="7f1b-8591-2fcf-d01c" scope="upgrade" affects="self.entries.profiles.Ranged Weapons" arg="Melta 2" join=", "/>
+                <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.e993-e086-6de1-12af.profiles.Ranged Weapons" arg="+0" join=""/>
+                <modifier type="replace" value="true" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.6337-b83b-0d1e-5770.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="3bb-c35f-f54-fb08" join=", " scope="upgrade" affects="self.entries.84c4-6d1e-e724-bd6e.profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="self.entries.e993-e086-6de1-12af"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Accelerator Rifle upgrade" hidden="false" id="e396-458e-e066-fdbb" collective="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="bc44-f33b-73bc-5ae5" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="630e-f998-7bab-7116" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e396-458e-e066-fdbb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="4cb3-e969-20d8-b003" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="d2e0-1a7f-b5d2-7d01">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bc44-f33b-73bc-5ae5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ea7f-7e30-c6d7-0d87" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="d2e0-1a7f-b5d2-7d01" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Plasma Accelerator Rifle" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="2" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.e993-e086-6de1-12af.profiles.Ranged Weapons" arg="+0" join=""/>
+                <modifier type="replace" value="true" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.6337-b83b-0d1e-5770.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="3bb-c35f-f54-fb08" join=", " scope="upgrade" affects="self.entries.84c4-6d1e-e724-bd6e.profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="3bb-c35f-f54-fb08" scope="upgrade" affects="self.entries.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="self.entries.e993-e086-6de1-12af"/>
+                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Supernova Launcher upgrade" hidden="false" id="e844-ec7e-9e46-1071">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="8588-2b55-0468-0a97" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="784e-8685-51f5-cac4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e844-ec7e-9e46-1071" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="b154-2a39-236a-8de2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8588-2b55-0468-0a97" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8334-982b-381e-2585" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="b154-2a39-236a-8de2" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Supernova Launcher" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="3" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thermoneutronic Projector upgrade" hidden="false" id="61f4-6563-bdb8-ec27" collective="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="1184-c004-494b-642e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f3a-f0f7-6647-348d" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="41b7-324d-21d3-af5e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="61f4-6563-bdb8-ec27" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="9558-f0bb-b86c-844c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1184-c004-494b-642e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c026-0d27-19ef-898d" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9558-f0bb-b86c-844c" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Thermoneutronic Projector" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="2" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="replace" value="true" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Shaper" hidden="false" id="39f9-dcd3-1e80-fa1f"/>
@@ -19224,6 +19150,11 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
     <categoryEntry name="Flesh Shaper" hidden="false" id="2c5e-7638-d746-1d27"/>
     <categoryEntry name="Lone-spear" hidden="false" id="1ac3-694c-fae8-afad"/>
     <categoryEntry name="Krootox Rampagers" hidden="false" id="6098-c74b-f3a1-f33"/>
+    <categoryEntry name="Support Turret Weapon" id="6e38-21cc-73fd-70d4" hidden="true"/>
+    <categoryEntry name="Fusion Blaster Weapon" id="c366-a7c4-45e2-5b6e" hidden="true"/>
+    <categoryEntry name="Plasma Rifle Weapon" id="630e-f998-7bab-7116" hidden="true"/>
+    <categoryEntry name="Airbursting Fragmentation Projector Weapon" id="784e-8685-51f5-cac4" hidden="true"/>
+    <categoryEntry name="Tau Flamer Weapon" id="41b7-324d-21d3-af5e" hidden="true"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save (5+)" hidden="false" id="27f4-7449-a636-ae8c" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
