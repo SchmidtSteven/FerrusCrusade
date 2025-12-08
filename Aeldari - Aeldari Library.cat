@@ -40854,8 +40854,8 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="15c1-57ac-89c7-7a47" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="15c1-57ac-89c7-7a47" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -40888,7 +40888,6 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c593-9ffa-a9c4-377c" shared="true"/>
                       </conditions>
                     </conditionGroup>
@@ -40918,7 +40917,6 @@ When doing so, you can set those units up in Strategic Reserves, regardless of h
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true" includeChildSelections="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d2c0-da0-5989-959c" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
