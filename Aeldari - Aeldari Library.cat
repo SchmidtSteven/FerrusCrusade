@@ -4297,6 +4297,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             <entryLink import="true" name="Armoured Warhost Enhancements" hidden="false" id="b6d9-6889-0b0e-b8d5" type="selectionEntryGroup" targetId="b8b5-e20b-604b-032f"/>
             <entryLink import="true" name="Ghosts of the Webway Enhancements" hidden="false" id="6417-959e-40f1-0715" type="selectionEntryGroup" targetId="0dce-ecda-f441-a5de"/>
             <entryLink import="true" name="Reaper&apos;s Wager Enhancements" hidden="false" id="9c09-9753-143c-eb8d" type="selectionEntryGroup" targetId="90b8-32e1-d346-a0ec"/>
+            <entryLink import="true" name="Serpent&apos;s Brood Enhancements" hidden="false" id="67cc-5b9e-364d-8b19" type="selectionEntryGroup" targetId="7c81-c8ad-92eb-8bc1"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wargear" id="6611-d8aa-5525-cf7d" hidden="false" sortIndex="4">
@@ -12781,9 +12782,14 @@ You can attach this unit to one of the above units, even if Yvraine has already 
           </conditions>
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -40807,7 +40813,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4222-6f2a-2370-4a81"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armoured Warhost Enhancements" id="7c81-c8ad-92eb-8bc1" hidden="false">
+        <selectionEntryGroup name="Serpent&apos;s Brood Enhancements" id="7c81-c8ad-92eb-8bc1" hidden="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -40849,7 +40855,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="15c1-57ac-89c7-7a47" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="15c1-57ac-89c7-7a47" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
