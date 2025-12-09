@@ -12783,6 +12783,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <modifier type="set" value="6" field="a2c9-1821-93ce-3900">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
