@@ -4992,7 +4992,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="227d-98ab-930c-3e7f" shared="true"/>
