@@ -4275,15 +4275,9 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -9162,15 +9156,9 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -13115,15 +13103,9 @@ You can attach this unit to one of the above units, even if Yvraine has already 
             <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2277-63e6-cbdb-e3b3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
