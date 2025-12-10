@@ -9347,7 +9347,7 @@ by 1.</characteristic>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Assault Terminator w/ Thunder Hammer &amp; Storm Shield" hidden="false" id="f5e2-f383-5061-9393">
               <entryLinks>
-                <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="6777-f60f-da01-309b" targetId="4913-96d4-2b1f-2c21">
+                <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="6777-f60f-da01-309b" targetId="8c92-52ed-c2a3-fa20">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
@@ -9387,7 +9387,7 @@ by 1.</characteristic>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Assault Terminator w/ Twin Lightning Claws" hidden="false" id="c435-bd14-2d69-1c38">
               <entryLinks>
-                <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="5cad-94ba-6952-82b0" targetId="130e-9b77-584-a15b">
+                <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="5cad-94ba-6952-82b0" targetId="a4fd-d133-4920-9da5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="616f-2c1d-29fb-dbdb"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f75a-7e18-118f-f03"/>
@@ -9420,7 +9420,7 @@ by 1.</characteristic>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Thunder Hammer &amp; Storm Shield" hidden="false" id="96bf-3cb4-69ff-a8ce">
                       <entryLinks>
-                        <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="ce72-6aff-3b42-7701" targetId="4913-96d4-2b1f-2c21">
+                        <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="ce72-6aff-3b42-7701" targetId="8c92-52ed-c2a3-fa20">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbc-31c5-a57a-dfef"/>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd40-a442-4c55-fa07"/>
@@ -9452,7 +9452,7 @@ by 1.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d2d-e616-774a-7f7a"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="6892-b868-5f61-860d" targetId="130e-9b77-584-a15b">
+                    <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="6892-b868-5f61-860d" targetId="a4fd-d133-4920-9da5">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="74ff-91bd-e7ba-5464" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -36326,6 +36326,47 @@ per turn.</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ec5-ca86-52a8-e91e"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Lightning Claws" hidden="false" id="a4fd-d133-4920-9da5" collective="true">
+      <profiles>
+        <profile name="Twin Lightning Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b258-ec20-008d-8643">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="eb37-2d68-359c-4d12" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <comment>A6 WS3+ S5</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="8c92-52ed-c2a3-fa20" collective="true">
+      <profiles>
+        <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="dc22-f059-f949-681d">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>A3 WS 3+ Collective</comment>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="eedc-2e55-4c19-e822" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="5a0d-316d-8871-8bd3" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -37192,7 +37233,7 @@ unit is within 12&quot; of this model, increase the cost of that usage of that 
               <profiles>
                 <profile name="Hunter&apos;s Instincts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4458-dcf6-ab23-44e9">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. If the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. In your movement phase, if the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
