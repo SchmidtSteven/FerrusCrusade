@@ -9325,7 +9325,7 @@ by 1.</characteristic>
         </profile>
         <profile name="Terminatus Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a277-c32c-c86d-654a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, each enemy unit within Engagement Range of this unit must take a Battle-shock test.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, each enemy unit within Engagement Range of this unit must take a Battle-shock tes</characteristic>
           </characteristics>
         </profile>
       </profiles>
