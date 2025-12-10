@@ -1741,21 +1741,9 @@ If a Character unit from your army with the Leader ability can be attached to a
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Replace Pistol" id="3186-81f7-9a86-0ad2" hidden="false" defaultSelectionEntryId="a3b1-a4d1-6857-384c">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" id="ac6d-d1c1-6b7f-7432" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1">
-                      <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="9cb6-5611-9026-2a72" targetId="f06c-dfec-c720-57f1" primary="false"/>
-                      </categoryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="4ab3-9c65-ad7e-bf81" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1">
-                      <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="d82e-0b20-7e19-abfe" targetId="f06c-dfec-c720-57f1" primary="false"/>
-                      </categoryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="5b8a-a20d-f743-bb1f" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1">
-                      <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="1431-aa6f-d8ee-6a63" targetId="f06c-dfec-c720-57f1" primary="false"/>
-                      </categoryLinks>
-                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="ac6d-d1c1-6b7f-7432" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1"/>
+                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="4ab3-9c65-ad7e-bf81" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1"/>
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="5b8a-a20d-f743-bb1f" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9c5-4ccd-9d10-cb24" includeChildSelections="false"/>
@@ -2874,58 +2862,11 @@ horizontally away from all enemy models.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Sanguinary Guard" hidden="false" id="b36d-e83-6a91-e2b4" defaultSelectionEntryId="8e33-50a5-d053-ee15" sortIndex="3">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Sanguinary Guard" hidden="false" id="8e33-50a5-d053-ee15">
+            <selectionEntry type="model" import="true" name="Sanguinary Guard w/ blade" hidden="false" id="8e33-50a5-d053-ee15">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c829-d98f-6cf8-8fc7"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee Weapon" id="6ddc-8f45-ecd6-1db6" hidden="false" defaultSelectionEntryId="8776-3451-c6e-aa6c">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Encarmine Blade" hidden="false" id="8776-3451-c6e-aa6c" collective="false">
-                      <profiles>
-                        <profile name="Encarmine Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5315-e49c-146b-c157">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ee95-57e8-bed1-6e2c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Encarmine Spear" hidden="false" id="e116-2740-11c0-34ed" collective="false">
-                      <profiles>
-                        <profile name="Encarmine Spear" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="46c8-05c2-743b-b8a5">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Lance" id="f8c4-b326-77fd-c4f8" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a9ac-d301-5f14-d724" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72b5-6bc5-b921-e38b" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d50-350e-ded5-9729" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
                 <selectionEntryGroup name="Ranged Weapon" id="7713-28f3-c9d1-4da1" hidden="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d34e-a394-d6b3-98c8" includeChildSelections="false"/>
@@ -2995,6 +2936,132 @@ horizontally away from all enemy models.</characteristic>
                   </modifiers>
                 </profile>
               </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Encarmine Blade" hidden="false" id="8776-3451-c6e-aa6c" collective="false">
+                  <profiles>
+                    <profile name="Encarmine Blade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5315-e49c-146b-c157">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ee95-57e8-bed1-6e2c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72b5-6bc5-b921-e38b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d50-350e-ded5-9729" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sanguinary Guard w/ spear" hidden="false" id="b97e-21d3-3255-fe83">
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="78cd-73a9-92c0-9eba"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Ranged Weapon" id="4b19-1b64-2fd1-e6c5" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aefb-e4a2-3d63-6503" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6972-4a2f-dc1d-89f5" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="a028-f227-ab50-27f4" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="b36d-e83-6a91-e2b4" shared="true" id="edf2-88bf-4fe5-fb37" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="edf2-88bf-4fe5-fb37">
+                          <conditions>
+                            <condition type="atLeast" value="6" field="selections" scope="b36d-e83-6a91-e2b4" childId="b97e-21d3-3255-fe83" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="aabd-f70d-34f8-b706" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Angelus Boltgun" hidden="false" id="c709-1213-8538-6d30">
+                      <profiles>
+                        <profile name="Angelus Boltgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3d89-24a9-c64c-807e">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" id="1ec5-eabc-82b7-4cc4" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f4ce-f12c-281e-2ed6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="3d0d-3ca7-761f-50b5" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Sanguinary Guard" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bd65-635d-7213-d769">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="2" field="bef7-942a-1a23-59f8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8352-c4fb-89d7-30d6" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Encarmine Spear" hidden="false" id="76ec-eb11-d512-f3c2" collective="false">
+                  <profiles>
+                    <profile name="Encarmine Spear" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b639-5778-b45d-ae86">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lance" id="638a-90ae-47dc-b90a" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="4375-94b7-698b-285f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="922b-771d-58cb-4b6f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4fc-7063-6bb7-306d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3006,7 +3073,7 @@ horizontally away from all enemy models.</characteristic>
       <modifiers>
         <modifier type="set" value="260" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="25e4-ead-faac-2531" childId="b36d-e83-6a91-e2b4" shared="true" id="91f1-bb67-e1ee-4bad" includeChildSelections="true"/>
+            <condition type="atLeast" value="4" field="selections" scope="25e4-ead-faac-2531" childId="model" shared="true" id="2a84-0174-83c5-21d1" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
