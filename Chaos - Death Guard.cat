@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="98" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5108-f98-63c2-53cb" name="Chaos - Death Guard" revision="101" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink id="9fec-b3ad-9626-6706" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="4e2e-3067-84f6-f727" targetId="b45c-af22-788a-dfd6" importRootEntries="true"/>
@@ -3558,7 +3558,12 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
         <entryLink id="3fe6-8952-3651-3158" name="Havoc launcher" hidden="false" collective="false" import="true" targetId="a226-a63a-597f-db94" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a226-a63a-597f-db94" name="Havoc launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -4984,11 +4989,12 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="265"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">

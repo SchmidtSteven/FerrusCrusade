@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f616-3f08-ee8e-3349" name="Xenos - Leagues of Votann" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f616-3f08-ee8e-3349" name="Xenos - Leagues of Votann" revision="70" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="5a53-ae58-e0d9-0616" name="Hearthkyn Warriors" hidden="false"/>
     <categoryEntry id="a360-cb11-e139-55df" name="Ûthar the Destined" hidden="false"/>
@@ -956,7 +956,12 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
         <entryLink id="e401-9dc4-6e5b-e7f5" name="Enhancements" hidden="false" collective="false" import="true" targetId="06ba-6740-bf71-0eea" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a0b-0a93-2494-57f9" name="Autoch-pattern combi-bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -2915,11 +2920,12 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Twin bolt cannon" hidden="false" type="selectionEntry" id="31fe-11c-4b19-fbea" targetId="43cd-5e9f-e550-83e0">
@@ -3778,11 +3784,12 @@ result, but it must end that move as close as possible to the closest enemy unit
         <entryLink id="241c-ae10-96f2-fc95" name="Warlord" hidden="false" collective="false" import="true" targetId="92b3-11ff-2a27-cd0c" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95b0-ab82-b1df-f35b" name="Memnyr Strategist" hidden="false" collective="false" import="true" type="model">
@@ -3948,11 +3955,12 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <entryLink id="0281-99fe-9c34-b953" name="Enhancements" hidden="false" collective="false" import="true" targetId="06ba-6740-bf71-0eea" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="89f1-f471-8596-dcc5" collective="true">
@@ -4189,7 +4197,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
     </selectionEntry>
     <selectionEntry id="ff06-171a-5613-7869" name="Ironkin Steeljacks with Heavy Volkanite Disintegrators" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="180">
+        <modifier type="set" field="51b2-306e-1021-d207" value="170">
           <conditions>
             <condition field="selections" scope="ff06-171a-5613-7869" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -4395,16 +4403,17 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d297-4d16-0662-df4e" name="Ironkin Steeljacks with Melee Weapons" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="180">
+        <modifier type="set" field="51b2-306e-1021-d207" value="170">
           <conditions>
             <condition field="selections" scope="d297-4d16-0662-df4e" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -4652,11 +4661,12 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="528c-01a9-2821-89e9" name="Kapricus Defenders" hidden="false" collective="false" import="true" type="unit">
@@ -5046,11 +5056,12 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">

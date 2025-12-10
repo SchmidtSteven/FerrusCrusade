@@ -7752,12 +7752,14 @@ Strategic Reserves.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vanguard Veteran Squad with Jump Packs" hidden="false" id="9e9c-bf4d-2d40-be82">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="82d2-1671-c882-68a7" primary="true" name="Infantry"/>
@@ -7783,7 +7785,7 @@ Strategic Reserves.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="ea1d-aa1b-39af-5932" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="190" field="51b2-306e-1021-d207">
+        <modifier type="set" value="200" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="9e9c-bf4d-2d40-be82" childId="8a7f-b578-d274-9769" shared="true" id="c465-ba04-3a7-cc0a"/>
           </conditions>
@@ -8942,12 +8944,14 @@ bearer can be moved during that move</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aggressor Squad" hidden="false" id="129d-2da5-66f3-f4ec">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6f5-7425-b205-cfa7" primary="true" name="Infantry"/>
@@ -9224,7 +9228,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="190" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="129d-2da5-66f3-f4ec" childId="72d4-ff18-9328-2bce" shared="true" id="c997-19f1-338e-a1ad"/>
           </conditions>
@@ -10718,12 +10722,14 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Centurion Devastator Squad" hidden="false" id="6ba0-cede-e278-f86b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3cf9-1b1c-e7ac-71e1"/>
@@ -10956,7 +10962,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="330" field="51b2-306e-1021-d207">
+        <modifier type="set" value="350" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="6ba0-cede-e278-f86b" childId="cd88-5a62-bbb7-eb2a" shared="true" id="4e3a-158a-baa1-87c8"/>
           </conditions>
@@ -15839,11 +15845,14 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Storm Speeder Thunderstrike" hidden="false" id="993a-9cbc-8052-e40">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="3aa0-ebdd-f874-cdd1" primary="true" name="Vehicle"/>
@@ -17337,11 +17346,14 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eradicator Squad" hidden="false" id="c570-c6ba-c9dc-5a44">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="95b1-be35-d597-e9ad" primary="true" name="Infantry"/>
@@ -17508,7 +17520,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="200" field="51b2-306e-1021-d207">
+        <modifier type="set" value="180" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="c570-c6ba-c9dc-5a44" childId="f59c-c864-bd59-1759" shared="true" id="50cb-11a-d6a5-47d1" includeChildSelections="true"/>
           </conditions>
@@ -23878,7 +23890,14 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="ce15-e87e-7cff-b129">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="dc03-fe9d-aed5-1d78" primary="true" name="Character"/>
@@ -37059,6 +37078,30 @@ If your unit is Battle‑shocked, add 2 to the Attacks characteristic of melee w
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saga of the Great Wolf" hidden="false" id="c09b-a2b1-569b-b9f6">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Master of Wolves" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f42-622e-c605-3444">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, you can select one of the Hunting Packs listed below. Until the start of your next Command phase, that Hunting Pack is active and its effects apply to all ADEPTUS ASTARTES units from your army. You can only select each Hunting Pack once per battle.
+
+
+■ Encircling Jaws: This unit can re-roll Advance rolls and Charge rolls.
+■ Hunter&apos;s Eye: Each time a model in this unit makes a ranged attack, add 1 to the Hit roll.
+■ Ferocious Strike: Each time this unit is selected to fight, select either the [LETHAL HITS] or [SUSTAINED HITS 1] ability. Until the end of the phase, weapons equipped by models in this unit have the selected ability.
+
+
+Once per battle, when selecting a Hunting Pack for the Master of Wolves Detachment rule (see above), if a LOGAN GRIMNAR model from your army is on the battlefield, you can select a Hunting Pack you have already selected this battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9e5d-de4c-c5d1-1d3e" collapsible="true">
@@ -40714,6 +40757,136 @@ If it does, until the end of the phase, models in the bearer’s unit have the F
               </conditionGroups>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Saga of the Great Wolf Enhancements" id="646a-ee90-cc64-5097" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c7d-77da-b90e-a2a0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="c09b-a2b1-569b-b9f6" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skjald&apos;s Foretelling" hidden="false" id="3822-7593-86ee-50e2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a142-4684-f734-3509" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="da71-6be5-53d9-55a1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Skjald&apos;s Foretelling" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4731-b8ba-b4c2-ec28">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WOLF GUARD BATTLE LEADER model only. While the bearer is leading a unit, weapons equipped by models in that unit have the [LANCE] ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Chariots of the Storm" hidden="false" id="60c8-9f25-0f5d-83d9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c818-0abc-59af-1bed" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Chariots of the Storm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4ac1-1ff2-f124-1672">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES model only. After both players have deployed their armies, select up to three ADEPTUS ASTARTES units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grimnar&apos;s Mark" hidden="false" id="b793-4960-97b2-0ea6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dd8f-6d0f-362e-1223" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dc24-dd64-5d97-df3c" shared="true" id="63a7-c211-755a-f837" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Grimnar&apos;s Mark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="093e-63e2-b3dc-0883">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS ASTARTES TERMINATOR CAPTAIN model only. Once per battle round, from the second battle round onwards, you can target the bearer&apos;s unit with the Rapid Ingress or Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.
+
+
+In the Declare Battle Formations step, the bearer can be attached to a WOLF GUARD TERMINATORS unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Howlmaw" hidden="false" id="3b5b-71fe-e453-739e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea86-b4db-fed4-e27a" includeChildSelections="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Howlmaw" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b2d0-5834-022e-0f65">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">WOLF PRIEST model only. At the start of the Fight phase, you can select one enemy unit within 6&quot; of the bearer. That unit must take a Battle-shock, subtracting 1 from the result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e700-e90e-8379-035f" shared="true" id="9c35-16e1-c705-497a" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>

@@ -1726,7 +1726,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Victrix Honour Guard" hidden="false" id="043f-1134-c01f-ff62">
       <modifiers>
-        <modifier type="set" value="210" field="51b2-306e-1021-d207">
+        <modifier type="set" value="240" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="parent" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -1767,7 +1767,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
         <categoryLink targetId="5179-8ede-45e3-49a2" id="2e5a-da63-af31-bd45" primary="false" name="Tacticus"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2002,7 +2002,7 @@ If your army includes one or more of the Vehicle models listed below, Sergeant C
         <infoLink name="Invulnerable Save" id="af72-046d-b4b2-ddfa" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>

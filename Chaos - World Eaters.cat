@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="df9a-59b2-f464-59ad" name="Chaos - World Eaters" revision="95" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="df9a-59b2-f464-59ad" name="Chaos - World Eaters" revision="97" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="02a0-fa96-6f9b-354f" name="Wrathful Presence">
       <characteristicTypes>
@@ -564,11 +564,12 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="360"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="340"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9754-481c-c292-a1f9" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -1216,11 +1217,12 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
         <entryLink id="8296-5207-7271-41d4" name="Enhancements" hidden="false" collective="false" import="true" targetId="7b6d-6d90-0ffe-b45b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b56-682c-ac33-bc5f" name="World Eaters Master of Executions" hidden="false" collective="false" import="true" type="model">
@@ -5335,11 +5337,12 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Goremongers" hidden="false" id="b399-9b66-e550-8050">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <profiles>
         <profile name="Goremongers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c5f1-2298-2c2e-703e">
@@ -6262,11 +6265,12 @@ until the end of the battle, this model has the Deep Strike and Scouts 6&quot; a
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="5c2e-bf80-e029-9e3a" targetId="9754-481c-c292-a1f9"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -6415,7 +6419,12 @@ until the end of the battle, this model has the Deep Strike and Scouts 6&quot; a
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8c4-d7a8-523f-ef12" includeChildSelections="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Helm of Brazen Ire" hidden="false" id="b5a7-c089-4f1a-de67">
@@ -6438,11 +6447,12 @@ until the end of the battle, this model has the Deep Strike and Scouts 6&quot; a
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f713-d89c-a512-e7a9" includeChildSelections="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Favoured of Khorne" hidden="false" id="f2a4-3578-8c1d-91d0">
