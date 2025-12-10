@@ -4796,32 +4796,32 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7f2-8219-f995-0bf4" includeChildSelections="false"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Replace Pistol" id="0d2e-b23e-03df-ffba" hidden="false" defaultSelectionEntryId="a3b1-a4d1-6857-384c">
+                <selectionEntryGroup name="Replace Pistol" id="2ceb-df59-2931-032d" hidden="false" defaultSelectionEntryId="a3b1-a4d1-6857-384c">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" id="42b9-4a51-b21a-7d2f" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1">
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="8112-9a0b-7357-5a18" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="b3bd-602f-8d49-1313" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="1221-e351-1223-b0c5" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="abbf-65c9-5d8d-30cc" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1">
+                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="f2d7-fe7f-e5b1-3a81" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="911d-2571-1d52-87bf" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="ebd2-a269-d418-c36a" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="bad4-74eb-fbc4-65bd" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="2757-9ce7-fe55-5844" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="6416-3d18-64d2-5ada" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="7808-aec3-8168-092c" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="088b-c0cd-ba23-de3c" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4d2-0e09-e0a1-f2e2" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7195-b8f0-ce77-f2dd" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32dc-f436-aefe-f805" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Bolt Pistol" hidden="false" id="317b-d8ee-971a-7669" sortIndex="2">
+                    <selectionEntry type="upgrade" import="true" name="Heavy Bolt Pistol" hidden="false" id="65e1-8002-ee61-9c3f" sortIndex="2">
                       <profiles>
-                        <profile name="Heavy Bolt Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0575-df93-a46f-d4fa">
+                        <profile name="Heavy Bolt Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="27b9-b8c7-f16a-a7e0">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -4834,8 +4834,11 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Pistol" id="24d6-2194-2810-55ea" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                        <infoLink name="Pistol" id="4da1-de6c-ddbd-431d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="cc92-16d8-06b9-67fc" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -4855,32 +4858,32 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                 <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="652f-47ba-c020-047f" includeChildSelections="false"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Replace Pistol" id="c77f-adef-0964-5adf" hidden="false" defaultSelectionEntryId="a3b1-a4d1-6857-384c">
+                <selectionEntryGroup name="Replace Pistol" id="86cf-1f3c-07a2-298c" hidden="false" defaultSelectionEntryId="a3b1-a4d1-6857-384c">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" id="c12b-2395-0ea5-25f6" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1">
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="8d0f-b1a8-65d8-26ae" type="selectionEntry" targetId="9dc6-6ad8-818e-db2e" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="40cf-35c8-c1ca-3941" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="2e0e-fa57-b785-d190" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="2249-346b-b467-ec50" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1">
+                    <entryLink import="true" name="Inferno Pistol" hidden="false" id="93d8-edc1-7f2e-f9d0" type="selectionEntry" targetId="d8bf-e17f-d6fa-b7e8" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="067f-a382-4b0f-a135" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="0780-5ae7-3508-47da" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="c430-5cf0-178e-09c7" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="f79f-79e9-3050-5443" type="selectionEntry" targetId="25c2-104f-fa0c-809e" sortIndex="1">
                       <categoryLinks>
-                        <categoryLink name="Pistol replacement" hidden="false" id="aafa-197f-a0c5-85e7" targetId="f06c-dfec-c720-57f1" primary="false"/>
+                        <categoryLink name="Pistol replacement" hidden="false" id="21ab-5a92-3335-3c20" targetId="f06c-dfec-c720-57f1" primary="false"/>
                       </categoryLinks>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="353b-adc1-0616-3840" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be9b-1793-15aa-7f01" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff9e-6b3e-6de8-5e43" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ec-f501-cb98-73e8" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Heavy Bolt Pistol" hidden="false" id="9847-b027-6454-74db" sortIndex="2">
+                    <selectionEntry type="upgrade" import="true" name="Heavy Bolt Pistol" hidden="false" id="96ac-beaa-783d-f907" sortIndex="2">
                       <profiles>
-                        <profile name="Heavy Bolt Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1e9c-558a-6dd3-1a89">
+                        <profile name="Heavy Bolt Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2541-ef79-17fe-2fdd">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -4893,8 +4896,11 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Pistol" id="e4f2-05a6-4616-29f7" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                        <infoLink name="Pistol" id="059a-fdd6-4d4c-c967" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f13-104a-8585-d20c" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -4969,15 +4975,8 @@ You can attach this model to one of the above units, even if one Captain, Chapt
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4761-c7fa-10ea-e343" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="edee-48a2-1e8a-2539" shared="true" id="4f47-ceb3-a70f-8e21" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42a-98cd-3baa-bf2e"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="4f47-ceb3-a70f-8e21">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="edee-48a2-1e8a-2539" childId="efcd-180-d07-b4d6" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
