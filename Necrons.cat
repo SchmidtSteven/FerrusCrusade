@@ -14836,6 +14836,33 @@ In your Shooting Phase, each time a Cryptek unit from your army is selected to s
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Cold Fervour" id="3750-407f-a3f1-79df" hidden="false" type="rule" targetId="f07c-3843-3122-6644">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="4af0-b1b1-176e-685e" shared="true" id="2028-6952-5501-db4e" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Cosmic Distortion" id="e06c-6363-ea17-d486" hidden="false" type="rule" targetId="2fbd-530a-d5cc-f7dd">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ef56-fcb1-d326-4aee" shared="true" id="4f83-4979-371b-483a" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Technosorcerous Augmentations" id="22c1-582e-ffdc-1dcd" hidden="false" type="rule" targetId="8c34-77d4-b8d0-d140">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="4308-3240-eec4-e745" shared="true" id="9828-cfa5-8e02-05fb" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
