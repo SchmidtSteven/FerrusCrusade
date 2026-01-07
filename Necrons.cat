@@ -7216,7 +7216,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         <selectionEntry type="upgrade" import="true" name="Singularity Matrix" hidden="true" id="d022-5728-66b3-ce58">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d52-fb36-dac4-994f" includeChildSelections="false"/>
-            <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="0cc9-baed-72be-ec10" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cc9-baed-72be-ec10" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
@@ -7238,11 +7238,6 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
           </profiles>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="0cc9-baed-72be-ec10">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -7367,7 +7362,7 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
         <selectionEntry type="upgrade" import="true" name="Quantum Goad" hidden="true" id="124b-ea1c-f01e-1b03">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c331-b83f-f149-2e13" includeChildSelections="false"/>
-            <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="31a8-c43e-ddfe-94b4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31a8-c43e-ddfe-94b4" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
@@ -7386,11 +7381,6 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
           </profiles>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="31a8-c43e-ddfe-94b4">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -7557,7 +7547,7 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
         <selectionEntry type="upgrade" import="true" name="Animus Damper" hidden="true" id="8c9b-632a-b0f5-ef03">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="877f-ceaf-7c09-b4a8" includeChildSelections="false"/>
-            <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="53cc-0446-6dca-4dea" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53cc-0446-6dca-4dea" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
@@ -7576,11 +7566,6 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
           </profiles>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="53cc-0446-6dca-4dea">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -7808,7 +7793,7 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
         <selectionEntry type="upgrade" import="true" name="Relativistic Tether" hidden="true" id="9640-0da5-5a46-e4bf">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c96-07b4-3a6d-8f18" includeChildSelections="false"/>
-            <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="e447-eb17-e8a6-011b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e447-eb17-e8a6-011b" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
@@ -7827,11 +7812,6 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
           </profiles>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="e447-eb17-e8a6-011b">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
