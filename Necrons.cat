@@ -7236,17 +7236,18 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
               </characteristics>
             </profile>
           </profiles>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="set" value="1" field="0cc9-baed-72be-ec10"/>
-              </modifiers>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" value="1" field="0cc9-baed-72be-ec10">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7383,17 +7384,18 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
               </characteristics>
             </profile>
           </profiles>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="set" value="1" field="31a8-c43e-ddfe-94b4"/>
-              </modifiers>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" value="1" field="31a8-c43e-ddfe-94b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7572,17 +7574,18 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
               </characteristics>
             </profile>
           </profiles>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="set" value="1" field="53cc-0446-6dca-4dea"/>
-              </modifiers>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" value="1" field="53cc-0446-6dca-4dea">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7822,17 +7825,18 @@ LORD OF DECEIT (AURA): Each time your opponent targets a unit from their army wi
               </characteristics>
             </profile>
           </profiles>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden"/>
-                <modifier type="set" value="1" field="e447-eb17-e8a6-011b"/>
-              </modifiers>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifierGroup>
-          </modifierGroups>
+            </modifier>
+            <modifier type="set" value="1" field="e447-eb17-e8a6-011b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ef56-fcb1-d326-4aee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
