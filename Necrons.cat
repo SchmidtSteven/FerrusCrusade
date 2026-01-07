@@ -797,7 +797,7 @@
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="4af0-b1b1-176e-685e" shared="true" id="07e9-d89f-ea92-991f" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2324-ba16-58e4-df2e" shared="true" id="b51a-3fd7-6804-7271" includeChildSelections="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="ee53-cc83-d667-ceb8" shared="true" id="29d7-dc70-5746-4257" includeChildSelections="true"/>
