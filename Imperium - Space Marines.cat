@@ -41295,7 +41295,7 @@ In the Declare Battle Formations step, the bearer can be attached to a WOLF GUAR
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="4131-b1d9-c0f3-3a0b" shared="true" id="c656-2372-f7d0-d395" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="da63-b697-7234-b133" shared="true" id="c656-2372-f7d0-d395" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
