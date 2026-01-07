@@ -2213,12 +2213,12 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Pantheon of Woe" hidden="false" id="ef56-fcb1-d326-4aee">
               <infoLinks>
-                <infoLink name="Cold Fervour" id="7402-f6ef-6dda-6490" hidden="false" type="rule" targetId="f07c-3843-3122-6644"/>
+                <infoLink name="Cosmic Distortion" id="7402-f6ef-6dda-6490" hidden="false" type="rule" targetId="2fbd-530a-d5cc-f7dd"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cryptek Conclave" hidden="false" id="4308-3240-eec4-e745">
               <infoLinks>
-                <infoLink name="Cold Fervour" id="2c8e-05d9-5dec-19df" hidden="false" type="rule" targetId="f07c-3843-3122-6644"/>
+                <infoLink name="Technosorcerous Augmentations" id="2c8e-05d9-5dec-19df" hidden="false" type="rule" targetId="8c34-77d4-b8d0-d140"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
