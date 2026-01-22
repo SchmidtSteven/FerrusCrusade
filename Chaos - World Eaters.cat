@@ -2902,7 +2902,7 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
         </profile>
         <profile id="6dfe-fb8a-bb6b-fd88" name="Rend and Tear" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack that targets a Monster or Vehicle unit, until the end of the phase, improve the Damage characteristic of that attack by 1.’</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a melee attack that targets a Monster or Vehicle unit, until the end of the phase, improve the Damage characteristic of that attack by 1.</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d799-5c41-f976-13bd">
