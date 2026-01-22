@@ -6486,7 +6486,6 @@ When mustering your army, unless specifically stated otherwise, you cannot selec
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 - PLAGUE MARINES
-- Poxwalkers
 You can attach this model to a PLAGUE MARINES unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same Leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
       </characteristics>
     </profile>
