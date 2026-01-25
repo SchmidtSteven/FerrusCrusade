@@ -4979,6 +4979,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="96cf-fc0b-816b-f093" includeChildSelections="true"/>
               </constraints>
+              <comment>Court</comment>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Spiritsilver" hidden="false" id="204d-d88e-0007-a8db">
               <costs>
