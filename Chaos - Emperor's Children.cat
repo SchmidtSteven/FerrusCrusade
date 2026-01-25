@@ -4920,6 +4920,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d1f4-cf01-9dde-5603" includeChildSelections="true"/>
               </constraints>
+              <comment>Court</comment>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tears of the Phoenix" hidden="false" id="6f23-9023-113d-6e7f">
               <costs>
