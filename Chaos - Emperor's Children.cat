@@ -5011,6 +5011,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <comment>Court</comment>
             </selectionEntry>
           </selectionEntries>
           <constraints>
