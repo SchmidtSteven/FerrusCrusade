@@ -758,7 +758,7 @@
         <modifier type="set" value="Legends are visible" field="name"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Show Unaligned Forces" hidden="false" id="2973-ea51-7f8d-5403">
+    <selectionEntry type="upgrade" import="true" name="Show Unaligned Forces" hidden="true" id="2973-ea51-7f8d-5403">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="756f-43f7-60e3-d93b" type="min"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2caa-2d0e-2ef7-2245"/>
@@ -770,7 +770,7 @@
         <modifier type="set" value="Unaligned Forces are visible" field="name"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Show Unaligned Fortifications" hidden="false" id="e916-2cf4-a49d-b8c4">
+    <selectionEntry type="upgrade" import="true" name="Show Unaligned Fortifications" hidden="true" id="e916-2cf4-a49d-b8c4">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555c-624d-1099-249b" type="min"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d690-2eb1-642-a72a"/>
