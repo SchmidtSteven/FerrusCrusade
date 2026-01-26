@@ -2344,14 +2344,15 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Battle-scarred Resistance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2872-cb8d-09c1-83b9">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Models in this unit have the Feel No Pain 6+ ability.
+                    2. This unit has Feel No Pain 5+ against Mortal Wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Feel No Pain" id="ae9d-f329-6a26-2288" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
                   <modifiers>
-                    <modifier type="append" value="6+" field="name" join=" "/>
+                    <modifier type="append" value="6+/5+" field="name" join=" "/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
