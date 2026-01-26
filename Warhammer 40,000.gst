@@ -886,7 +886,7 @@
                 <modifier type="set" value="Pariah Nexus content is enabled" field="name"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Show Tyrannic War content" hidden="false" id="c566-c14f-c589-5375">
+            <selectionEntry type="upgrade" import="true" name="Show Ferrus Crusade content" hidden="false" id="c566-c14f-c589-5375">
               <categoryLinks>
                 <categoryLink name="Configuration" hidden="false" id="0d1d-84f9-e9fc-7564" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
               </categoryLinks>
@@ -898,7 +898,7 @@
               <modifiers>
                 <modifier type="set" value="0" field="2173-f2a6-397c-8fbf"/>
                 <modifier type="set" value="0" field="d147-319b-3d28-53cb"/>
-                <modifier type="set" value="Tyrannic War content is enabled" field="name"/>
+                <modifier type="set" value="Ferrus Crusade content is enabled" field="name"/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Show Armageddon content" hidden="false" id="5700-66f7-a020-7386">
@@ -998,8 +998,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Current Campaign" id="41a3-8e07-1e16-db1d" hidden="false" sortIndex="1" defaultSelectionEntryId="none" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tyrannic War" hidden="false" id="11ab-9c3e-c756-9602" sortIndex="5"/>
-            <selectionEntry type="upgrade" import="true" name="Tartarus War" hidden="false" id="TartarusSelectionEntry" sortIndex="6"/>
+            <selectionEntry type="upgrade" import="true" name="Ferrus Crusade" hidden="false" id="11ab-9c3e-c756-9602" sortIndex="5"/>
             <selectionEntry type="upgrade" import="true" name="Nachmund Gauntlet" hidden="false" id="a1e8-4bda-9200-f7c7" sortIndex="3"/>
             <selectionEntry type="upgrade" import="true" name="Armageddon" hidden="false" id="fd80-17e3-3c1a-6570" sortIndex="2"/>
             <selectionEntry type="upgrade" import="true" name="Pariah Nexus" hidden="false" id="0e83-84fd-f2a7-223c" sortIndex="4"/>
@@ -6163,7 +6162,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Tyrannic War Crusade Relics" id="5a5c-df7d-ba6b-5441" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Ferrus Crusade Crusade Relics" id="5a5c-df7d-ba6b-5441" hidden="false" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Antiquity Relics" id="bf35-60e5-4472-2ec6" hidden="false" sortIndex="2">
               <selectionEntries>
@@ -7874,7 +7873,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Tyrannic War Battle Honours" id="1927-d905-041e-b914" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Ferrus Crusade Battle Honours" id="1927-d905-041e-b914" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran Tally" hidden="false" id="3d5f-dcb4-104d-ccc9" sortIndex="3">
           <modifiers>
@@ -8464,7 +8463,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
           </conditions>
         </modifier>
       </modifiers>
-      <comment>Tyrannic War Crusade content</comment>
+      <comment>Ferrus Crusade Crusade content</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Pariah Nexus Blackstone Upgrades" id="66c2-2a46-e7ed-a935" hidden="false" collapsible="true">
       <selectionEntryGroups>
