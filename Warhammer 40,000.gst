@@ -2555,9 +2555,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </selectionEntry>
 
             <!-- Jump Pack Battle Traits -->
-            <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="8c3a-90c3-e11b-4329">
+            <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="JumpPackBT01">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81b6-d6ca-9132-3e74" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="JumpPackBT01Constraint" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -2580,7 +2580,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Sleek Interceptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99fc-06f4-f204-3524">
+                <profile name="Sleek Interceptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="JumpPackBT01Profile">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 2” to the Move characteristic.
 2. Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in this unit.</characteristic>
