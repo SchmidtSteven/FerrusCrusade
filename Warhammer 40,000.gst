@@ -2681,9 +2681,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Encircling Raptors" hidden="false" id="766e-c06d-bcc1-c148">
+            <selectionEntry type="upgrade" import="true" name="Saddleborne" hidden="false" id="766e-c06d-bcc1-c148">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0331-71bc-ed9e-d1aa" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0331-71bc-ed9e-d1aa" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -2706,9 +2706,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Encircling Raptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7f3-d332-f6ae-f067">
+                <profile name="Saddleborn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7f3-d332-f6ae-f067">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Models in this unit have the Stealth ability. 2. Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
