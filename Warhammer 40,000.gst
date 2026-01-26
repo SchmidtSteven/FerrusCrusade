@@ -841,21 +841,6 @@
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Show Tartarus War content" hidden="false" id="ShowTartarusContentID">
-              <categoryLinks>
-                <categoryLink name="Configuration" hidden="false" id="TartarusCategoryLinkId" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
-              </categoryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="TartarusConstraintMinForceID" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="TartarusConstraintMinParentID"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="TartarusConstraintMaxParentID"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="TartarusConstraintMinForceID"/>
-                <modifier type="set" value="0" field="TartarusConstraintMinParentID"/>
-                <modifier type="set" value="Tartarus War content is enabled" field="name"/>
-              </modifiers>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet content" hidden="false" id="c9b3-8039-f1e9-c975">
               <categoryLinks>
                 <categoryLink name="Configuration" hidden="false" id="4650-5005-ee33-9136" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
@@ -2152,7 +2137,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
