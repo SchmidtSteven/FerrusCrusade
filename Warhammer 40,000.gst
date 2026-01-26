@@ -2582,7 +2582,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="High-speed Gunnery" hidden="false" id="361f-3820-741e-8aaf">
+            <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="361f-3820-741e-8aaf">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="416a-9da4-c9e2-5163" includeChildSelections="false"/>
               </constraints>
@@ -2607,9 +2607,11 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="High-speed Gunnery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="47e7-f968-b74f-deb3">
+                <profile name="Crushing Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="47e7-f968-b74f-deb3">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, until the end of the turn all ranged weapons equipped by models in this unit have the **[ASSAULT]** ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+ that enemy unit suffers 1 mortal wound.
+                      2. Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.
+                    </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2617,7 +2619,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <infoLink name="Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Predatory Urge" hidden="false" id="3235-b0da-b04d-ef17">
+            <!-- <selectionEntry type="upgrade" import="true" name="Predatory Urge" hidden="false" id="3235-b0da-b04d-ef17">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ea5-b9b8-ce98-e231" includeChildSelections="false"/>
               </constraints>
@@ -2648,8 +2650,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mounted Guerrillas" hidden="false" id="471d-cf1d-cb71-4810">
+            </selectionEntry> -->
+            <!-- <selectionEntry type="upgrade" import="true" name="Mounted Guerrillas" hidden="false" id="471d-cf1d-cb71-4810">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ee-f6d7-b44a-d5b0" includeChildSelections="false"/>
               </constraints>
@@ -2680,10 +2682,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
+            </selectionEntry> -->
             <selectionEntry type="upgrade" import="true" name="Saddleborne" hidden="false" id="766e-c06d-bcc1-c148">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0331-71bc-ed9e-d1aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0331-71bc-ed9e-d1aa" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -2708,7 +2710,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Saddleborn" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7f3-d332-f6ae-f067">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Models in this unit have the Stealth ability. 2. Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Models in this unit have the Stealth ability. 
+                    2. Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
