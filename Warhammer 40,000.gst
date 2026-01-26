@@ -2114,10 +2114,13 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Advanced Suspensors" oldName="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the ASSAULT keyword. 2. Add 2” to Advance rolls.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the **^^ASSAULT^^** keyword. 2. Add 2” to Advance rolls.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="ASSAULT" id="assaultIDCrusade" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"></infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stubborn Explorator" oldName="Archeotech Power Cell" hidden="false" id="114f-6903-9440-6051">
               <constraints>
