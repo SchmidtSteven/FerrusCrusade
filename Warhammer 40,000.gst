@@ -2553,6 +2553,49 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
+
+            <!-- Jump Pack Battle Traits -->
+            <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="8c3a-90c3-e11b-4329">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81b6-d6ca-9132-3e74" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Sleek Interceptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99fc-06f4-f204-3524">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 2” to the Move characteristic.
+2. Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Sleek Interceptors" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
             <!-- <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Celerity" hidden="false" id="2879-b673-7355-efab">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a593-53d2-ba2e-bcbe" includeChildSelections="false"/>
