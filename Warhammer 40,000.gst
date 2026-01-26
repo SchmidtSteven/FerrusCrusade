@@ -2114,7 +2114,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Advanced Suspensors" oldName="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the **^^ASSAULT^^** keyword. 2. Add 2” to Advance rolls.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the **^^ASSAULT^^** keyword.
+2. Add 2” to Advance rolls.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2154,7 +2155,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Stubborn Explorator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4258-8480-6cfb-8a9a">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 2&quot; to the Move characteristic of models in this unit. 2. Each time this unit makes a Normal, Advance, or Charge move it can move over terrain features as if they were not there. It may not end its movement inside of a wall etc. If it does roll a D6: on a 1 or 2 this unit takes D3 Mortal Wounds.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 2&quot; to the Move characteristic of models in this unit.
+2. Each time this unit makes a Normal, Advance, or Charge move it can move over terrain features as if they were not there. It may not end its movement inside of a wall etc. If it does roll a D6: on a 1 or 2 this unit takes D3 Mortal Wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
