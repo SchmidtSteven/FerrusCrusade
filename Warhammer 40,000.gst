@@ -1814,7 +1814,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Deadly Combatant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe00-d1ed-cc9f-af99">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">All melee weapon equipped by **^^Character^^** models in this unit have the **[SUSTAINED HITS 1]** ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SOME melee weapon equipped by **^^Character^^** models in this unit have the **[SUSTAINED HITS 1]** ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
