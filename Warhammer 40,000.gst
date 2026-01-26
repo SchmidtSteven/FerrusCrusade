@@ -2384,7 +2384,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Vanguard Espionage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf52-1646-5b05-6b57">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Scouts 9&quot; ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. This unit has the Scouts 9&quot; ability.
+                    2. This unit has the Infiltrators ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2394,6 +2395,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <modifier type="append" value="9&quot;" field="name" join=" "/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Infiltrators" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"></infoLink>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Obdurate Obedience" hidden="false" id="d908-df85-4e95-9888">
