@@ -2082,7 +2082,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blessed Hull" hidden="false" id="1ff1-67fa-af94-1449">
+            <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" oldName="Blessed Hull" hidden="false" id="1ff1-67fa-af94-1449">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daae-766d-05ca-cccc" includeChildSelections="false"/>
               </constraints>
@@ -2100,7 +2100,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2112,9 +2112,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
+                <profile name="Advanced Suspensors" oldName="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 5+ invulnerable save.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the ASSAULT keyword. 2. Add 2” to Advance rolls.
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2174,7 +2175,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2211,7 +2212,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2248,7 +2249,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2293,7 +2294,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2699,7 +2700,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </characteristics>
                 </profile>
               </profiles>
-                            <infoLinks>
+              <infoLinks>
                 <infoLink name="Stealth" id="Crusade Stealth" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"></infoLink>
               </infoLinks>
 
