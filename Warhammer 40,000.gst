@@ -2163,7 +2163,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Archeotech Power Cell" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="append" value="Stubborn Explorator" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
                     <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
