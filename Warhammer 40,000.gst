@@ -2547,7 +2547,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Obdurate Obedience" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="append" value="Resolute Veterans" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
                     <modifier type="increment" value="1" field="bef7-942a-1a23-59f8" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
