@@ -2112,7 +2112,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Advanced Suspensors" oldName="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
+                <profile name="Advanced Suspensors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9946-99c9-bf5b-b03f">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. All ranged weapons equipped by models in this unit have the **^^ASSAULT^^** keyword.
 2. Add 2” to Advance rolls.</characteristic>
@@ -2593,43 +2593,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry> -->
-            <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="361f-3820-741e-8aaf">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="416a-9da4-c9e2-5163" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Crushing Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="47e7-f968-b74f-deb3">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+ that enemy unit suffers 1 mortal wound.
-                      2. Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.
-                    </characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-              </infoLinks>
-            </selectionEntry>
             <!-- <selectionEntry type="upgrade" import="true" name="Predatory Urge" hidden="false" id="3235-b0da-b04d-ef17">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ea5-b9b8-ce98-e231" includeChildSelections="false"/>
@@ -2694,6 +2657,43 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry> -->
+            <selectionEntry type="upgrade" import="true" name="Thundering Onslaught" hidden="false" id="40f7-f013-e684-02a0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885b-d139-d44e-0d62" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Thundering Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5ff3-f50a-9614-31f9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Saddleborne" hidden="false" id="766e-c06d-bcc1-c148">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0331-71bc-ed9e-d1aa" includeChildSelections="false"/>
@@ -2729,9 +2729,84 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <infoLinks>
                 <infoLink name="Stealth" id="Crusade Stealth" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"></infoLink>
               </infoLinks>
-
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Destructive Impulse" hidden="false" id="b776-cf8e-c23d-3796">
+            <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="361f-3820-741e-8aaf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="416a-9da4-c9e2-5163" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Crushing Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="47e7-f968-b74f-deb3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+ that enemy unit suffers 1 mortal wound.
+                      2. Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.
+                    </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="778b-0a0b-2f1e-b392" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="f09a-6b41-483c-147e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9639-5c4b-8d59-ca6d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c619-2086-bbcf-69c9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Sleek Interceptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6633-39c0-087c-7bac">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 2” to the Move characteristic.
+2. Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+
+            <!-- <selectionEntry type="upgrade" import="true" name="Destructive Impulse" hidden="false" id="b776-cf8e-c23d-3796">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97a8-46c1-6f7d-7429" includeChildSelections="false"/>
               </constraints>
@@ -2791,7 +2866,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
-          </selectionEntries>
+          </selectionEntries> -->
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -3621,43 +3696,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Thundering Onslaught" hidden="false" id="40f7-f013-e684-02a0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885b-d139-d44e-0d62" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Thundering Onslaught" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5ff3-f50a-9614-31f9">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Saddleborne Assassins" hidden="false" id="9c54-2886-35b2-2860">
               <constraints>
@@ -7891,7 +7929,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     </selectionEntryGroup>
     <selectionEntryGroup name="Ferrus Crusade Battle Honours" id="1927-d905-041e-b914" hidden="false" collapsible="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran Tally" hidden="false" id="3d5f-dcb4-104d-ccc9" sortIndex="3">
+        <!-- <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran Tally" hidden="false" id="3d5f-dcb4-104d-ccc9" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -7904,8 +7942,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </conditionGroups>
             </modifier>
           </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran" hidden="false" id="7767-9b46-61a3-c62a" sortIndex="1">
+        </selectionEntry> -->
+        <!-- <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran" hidden="false" id="7767-9b46-61a3-c62a" sortIndex="1">
           <categoryLinks>
             <categoryLink name="Monster Hunters" hidden="false" id="0cc7-0e96-96a5-e1ec" targetId="1532-9501-d870-4514" primary="false"/>
             <categoryLink name="Tyrannic War Veteran" hidden="false" id="5986-1684-040c-8a5c" targetId="26fe-d7cb-eb8f-77d4" primary="false"/>
@@ -7926,8 +7964,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0d-a726-af2e-ec7f" includeChildSelections="false"/>
           </constraints>
           <comment>Monster Hunters</comment>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran" hidden="false" id="fe0b-a773-b244-d6a3" sortIndex="2">
+        </selectionEntry> -->
+        <!-- <selectionEntry type="upgrade" import="true" name="Tyrannic War Veteran" hidden="false" id="fe0b-a773-b244-d6a3" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Striding Behemoths" hidden="false" id="e8a7-8264-0136-a5c9" targetId="0dce-ed3d-83af-2f27" primary="false"/>
             <categoryLink name="Tyrannic War Veteran" hidden="false" id="53a2-710e-ed0a-8d3e" targetId="26fe-d7cb-eb8f-77d4" primary="false"/>
@@ -7948,7 +7986,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b070-2abc-f1a5-0d4d" includeChildSelections="false"/>
           </constraints>
           <comment>Striding Behemoths</comment>
-        </selectionEntry>
+        </selectionEntry> -->
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Monster Hunters" id="bae5-5003-9266-c381" hidden="false">
