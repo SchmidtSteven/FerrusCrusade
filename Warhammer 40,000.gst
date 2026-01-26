@@ -2699,6 +2699,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </characteristics>
                 </profile>
               </profiles>
+                            <infoLinks>
+                <infoLink name="Stealth" id="Crusade Stealth" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"></infoLink>
+              </infoLinks>
+
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Destructive Impulse" hidden="false" id="b776-cf8e-c23d-3796">
               <constraints>
