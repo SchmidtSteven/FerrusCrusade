@@ -2312,7 +2312,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Blessed Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6633-39c0-087c-7bac">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. This model has a 5+ Invulnerable Save. 2. At the start of your Command phase, one model in this unit regains 1 lost wound.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. This model has a 5+ Invulnerable Save.
+2. At the start of your Command phase, one model in this unit regains 1 lost wound.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2345,7 +2346,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <profile name="Battle-scarred Resistance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2872-cb8d-09c1-83b9">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Models in this unit have the Feel No Pain 6+ ability.
-                    2. This unit has Feel No Pain 5+ against Mortal Wounds.</characteristic>
+2. This unit has Feel No Pain 5+ against Mortal Wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2385,7 +2386,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <profile name="Vanguard Espionage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf52-1646-5b05-6b57">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. This unit has the Scouts 9&quot; ability.
-                    2. This unit has the Infiltrators ability.</characteristic>
+2. This unit has the Infiltrators ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2423,9 +2424,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Obdurate Obedience" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4280-0ad4-41db-e2b9">
+                <profile name="Whirlwind of Doom" oldName="Obdurate Obedience" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4280-0ad4-41db-e2b9">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Objective Control characteristic of all models in this unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add one to Charge rolls.
+2. This unit re-rolls Charge rolls.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
