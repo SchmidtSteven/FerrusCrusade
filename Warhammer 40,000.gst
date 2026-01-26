@@ -4580,11 +4580,11 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         </selectionEntryGroup>
 
 
-        <selectionEntryGroup name="Tartarus War Battle Traits" id="TartarusBattleTraitsID" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="5370-0734-ffdb-9fdf" hidden="false" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Precision Insertion" hidden="false" id="TarBTChar01">
+            <selectionEntry type="upgrade" import="true" name="Precision Insertion" hidden="false" id="ba7f-a586-d2f7-a8eb">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="TarBTChar01Constraint" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fcd-5c3c-17d8-80cc" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -4602,9 +4602,11 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Precision Insertion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="TarBTChar01Profile">
+                <profile name="Precision Insertion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8541-0803-dadb-b6dd">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CharacterBattleTrait01Description</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when this unit is set up on the battlefield using the Deep Strike ability, it can perform a Precision Insertion. If it does, this unit can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge. Each time this unit performs a Surgical Deep Strike, add 2 to the Deep Strike test.
+
+**Designer&apos;s Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5370,7 +5372,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Drop Zone Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d34-d242-a338-8e60">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of the turn, each time a model in this unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. Each time this unit performs a Surgical Deep Strike, you can re-roll the Deep Strike test.*0*Designer&apos;s Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of the turn, each time a model in this unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. Each time this unit performs a Surgical Deep Strike, you can re-roll the Deep Strike test.
+
+**Designer&apos;s Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5397,7 +5401,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Stealthy Arrival" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85d8-e908-b885-b5b1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of your next turn, this unit has the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.**Designer&apos;s Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of your next turn, this unit has the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.
+
+**Designer&apos;s Note:** *Only units that are set up using the Deep Strike ability with benefit from this Battle Trait.*</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5414,9 +5420,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-// Tart
 
 
+        
         <selectionEntryGroup name="Armageddon Battle Traits" id="9c28-2876-4721-62f5" hidden="false" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Warp Terrors (Psychic)" hidden="false" id="b283-c2a9-13fd-21b4">
