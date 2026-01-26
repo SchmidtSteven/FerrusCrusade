@@ -2542,7 +2542,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Celerity" hidden="false" id="2879-b673-7355-efab">
+            <!-- <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Celerity" hidden="false" id="2879-b673-7355-efab">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a593-53d2-ba2e-bcbe" includeChildSelections="false"/>
               </constraints>
@@ -2581,7 +2581,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
-            </selectionEntry>
+            </selectionEntry> -->
             <selectionEntry type="upgrade" import="true" name="Crushing Charge" hidden="false" id="361f-3820-741e-8aaf">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="416a-9da4-c9e2-5163" includeChildSelections="false"/>
