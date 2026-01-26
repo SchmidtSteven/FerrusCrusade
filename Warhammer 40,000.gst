@@ -2201,7 +2201,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Berserking Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0a7c-c752-f53e-ed90">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Once per battle you can target this unit with the Tank shock Stratagem for 0 CP. 2. If you target this unit with the Tank shock Stratagem it can roll two extra dice.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Once per battle you can target this unit with the Tank shock Stratagem for 0 CP.
+2. If you target this unit with the Tank shock Stratagem it can roll two extra dice.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2238,7 +2239,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Tank Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4ee6-6225-5888-59ce">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Each time a model in this unit makes an attack that targets a Monster or Vehicle unit, re-roll a Wound roll of 1. 2. Each time a model in this unit makes an attack that targets a Monster or Vehicle unit, add 1 to the Wound roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Each time a model in this unit makes an attack that targets a Monster or Vehicle unit, re-roll a Wound roll of 1.
+2. Each time a model in this unit makes an attack that targets a Monster or Vehicle unit, add 1 to the Wound roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2275,7 +2277,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Unrelenting Optics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5b99-ce98-dc07-6089">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Once per game you can target this unit with the Fire Overwatch Stratagem for 0 CP. 2. If this unit is targeted with the Fire Overwatch Statagem it hits on 5+.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Once per game you can target this unit with the Fire Overwatch Stratagem for 0 CP.
+2. If this unit is targeted with the Fire Overwatch Statagem it hits on 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2399,7 +2402,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <infoLink name="Infiltrators" id="51ab-7e2f-8922-7189" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"></infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Obdurate Obedience" hidden="false" id="d908-df85-4e95-9888">
+            <selectionEntry type="upgrade" import="true" name="Whirlwind of Doom" oldName="Obdurate Obedience" hidden="false" id="d908-df85-4e95-9888">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1369-9b07-4005-736c" includeChildSelections="false"/>
               </constraints>
@@ -2424,23 +2427,15 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Whirlwind of Doom" oldName="Obdurate Obedience" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4280-0ad4-41db-e2b9">
+                <profile name="Whirlwind of Doom" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4280-0ad4-41db-e2b9">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add one to Charge rolls.
 2. This unit re-rolls Charge rolls.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Obdurate Obedience" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
-                    <modifier type="increment" value="1" field="bef7-942a-1a23-59f8" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Resolute Veterans" hidden="false" id="dd0e-fa43-bbc1-579d">
+            <selectionEntry type="upgrade" import="true" name="Adaptive Camoflage" oldName="Resolute Veterans" hidden="false" id="dd0e-fa43-bbc1-579d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1684-6b48-9acd-5728" includeChildSelections="false"/>
               </constraints>
@@ -2465,14 +2460,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Resolute Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7540-1649-6e02-4718">
+                <profile name="Adaptive Camoflage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7540-1649-6e02-4718">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you take a Battle-shock, Leadership or Desperate Escape test for this unit, add 1 to that test.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. This unit has Stealth
+2. When in Strategic Reserves, count the battle round as one higher.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Stealth" id="5f2c-04a4-18d1-29a2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+              </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Only The Swift Survive" hidden="false" id="e9bb-838d-d5cd-88c3">
+            <selectionEntry type="upgrade" import="true" name="Footsloggers" oldName="Only The Swift Survive" hidden="false" id="e9bb-838d-d5cd-88c3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be6-d0ad-3ce2-c33b" includeChildSelections="false"/>
               </constraints>
@@ -2497,14 +2496,23 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Only The Swift Survive" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="80cc-c73c-14ee-8385">
+                <profile name="Footsloggers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="80cc-c73c-14ee-8385">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add 1” to the Move characteristic of models in this unit.
+2. Add one to Advance rolls for models in this unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Footsloggers" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Headhunters" hidden="false" id="8c3a-90c3-e11b-4329">
+            <selectionEntry type="upgrade" import="true" oldName="Headhunters" name="Resolute Veterans" hidden="false" id="8c3a-90c3-e11b-4329">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81b6-d6ca-9132-3e74" includeChildSelections="false"/>
               </constraints>
@@ -2529,12 +2537,21 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Headhunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99fc-06f4-f204-3524">
+                <profile name="Resolute Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99fc-06f4-f204-3524">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one enemy unit (regardless of how many units in your Crusade army have this Battle Trait). Until the end of the battle, each time a model in this unit makes an attack against that enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1. Add one to the Objective Control of all models in this unit.
+2. This unit can perform an action after it has advanced and or shot.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Resolute Veterans" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="1" field="bef7-942a-1a23-59f8" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <!-- <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Celerity" hidden="false" id="2879-b673-7355-efab">
               <constraints>
