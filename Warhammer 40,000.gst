@@ -1613,6 +1613,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <modifiers>
                     <modifier type="append" value="Deep Wounds" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
                     <modifier type="increment" value="-1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                    <modifier type="increment" value="-1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
