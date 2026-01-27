@@ -2035,7 +2035,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Damaged Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Sv is worsened by 1 (to a max of 6+).</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Save is worsened by 1 (to a max of 6+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2227,7 +2227,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Cracked Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">All ranged weapons take minus 1 to hit if this unit has moved.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Save is worsened by 1 (to a max of 6+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
