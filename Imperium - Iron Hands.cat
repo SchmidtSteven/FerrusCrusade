@@ -6,6 +6,254 @@
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="fcde-dbec-a498-fb3d" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntries>
+
+
+
+    <selectionEntry type="model" import="true" name="Techmarine in Terminator Armour" hidden="false" id="TechTermEntry">
+      <infoLinks>
+        <infoLink name="Leader" type="rule" id="TechTermEntryLeader" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="TechTermEntryLeaderAOC1" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="TechTermEntryLeaderAOC2" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="140c-8600-7c34-099a" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="TechTermEntryWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="TechTermEntryLeaderConstraint" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="TechTermEntryLeaderEnhancement" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="TechTermEntryLeaderCrusade" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="TechTermEntryLeaderRosterConstraint" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="9dae-a425-38c1-02f5" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e264-a430-f5ab-7a4f" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fa2a-4a95-77e5-bbf0" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Techmarine in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3eb3-b6eb-4967-a6b2">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Techmarine in Terminator Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40d5-dc4a-5c0a-fe2e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly Adeptus Astartes Vehicle units, this model has the Lone Operative ability</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blessing of the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b4c1-7511-e999-2538">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one friendly Adeptus Astartes Vehicle model within 3&quot; of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vengeance of the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6bc9-9c39-2271-1f1e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a friendly Adeptus Astartes Vehicle model is destroyed within 12&quot; of this model, until the end of the battle, this model’s Omnissian power axe has an
+Attacks characteristic of 7.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="237c-15f3-c241-2ae1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Assault Intercessor Squad
+■ Desolation Squad
+■ Devastator Squad
+■ Intercessor Squad
+■ Tactical Squad</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="f21a-10ac-dacb-f297" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="9ec3-59d-ada7-c814" primary="false" name="Infantry"/>
+        <categoryLink targetId="b957-d9cd-ee81-560" id="a524-e56-5537-95f2" primary="false" name="Techmarine"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="97c1-e530-2216-3325" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e264-9b6c-f3b8-7398" primary="false" name="Imperium"/>
+        <categoryLink targetId="5179-8ede-45e3-49a2" id="538b-b637-1650-4ffb" primary="false" name="Terminator"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="e264-a430-f5ab-7a4f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="fa2a-4a95-77e5-bbf0">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="9dae-a425-38c1-02f5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="2cd4-962e-1bf9-538f" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forge Bolter" hidden="false" id="c691-f4b-30a0-170b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea84-4072-1691-da7b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c96-4bc8-4c82-d70"/>
+              </constraints>
+              <profiles>
+                <profile name="Forge Bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2aea-ded0-1a03-3242">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="fdbb-d9e2-59a7-d95e" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e754-6cfe-ecee-4ab6" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="f6e0-7945-a9ec-da70" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Grav-pistol" hidden="false" id="8bf-9ae7-46f3-da29" type="selectionEntry" targetId="1f74-a1b-2835-ccdd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="decd-393-6cb6-9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3270-35f5-7c76-a9f6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="e0f9-bae4-52f0-b894" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="f6a3-b291-8d10-eb46" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Omnissian Power Axe" hidden="false" id="3f87-f63b-963f-6ece" type="selectionEntry" targetId="23ac-b0be-8e28-be7f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="272c-8eed-4ef9-b609"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ae3-aa9d-44d4-c4a4"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3e33-f4d6-c633-925d" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Servo-arm" hidden="false" id="e1df-a44f-4c1e-338b" type="selectionEntry" targetId="cd5a-f09d-fd9a-e7f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39dd-84e3-cf88-977c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f4-5fbf-e224-5f0b"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="52dd-faa6-fb5d-9281" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Omnissian Power Axe" hidden="false" id="23ac-b0be-8e28-be7f">
+      <profiles>
+        <profile name="Omnissian Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2012-125d-f852-eb24">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="107d-566c-c1b3-7678" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Servo-arm" hidden="false" id="cd5a-f09d-fd9a-e7f6">
+      <profiles>
+        <profile name="Servo-arm" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ba94-462a-52f0-ead">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Extra Attacks" hidden="false" type="rule" id="fb7f-af05-a90b-93d5" targetId="115b-79dc-f723-d761"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="9f50-8de4-54c4-f79c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="e65f-373a-33f8-a88d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+
+
+
     <selectionEntry type="model" import="true" name="Iron Father Feirros" hidden="false" id="6c9d-4ec3-69dd-90b2">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
