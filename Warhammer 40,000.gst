@@ -1735,12 +1735,12 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </selectionEntry>
 
           
-            <selectionEntry type="upgrade" import="true" name="Panicked Control" hidden="false" id="Crack-In-The-Armour">
+            <selectionEntry type="upgrade" import="true" name="Crack In The Armour" hidden="false" id="Crack-In-The-Armour">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Panicked Control" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                <profile name="Crack In The Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Save is worsened by 1 (to a max of 6+).</characteristic>
                   </characteristics>
@@ -1749,7 +1749,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Panicked Control" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="append" value="Crack In The Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
                     <modifier type="increment" value="1" field="450-a17e-9d5e-29da" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
@@ -1796,7 +1796,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <comment>Underpowered Shot</comment>
                   <modifiers>
                     <modifier type="append" value="Underpowered Shot" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
-                    <modifier type="increment" value="-1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -2019,7 +2019,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
 
 
 
-            
+
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
