@@ -3524,7 +3524,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
 
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c619-2086-bbcf-69c9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c619-2086-bbcf-69c9" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
 
 
