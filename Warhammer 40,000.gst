@@ -2737,7 +2737,12 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         <comment>Ferrus Crusade Battle Traits Start</comment>    \
         <selectionEntryGroup name="Ferrus Crusade Battle Traits" id="b6e6-7945-adcc-eb15" hidden="false" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deadly Combatant" hidden="false" id="26be-2062-a96a-32fa">
+
+
+
+
+
+            <!-- <selectionEntry type="upgrade" import="true" name="Deadly Combatant" hidden="false" id="26be-2062-a96a-32fa">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40ec-dc35-db4f-7462" includeChildSelections="false"/>
               </constraints>
@@ -3024,7 +3029,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
+            </selectionEntry> -->
+
+
+            <comment>VEHICLE TRAITS START</comment>
             <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" oldName="Blessed Hull" hidden="false" id="1ff1-67fa-af94-1449">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daae-766d-05ca-cccc" includeChildSelections="false"/>
@@ -3043,7 +3051,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <!-- <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/> -->
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3264,6 +3272,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
+            <comment>VEHICLE TRAITS END</comment>
+            <comment>INFANTRY TRAITS START</comment>
             <selectionEntry type="upgrade" import="true" name="Battle-scarred Resistance" hidden="false" id="13f1-9475-b20d-1b71">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="676d-7fa6-cadb-8a55" includeChildSelections="false"/>
@@ -3496,8 +3506,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-
-            <!-- Jump Pack Battle Traits -->
+            <comment>INFANTRY TRAITS END</comment>
+            <comment>JUMP PACK TRAITS START</comment>
             <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="JumpPackBT01">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="JumpPackBT01Constraint" includeChildSelections="false"/>
@@ -3517,7 +3527,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c619-2086-bbcf-69c9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c619-2086-bbcf-69c9" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3620,6 +3630,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 </profile>
               </profiles>
             </selectionEntry>
+            <comment>JUMP PACK TRAITS END</comment>
+
 
             <!-- <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Celerity" hidden="false" id="2879-b673-7355-efab">
               <constraints>
