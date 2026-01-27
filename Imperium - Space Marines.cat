@@ -42985,6 +42985,7 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
             </entryLink>
             <entryLink import="true" name="Inner Circle Advancement" hidden="false" id="f4c9-67f2-802f-583c" type="selectionEntryGroup" targetId="5675-d5d5-87d8-6117"/>
             <entryLink import="true" name="Angels Ascendant" hidden="false" id="26db-bd00-d362-0c25" type="selectionEntryGroup" targetId="2705-f3cd-ec46-b24d" collapsible="true"/>
+            <entryLink import="true" name="Forge of Ferrum" hidden="false" id="Forgeofferrumelink" type="selectionEntryGroup" targetId="IronHandsHonorPointTable" collapsible="true"/>
             <entryLink import="true" name="Chapter Command" hidden="false" id="dcf2-9407-d528-2ec7" type="selectionEntryGroup" targetId="034f-ec3f-7f27-66fc"/>
             <entryLink import="true" name="Deeds of Making" hidden="false" id="dd79-a1c8-9aba-3bfb" type="selectionEntryGroup" targetId="d5c2-e5ae-5c9a-73f2"/>
             <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="a200-b081-42a3-25d8" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
@@ -44403,6 +44404,11 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfae-7412-3b57-2caf" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+
+
+
+
+
     <selectionEntryGroup name="The Forge of Ferrum" id="IronHandsHonorPointTable" hidden="false">
       <comment>Crusade content - Iron Hands only</comment>
       <modifiers>
@@ -44522,6 +44528,11 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9958-a353-b0c6-d59c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+
+
+
+
+
     <selectionEntryGroup name="Angels Ascendant" id="2705-f3cd-ec46-b24d" hidden="false">
       <comment>Crusade content - Blood Angels only</comment>
       <modifiers>
@@ -49325,6 +49336,7 @@ If this unit has the **^^Infantry^^** keyword:
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="self" childId="034f-ec3f-7f27-66fc" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="self" childId="2705-f3cd-ec46-b24d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="self" childId="IronHandsHonorPointTable" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="self" childId="d5c2-e5ae-5c9a-73f2" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="self" childId="5675-d5d5-87d8-6117" shared="true"/>
               </conditions>
