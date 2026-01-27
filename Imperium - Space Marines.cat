@@ -44424,11 +44424,11 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shield of Baal" hidden="false" id="7790-f111-f682-93d0">
+        <selectionEntry type="upgrade" import="true" name="Medusan Armor" hidden="false" id="7790-f111-f682-93d0">
           <profiles>
-            <profile name="Shield of Baal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="27fb-11c4-283b-c3d3">
+            <profile name="Medusan Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="27fb-11c4-283b-c3d3">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Captain^^** model only. Once per battle, after selecting your Oath of Moment target, you can use this ability. If you do, until the start of your next Command phase, each time this model&apos;s unit makes a melee attack that targets your Oath of Moment target, you can re-roll the Wound roll.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Techmarine^^** model only. Don Terminator Armor</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -44447,7 +44447,7 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2d7f-1892-2fd0-e29c" shared="true" includeChildSelections="false"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b957-d9cd-ee81-560" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="set" value="2" field="b03b-c239-15a5-da55">
