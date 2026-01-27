@@ -1655,8 +1655,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <modifierGroup type="and">
                   <comment>Weak Swing</comment>
                   <modifiers>
-                    <modifier type="append" value="Weak Swing" field="annotation" join=", " scope="model" affects="self.entries.profiles.Melee Weapons"/>
-                    <modifier type="increment" value="-1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.profiles.Melee Weapons"/>
+                    <modifier type="append" value="Weak Swing" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="-1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <!-- <modifier type="append" value="Deep Wounds" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="-1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/> -->
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
