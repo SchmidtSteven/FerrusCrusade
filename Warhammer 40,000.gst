@@ -1913,6 +1913,206 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
 
 
 
+            <selectionEntry type="upgrade" import="true" name="Pressure Under Arms" hidden="false" id="Pressure-Under-Arms">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pressure Under Arms" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit has 1 less attack (melee and ranged, to a minimum of 1 attack) when charged, this lasts for as long as you are in Engagement Range of the unit that charged you.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+
+
+            <selectionEntry type="upgrade" import="true" name="Weakened Armour" hidden="false" id="Weakened-Armour">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Weakened Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Reduce the wounds of the unit by 2.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Weakened Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="-2" field="750a-a2ec-90d3-21fe" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+
+
+
+            <selectionEntry type="upgrade" import="true" name="Weak Munitions" hidden="false" id="Weak-Munitions">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Weak Munitions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">All ranged weapons this unit has one less AP (to a max of -0) and one less Strength. If the unit has no ranged attacks, re-roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Weak Munitions</comment>
+                  <modifiers>
+                    <modifier type="append" value="Underpowered Shot" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="-1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="-1" field="2229-f494-25db-c5d3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+
+
+            <selectionEntry type="upgrade" import="true" name="Damaged Armour" hidden="false" id="Damaged-Armour">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Damaged Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Sv is worsened by 1 (to a max of 6+).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Damaged Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="1" field="450-a17e-9d5e-29da" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+
+
+
+            <selectionEntry type="upgrade" import="true" name="Shattered Reticule" hidden="false" id="Shattered-Reticule">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shattered Reticule" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit’s WS and BS on all weapons are decreased by 1 (to a max of 6).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Shattered Reticule</comment>
+                  <modifiers>
+                    <modifier type="append" value="Shattered Reticule" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="1" field="94d-8a98-cf90-183e" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="append" value="Shattered Reticule" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="1" field="95d1-95f-45b4-11d6" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+
+
+
             <!-- <selectionEntry type="upgrade" import="true" name="Crippling Damage" hidden="false" id="4135-1065-ae32-09a4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="159e-81b2-f506-493f" includeChildSelections="false"/>
