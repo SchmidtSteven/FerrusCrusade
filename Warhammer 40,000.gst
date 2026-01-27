@@ -1750,7 +1750,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="append" value="Crack In The Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
-                    <modifier type="increment" value="-1" field="450-a17e-9d5e-29da" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                    <modifier type="increment" value="1" field="450-a17e-9d5e-29da" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
