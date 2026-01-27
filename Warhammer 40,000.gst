@@ -1597,23 +1597,45 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
       <selectionEntryGroups>
         <selectionEntryGroup name="Main Rules Battle Scars" id="39da-ebb3-1551-dd9e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Battle-weary" hidden="false" id="856a-44c0-4d44-4fd6">
+            <selectionEntry type="upgrade" import="true" name="Deep Wounds" hidden="false" id="856a-44c0-4d44-4fd6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Battle-weary" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                <profile name="Deep Wounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit takes a Battle-shock, Leadership, Desperate Escape or Out of Action test, subtract 1 from that test.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit has -1 Toughness to a minimum of 1, otherwise re-roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Deep Wounds" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="-1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Crippling Damage" hidden="false" id="4135-1065-ae32-09a4">
               <constraints>
