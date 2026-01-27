@@ -1647,7 +1647,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <profiles>
                 <profile name="Weak Swing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit has -1 Toughness to a minimum of 1, otherwise re-roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s melee weapons have -1 Strength</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1655,8 +1655,8 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <modifierGroup type="and">
                   <comment>Weak Swing</comment>
                   <modifiers>
-                    <modifier type="increment" value="-1" field="ab33-d393-96ce-ccba" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
-                    <modifier type="append" value="Weak Swing" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                    <modifier type="append" value="Weak Swing" field="annotation" join=", " scope="model" affects="self.entries.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="-1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.profiles.Melee Weapons"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
