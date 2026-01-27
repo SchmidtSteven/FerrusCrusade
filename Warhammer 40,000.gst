@@ -2002,7 +2002,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <comment>Weak Munitions</comment>
                   <modifiers>
                     <modifier type="append" value="Underpowered Shot" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
-                    <modifier type="increment" value="-1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
                     <modifier type="increment" value="-1" field="2229-f494-25db-c5d3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
                   </modifiers>
                 </modifierGroup>
