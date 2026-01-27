@@ -1735,12 +1735,12 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </selectionEntry>
 
           
-            <selectionEntry type="upgrade" import="true" name="Crack In The Armour" hidden="false" id="Crack-In-The-Armour">
+            <selectionEntry type="upgrade" import="true" name="Panicked Control" hidden="false" id="Crack-In-The-Armour">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Crack In The Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                <profile name="Panicked Control" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit’s Save is worsened by 1 (to a max of 6+).</characteristic>
                   </characteristics>
@@ -1749,7 +1749,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Crack In The Armour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="append" value="Panicked Control" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
                     <modifier type="increment" value="1" field="450-a17e-9d5e-29da" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
                   </modifiers>
                 </modifierGroup>
@@ -1793,10 +1793,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               </profiles>
               <modifierGroups>
                 <modifierGroup type="and">
-                  <comment>Weak Swing</comment>
+                  <comment>Underpowered Shot</comment>
                   <modifiers>
-                    <modifier type="append" value="Underpowered Shot" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="increment" value="-1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="Underpowered Shot" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                    <modifier type="increment" value="-1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -1826,8 +1826,52 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </selectionEntry>
 
 
+            <selectionEntry type="upgrade" import="true" name="Panicked Control" hidden="false" id="Panicked-Control">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Panicked Control" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4889-1296-cec0-fdbe">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unit has 1 less OC. If the unit is already OC 0, then re-roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Panicked Control" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="-1" field="bef7-942a-1a23-59f8" scope="model" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="-1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="-2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
 
-            <selectionEntry type="upgrade" import="true" name="Crippling Damage" hidden="false" id="4135-1065-ae32-09a4">
+          
+            <!-- <selectionEntry type="upgrade" import="true" name="Crippling Damage" hidden="false" id="4135-1065-ae32-09a4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="159e-81b2-f506-493f" includeChildSelections="false"/>
               </constraints>
@@ -1970,7 +2014,12 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
               </costs>
-            </selectionEntry>
+            </selectionEntry> -->
+
+
+
+
+            
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
