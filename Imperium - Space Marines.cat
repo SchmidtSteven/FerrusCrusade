@@ -44444,6 +44444,16 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b26-d9b1-212f-6eed" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf54-b219-a8e6-f374" includeChildSelections="true"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Medusan Armor" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
+                <modifier type="increment" value="-1" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+                <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
