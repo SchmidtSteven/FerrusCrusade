@@ -187,11 +187,12 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Character Ballistus Dreadnought" hidden="false" type="selectionEntry" id="BallistusCharacterELINK" targetId="BallistusCharacterSelEntry"/>
+    <entryLink import="true" name="Ballistus Dreadnought Character" hidden="false" type="selectionEntry" id="BallistusCharacterELINK" targetId="BallistusCharacterSelEntry"/>
     <entryLink import="true" name="Ballistus Dreadnought" hidden="false" type="selectionEntry" id="fa66-cda4-10fa-4c69" targetId="5dc7-aa6c-7053-cede"/>
     <entryLink import="true" name="Bike Squad [Legends]" hidden="false" type="selectionEntry" id="b6b0-9449-1f70-6cfe" targetId="e6c4-3c73-1f0e-816d"/>
     <entryLink import="true" name="Bladeguard Ancient" hidden="false" type="selectionEntry" id="b596-18b1-d905-fd1d" targetId="9ca5-e5f4-f85d-bcca"/>
     <entryLink import="true" name="Bladeguard Veteran Squad" hidden="false" type="selectionEntry" id="be1a-7188-94e5-3cfe" targetId="7044-bf1-f949-c32d"/>
+    <entryLink import="true" name="Brutalis Dreadnought Character" hidden="false" type="selectionEntry" id="BrutalisCharacterELINK" targetId="BrutalisCharacterSelEntry"/>
     <entryLink import="true" name="Brutalis Dreadnought" hidden="false" type="selectionEntry" id="f6b9-71b1-297a-c13a" targetId="1c00-9398-b9e7-446a"/>
     <entryLink import="true" name="Captain in Gravis Armour" hidden="false" type="selectionEntry" id="152d-fdb1-dfcd-2251" targetId="1d56-1cc3-de57-10e2"/>
     <entryLink import="true" name="Captain in Phobos Armour" hidden="false" type="selectionEntry" id="2632-9483-b17f-ff52" targetId="a976-7cd5-9657-d91a"/>
@@ -13296,10 +13297,11 @@ by 1.</characteristic>
     <!-- BALLISTUS END -->
     <!-- BALLISTUS END -->
     <!-- BALLISTUS END -->
-    <!-- BRUTALIS START -->
-    <!-- BRUTALIS START -->
-    <!-- BRUTALIS START -->
-    <selectionEntry type="model" import="true" name="Brutalis Dreadnought" hidden="false" id="1c00-9398-b9e7-446a">
+     
+    <!-- BRUTALIS CHARACTER START -->
+    <!-- BRUTALIS CHARACTER START -->
+    <!-- BRUTALIS CHARACTER START -->
+    <selectionEntry type="model" import="true" name="Brutalis Dreadnought Character" hidden="false" id="BrutalisCharacterSelEntry">
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d3bb-568d-8bbc-bd8b" targetId="b68a-5ded-65ac-98c">
           <modifiers>
@@ -13317,7 +13319,7 @@ by 1.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bb02-cebb-c802-dd01" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Brutalis Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7f57-4ff2-3b71-eafb">
+        <profile name="Brutalis Dreadnought Character" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7f57-4ff2-3b71-eafb">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
@@ -13337,8 +13339,8 @@ by 1.</characteristic>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="VehCharCatEnt" id="BrutalisCharacter" primary="true" name="DreadnoughtCharacter" hidden="false" />
-        <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="true" name="Vehicle"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="BrutalisCharacter" primary="true" name="Character"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="false" name="Vehicle"/>
         <categoryLink targetId="a820-cf8-f29d-7b06" id="6bb1-d26c-6985-ee34" primary="false" name="Dreadnought"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="de4-e311-712-c728" primary="false" name="Walker"/>
         <categoryLink targetId="c0fd-10e-543a-273d" id="66c2-1353-eef2-beb9" primary="false" name="Brutalis Dreadnought"/>
@@ -13477,6 +13479,306 @@ by 1.</characteristic>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="BrutalisCharacterWarlord" collective="false" targetId="caa-f869-3cbd-b48e" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="BrutalisCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="aec8-d6a5-b190-68fe" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="c43b-8aba-524a-e29f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="7d04-1215-8360-2be4">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="bb02-cebb-c802-dd01">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" id="6c9-da5-cea7-f3c9">
+      <infoLinks>
+        <infoLink name="Anti-" hidden="false" type="rule" id="9e03-71d1-2bac-cf3" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Rapid Fire" hidden="false" type="rule" id="f72b-5557-fb24-a803" targetId="c5c8-8b58-b8b6-7786"/>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="a094-7177-e146-d5ff" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Twin Icarus Ironhail Heavy Stubber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3204-5fbd-c5a5-1bf9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-FLY 4+, Rapid Fire 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Multi-melta" hidden="false" id="6fad-2d0d-8ff9-5f8f">
+      <profiles>
+        <profile name="Twin Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5eb7-47-da8a-4283">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="16c0-1dd0-d780-98c2" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Melta" hidden="false" type="rule" id="33d6-a13e-8f3d-7c7d" targetId="7cdb-fb99-44a9-8849"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="6766-b8f0-ea95-e023" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <!-- BRUTALIS CHARACTER END -->
+    <!-- BRUTALIS CHARACTER END -->
+    <!-- BRUTALIS CHARACTER END -->
+    <!-- BRUTALIS START -->
+    <!-- BRUTALIS START -->
+    <!-- BRUTALIS START -->
+    <selectionEntry type="model" import="true" name="Brutalis Dreadnought" hidden="false" id="1c00-9398-b9e7-446a">
+      <infoLinks>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="d3bb-568d-8bbc-bd8b" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="c597-f117-dcff-91c6" targetId="ee64-aaaf-75df-8da9"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="eb6f-5591-4a7e-fd5f" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="5b3b-9d18-9f41-813b" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="cec5-2793-a763-e647"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="c43b-8aba-524a-e29f" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7d04-1215-8360-2be4" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bb02-cebb-c802-dd01" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Brutalis Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7f57-4ff2-3b71-eafb">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brutalis Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbd0-636-26e-2482">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="true" name="Vehicle"/>
+        <categoryLink targetId="a820-cf8-f29d-7b06" id="6bb1-d26c-6985-ee34" primary="false" name="Dreadnought"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="de4-e311-712-c728" primary="false" name="Walker"/>
+        <categoryLink targetId="c0fd-10e-543a-273d" id="66c2-1353-eef2-beb9" primary="false" name="Brutalis Dreadnought"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2110-a221-b99a-7e8c" primary="false" name="Imperium"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="bb43-bba7-8d62-caca" primary="false" name="Faction: Adeptus Astartes"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="c38d-536f-fa2d-9895" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Twin Icarus Ironhail Heavy Stubber" hidden="false" id="5814-20f2-53ee-3add" type="selectionEntry" targetId="6c9-da5-cea7-f3c9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72d0-d3e4-b23a-1911"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcc8-dc0-4e22-c05b"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="821c-9197-fd2b-21f4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapon Option" id="6099-9d44-6aee-cd5b" hidden="false" defaultSelectionEntryId="fbd7-1d77-add6-15f1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Brutalis Fists &amp; Brutalis Bolt Rifles" hidden="false" id="fbd7-1d77-add6-15f1">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Brutalis Fists" hidden="false" id="a45d-5a4-fd3b-fbe">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="747c-717b-9958-cdb6"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a9-1aca-b466-8897"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="945d-c121-a947-55b7" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                      </infoLinks>
+                      <profiles>
+                        <profile name="Brutalis Fists" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bf72-380a-edcf-816a">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="08aa-65c9-6f9f-2cf0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Brutalis Bolt Rifles" hidden="false" id="b8bc-cc4-1d6a-559e">
+                      <profiles>
+                        <profile name="Brutalis Bolt Rifles" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a8fd-bc3b-b629-e6a4">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="2243-bd57-978b-dccb" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d578-4803-fc07-61a5"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df00-fa46-d78b-9fdd"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1c96-c478-8fa7-7c46" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Brutalis Talons" hidden="false" id="3221-309e-810a-39a9">
+                  <profiles>
+                    <profile name="➤ Brutalis Talons - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a042-66db-3ce0-a3ab">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Brutalis Talons - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7048-2ef3-7430-e152">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="17ec-7bf5-c25e-193e" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="463b-cf96-ff7d-8da8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27b2-3e3-75af-d3b1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="369b-473c-81de-4f60"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapon Option" id="da4-fa24-f9c9-bdc0" hidden="false" defaultSelectionEntryId="e99e-b2c0-4c80-779b">
+              <entryLinks>
+                <entryLink import="true" name="Twin Heavy Bolter" hidden="false" id="e99e-b2c0-4c80-779b" type="selectionEntry" targetId="d107-1e89-9d3f-c9c7">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0e96-baaa-275f-0cb9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Twin Multi-melta" hidden="false" id="9537-75fb-b520-a005" type="selectionEntry" targetId="6fad-2d0d-8ff9-5f8f">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="bfe2-84d0-19e8-5244" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cadb-aacb-cdf9-7e75"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca31-fce6-744c-4dd9"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="aec8-d6a5-b190-68fe" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifiers>
