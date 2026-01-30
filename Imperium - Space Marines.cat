@@ -12274,8 +12274,8 @@ by 1.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="90f2-fd30-e576-411d" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink id="b29-1397-edf-bf99" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="bc41-9bd9-b7a-ca90" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink id="RedemptorCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="RedemptorCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="a028-a40f-67a2-b5c3" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifiers>
