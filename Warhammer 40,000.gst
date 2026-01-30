@@ -654,9 +654,9 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
