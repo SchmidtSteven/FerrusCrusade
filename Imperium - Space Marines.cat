@@ -12481,6 +12481,8 @@ by 1.</characteristic>
         </profile>
       </profiles>
       <entryLinks>
+        <entryLink id="BallistusCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="BallistusCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="af80-f121-8970-d074" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
@@ -12863,6 +12865,8 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
+        <entryLink id="BrutalisCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="BrutalisCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="aec8-d6a5-b190-68fe" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifiers>
