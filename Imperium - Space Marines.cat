@@ -187,6 +187,7 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Ballistus Dreadnought" hidden="false" type="selectionEntry" id="fa66-cda4-10fa-4c69" targetId="BallistusCharacterELINK"/>
     <entryLink import="true" name="Ballistus Dreadnought" hidden="false" type="selectionEntry" id="fa66-cda4-10fa-4c69" targetId="5dc7-aa6c-7053-cede"/>
     <entryLink import="true" name="Bike Squad [Legends]" hidden="false" type="selectionEntry" id="b6b0-9449-1f70-6cfe" targetId="e6c4-3c73-1f0e-816d"/>
     <entryLink import="true" name="Bladeguard Ancient" hidden="false" type="selectionEntry" id="b596-18b1-d905-fd1d" targetId="9ca5-e5f4-f85d-bcca"/>
@@ -12446,12 +12447,12 @@ by 1.</characteristic>
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
-    <selectionEntry type="model" import="true" name="Ballistus Dreadnought" hidden="false" id="5dc7-aa6c-7053-cede">
+    <selectionEntry type="model" import="true" name="Ballistus Dreadnought" hidden="false" id="BallistusCharacterELINK">
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9432-b063-a3f3-2dc9"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="aaff-e889-e424-872d" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="6443-a286-b6e7-3b88" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c14c-f21e-5ae3-4ae1" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="BalChaCon01"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="BalChaCon02" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="BalChaCon03" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="BalChaCon04" includeChildSelections="true"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
@@ -12464,7 +12465,7 @@ by 1.</characteristic>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <profiles>
-        <profile name="Ballistus Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="96f7-307-efa6-dd1a">
+        <profile name="Ballistus Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="BalChaProfile">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
@@ -12474,7 +12475,7 @@ by 1.</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">4</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ballistus Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="167c-25a9-9fed-9d96">
+        <profile name="Ballistus Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="BalChaProfile02">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll.</characteristic>
           </characteristics>
@@ -12483,26 +12484,26 @@ by 1.</characteristic>
       <entryLinks>
         <entryLink id="BallistusCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="BallistusCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="af80-f121-8970-d074" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="BallistusCharacterCrusade" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="7a9e-7486-35b6-3d6e" targetId="ee64-aaaf-75df-8da9"/>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="3ee3-e684-64ee-51a8" targetId="b68a-5ded-65ac-98c">
+        <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="BalCharRule01" targetId="ee64-aaaf-75df-8da9"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="BalCharRule02" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="D3" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Oath of Moment" hidden="false" type="rule" id="c726-923b-68c0-7456" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Templar Vows" id="ea5c-3499-db05-9a4a" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="BalCharRule03" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="BalCharRule04" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="BallistusCharacter" primary="true" name="Character" hidden="false" />
-        <categoryLink targetId="dbd4-63-af05-998" id="be9b-aea5-348-cf7b" primary="false" name="Vehicle"/>
-        <categoryLink targetId="6dda-e157-334d-e93a" id="651f-e0b7-5b6c-98a2" primary="false" name="Walker"/>
-        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="30ec-884d-eae1-8db2" primary="false" name="Imperium"/>
-        <categoryLink targetId="2ade-80d5-d39b-baeb" id="4427-701b-afe8-59f8" primary="false" name="Ballistus Dreadnought"/>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="a9bf-d810-fd6f-eae7" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink name="Dreadnought" hidden="false" id="fb56-ca92-f1f0-e272" targetId="c97c-376-e2e0-1dd2" primary="false"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="BallistusCharacter" primary="true" name="Character"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="BalCharLink01" primary="false" name="Vehicle"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="BalCharLink02" primary="false" name="Walker"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="BalCharLink03" primary="false" name="Imperium"/>
+        <categoryLink targetId="2ade-80d5-d39b-baeb" id="BalCharLink04" primary="false" name="Ballistus Dreadnought"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="BalCharLink05" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="c97c-376-e2e0-1dd2" id="BalCharLink06" primary="false" name="Dreadnought"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -12514,17 +12515,17 @@ by 1.</characteristic>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="6" field="aaff-e889-e424-872d">
+            <modifier type="set" value="6" field="BalChaCon02">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="2" field="6443-a286-b6e7-3b88">
+            <modifier type="increment" value="2" field="BalChaCon03">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
-            <modifier type="increment" value="2" field="c14c-f21e-5ae3-4ae1">
+            <modifier type="increment" value="2" field="BalChaCon04">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
@@ -12579,11 +12580,11 @@ by 1.</characteristic>
         </modifierGroup>
       </modifierGroups>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="51dd-0ab4-fd1a-3eb0" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="BalCharWargear" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Armoured Feet" hidden="false" id="3069-5719-a1f9-49d3">
+            <selectionEntry type="upgrade" import="true" name="Armoured Feet" hidden="false" id="BalCharArmoredFeet">
               <profiles>
-                <profile name="Armoured Feet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6962-59e-aca0-d93d">
+                <profile name="Armoured Feet" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="BalCharArmoredFeetProfile">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
