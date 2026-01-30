@@ -12690,6 +12690,12 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <!-- BALLISTUS END -->
+    <!-- BALLISTUS END -->
+    <!-- BALLISTUS END -->
+    <!-- BRUTALIS START -->
+    <!-- BRUTALIS START -->
+    <!-- BRUTALIS START -->
     <selectionEntry type="model" import="true" name="Brutalis Dreadnought" hidden="false" id="1c00-9398-b9e7-446a">
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d3bb-568d-8bbc-bd8b" targetId="b68a-5ded-65ac-98c">
@@ -12866,7 +12872,7 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="BrutalisCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="BrutalisCharacterWarlord" collective="false" targetId="caa-f869-3cbd-b48e" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="BrutalisCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="aec8-d6a5-b190-68fe" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
@@ -12987,6 +12993,9 @@ by 1.</characteristic>
         <categoryLink name="Damage Dx Weapon" hidden="false" id="6766-b8f0-ea95-e023" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <!-- BRUTALIS END -->
+    <!-- BRUTALIS END -->
+    <!-- BRUTALIS END -->
     <selectionEntry type="unit" import="true" name="Assault Squad [Legends]" hidden="false" id="ca4e-47d5-a704-8e5a">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
