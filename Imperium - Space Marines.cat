@@ -187,7 +187,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Ballistus Dreadnought" hidden="false" type="selectionEntry" id="fa66-cda4-10fa-4c69" targetId="BallistusCharacterELINK"/>
+    <entryLink import="true" name="Character Ballistus Dreadnought" hidden="false" type="selectionEntry" id="BallistusCharacterELINK" targetId="BallistusCharacterSelEntry"/>
     <entryLink import="true" name="Ballistus Dreadnought" hidden="false" type="selectionEntry" id="fa66-cda4-10fa-4c69" targetId="5dc7-aa6c-7053-cede"/>
     <entryLink import="true" name="Bike Squad [Legends]" hidden="false" type="selectionEntry" id="b6b0-9449-1f70-6cfe" targetId="e6c4-3c73-1f0e-816d"/>
     <entryLink import="true" name="Bladeguard Ancient" hidden="false" type="selectionEntry" id="b596-18b1-d905-fd1d" targetId="9ca5-e5f4-f85d-bcca"/>
@@ -12447,7 +12447,7 @@ by 1.</characteristic>
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
-    <selectionEntry type="model" import="true" name="Ballistus Dreadnought" hidden="false" id="BallistusCharacterELINK">
+    <selectionEntry type="model" import="true" name="Character Ballistus Dreadnought" hidden="false" id="BallistusCharacterSelEntry">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="BalChaCon01"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="BalChaCon02" includeChildSelections="false"/>
@@ -12465,7 +12465,7 @@ by 1.</characteristic>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <profiles>
-        <profile name="Ballistus Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="BalChaProfile">
+        <profile name="Character Ballistus Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="BalChaProfile">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
