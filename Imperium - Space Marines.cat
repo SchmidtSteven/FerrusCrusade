@@ -12734,6 +12734,7 @@ by 1.</characteristic>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <categoryLinks>
+        <categoryLink targetId="tester123" id="3b45-9211-182f-33c7" primary="false" name="Captain"/>
         <categoryLink targetId="VehCharCatEnt" id="BrutalisCharacter" primary="true" name="Vehicle Character" hidden="false" />
         <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="true" name="Vehicle"/>
         <categoryLink targetId="a820-cf8-f29d-7b06" id="6bb1-d26c-6985-ee34" primary="false" name="Dreadnought"/>
