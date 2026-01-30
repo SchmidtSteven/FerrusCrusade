@@ -12735,7 +12735,7 @@ by 1.</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="VehCharCatEnt" id="BrutalisCharacter" primary="true" name="DreadnoughtCharacter" hidden="false" />
-        <!-- <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="true" name="Vehicle"/> -->
+        <categoryLink targetId="dbd4-63-af05-998" id="e9ac-1dab-cad3-58df" primary="true" name="Vehicle"/>
         <categoryLink targetId="a820-cf8-f29d-7b06" id="6bb1-d26c-6985-ee34" primary="false" name="Dreadnought"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="de4-e311-712-c728" primary="false" name="Walker"/>
         <categoryLink targetId="c0fd-10e-543a-273d" id="66c2-1353-eef2-beb9" primary="false" name="Brutalis Dreadnought"/>
