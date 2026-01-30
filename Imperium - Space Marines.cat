@@ -12446,7 +12446,7 @@ by 1.</characteristic>
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
     <!-- BALLISTUS CHARACTER START -->
-    <!-- <selectionEntry type="model" import="true" name="Ballistus Dreadnought" hidden="false" id="5dc7-aa6c-7053-cede">
+    <selectionEntry type="model" import="true" name="Ballistus Dreadnought" hidden="false" id="5dc7-aa6c-7053-cede">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9432-b063-a3f3-2dc9"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="aaff-e889-e424-872d" includeChildSelections="false"/>
@@ -12689,7 +12689,7 @@ by 1.</characteristic>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry> -->
+    </selectionEntry>
     <!-- BALLISTUS CHARACTER END -->
     <!-- BALLISTUS CHARACTER END -->
     <!-- BALLISTUS CHARACTER END -->
@@ -12746,13 +12746,12 @@ by 1.</characteristic>
         <infoLink name="Templar Vows" id="ea5c-3499-db05-9a4a" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="BallistusCharacter" primary="true" name="Character" hidden="false" />
-        <categoryLink targetId="dbd4-63-af05-998" id="be9b-aea5-348-cf7b" primary="false" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="be9b-aea5-348-cf7b" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="651f-e0b7-5b6c-98a2" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="30ec-884d-eae1-8db2" primary="false" name="Imperium"/>
         <categoryLink targetId="2ade-80d5-d39b-baeb" id="4427-701b-afe8-59f8" primary="false" name="Ballistus Dreadnought"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="a9bf-d810-fd6f-eae7" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink name="Dreadnought" hidden="false" id="fb56-ca92-f1f0-e272" targetId="c97c-376-e2e0-1dd2" primary="false"/>
+        <categoryLink targetId="c97c-376-e2e0-1dd2" id="fb56-ca92-f1f0-e272" primary="false" name="Dreadnought"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
