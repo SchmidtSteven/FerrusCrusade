@@ -12481,6 +12481,7 @@ by 1.</characteristic>
         <infoLink name="Templar Vows" id="ea5c-3499-db05-9a4a" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="BallistusCharacter" primary="true" name="Character" hidden="false" />
         <categoryLink targetId="dbd4-63-af05-998" id="be9b-aea5-348-cf7b" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="651f-e0b7-5b6c-98a2" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="30ec-884d-eae1-8db2" primary="false" name="Imperium"/>
