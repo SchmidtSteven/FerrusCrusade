@@ -12104,7 +12104,7 @@ by 1.</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="RedemptorCharacter" primary="true" name="Character" hidden="false" />
-        <categoryLink targetId="dbd4-63-af05-998" id="43e3-e8fd-14a9-69a1" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="43e3-e8fd-14a9-69a1" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="d68a-db4d-11b5-cfc4" primary="false" name="Walker"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="9f00-913-1e1e-8ba5" primary="false" name="Imperium"/>
         <categoryLink targetId="c7d9-a778-b8db-26d4" id="4956-b29e-a0ed-4d58" primary="false" name="Redemptor Dreadnought"/>
@@ -12632,8 +12632,6 @@ by 1.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="90f2-fd30-e576-411d" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink id="RedemptorCharacterWarlord" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="RedemptorCharacterEnhancements" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="a028-a40f-67a2-b5c3" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifiers>
