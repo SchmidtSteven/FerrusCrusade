@@ -44142,11 +44142,11 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
         <!-- Honored Companion Start -->
         <!-- Honored Companion Start -->
         <!-- Honored Companion Start -->
-        <selectionEntryGroup name="Honored Companion" id="77fd-379c-c1d1-fec9" hidden="false">
+        <selectionEntryGroup name="Honored Companion" id="HonoredCompanion01" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Honored Companion" hidden="false" id="62c3-59ce-191d-768c">
+            <selectionEntry type="upgrade" import="true" name="Honored Companion" hidden="false" id="HonoredCompanion02">
               <profiles>
-                <profile name="Honored Companion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f132-2302-a5f7-8112">
+                <profile name="Honored Companion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="HonoredCompanion03">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model gains the Captain keyword for the purposes of which units it can join and which units can join the same unit.
 Units that say any captain model can join this unit can now be joined by this model. 
@@ -44194,13 +44194,110 @@ A model that says it can attach to a unit it can lead even if one CAPTAIN or CHA
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c5-9a1e-01c7-ca48" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8a0-8c48-284f-f5a4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="HonoredCompanion04" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="HonoredCompanion05" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
         <!-- Honored Companion End -->
         <!-- Honored Companion End -->
         <!-- Honored Companion End -->
+
+        <!-- Renowned Chapter Member Start -->
+        <!-- Renowned Chapter Member Start -->
+        <!-- Renowned Chapter Member Start -->
+        <selectionEntryGroup name="Renowned Chapter Member" id="77fd-379c-c1d1-fec9" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Renowned Chapter Member" hidden="false" id="62c3-59ce-191d-768c">
+              <profiles>
+                <profile name="Renowned Chapter Member" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f132-2302-a5f7-8112">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A unit from your army that does not have any Chapter Keyword.
+This unit gains the Chapter Keyword (eg: SPACE WOLVES, BLOOD ANGELS)
+This allows stratagems and detachment rules to work with a larger number of units.
+                    </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9249-acae-2882-d95" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c5-9a1e-01c7-ca48" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8a0-8c48-284f-f5a4" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntryGroup>
+        <!-- Renowned Chapter Member End -->
+        <!-- Renowned Chapter Member End -->
+        <!-- Renowned Chapter Member End -->
+
+        <!-- Chapter Relic Start -->
+        <!-- Chapter Relic Start -->
+        <!-- Chapter Relic Start -->
+        <selectionEntryGroup name="Chapter Relic" id="77fd-379c-c1d1-fec9" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chapter Relic" hidden="false" id="62c3-59ce-191d-768c">
+              <profiles>
+                <profile name="Chapter Relic" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f132-2302-a5f7-8112">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Choose an Enhancement that you are eligible to take. This Enhancement becomes a Crusade Relic and is no longer eligible as an enhancement. It has the following rarity depending on the points cost of the enhancement:
+10-20 points 	 5 Honor Points → Artificer Relic (6XP / Blooded or higher)
+25 points or more → 10 Honor Points → Venerated Relic (16XP / Battle Hardened or Higher)
+These Relics do not cost points.
+Remember that models can only have one Enhancement but many Relics. So if you ever wanted to stack certain Enhancements you now can if you turn one (or more) of them into Relics.
+                    </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9249-acae-2882-d95" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c5-9a1e-01c7-ca48" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8a0-8c48-284f-f5a4" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntryGroup>
+        <!-- Chapter Relic End -->
+        <!-- Chapter Relic End -->
+        <!-- Chapter Relic End -->
+
 
         <selectionEntryGroup name="Chapter Master" id="77fd-379c-c1d1-fec9" hidden="false">
           <selectionEntries>
