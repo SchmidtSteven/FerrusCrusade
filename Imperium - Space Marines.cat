@@ -44180,7 +44180,7 @@ A model that says it can attach to a unit it can lead even if one CAPTAIN or CHA
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <!-- Chaplain -->
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1fb1-3603-a4bd-485" shared="true"/>
