@@ -44205,11 +44205,11 @@ A model that says it can attach to a unit it can lead even if one CAPTAIN or CHA
         <!-- Renowned Chapter Member Start -->
         <!-- Renowned Chapter Member Start -->
         <!-- Renowned Chapter Member Start -->
-        <selectionEntryGroup name="Renowned Chapter Member" id="77fd-379c-c1d1-fec9" hidden="false">
+        <selectionEntryGroup name="Renowned Chapter Member" id="RenownedChapterMember01" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Renowned Chapter Member" hidden="false" id="62c3-59ce-191d-768c">
+            <selectionEntry type="upgrade" import="true" name="Renowned Chapter Member" hidden="false" id="RenownedChapterMember02">
               <profiles>
-                <profile name="Renowned Chapter Member" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f132-2302-a5f7-8112">
+                <profile name="Renowned Chapter Member" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="RenownedChapterMember03">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A unit from your army that does not have any Chapter Keyword.
 This unit gains the Chapter Keyword (eg: SPACE WOLVES, BLOOD ANGELS)
@@ -44241,8 +44241,8 @@ This allows stratagems and detachment rules to work with a larger number of unit
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c5-9a1e-01c7-ca48" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8a0-8c48-284f-f5a4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="RenownedChapterMember04" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="RenownedChapterMember05" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
         <!-- Renowned Chapter Member End -->
@@ -44252,11 +44252,11 @@ This allows stratagems and detachment rules to work with a larger number of unit
         <!-- Chapter Relic Start -->
         <!-- Chapter Relic Start -->
         <!-- Chapter Relic Start -->
-        <selectionEntryGroup name="Chapter Relic" id="77fd-379c-c1d1-fec9" hidden="false">
+        <selectionEntryGroup name="Chapter Relic" id="ChapterRelic01" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Chapter Relic" hidden="false" id="62c3-59ce-191d-768c">
+            <selectionEntry type="upgrade" import="true" name="Chapter Relic" hidden="false" id="ChapterRelic02">
               <profiles>
-                <profile name="Chapter Relic" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f132-2302-a5f7-8112">
+                <profile name="Chapter Relic" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ChapterRelic03">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Choose an Enhancement that you are eligible to take. This Enhancement becomes a Crusade Relic and is no longer eligible as an enhancement. It has the following rarity depending on the points cost of the enhancement:
 10-20 points 	 5 Honor Points → Artificer Relic (6XP / Blooded or higher)
@@ -44290,8 +44290,8 @@ Remember that models can only have one Enhancement but many Relics. So if you ev
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c5-9a1e-01c7-ca48" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8a0-8c48-284f-f5a4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ChapterRelic04" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ChapterRelic05" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
         <!-- Chapter Relic End -->
