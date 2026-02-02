@@ -44304,14 +44304,13 @@ Remember that models can only have one Enhancement but many Relics. So if you ev
         <!-- Trained of the Chapter Start -->
         <!-- Trained of the Chapter Start -->
         <!-- Trained of the Chapter Start -->
-        <selectionEntryGroup name="Trained of the Chapter (One per Crusade Force)" id="TrainedOfTheChapter01" hidden="false">
+        <selectionEntryGroup name="Trained of the 15HP Chapter (One per Crusade Force)" id="TrainedOfTheChapter01" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Psychic Hood" hidden="false" id="PsychicHood01">
+            <selectionEntry type="upgrade" import="true" name="Mental Fortress" hidden="false" id="MentalFortress01">
               <profiles>
-                <profile name="Psychic Hood" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="PsychicHood02">
+                <profile name="Mental Fortress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="MentalFortress02">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks.
-                    </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a 4+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

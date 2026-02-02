@@ -2464,6 +2464,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </selectionEntry>
 
 
+
             <selectionEntry type="upgrade" import="true" name="Poisoned Wounds" hidden="false" id="Poisoned-Wounds">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4f-7458-34ff-ae92" includeChildSelections="false"/>
@@ -7306,11 +7307,15 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
           <selectionEntryGroups>
             <selectionEntryGroup name="Artificer Relics" id="84ad-429b-810f-9f63" hidden="false" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Medallion of the Conqueror" hidden="false" id="a69c-fb1d-07fa-2194">
+
+                <!-- Medallion of Command Start -->
+                <!-- Medallion of Command Start -->
+                <!-- Medallion of Command Start -->
+                <selectionEntry type="upgrade" import="true" name="Medallion of Command" hidden="false" id="a69c-fb1d-07fa-2194">
                   <profiles>
-                    <profile name="Medallion of the Conqueror" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dfd8-89bd-1c1f-385c">
+                    <profile name="Medallion of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dfd8-89bd-1c1f-385c">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if the bearer is within range of an objective marker that you control, roll one D6: on a 4+, you gain 1CP. Add 1 to the roll if the objective marker is not in your deployment zone. Add 2 to the roll if the objective is in your opponents deployment zone.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if the bearer is within range of an objective marker that you control, roll one D6: on a 4+, you gain 1CP. Add 1 to the roll if the objective marker is in No Man's Land. Add 2 to the roll if the objective is in your opponents deployment zone.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7342,11 +7347,17 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Master-crafted Armour" hidden="false" id="2b62-7b30-e912-90ef">
+                <!-- Medallion of Command End -->
+                <!-- Medallion of Command End -->
+                <!-- Medallion of Command End -->
+                <!-- Conversion Field Start -->
+                <!-- Conversion Field Start -->
+                <!-- Conversion Field Start -->
+                <selectionEntry type="upgrade" import="true" name="Conversion Field" hidden="false" id="2b62-7b30-e912-90ef">
                   <profiles>
-                    <profile name="Master-crafted Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d38-3938-1582-d2fa">
+                    <profile name="Conversion Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d38-3938-1582-d2fa">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to armour saving throws made for the bearer.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearer's unit have a 5+ invulnerable save against ranged attacks and each time a ranged attack is allocated to a model in the bearer's unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7378,11 +7389,17 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Artificer Weapon" hidden="false" id="be3b-002c-05eb-b21f">
+                <!-- Conversion Field End -->
+                <!-- Conversion Field End -->
+                <!-- Conversion Field End -->
+                <!-- Armour of the Soulless Sentry Start -->
+                <!-- Armour of the Soulless Sentry Start -->
+                <!-- Armour of the Soulless Sentry Start -->
+                <selectionEntry type="upgrade" import="true" name="Armour of the Soulless Sentry" hidden="false" id="be3b-002c-05eb-b21f">
                   <profiles>
-                    <profile name="Artificer Weapon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="39dc-f5a6-364d-51ac">
+                    <profile name="Armour of the Soulless Sentry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="39dc-f5a6-364d-51ac">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). Make a note on the bearer&apos;s Crusade card of this weapon and give it a suitable name. That weapon is now a Crusade Relic and each time the bearer makes an attack with it, on a Critical Hit, the target suffers 1 mortal wound in addition to any normal damage.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Toughness and Save characteristics of the bearer by 1.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7420,11 +7437,17 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Biosplint Gland" hidden="false" id="a55e-b0b2-21d9-6a9a">
+                <!-- Armour of the Soulless Sentry End -->
+                <!-- Armour of the Soulless Sentry End -->
+                <!-- Armour of the Soulless Sentry End -->
+                <!-- Master-Crafted Armour Start -->
+                <!-- Master-Crafted Armour Start -->
+                <!-- Master-Crafted Armour Start -->
+                <selectionEntry type="upgrade" import="true" name="Master-Crafted Armour" hidden="false" id="a55e-b0b2-21d9-6a9a">
                   <profiles>
-                    <profile name="Biosplint Gland" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="179e-a700-2330-1df8">
+                    <profile name="Master-Crafted Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="179e-a700-2330-1df8">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer&apos;s unit ends Charge moved, select one enemy unit within Engagement Range of the bearer. Until the end of the turn, each time a model in that enemy unit makes an attack, subtract 1 from that attack&apos;s Hit roll.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic and add 1 to armour saving throws made for the bearer.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7456,6 +7479,135 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
+                <!-- Master-Crafted Armour End -->
+                <!-- Master-Crafted Armour End -->
+                <!-- Master-Crafted Armour End -->
+                <!-- Blurring Talisman Start -->
+                <!-- Blurring Talisman Start -->
+                <!-- Blurring Talisman Start -->
+                <selectionEntry type="upgrade" import="true" name="Blurring Talisman" hidden="false" id="BlurringTalisman01">
+                  <profiles>
+                    <profile name="Blurring Talisman" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="BlurringTalisman02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry^^** model only. Gives the model and the unit it is attached to Stealth.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="BlurringTalisman03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="BlurringTalisman01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="BlurringTalisman01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- Blurring Talisman End -->
+                <!-- Blurring Talisman End -->
+                <!-- Blurring Talisman End -->
+                <!-- EYE OF MARS Start -->
+                <!-- EYE OF MARS Start -->
+                <!-- EYE OF MARS Start -->
+                <selectionEntry type="upgrade" import="true" name="Eye of Mars" hidden="false" id="EYEOFMARS01">
+                  <profiles>
+                    <profile name="Eye of Mars" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="EYEOFMARS02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, select one unit from your Crusade army and redeploy it. When doing so, you can set that unit up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="EYEOFMARS03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="EYEOFMARS01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="EYEOFMARS01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- EYE OF MARS End -->
+                <!-- EYE OF MARS End -->
+                <!-- EYE OF MARS End -->
+                <!-- Auto-Medicae Start -->
+                <!-- Auto-Medicae Start -->
+                <!-- Auto-Medicae Start -->
+                <selectionEntry type="upgrade" import="true" name="Auto-Medicae" hidden="false" id="AutoMedicae01">
+                  <profiles>
+                    <profile name="Auto-Medicae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="AutoMedicae02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Feel No Pain 5+ ability.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="AutoMedicae03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="AutoMedicae01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="AutoMedicae01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- Auto-Medicae End -->
+                <!-- Auto-Medicae End -->
+                <!-- Auto-Medicae End -->
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Antiquity Relics" id="bf35-60e5-4472-2ec6" hidden="false" sortIndex="2">
@@ -7504,11 +7656,16 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sigil of Sol" hidden="false" id="9d47-75ae-6c66-b58c">
+
+
+                <!-- Dolmen Key Start -->
+                <!-- Dolmen Key Start -->
+                <!-- Dolmen Key Start -->
+                <selectionEntry type="upgrade" import="true" name="Dolmen Key" hidden="false" id="9d47-75ae-6c66-b58c">
                   <profiles>
-                    <profile name="Sigil of Sol" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc31-bfee-9765-9af2">
+                    <profile name="Dolmen Key" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc31-bfee-9765-9af2">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, if the bearer is on the battlefield when you use a Strategic Ploy Stratagem, you can use that Stratagem without spending any CP.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearer’s unit have the Deep Strike ability. In addition, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP, and when resolving that Stratagem, you can set up that unit anywhere on the battlefield that is more than 6" horizontally away from all enemy units and within range of an objective marker. Until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7547,11 +7704,16 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Cranium Obscura" hidden="false" id="a88f-f874-3cdd-9f49">
+
+
+                <!-- Deepstrike Scrambler -->
+                <!-- Deepstrike Scrambler -->
+                <!-- Deepstrike Scrambler -->
+                <selectionEntry type="upgrade" import="true" name="Deepstrike Scrambler" hidden="false" id="a88f-f874-3cdd-9f49">
                   <profiles>
-                    <profile name="Cranium Obscura" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2aa8-048c-cf96-be49">
+                    <profile name="Deepstrike Scrambler" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2aa8-048c-cf96-be49">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Cannot be taken by **^^Psyker^^** models. Each time a Psychic Attack targets the bearer&apos;s unit, subtract 1 from that attack&apos;s Hit roll.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12" of the bearer.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7591,11 +7753,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
+                <!-- Deepstrike Scrambler -->
+                <!-- Deepstrike Scrambler -->
+                <!-- Deepstrike Scrambler -->
+
+                <!-- Shadesplinter Cloak -->
+                <!-- Shadesplinter Cloak -->
+                <!-- Shadesplinter Cloak -->
                 <selectionEntry type="upgrade" import="true" name="Shadesplinter Cloak" hidden="false" id="6e99-6b8f-a137-5dd1">
                   <profiles>
                     <profile name="Shadesplinter Cloak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6ad8-c713-f166-c037">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unless the bearer is part of an Attached unit at the start of the battle, it has the Lone Operative ability.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Unless the bearer is part of an Attached unit at the start of the battle, it has the Lone Operative and Stealth abilities.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7637,11 +7806,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <infoLink name="Lone Operative" id="d495-11d7-00cf-4686" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
                   </infoLinks>
                 </selectionEntry>
+                <!-- Shadesplinter Cloak -->
+                <!-- Shadesplinter Cloak -->
+                <!-- Shadesplinter Cloak -->
+
+                <!-- Lantern of Detestation -->
+                <!-- Lantern of Detestation -->
+                <!-- Lantern of Detestation -->
                 <selectionEntry type="upgrade" import="true" name="Lantern of Detestation" hidden="false" id="6aa0-1222-ba18-6665">
                   <profiles>
                     <profile name="Lantern of Detestation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="25fb-f968-ea54-fa54">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your opponent&apos;s Movement phase, for each enemy unit (excluding **^^Imperium^^** and **^^Chaos^^** units) within Engagement Range of the bearer, roll one D6: on a 4+. until the end of the phase, that unit cannot be selected to Fall Back.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your opponent&apos;s Movement phase, for each enemy unit within Engagement Range of the bearer, roll one D6: on a 4+. until the end of the phase, that unit cannot be selected to Fall Back.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7680,11 +7856,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Shard of Dying Light" hidden="false" id="c8b5-e565-15b4-be27">
+                <!-- Lantern of Detestation -->
+                <!-- Lantern of Detestation -->
+                <!-- Lantern of Detestation -->
+
+                <!-- Warding Totem -->
+                <!-- Warding Totem -->
+                <!-- Warding Totem -->
+                <selectionEntry type="upgrade" import="true" name="Warding Totem" hidden="false" id="c8b5-e565-15b4-be27">
                   <profiles>
-                    <profile name="Shard of Dying Light" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="523d-6d7f-a2b3-581a">
+                    <profile name="Warding Totem" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="523d-6d7f-a2b3-581a">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Psyker^^** model only. Each time the bearer makes a Psychic Attack, add 1 to that attack&apos;s Wound roll.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry^^** model only. Gives this model and the unit it is attached to to the ability to reroll armour saves of 1.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7724,15 +7907,76 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
+                <!-- Warding Totem -->
+                <!-- Warding Totem -->
+                <!-- Warding Totem -->
+
+                <!-- Transhuman Physiology -->
+                <!-- Transhuman Physiology -->
+                <!-- Transhuman Physiology -->
+                <selectionEntry type="upgrade" import="true" name="Transhuman Physiology" hidden="false" id="TranshumanPhysiology01">
+                  <profiles>
+                    <profile name="Transhuman Physiology" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="TranshumanPhysiology02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry^^** model only. Attacks with a Strength characteristic higher than the bearer's units Toughness characteristic subtract 1 from the Wound roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="TranshumanPhysiology03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="TranshumanPhysiology01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="TranshumanPhysiology01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- Transhuman Physiology -->
+                <!-- Transhuman Physiology -->
+                <!-- Transhuman Physiology -->
+
+
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Legendary Relics" id="c1dc-8e46-fd08-8aba" hidden="false" sortIndex="3">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gheist Prism Field" hidden="false" id="f2b3-9324-ed28-05aa">
+
+
+                <!-- Blood of the Fallen -->
+                <!-- Blood of the Fallen -->
+                <!-- Blood of the Fallen -->
+                <selectionEntry type="upgrade" import="true" name="Blood of the Fallen" hidden="false" id="f2b3-9324-ed28-05aa">
                   <profiles>
-                    <profile name="Gheist Prism Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de45-77ab-837e-748a">
+                    <profile name="Blood of the Fallen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="de45-77ab-837e-748a">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base). If doing so when making a Fall Back move, models in this unit do need to take a Desperate Escape test. After it has finished moving, select one enemy unit it moved across (if any) and roll one D6: on a 2+, that unit suffers D3 mortal wounds.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this model's unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, add 1 to the roll of the attacking unit is a character unit. On a 3+, do not remove it from play; that destroyed model can fight after the attacking model's unit has finished making its attacks, and is then removed from play.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7771,22 +8015,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Vortex Grenade" hidden="false" id="d0ad-c653-466e-a860">
+                <!-- Blood of the Fallen -->
+                <!-- Blood of the Fallen -->
+                <!-- Blood of the Fallen -->
+
+                <!-- Guardian of the Unbound -->
+                <!-- Guardian of the Unbound -->
+                <!-- Guardian of the Unbound -->
+                <selectionEntry type="upgrade" import="true" name="Guardian of the Unbound" hidden="false" id="d0ad-c653-466e-a860">
                   <profiles>
-                    <profile name="Vertebrax of Vodun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="afcc-75f3-b4df-3302">
+                    <profile name="Guardian of the Unbound" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b999-edd4-8e79-7750">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">*</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">*</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">*</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Vortex Grenade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b999-edd4-8e79-7750">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer can only shoot with this weapon once per battle. When an attack is made with this weapon, if a hit is scored roll one D6 for each unit within 6&quot; of the target unit (excluding the target unit itself): on a 4+, the unit being rolled for suffers D3 mortal wounds. The target unit then suffers 3D3 mortal wounds.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7828,6 +8068,13 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <infoLink name="Assault" id="2feb-cf1f-0058-be49" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
                 </selectionEntry>
+                <!-- Guardian of the Unbound -->
+                <!-- Guardian of the Unbound -->
+                <!-- Guardian of the Unbound -->
+
+                <!-- Null-field Disruptor -->
+                <!-- Null-field Disruptor -->
+                <!-- Null-field Disruptor -->
                 <selectionEntry type="upgrade" import="true" name="Null-field Disruptor" hidden="false" id="dba3-045b-5786-9d39">
                   <profiles>
                     <profile name="Null-field Disruptor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="81a6-e01e-03b3-4125">
@@ -7871,11 +8118,18 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Vertebrax of Vodun" hidden="false" id="492f-7d54-0a84-21e8">
+                <!-- Null-field Disruptor -->
+                <!-- Null-field Disruptor -->
+                <!-- Null-field Disruptor -->
+
+                <!-- Repositioning Vortex -->
+                <!-- Repositioning Vortex -->
+                <!-- Repositioning Vortex -->
+                <selectionEntry type="upgrade" import="true" name="Repositioning Vortex" hidden="false" id="492f-7d54-0a84-21e8">
                   <profiles>
-                    <profile name="Vertebrax of Vodun" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5109-2625-e190-8ddc">
+                    <profile name="Repositioning Vortex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5109-2625-e190-8ddc">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, select one friendly model on the battlefield (excluding the bearer) and then select one Aura ability that selected model has. Until the start of your next Command phase, the bearer has that Aura ability.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a Consolidation move, if this unit is not within Engagement Range of one or more enemy units, it can make a normal move instead.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7914,6 +8168,111 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
                 </selectionEntry>
+                <!-- Repositioning Vortex -->
+                <!-- Repositioning Vortex -->
+                <!-- Repositioning Vortex -->
+
+                <!-- Lord of Slaughter -->
+                <!-- Lord of Slaughter -->
+                <!-- Lord of Slaughter -->
+                <selectionEntry type="upgrade" import="true" name="Lord of Slaughter" hidden="false" id="LordOfSlaughter01">
+                  <profiles>
+                    <profile name="Lord of Slaughter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="LordOfSlaughter02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model and any unit it leads is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="LordOfSlaughter03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="LordOfSlaughter01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="LordOfSlaughter01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- Lord of Slaughter -->
+                <!-- Lord of Slaughter -->
+                <!-- Lord of Slaughter -->
+
+                <!-- Whirlwind of Doom -->
+                <!-- Whirlwind of Doom -->
+                <!-- Whirlwind of Doom -->
+                <selectionEntry type="upgrade" import="true" name="Whirlwind of Doom" hidden="false" id="WhirlwindOdDoom01">
+                  <profiles>
+                    <profile name="Whirlwind of Doom" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="WhirlwindOdDoom02">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model fights, until the end of the phase add 1 to the Attacks characteristic of one Melee Weapons for every 5 enemy models within 6" of this model.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="WhirlwindOdDoom03" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="WhirlwindOdDoom01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="WhirlwindOdDoom01" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <!-- Whirlwind of Doom -->
+                <!-- Whirlwind of Doom -->
+                <!-- Whirlwind of Doom -->
+
+
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
