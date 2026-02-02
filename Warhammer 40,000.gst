@@ -7395,7 +7395,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                 <!-- Armour of the Soulless Sentry Start -->
                 <!-- Armour of the Soulless Sentry Start -->
                 <!-- Armour of the Soulless Sentry Start -->
-                <selectionEntry type="upgrade" import="true" name="Armour of the Soulless Sentry" hidden="false" id="be3b-002c-05eb-b21f">
+                <!-- <selectionEntry type="upgrade" import="true" name="Armour of the Soulless Sentry" hidden="false" id="be3b-002c-05eb-b21f">
                   <profiles>
                     <profile name="Armour of the Soulless Sentry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="39dc-f5a6-364d-51ac">
                       <characteristics>
@@ -7436,7 +7436,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                     <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                     <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
                   </costs>
-                </selectionEntry>
+                </selectionEntry> -->
                 <!-- Armour of the Soulless Sentry End -->
                 <!-- Armour of the Soulless Sentry End -->
                 <!-- Armour of the Soulless Sentry End -->
@@ -8229,7 +8229,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
                   <profiles>
                     <profile name="Whirlwind of Doom" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="WhirlwindOdDoom02">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model fights, until the end of the phase add 1 to the Attacks characteristic of one Melee Weapons for every 5 enemy models within 6" of this model.</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model fights, until the end of the phase add 1 to the Attacks characteristic of one Melee Weapon for every 5 enemy models within 6" of this model.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
