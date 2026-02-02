@@ -44008,6 +44008,7 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a0d9-c115-2a-8330" shared="true"/>
                         <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <conditionGroups>
@@ -45671,10 +45672,9 @@ Remember that models can only have one Enhancement but many Relics. So if you ev
       </constraints>
     </selectionEntryGroup>
 
-
-
-
-
+    <!-- Forge of Ferrum Start -->
+    <!-- Forge of Ferrum Start -->
+    <!-- Forge of Ferrum Start -->
     <selectionEntryGroup name="The Forge of Ferrum" id="IronHandsHonorPointTable" hidden="false">
       <comment>Crusade content - Iron Hands only</comment>
       <modifiers>
@@ -45738,10 +45738,9 @@ Remember that models can only have one Enhancement but many Relics. So if you ev
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9958-a353-b0c6-d59c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-
-
-
-
+    <!-- Forge of Ferrum End -->
+    <!-- Forge of Ferrum End -->
+    <!-- Forge of Ferrum End -->
 
     <selectionEntryGroup name="Angels Ascendant" id="2705-f3cd-ec46-b24d" hidden="false">
       <comment>Crusade content - Blood Angels only</comment>
